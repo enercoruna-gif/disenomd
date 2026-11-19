@@ -186,15 +186,13 @@ GH = re.search(r' d="([^"]+)"', (Path(__file__).parent / "logos" / "github.svg")
 
 
 CORREO = "mailto:enercoruna@gmail.com?subject=" + quote("Quiero un DESIGN.md a medida") + "&body=" + quote("Hola, quiero un DESIGN.md a medida para esta web: \n\nLo usaré con (ChatGPT, Cursor, Lovable...): \n")
-PROXIMOS = [("pase", "Pase del catálogo", "Acceso a todos los análisis nuevos según salgan, sin pagar uno a uno."),
-            ("fondos", "Fondos", "Fondos y degradados listos para usar en la cabecera de tu web."),
-            ("videos", "Plantillas de vídeo", "Vídeos cortos de presentación para enseñar tu producto en redes."),
-            ("a-medida", "DESIGN.md a medida", "Analizamos la web que tú elijas y te entregamos su DESIGN.md en español.")]
+COMPRA = {"pase": "https://payhip.com/b/TmsD6", "web": "https://payhip.com/b/zXyEs", "app": "https://payhip.com/b/8sAFS", "fondos": "https://payhip.com/b/APUh4", "videos": "https://payhip.com/b/mOwWv", "prompts": "https://payhip.com/b/MoOeS", "sectores": "https://payhip.com/b/bXiQf", "a-medida": "https://payhip.com/b/kYZU0"}
+COMPRA_TODO = "https://payhip.com/b/7smZP"
 MENU_KITS = [("pase", "Pase del catálogo"), ("web", "Kit web inicial"), ("app", "Kit app móvil"), ("prompts", "Pack de prompts"), ("fondos", "Fondos"), ("videos", "Plantillas de vídeo")]
 
 
 def menu_kits(prefijo):
-  hay = {k["slug"] for k in KITS} | {s for s, _, _ in PROXIMOS}
+  hay = {k["slug"] for k in KITS} | set()
   return "".join(f'    <a href="{prefijo}kits/#{s}">{n}</a>\n' for s, n in MENU_KITS if s in hay)
 
 
@@ -264,6 +262,27 @@ KITS = [
        llano="120 instrucciones para pedirle a la IA textos, diseños y webs que salgan bien a la primera.",
        precio="19 €", detalle="Colección de prompts, habilidades para tu IA (archivos SKILL.md) y reglas (.cursorrules, CLAUDE.md, AGENTS.md) en español para diseñar, programar, escribir textos y revisar webs.",
        incluye=["40 habilidades (archivos SKILL.md) listas para Claude y Codex", "Plantillas CLAUDE.md, AGENTS.md y .cursorrules", "120 prompts de diseño, código y marketing", "10 ejemplos antes/después", "Reglas para Lovable, Bolt, v0 y ChatGPT"]),
+  dict(slug="pase", icono="▦", nombre="Pase del catálogo", sub="Todos los DESIGN.md de pago en un solo pase",
+       llano="45 análisis DESIGN.md de webs conocidas que no están en el catálogo gratis, cada uno con su página de muestra y su prompt.",
+       precio="49 €", detalle="Análisis propios en español en formato DESIGN.md (colores, tipografías, espaciados y componentes medidos en la web real), con una vista HTML de ejemplo y un índice filtrable por sector.",
+       incluye=["45 DESIGN.md de webs reales, en español", "Vista de muestra y PROMPT.md en cada diseño", "Índice filtrable por sector", "Análisis independiente: sin afiliación con las marcas"]),
+  dict(slug="fondos", icono="◌", nombre="Fondos animados", sub="Fondos en movimiento para tu web, listos para pegar",
+       llano="30 fondos animados originales para la cabecera o la portada de tu web. Eliges colores y velocidad y le pides a tu IA que lo pegue.",
+       precio="29 €", detalle="Efectos en CSS, Canvas 2D y WebGL sin dependencias, con 3 colores, velocidad e intensidad configurables, pausa al ocultar la pestaña y respeto por prefers-reduced-motion.",
+       incluye=["30 fondos animados originales", "Galería para verlos todos sin conexión", "Un PROMPT.md por fondo", "Guía para Claude Code, Cursor, ChatGPT, Lovable y WordPress"]),
+  dict(slug="videos", icono="▶", nombre="Plantillas de vídeo", sub="Vídeos para redes y web con tu marca",
+       llano="12 plantillas de vídeo (lanzamiento, oferta, apertura, testimonio, menú del día, cuenta atrás…) en horizontal y vertical. Cambias textos, colores y fotos y las grabas desde el móvil o las exportas a MP4.",
+       precio="39 €", detalle="Composiciones HTML con línea de tiempo determinista y script de exportación a MP4 (1920×1080 y 1080×1920), con modo de grabación a pantalla completa para el móvil.",
+       incluye=["12 plantillas en 16:9 y 9:16", "24 vídeos de muestra en MP4", "Un PROMPT.md por plantilla", "Guía para exportar a MP4 gratis"]),
+  dict(slug="a-medida", icono="✉", nombre="DESIGN.md a medida", sub="Un DESIGN.md hecho para tu marca o tu web",
+       llano="Nos mandas tu web, tu logo o las webs que te gustan y te preparamos un DESIGN.md propio, en español, listo para que tu IA haga todo con tu estilo.",
+       precio="149 €", detalle="Análisis de tu web o tus referencias, paleta, tipografías, espaciados y componentes en formato DESIGN.md, con una página de muestra y prompts para tu herramienta.",
+       incluye=["DESIGN.md propio de tu marca", "Página de muestra con tu estilo", "Prompts para Claude Code, Cursor, ChatGPT o Lovable", "Una ronda de cambios"],
+       correo=True),
+  dict(slug="sectores", icono="▤", nombre="Estilos por sector", sub="45 estilos originales para negocios de aquí",
+       llano="45 DESIGN.md originales pensados por sector (bar, peluquería, clínica, reformas, gestoría, tienda…) para que tu web parezca de tu gremio desde el primer día.",
+       precio="19 €", detalle="Sistemas de diseño propios en formato DESIGN.md, cada uno con su página de muestra, su prompt y un índice filtrable por sector.",
+       incluye=["45 DESIGN.md originales por sector", "Vista de muestra y PROMPT.md en cada uno", "Índice filtrable por sector"]),
 ]
 
 
@@ -435,21 +454,24 @@ def kits():
   bloques = ""
   for k in KITS:
     inc = "".join(f"<li>{x}</li>" for x in k["incluye"])
+    boton = (f'<a class="btn" href="{COMPRA[k["slug"]]}" rel="noopener">{"Encargarlo" if k.get("correo") else "Comprar"} en Payhip</a>' if k["slug"] in COMPRA
+             else '<span class="btn btn-off" aria-disabled="true">Todavía no está a la venta</span>')
+    if k.get("correo"):
+      boton += f' <a href="{CORREO}">o pregúntanos por correo</a>'
     bloques += f'''<article class="kit" id="{k["slug"]}">
   <p class="eti eti-acc">{k["nombre"]}</p>
   <h2>{k["sub"]}.</h2>
   <p>{k["llano"]}</p>
   <details class="tecnico"><summary>Detalles técnicos</summary><p>{k["detalle"]}</p><ul class="lista">{inc}</ul></details>
-  <div class="precio"><strong>{k["precio"]}</strong><span class="tenue">precio previsto · pago único</span></div>
-  <div class="acciones"><span class="btn btn-off" aria-disabled="true">Todavía no está a la venta</span></div>
+  <div class="precio"><strong>{k["precio"]}</strong><span class="tenue">{"precio orientativo · te confirmamos presupuesto" if k.get("correo") else "pago único"}</span></div>
+  <div class="acciones">{boton}</div>
 </article>'''
   cuerpo = f'''
-<section class="det-cab"><p class="eti">Kits de inicio · próximamente</p><h1>Empieza con el 80 % hecho.</h1>
-<p class="intro">Webs y apps casi terminadas, preparadas para que tu IA las entienda a la primera. Tú le pides en español lo que quieres cambiar y el resultado es tuyo. Aún no están a la venta; mientras tanto, el <a href="../#catalogo">catálogo de diseños</a> es gratis.</p>
+<section class="det-cab"><p class="eti">Kits y servicios de pago</p><h1>Empieza con el 80 % hecho.</h1>
+<p class="intro">Webs, apps, fondos, vídeos y DESIGN.md preparados para que tu IA los entienda a la primera. Tú le pides en español lo que quieres cambiar y el resultado es tuyo. Pago único con Payhip; el <a href="../#catalogo">catálogo de diseños</a> sigue siendo gratis.</p>
 {HERRAMIENTAS}</section>
 <section class="bloque kits">{bloques}</section>
-<section class="bloque kits">{"".join(f'<article class="kit" id="{s}"><p class="eti eti-acc">{n} · próximamente</p><p>{d}</p>' + (f'<div class="acciones"><a class="btn" href="{CORREO}">Pedirlo por correo</a></div>' if s == "a-medida" else '<div class="acciones"><span class="btn btn-off" aria-disabled="true">Todavía no está a la venta</span></div>') + '</article>' for s, n, d in PROXIMOS)}</section>
-<section class="bloque banda"><h2>¿Todo junto?</h2><p>Kit Web + Kit App + Pack de instrucciones: <strong>129 €</strong> previstos en el lanzamiento.</p><a class="btn" href="../#catalogo">Mientras, elige un diseño gratis</a></section>
+<section class="bloque banda" id="todo"><h2>¿Todo junto?</h2><p>Los 7 packs digitales (Pase, Kit Web, Kit App, Fondos, Vídeo, Prompts y Estilos por sector): <strong>199 €</strong> en lugar de 313 €.</p>{f'<a class="btn" href="{COMPRA_TODO}" rel="noopener">Comprar el pack completo</a>' if COMPRA_TODO else '<a class="btn" href="../#catalogo">Mientras, elige un diseño gratis</a>'}</section>
 '''
   return pagina(f"Kits de inicio para crear webs y apps con IA | {MARCA}",
                 "Kits de inicio en español para crear webs y apps móviles con Claude Code, Cursor o Codex: plantillas, DESIGN.md, AGENTS.md y prompts.", cuerpo, "../")
@@ -464,7 +486,7 @@ def aviso_legal():
 <li><strong>Quién está detrás:</strong> {MARCA} es un proyecto de Cuadrantia, una marca española de plantillas digitales.</li>
 <li><strong>Datos personales:</strong> esta web no tiene formularios, no usa cookies propias ni analítica y no guarda ningún dato tuyo. Las tipografías se cargan desde Google Fonts.</li>
 <li><strong>Licencia de los diseños:</strong> puedes usar los DESIGN.md gratis en proyectos personales y comerciales. No está permitido revenderlos como producto propio.</li>
-<li><strong>Kits:</strong> todavía no están a la venta; los precios mostrados son orientativos. Las condiciones de compra, devolución y licencia se publicarán con ellos.</li>
+<li><strong>Kits:</strong> se venden con pago único a través de Payhip (<a href="https://payhip.com/Cuadrantia" rel="noopener">payhip.com/Cuadrantia</a>); cada ficha indica su contenido y su licencia de uso.</li>
 <li><strong>Marcas:</strong> Claude Code, Cursor, Codex, Gemini, ChatGPT, Lovable y v0 son marcas de sus respectivos dueños; no hay afiliación.</li>
 </ul></section>
 '''

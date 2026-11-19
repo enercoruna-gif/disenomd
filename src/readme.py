@@ -40,11 +40,12 @@ def generar(raiz):
     del_grupo = [x for x in items if AW.GRUPO[x[0]["sector"]] == g]
     if del_grupo:
       grupos += f"\n<details>\n<summary><b>{g}</b> · {len(del_grupo)} webs</summary>\n\n{tabla(del_grupo)}\n\n</details>\n"
-  from build import KITS
+  from build import KITS, COMPRA
+  comprar = lambda k: f"[Comprar]({COMPRA[k['slug']]})" if k['slug'] in COMPRA else 'Pronto'
   colores = ["FF7A45", "7B6CFF", "2EA043", "F5A9D6", "4285F4", "F5B83D", "C60B1E"]
-  packs = ("## 🎁 Packs de pago · próximamente\n\nTodavía no están a la venta. Mira qué incluirá cada uno en la [página de kits](" + WEB + "kits/).\n\n"
-           "| Pack | Qué es | Precio previsto |\n|---|---|:-:|\n"
-           + "\n".join(f'| **[{k["nombre"]}]({WEB}kits/#{k["slug"]})** | {k["sub"]} | <img src="{insignia("precio", k["precio"].replace(" ", ""), colores[i % len(colores)])}" alt="{k["precio"]}"> |' for i, k in enumerate(KITS)))
+  packs = ("## 🎁 Packs de pago\n\nPago único en Payhip. Detalles de cada uno en la [página de kits](" + WEB + "kits/).\n\n"
+           "| Pack | Qué es | Precio | |\n|---|---|:-:|:-:|\n"
+           + "\n".join(f'| **[{k["nombre"]}]({WEB}kits/#{k["slug"]})** | {k["sub"]} | <img src="{insignia("precio", k["precio"].replace(" ", ""), colores[i % len(colores)])}" alt="{k["precio"]}"> | {comprar(k)} |' for i, k in enumerate(KITS)))
   badges = " ".join(f'<img src="{u}" alt="{a}">' for a, u in [
     ("DESIGN.md", insignia("DESIGN.md", str(len(items)), "F5A9D6")),
     ("idioma", insignia("idioma", "español", "C60B1E", "FFC400")),
