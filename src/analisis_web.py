@@ -135,7 +135,7 @@ GRUPO = {sec: g for g, secs in GRUPOS.items() for sec in secs}
 
 def tarjeta(s, c, prefijo):
   sw = "".join(f'<i style="background:{c[k]}"></i>' for k in ("primary", "secondary", "accent", "text", "background"))
-  txt = esc(f"{s['nombre']} {s['sector']} web real análisis {N[s['slug']][0]}".lower())
+  txt = esc(f"{s['nombre']} {s['sector']} {GRUPO[s['sector']]} web real análisis {N[s['slug']][0]}".lower())
   return (f'<a class="tarjeta tarjeta-foto" href="{prefijo}analisis/{s["slug"]}/" data-cat="{esc(GRUPO[s["sector"]])}" data-texto="{txt}">'
           f'<img src="{prefijo}analisis/{s["slug"]}/captura.webp" alt="Captura de la portada de {esc(s["nombre"])}" loading="lazy" width="960" height="600">'
           f'<div class="tarjeta-pie"><div><strong>{esc(s["nombre"])}</strong><small>{esc(s["sector"])}</small></div><span class="sw">{sw}</span></div></a>')
