@@ -17,6 +17,8 @@ DESTINO = Path.home() / "kits-cuadrantia"
 ORIGEN = "https://enercoruna-gif.github.io/disenomd/"
 DOMINIO = "https://kits.cuadrantia.store/"
 ATRIBUTO = re.compile(r'\b(href|src)="([^"]*)"')
+CORREO = "hola@cuadrantia.store"
+EMAIL = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}', re.I)
 
 
 def ruta_raiz(url, pagina):
@@ -39,6 +41,9 @@ def ruta_raiz(url, pagina):
 def preparar(html, pagina, canon):
     html = re.sub(r'<p class="tenue" id="aviso-cuadrantia">.*?</p>\n?', "", html)
     html = ATRIBUTO.sub(lambda m: f'{m[1]}="{ruta_raiz(m[2], pagina)}"', html)
+    html = EMAIL.sub(CORREO, html)
+    if CORREO not in re.sub(r"<[^>]*>", "", html):
+        html = html.replace("</footer>", f'<p class="legal">Contacto: <a href="mailto:{CORREO}">{CORREO}</a></p>\n</footer>')
     return html.replace("</head>", f'<link rel="canonical" href="{canon}">\n<meta property="og:url" content="{canon}">\n</head>')
 
 
@@ -115,11 +120,13 @@ def main():
     (sitio / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMINIO}sitemap.xml\n")
     urls = (DOMINIO, DOMINIO + "aviso-legal/")
     (sitio / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{url}</loc></url>" for url in urls) + "</urlset>\n")
-    (DESTINO / "cuadrantia-kits-autonomo.html").write_text(autonomo(indice, sitio), encoding="utf-8")
     for archivo in sitio.rglob("*"):
         if archivo.is_file() and archivo.suffix not in (".png",):
-            if "../" in archivo.read_text():
+            contenido = EMAIL.sub(CORREO, archivo.read_text(encoding="utf-8"))
+            archivo.write_text(contenido, encoding="utf-8")
+            if "../" in contenido:
                 raise ValueError(f"Ruta sin resolver: {archivo}")
+    (DESTINO / "cuadrantia-kits-autonomo.html").write_text(autonomo(indice, sitio), encoding="utf-8")
     with zipfile.ZipFile(DESTINO / "cuadrantia-kits.zip", "w", zipfile.ZIP_DEFLATED) as paquete:
         for archivo in sorted(sitio.rglob("*")):
             if archivo.is_file():

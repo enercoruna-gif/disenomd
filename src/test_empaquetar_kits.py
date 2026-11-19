@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import zipfile
 from unittest.mock import patch
 from urllib.error import URLError
 from urllib.parse import urljoin
@@ -87,6 +88,30 @@ class EmpaquetarKitsTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as carpeta, patch.object(kits, "DOCS", Path(carpeta)):
             with self.assertRaisesRegex(SystemExit, "Ejecuta primero"):
                 kits.main()
+
+    def test_correo_solo_en_paquete(self):
+        parametros = "?subject=Quiero%20un%20kit&body=Hola%2C%20quiero%20informacion"
+        for contenido in ("", "<p>Contacto: otro@example.com</p>"):
+            html = f'<a href="mailto:enercoruna@gmail.com{parametros}">Correo</a>{contenido}<footer></footer>'
+            resultado = kits.preparar(html, "kits", kits.DOMINIO)
+            self.assertIn(f'href="mailto:{kits.CORREO}{parametros}"', resultado)
+            self.assertIn(kits.CORREO, kits.re.sub(r"<[^>]*>", "", resultado))
+            self.assertEqual(set(kits.EMAIL.findall(resultado)), {kits.CORREO})
+        originales = {p: p.read_bytes() for p in kits.DOCS.rglob("*") if p.is_file()}
+        with tempfile.TemporaryDirectory() as carpeta, patch.object(kits, "DESTINO", Path(carpeta)), patch.object(kits, "urlopen", side_effect=URLError("sin conexión")):
+            kits.main()
+            destino = Path(carpeta)
+            for nombre in ("index.html", "aviso-legal/index.html", "404.html"):
+                html = (destino / "sitio" / nombre).read_text()
+                self.assertEqual(set(kits.EMAIL.findall(html)), {kits.CORREO})
+                self.assertIn(kits.CORREO, kits.re.sub(r"<[^>]*>", "", html))
+            html = (destino / "cuadrantia-kits-autonomo.html").read_text()
+            self.assertEqual(set(kits.EMAIL.findall(html)), {kits.CORREO})
+            with zipfile.ZipFile(destino / "cuadrantia-kits.zip") as paquete:
+                for nombre in paquete.namelist():
+                    if not nombre.endswith(".png"):
+                        self.assertLessEqual(set(kits.EMAIL.findall(paquete.read(nombre).decode())), {kits.CORREO})
+        self.assertTrue(all(p.read_bytes() == datos for p, datos in originales.items()))
 
 
 if __name__ == "__main__":
