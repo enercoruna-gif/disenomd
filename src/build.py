@@ -254,16 +254,16 @@ HERRAMIENTAS = '<div class="herr"><span>Claude Code</span><span>Cursor</span><sp
 KITS = [
   dict(slug="web", icono="▭", nombre="Kit Web Inicial", sub="Tu web casi terminada: cambia textos y fotos",
        llano="5 webs completas (página de presentación, tienda, blog, portfolio y web de servicio) que le pasas a tu IA para que las adapte a tu negocio en una tarde.",
-       precio="79 €", detalle="5 plantillas (presentación, servicio, tienda, blog, portfolio) en Next.js + Tailwind, cada una con su DESIGN.md, AGENTS.md y prompts listos para Claude Code, Cursor o Codex.",
-       incluye=["5 webs completas: presentación, servicio, tienda, blog y portfolio", "DESIGN.md + AGENTS.md en cada plantilla", "Biblioteca de 60 prompts en español por pantalla", "Guía paso a paso para publicar gratis", "Pago único y actualizaciones de por vida"]),
+       precio="79 €", detalle="5 plantillas (presentación, servicio, tienda, blog, portfolio) en HTML, CSS y JavaScript que funcionan sin instalar nada, cada una con su DESIGN.md, AGENTS.md, CLAUDE.md y prompts listos para Claude Code, Cursor, Codex o ChatGPT.",
+       incluye=["5 webs completas (34 páginas): presentación, servicio, tienda, blog y portfolio", "DESIGN.md + AGENTS.md + CLAUDE.md en cada plantilla", "68 prompts en español por pantalla", "Guía paso a paso para publicar gratis", "Pago único y actualizaciones de por vida"]),
   dict(slug="app", icono="▯", nombre="Kit App Móvil", sub="Tu app para iPhone y Android, ya empezada",
        llano="Una app base con registro, pagos y avisos ya montados: solo falta conectarlos a tus cuentas. Le pides a la IA los cambios en español y te guía hasta publicarla en App Store y Google Play.",
        precio="79 €", detalle="Base de app en Expo / React Native con inicio de sesión, pagos, notificaciones y navegación ya montados: solo falta conectarlos a tus cuentas. Guiada por DESIGN.md.",
-       incluye=["Plantilla Expo con 12 pantallas tipo", "Registro, pagos y avisos montados, listos para conectar a tus cuentas", "DESIGN.md móvil + AGENTS.md", "Prompts para añadir pantallas sin romper el estilo", "Guía para subir a App Store y Google Play"]),
+       incluye=["Plantilla Expo con 12 pantallas y modo demo que funciona sin cuentas", "Registro, pagos y avisos montados, listos para conectar a tus cuentas", "DESIGN.md móvil + AGENTS.md", "48 prompts para añadir pantallas sin romper el estilo", "Guía para subir a App Store y Google Play"]),
   dict(slug="prompts", icono="✦", nombre="Pack Prompts e Instrucciones", sub="Instrucciones listas para tu IA",
-       llano="Más de 100 instrucciones probadas para pedirle a la IA textos, diseños y webs que salgan bien a la primera.",
+       llano="120 instrucciones para pedirle a la IA textos, diseños y webs que salgan bien a la primera.",
        precio="19 €", detalle="Colección de prompts, habilidades para tu IA (archivos SKILL.md) y reglas (.cursorrules, CLAUDE.md, AGENTS.md) en español para diseñar, programar, escribir textos y revisar webs.",
-       incluye=["40 habilidades (archivos SKILL.md) listas para Claude y Codex", "Plantillas CLAUDE.md, AGENTS.md y .cursorrules", "120 prompts de diseño, código y marketing", "Ejemplos antes/después", "Actualizaciones mensuales"]),
+       incluye=["40 habilidades (archivos SKILL.md) listas para Claude y Codex", "Plantillas CLAUDE.md, AGENTS.md y .cursorrules", "120 prompts de diseño, código y marketing", "10 ejemplos antes/después", "Reglas para Lovable, Bolt, v0 y ChatGPT"]),
 ]
 
 
