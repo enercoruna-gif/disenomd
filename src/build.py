@@ -316,7 +316,7 @@ def portada():
 </section>
 <section class="bloque lista-webs" aria-labelledby="t-webs">
   <p class="eti" id="t-webs"># Análisis de webs populares</p>
-  <ul class="lista-iconos">{"".join(f'<li><a href="analisis/{x["slug"]}/"><img src="analisis/{x["slug"]}/icono.png" alt="" width="28" height="28" loading="lazy"><span>{esc(x["nombre"])}</span><small>{esc(x["sector"])}</small></a></li>' for x in AW.SITIOS[:12])}</ul>
+  <ul class="lista-iconos">{"".join(f'<li><a href="analisis/{x["slug"]}/"><img src="analisis/{x["slug"]}/icono.png" alt="" width="28" height="28"><span>{esc(x["nombre"])}</span><small>{esc(x["sector"])}</small></a></li>' for x in AW.SITIOS[:12])}</ul>
   <p><a class="btn btn-claro btn-peq" href="webs/">Ver las {len(AW.SITIOS)} webs →</a></p>
 </section>
 <section class="bloque" id="catalogo">
