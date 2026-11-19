@@ -45,6 +45,10 @@ class DeliveryTest(unittest.TestCase):
             self.assertTrue(data_uri(ROOT / "assets/montanas.webp").startswith("data:image/webp;base64,"))
             self.assertTrue(data_uri(ROOT / "DESIGN.md").startswith("data:text/markdown;base64,"))
 
+    def test_hidden_line_breaks_preserve_word_spacing(self):
+        source = (ROOT / "index.html").read_text()
+        self.assertNotRegex(source, r"\S<br")
+
     def test_document_and_assets(self):
         source = (ROOT / "index.html").read_text()
         doc = Document(source)
