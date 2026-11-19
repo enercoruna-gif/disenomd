@@ -212,6 +212,8 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
     <a href="{prefijo}webs/">Webs populares</a>
     <a href="{prefijo}kits/#pase">Pase del catálogo</a>
     <a href="{prefijo}kits/#web">Kit web inicial <span class="nav-ext" aria-hidden="true">↗</span></a>
+    <a href="{prefijo}kits/#app">Kit app móvil</a>
+    <a href="{prefijo}kits/#prompts">Pack de prompts</a>
     <a href="{prefijo}kits/#fondos">Fondos</a>
     <a href="{prefijo}kits/#videos">Plantillas de vídeo</a>
     <a href="{prefijo}descargas/disenomd-catalogo.zip" download>DESIGN.md gratis</a>
