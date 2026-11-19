@@ -6,16 +6,19 @@
   }
   function copiar(texto, msg) {
     var ok = function () { aviso(msg || 'Copiado'); };
+    var fallo = function () { aviso('No se pudo copiar: mantén pulsado el texto para copiarlo'); };
     if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(texto).then(ok, function () { respaldo(texto); ok(); });
-    } else { respaldo(texto); ok(); }
+      navigator.clipboard.writeText(texto).then(ok, function () { respaldo(texto) ? ok() : fallo(); });
+    } else { respaldo(texto) ? ok() : fallo(); }
   }
   function respaldo(texto) {
     var a = document.createElement('textarea');
     a.value = texto; a.setAttribute('readonly', ''); a.style.position = 'fixed'; a.style.opacity = '0';
     document.body.appendChild(a); a.select(); a.setSelectionRange(0, texto.length);
-    try { document.execCommand('copy'); } catch (e) {}
+    var hecho = false;
+    try { hecho = document.execCommand('copy'); } catch (e) {}
     document.body.removeChild(a);
+    return hecho;
   }
   document.addEventListener('click', function (e) {
     var b = e.target.closest('[data-copiar],[data-copiar-de]');
