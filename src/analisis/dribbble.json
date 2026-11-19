@@ -5,19 +5,19 @@
   "#FFFFFF",
   "#F3F3F6",
   "#ECEBF0",
-  "#FAF9FB",
-  "#FDFCFB",
-  "#0D0C22",
-  "#EA4C89",
-  "#3A3546"
+  "#010101",
+  "#F3F3EF",
+  "#B6B6B6",
+  "#0E0907",
+  "#FAF9FB"
  ],
  "textos": [
   "#0D0C22",
   "#FFFFFF",
   "#060318",
-  "#BEB9CA",
+  "#524B63",
   "#3A3546",
-  "#524B63"
+  "#7B7194"
  ],
  "fuentes": [
   "Mona Sans"

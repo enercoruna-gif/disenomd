@@ -5,8 +5,10 @@
   "#08090A",
   "#090A0B",
   "#101112",
+  "#161718",
   "#0F1011",
   "#E5E5E6",
+  "#1C1C1D",
   "#121414"
  ],
  "textos": [
@@ -14,6 +16,7 @@
   "#62666D",
   "#8A8F98",
   "#F7F8F8",
+  "#949496",
   "#08090A"
  ],
  "fuentes": [
@@ -21,10 +24,11 @@
   "Berkeley Mono"
  ],
  "radios": [
+  "9999px",
   "12px",
   "9px",
-  "9999px",
-  "2px"
+  "2px",
+  "8px"
  ],
  "h1": {
   "texto": "The product development system for teams and agentsThe product developmentsystem for teams",

@@ -14,13 +14,13 @@ colors:
   border: "#DBDBDB"
 typography:
   display-lg:
-    fontFamily: Glovo Sans
+    fontFamily: Inter
     fontSize: 3rem
     fontWeight: 700
     lineHeight: 1.1
     letterSpacing: -0.02em
   headline-md:
-    fontFamily: Glovo Sans
+    fontFamily: Inter
     fontSize: 1.75rem
     fontWeight: 600
     lineHeight: 1.2
@@ -93,7 +93,7 @@ Fondo claro `#FFFFFF` con texto `#000000`. El color de acción es `#017963` (tex
 
 ## Tipografía
 
-Titulares en **Glovo Sans** (peso 700, unos 37px en escritorio) y texto en **Glovo Sans** a 16px. Si esa fuente no está disponible, usa **Inter** como alternativa libre de Google Fonts.
+Titulares en **Inter** (peso 700, unos ? en escritorio) y texto en **Glovo Sans** a 16px. Si esa fuente no está disponible, usa **Inter** como alternativa libre de Google Fonts.
 
 ## Formas y espaciado
 
@@ -102,5 +102,5 @@ Radio habitual de 8px; los botones son píldoras. Espaciado en múltiplos de 8px
 ## Qué hacer y qué no
 
 - Haz: respeta la jerarquía de un solo color de acción (`#017963`).
-- Haz: usa Glovo Sans solo en titulares y deja el texto en Glovo Sans.
+- Haz: usa Inter solo en titulares y deja el texto en Glovo Sans.
 - No hagas: copiar el logotipo, las fotografías o los textos de Glovo; crea los tuyos.

@@ -16,13 +16,13 @@ typography:
   display-lg:
     fontFamily: Airbnb Cereal VF
     fontSize: 3rem
-    fontWeight: 700
+    fontWeight: 400
     lineHeight: 1.1
     letterSpacing: -0.02em
   headline-md:
     fontFamily: Airbnb Cereal VF
     fontSize: 1.75rem
-    fontWeight: 600
+    fontWeight: 400
     lineHeight: 1.2
     letterSpacing: -0.01em
   body-md:
@@ -93,7 +93,7 @@ Fondo claro `#FFFFFF` con texto `#222222`. El color de acción es `#DA1249` (tex
 
 ## Tipografía
 
-Titulares en **Airbnb Cereal VF** (peso 700, unos 28px en escritorio) y texto en **Airbnb Cereal VF** a 14px. Si esa fuente no está disponible, usa **Inter** como alternativa libre de Google Fonts.
+Titulares en **Airbnb Cereal VF** (peso 400, unos 14px en escritorio) y texto en **Airbnb Cereal VF** a 14px. Si esa fuente no está disponible, usa **Inter** como alternativa libre de Google Fonts.
 
 ## Formas y espaciado
 

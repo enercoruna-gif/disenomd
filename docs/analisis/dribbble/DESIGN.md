@@ -3,10 +3,10 @@ version: "alpha"
 name: Dribbble (análisis)
 description: "Análisis independiente del estilo visual de Dribbble (https://dribbble.com)."
 colors:
-  primary: "#EA4C89"
-  on-primary: "#000000"
-  secondary: "#782850"
-  accent: "#A06884"
+  primary: "#0D0C22"
+  on-primary: "#FFFFFF"
+  secondary: "#0A081D"
+  accent: "#545261"
   background: "#FFFFFF"
   surface: "#F3F3F6"
   text: "#060318"
@@ -65,7 +65,7 @@ components:
     textColor: "{colors.secondary}"
   tag:
     backgroundColor: "{colors.accent}"
-    textColor: "{colors.on-primary}"
+    textColor: "{colors.background}"
     rounded: "{rounded.full}"
     padding: 2px 10px
   caption:
@@ -89,7 +89,7 @@ Botones negros en píldora y miniaturas de proyectos con esquinas suaves.
 
 ## Colores
 
-Fondo claro `#FFFFFF` con texto `#060318`. El color de acción es `#EA4C89` (texto encima `#000000`); `#782850` y `#A06884` aparecen en detalles y etiquetas.
+Fondo claro `#FFFFFF` con texto `#060318`. El color de acción es `#0D0C22` (texto encima `#FFFFFF`); `#0A081D` y `#545261` aparecen en detalles y etiquetas.
 
 ## Tipografía
 
@@ -101,6 +101,6 @@ Radio habitual de 8px; los botones son píldoras. Espaciado en múltiplos de 8px
 
 ## Qué hacer y qué no
 
-- Haz: respeta la jerarquía de un solo color de acción (`#EA4C89`).
+- Haz: respeta la jerarquía de un solo color de acción (`#0D0C22`).
 - Haz: usa Mona Sans solo en titulares y deja el texto en Mona Sans.
 - No hagas: copiar el logotipo, las fotografías o los textos de Dribbble; crea los tuyos.

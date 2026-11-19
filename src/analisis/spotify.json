@@ -16,8 +16,8 @@
   "#121212"
  ],
  "fuentes": [
-  "SpotifyMixUI",
   "SpotifyMixUITitleVariable",
+  "SpotifyMixUI",
   "a"
  ],
  "radios": [
@@ -37,14 +37,7 @@
   "tam": "16px",
   "lh": "normal"
  },
- "boton": {
-  "texto": "Saltar al contenido",
-  "fondo": "#FFFFFF",
-  "color": "#121212",
-  "radio": "500px",
-  "padding": "16px 48px",
-  "peso": "700"
- },
+ "boton": null,
  "enlace": "#9E9EFF",
  "slug": "spotify",
  "url": "https://www.spotify.com/es/premium/",

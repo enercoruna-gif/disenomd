@@ -6,7 +6,7 @@ colors:
   primary: "#163300"
   on-primary: "#FFFFFF"
   secondary: "#9FE870"
-  accent: "#BCEF9B"
+  accent: "#163300"
   background: "#FFFFFF"
   surface: "#9FE870"
   text: "#0E0F0C"
@@ -38,9 +38,9 @@ typography:
     lineHeight: 1.3
     letterSpacing: 0.01em
 rounded:
-  sm: 18px
-  md: 36px
-  lg: 72px
+  sm: 13px
+  md: 27px
+  lg: 54px
   full: 9999px
 spacing:
   xs: 4px
@@ -65,7 +65,7 @@ components:
     textColor: "{colors.text}"
   tag:
     backgroundColor: "{colors.accent}"
-    textColor: "{colors.text}"
+    textColor: "{colors.background}"
     rounded: "{rounded.full}"
     padding: 2px 10px
   caption:
@@ -89,7 +89,7 @@ Botones en píldora verdes, ilustraciones planas y tono directo.
 
 ## Colores
 
-Fondo claro `#FFFFFF` con texto `#0E0F0C`. El color de acción es `#163300` (texto encima `#FFFFFF`); `#9FE870` y `#BCEF9B` aparecen en detalles y etiquetas.
+Fondo claro `#FFFFFF` con texto `#0E0F0C`. El color de acción es `#163300` (texto encima `#FFFFFF`); `#9FE870` y `#163300` aparecen en detalles y etiquetas.
 
 ## Tipografía
 
@@ -97,7 +97,7 @@ Titulares en **Wise Sans** (peso 800, unos 96px en escritorio) y texto en **Inte
 
 ## Formas y espaciado
 
-Radio habitual de 36px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
+Radio habitual de 27px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
 
 ## Qué hacer y qué no
 

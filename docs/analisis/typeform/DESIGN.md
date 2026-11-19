@@ -8,9 +8,9 @@ colors:
   secondary: "#653C73"
   accent: "#83698C"
   background: "#FAF9FB"
-  surface: "#FFFFFF"
+  surface: "#F2F0F3"
   text: "#2A222B"
-  muted: "#3C323E"
+  muted: "#736D74"
   border: "#DDDBDE"
 typography:
   display-lg:

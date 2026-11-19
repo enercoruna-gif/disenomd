@@ -8,21 +8,21 @@
   "#26251E",
   "#EBEAE5",
   "#E6E5E0",
-  "#E1E0DB",
-  "#E3EBF3"
+  "#E3EBF3",
+  "#E1E0DB"
  ],
  "textos": [
   "#26251E",
   "#F7F7F4",
-  "#3A6A9F",
   "#1F8A65",
+  "#3A6A9F",
   "#FFFFFF"
  ],
  "fuentes": [
   "system-ui",
   "EB Garamond",
-  "CursorGothic",
-  "berkeleyMono"
+  "berkeleyMono",
+  "CursorGothic"
  ],
  "radios": [
   "4px",
@@ -45,7 +45,7 @@
   "lh": "24px"
  },
  "boton": {
-  "texto": "Saltar al contenido",
+  "texto": "Descargar",
   "fondo": "#26251E",
   "color": "#F7F7F4",
   "radio": "3.35544e+07px",

@@ -14,13 +14,13 @@ colors:
   border: "#D4D4D4"
 typography:
   display-lg:
-    fontFamily: verdana
+    fontFamily: iberiaheadline
     fontSize: 3rem
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: -0.02em
   headline-md:
-    fontFamily: verdana
+    fontFamily: iberiaheadline
     fontSize: 1.75rem
     fontWeight: 400
     lineHeight: 1.2
@@ -93,7 +93,7 @@ Fondo claro `#EEEEEE` con texto `#333333`. El color de acción es `#D7192D` (tex
 
 ## Tipografía
 
-Titulares en **verdana** (peso 400, unos 0px en escritorio) y texto en **verdana** a 16px. Si esa fuente no está disponible, usa **Inter** como alternativa libre de Google Fonts.
+Titulares en **iberiaheadline** (peso 400, unos 60px en escritorio) y texto en **verdana** a 16px. Si esa fuente no está disponible, usa **Inter** como alternativa libre de Google Fonts.
 
 ## Formas y espaciado
 
@@ -102,5 +102,5 @@ Radio habitual de 4px; los botones son rectángulos con radio 4px. Espaciado en 
 ## Qué hacer y qué no
 
 - Haz: respeta la jerarquía de un solo color de acción (`#D7192D`).
-- Haz: usa verdana solo en titulares y deja el texto en verdana.
+- Haz: usa iberiaheadline solo en titulares y deja el texto en verdana.
 - No hagas: copiar el logotipo, las fotografías o los textos de Iberia; crea los tuyos.

@@ -1,0 +1,41 @@
+{
+ "titulo": "Enviar Dinero | Cartera Digital y Gestión de Dinero | PayPal ES",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F1EFEA",
+  "#FFFFFF",
+  "#60CDFF",
+  "#000000"
+ ],
+ "textos": [
+  "#000000",
+  "#FFFFFF",
+  "#60CDFF"
+ ],
+ "fuentes": [
+  "PayPal Pro",
+  "PayPal Pro Text VF"
+ ],
+ "radios": [
+  "12px",
+  "68.5714px"
+ ],
+ "h1": {
+  "texto": "Cómpralo hoy. Paga a plazos.",
+  "familia": "PayPal Pro",
+  "tam": "82.9291px",
+  "peso": "900",
+  "ls": "-2.48787px",
+  "lh": "91.222px"
+ },
+ "cuerpo": {
+  "familia": "PayPal Pro Text VF",
+  "tam": "16px",
+  "lh": "18.4px"
+ },
+ "boton": null,
+ "enlace": null,
+ "slug": "paypal",
+ "url": "https://www.paypal.com/es/home",
+ "final": "https://www.paypal.com/es/home"
+}

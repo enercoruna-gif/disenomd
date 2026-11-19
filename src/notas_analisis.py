@@ -37,7 +37,7 @@ N = dict(
   openai=("Portada sobria y blanca con buscador central y tarjetas de imagen grandes y suaves.", "Tipografía propia neutra, casi sin color de interfaz y botones negros en píldora."),
   posthog=("Crema y marrón con un estilo de escritorio retro, ventanas y personajes de erizo.", "Botones amarillos con relieve, bordes marcados y tono humorístico."),
   raycast=("Negro profundo con un gráfico rojo diagonal y titular blanco: aspecto de app nativa premium.", "Tarjetas oscuras con brillo sutil y botones pequeños en píldora."),
-  renfe=("Fondo blanco funcional con buscador de trenes en primer plano y morado corporativo.", "Formularios grandes, botones de color sólido y tipografía práctica."),
+  paypal=("Azul cielo de fondo con titular negro enorme y muy grueso, y una tarjeta blanca con fotografía en el centro.", "Botones negros en píldora, cabecera blanca y azul marino de marca solo en el logotipo y la barra superior."),
   resend=("Negro total con una ilustración 3D en cristal y titular serif blanco.", "Estética de herramienta para desarrolladores: bordes finos grises y botones blancos."),
   revolut=("Azul de marca con fotografía de estilo de vida y titulares blancos enormes.", "Botones en píldora blancos, tarjetas redondeadas y contraste alto."),
   shopify=("Negro de fondo con fotografía cálida y titulares blancos en una sans propia.", "Botones blancos en píldora, verde de marca solo en detalles."),
@@ -53,6 +53,6 @@ N = dict(
   webflow=("Blanco con azul eléctrico de marca y capturas del editor visual en tarjetas.", "Tipografía propia ancha, botones azules rectangulares y mucho detalle de producto."),
   wise=("Verde lima brillante con titular en mayúsculas muy grueso en verde oscuro.", "Botones en píldora verdes, ilustraciones planas y tono directo."),
   xataka=("Fondo oscuro de portada con logotipo verde y rejilla densa de noticias tecnológicas.", "Titulares en sans condensada, etiquetas de sección y mucha imagen."),
-  zara=("Fotografía de moda a sangre con el logotipo gigante superpuesto y una navegación casi invisible.", "Sin color de interfaz: negro, blanco y tipografía muy fina."),
+  intercom=("Titular centrado enorme en sans fina que combina gris claro y negro, rodeado de fotografías recortadas en los márgenes.", "Fondo blanco, texto en serif para el párrafo y botones rectangulares: uno negro sólido y otro con borde."),
 )
 N["el-pais"] = ("Cabecera de periódico clásica con logotipo serif centrado, columnas de noticias y fotografía documental.", "Titulares en serif propia, texto denso, filetes finos y el azul solo en etiquetas.")

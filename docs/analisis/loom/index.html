@@ -39,7 +39,7 @@
   <div class="acciones"><button class="btn" data-copiar-de="md">Copiar DESIGN.md</button><button class="btn btn-claro" data-copiar-de="prompt">Copiar instrucción</button></div>
   <p class="tenue peq">Captura hecha por nosotros el 19-11-2026 en <a href="https://www.loom.com" rel="noopener nofollow">https://www.loom.com</a>. Análisis independiente, sin afiliación con Loom.</p>
 </section>
-<section class="bloque"><h2>Colores extraídos</h2><div class="colores"><div class="color"><i style="background:#1868DB"></i><b>primary</b><code>#1868DB</code></div><div class="color"><i style="background:#FFFFFF"></i><b>on-primary</b><code>#FFFFFF</code></div><div class="color"><i style="background:#FFAB00"></i><b>secondary</b><code>#FFAB00</code></div><div class="color"><i style="background:#FFC44C"></i><b>accent</b><code>#FFC44C</code></div><div class="color"><i style="background:#FFFFFF"></i><b>background</b><code>#FFFFFF</code></div><div class="color"><i style="background:#E9F2FE"></i><b>surface</b><code>#E9F2FE</code></div><div class="color"><i style="background:#000000"></i><b>text</b><code>#000000</code></div><div class="color"><i style="background:#101214"></i><b>muted</b><code>#101214</code></div><div class="color"><i style="background:#DBDBDB"></i><b>border</b><code>#DBDBDB</code></div></div></section>
+<section class="bloque"><h2>Colores extraídos</h2><div class="colores"><div class="color"><i style="background:#1868DB"></i><b>primary</b><code>#1868DB</code></div><div class="color"><i style="background:#FFFFFF"></i><b>on-primary</b><code>#FFFFFF</code></div><div class="color"><i style="background:#0C346E"></i><b>secondary</b><code>#0C346E</code></div><div class="color"><i style="background:#55719A"></i><b>accent</b><code>#55719A</code></div><div class="color"><i style="background:#FFFFFF"></i><b>background</b><code>#FFFFFF</code></div><div class="color"><i style="background:#E9F2FE"></i><b>surface</b><code>#E9F2FE</code></div><div class="color"><i style="background:#000000"></i><b>text</b><code>#000000</code></div><div class="color"><i style="background:#101214"></i><b>muted</b><code>#101214</code></div><div class="color"><i style="background:#DBDBDB"></i><b>border</b><code>#DBDBDB</code></div></div></section>
 <section class="bloque">
   <h2>Instrucción para tu IA</h2>
   <pre class="codigo corto" id="prompt" tabindex="0" aria-label="Instrucción para tu IA">Crea [describe aquí tu web]. Usa el DESIGN.md que te he pasado (análisis del estilo de Loom) como referencia visual: aplica sus colores, tipografías, radios y componentes, pero con mis textos, mi logotipo y mis imágenes.</pre>
@@ -52,8 +52,8 @@ description: &quot;Análisis independiente del estilo visual de Loom (https://ww
 colors:
   primary: &quot;#1868DB&quot;
   on-primary: &quot;#FFFFFF&quot;
-  secondary: &quot;#FFAB00&quot;
-  accent: &quot;#FFC44C&quot;
+  secondary: &quot;#0C346E&quot;
+  accent: &quot;#55719A&quot;
   background: &quot;#FFFFFF&quot;
   surface: &quot;#E9F2FE&quot;
   text: &quot;#000000&quot;
@@ -85,9 +85,9 @@ typography:
     lineHeight: 1.3
     letterSpacing: 0.01em
 rounded:
-  sm: 2px
-  md: 4px
-  lg: 8px
+  sm: 19px
+  md: 39px
+  lg: 78px
   full: 9999px
 spacing:
   xs: 4px
@@ -109,10 +109,10 @@ components:
     padding: 24px
   link:
     backgroundColor: &quot;{colors.background}&quot;
-    textColor: &quot;{colors.text}&quot;
+    textColor: &quot;{colors.secondary}&quot;
   tag:
     backgroundColor: &quot;{colors.accent}&quot;
-    textColor: &quot;{colors.text}&quot;
+    textColor: &quot;{colors.background}&quot;
     rounded: &quot;{rounded.full}&quot;
     padding: 2px 10px
   caption:
@@ -136,7 +136,7 @@ Botones en píldora azules y tarjetas con esquinas medianas.
 
 ## Colores
 
-Fondo claro `#FFFFFF` con texto `#000000`. El color de acción es `#1868DB` (texto encima `#FFFFFF`); `#FFAB00` y `#FFC44C` aparecen en detalles y etiquetas.
+Fondo claro `#FFFFFF` con texto `#000000`. El color de acción es `#1868DB` (texto encima `#FFFFFF`); `#0C346E` y `#55719A` aparecen en detalles y etiquetas.
 
 ## Tipografía
 
@@ -144,7 +144,7 @@ Titulares en **Charlie Display** (peso 700, unos 56.5385px en escritorio) y text
 
 ## Formas y espaciado
 
-Radio habitual de 4px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
+Radio habitual de 39px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
 
 ## Qué hacer y qué no
 

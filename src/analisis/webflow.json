@@ -1,5 +1,5 @@
 {
- "titulo": "Webflow: The agentic web platform for modern businesses",
+ "titulo": "Webflow: La plataforma web con IA para empresas modernas",
  "fondo": "#FFFFFF",
  "fondos": [
   "#FFFFFF",
@@ -20,7 +20,7 @@
   "1280px"
  ],
  "h1": {
-  "texto": "Build for what’s next",
+  "texto": "Construye pensando en el futuro",
   "familia": "WF Visual Sans Variable",
   "tam": "74.8571px",
   "peso": "600",
@@ -33,7 +33,7 @@
   "lh": "25.6px"
  },
  "boton": {
-  "texto": "Start for free",
+  "texto": "Empieza gratis",
   "fondo": "#146EF5",
   "color": "#FFFFFF",
   "radio": "4px",
@@ -43,5 +43,5 @@
  "enlace": "#FFFFFF",
  "slug": "webflow",
  "url": "https://webflow.com",
- "final": "https://webflow.com/"
+ "final": "https://webflowmarketingmain.com/es"
 }

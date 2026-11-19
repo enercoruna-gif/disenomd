@@ -34,11 +34,11 @@
   "lh": "normal"
  },
  "boton": {
-  "texto": "Pasar al contenido principal",
-  "fondo": "#1E1919",
+  "texto": "Comenzar",
+  "fondo": "#0061FE",
   "color": "#F7F5F2",
-  "radio": "0px",
-  "padding": "0px",
+  "radio": "12px",
+  "padding": "0px 12px",
   "peso": "400"
  },
  "enlace": "#F7F5F2",

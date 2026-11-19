@@ -33,12 +33,12 @@
   "lh": "20px"
  },
  "boton": {
-  "texto": "Saltar al contenido principal",
-  "fondo": "#DADADA",
-  "color": "#434343",
+  "texto": "Assistant",
+  "fondo": "#FAFAFA",
+  "color": "#131313",
   "radio": "0px",
-  "padding": "14px 18px",
-  "peso": "600"
+  "padding": "0px 12px",
+  "peso": "400"
  },
  "enlace": "#FDFDFD",
  "slug": "mango",

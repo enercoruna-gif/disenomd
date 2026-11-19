@@ -7,26 +7,27 @@
   "#FAFAF9",
   "#06070A",
   "#121926",
+  "#1963EF",
   "#FEF2F2",
-  "#FF5454",
-  "#FFFBEB"
+  "#FF5454"
  ],
  "textos": [
   "#FFFFFF",
   "#121926",
   "#686F7C",
-  "#9CA3AF",
   "#CDD5DF",
-  "#374151"
+  "#374151",
+  "#D1D5DB"
  ],
  "fuentes": [
   "inter"
  ],
  "radios": [
   "9999px",
-  "18px",
   "8px",
-  "12px"
+  "18px",
+  "12px",
+  "20px"
  ],
  "h1": {
   "texto": "Facturación y mucho más. Todo tu negocio en un solo sitio.",

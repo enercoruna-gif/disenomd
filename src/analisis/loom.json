@@ -5,16 +5,13 @@
   "#FFFFFF",
   "#101214",
   "#1868DB",
-  "#E9F2FE",
-  "#FFAB00"
+  "#E9F2FE"
  ],
  "textos": [
   "#101214",
   "#FFFFFF",
-  "#0052CC",
   "#000000",
-  "#292A2E",
-  "#696969"
+  "#292A2E"
  ],
  "fuentes": [
   "Charlie Text",
@@ -22,9 +19,7 @@
  ],
  "radios": [
   "9999px",
-  "2px",
-  "39.3846px",
-  "4px"
+  "39.3846px"
  ],
  "h1": {
   "texto": "One video is worth a thousand words",

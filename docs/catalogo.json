@@ -442,19 +442,19 @@
   }
  },
  {
-  "slug": "zara",
-  "nombre": "Zara",
+  "slug": "intercom",
+  "nombre": "Intercom",
   "categoria": "Webs reales",
-  "url": "https://www.zara.com/es/",
+  "url": "https://www.intercom.com",
   "colores": {
-   "primary": "#FD2E00",
-   "on-primary": "#000000",
-   "secondary": "#7E1700",
-   "accent": "#A55D4C",
+   "primary": "#0007CB",
+   "on-primary": "#FFFFFF",
+   "secondary": "#DF2020",
+   "accent": "#111111",
    "background": "#FFFFFF",
-   "surface": "#F5F5F5",
+   "surface": "#FAF9F6",
    "text": "#000000",
-   "muted": "#595959",
+   "muted": "#111111",
    "border": "#DBDBDB"
   }
  },
@@ -554,9 +554,9 @@
    "secondary": "#653C73",
    "accent": "#83698C",
    "background": "#FAF9FB",
-   "surface": "#FFFFFF",
+   "surface": "#F2F0F3",
    "text": "#2A222B",
-   "muted": "#3C323E",
+   "muted": "#736D74",
    "border": "#DDDBDE"
   }
  },
@@ -566,9 +566,9 @@
   "categoria": "Webs reales",
   "url": "https://www.holded.com/es",
   "colores": {
-   "primary": "#FF5454",
-   "on-primary": "#000000",
-   "secondary": "#88363D",
+   "primary": "#1963EF",
+   "on-primary": "#FFFFFF",
+   "secondary": "#FF5454",
    "accent": "#ECEAE6",
    "background": "#FFFFFF",
    "surface": "#FAFAF9",
@@ -957,10 +957,10 @@
   "categoria": "Webs reales",
   "url": "https://dribbble.com",
   "colores": {
-   "primary": "#EA4C89",
-   "on-primary": "#000000",
-   "secondary": "#782850",
-   "accent": "#A06884",
+   "primary": "#0D0C22",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0A081D",
+   "accent": "#545261",
    "background": "#FFFFFF",
    "surface": "#F3F3F6",
    "text": "#060318",
@@ -977,7 +977,7 @@
    "primary": "#163300",
    "on-primary": "#FFFFFF",
    "secondary": "#9FE870",
-   "accent": "#BCEF9B",
+   "accent": "#163300",
    "background": "#FFFFFF",
    "surface": "#9FE870",
    "text": "#0E0F0C",
@@ -1076,9 +1076,9 @@
   "categoria": "Webs reales",
   "url": "https://trello.com/es",
   "colores": {
-   "primary": "#172B4D",
+   "primary": "#0065FF",
    "on-primary": "#FFFFFF",
-   "secondary": "#0065FF",
+   "secondary": "#0052CC",
    "accent": "#0052CC",
    "background": "#FFFFFF",
    "surface": "#F4F5F7",
@@ -1105,20 +1105,20 @@
   }
  },
  {
-  "slug": "renfe",
-  "nombre": "Renfe",
+  "slug": "paypal",
+  "nombre": "PayPal",
   "categoria": "Webs reales",
-  "url": "https://www.renfe.com/es/es",
+  "url": "https://www.paypal.com/es/home",
   "colores": {
-   "primary": "#5B064B",
-   "on-primary": "#FFFFFF",
-   "secondary": "#340A2E",
-   "accent": "#404040",
+   "primary": "#60CDFF",
+   "on-primary": "#000000",
+   "secondary": "#306680",
+   "accent": "#6E94A6",
    "background": "#FFFFFF",
-   "surface": "#F1F2F8",
-   "text": "#0D0F12",
-   "muted": "#404040",
-   "border": "#DDDDDE"
+   "surface": "#F1EFEA",
+   "text": "#000000",
+   "muted": "#595959",
+   "border": "#DBDBDB"
   }
  },
  {
@@ -1146,8 +1146,8 @@
   "colores": {
    "primary": "#1868DB",
    "on-primary": "#FFFFFF",
-   "secondary": "#FFAB00",
-   "accent": "#FFC44C",
+   "secondary": "#0C346E",
+   "accent": "#55719A",
    "background": "#FFFFFF",
    "surface": "#E9F2FE",
    "text": "#000000",

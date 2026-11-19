@@ -24,14 +24,7 @@
   "896px",
   "8px"
  ],
- "h1": {
-  "texto": "Principales ciudades en España",
-  "familia": "Glovo Sans",
-  "tam": "37px",
-  "peso": "700",
-  "ls": "normal",
-  "lh": "40px"
- },
+ "h1": null,
  "cuerpo": {
   "familia": "Glovo Sans",
   "tam": "16px",

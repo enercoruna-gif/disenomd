@@ -3,13 +3,11 @@
  "fondo": "#FAF9FB",
  "fondos": [
   "#2A222B",
-  "#FFFFFF",
   "#FAF9FB",
   "#A057BB"
  ],
  "textos": [
   "#FAF9FB",
-  "#3C323E",
   "#2A222B",
   "#F9F2FD",
   "#ECCFFA"
@@ -37,14 +35,7 @@
   "tam": "16px",
   "lh": "19.2px"
  },
- "boton": {
-  "texto": "Contactar con Ventas",
-  "fondo": "#2A222B",
-  "color": "#FAF9FB",
-  "radio": "12px",
-  "padding": "8px 20px",
-  "peso": "400"
- },
+ "boton": null,
  "enlace": "#2A222B",
  "slug": "typeform",
  "url": "https://www.typeform.com/es/",

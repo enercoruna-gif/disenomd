@@ -39,7 +39,7 @@
   <div class="acciones"><button class="btn" data-copiar-de="md">Copiar DESIGN.md</button><button class="btn btn-claro" data-copiar-de="prompt">Copiar instrucción</button></div>
   <p class="tenue peq">Captura hecha por nosotros el 19-11-2026 en <a href="https://www.holded.com/es" rel="noopener nofollow">https://www.holded.com/es</a>. Análisis independiente, sin afiliación con Holded.</p>
 </section>
-<section class="bloque"><h2>Colores extraídos</h2><div class="colores"><div class="color"><i style="background:#FF5454"></i><b>primary</b><code>#FF5454</code></div><div class="color"><i style="background:#000000"></i><b>on-primary</b><code>#000000</code></div><div class="color"><i style="background:#88363D"></i><b>secondary</b><code>#88363D</code></div><div class="color"><i style="background:#ECEAE6"></i><b>accent</b><code>#ECEAE6</code></div><div class="color"><i style="background:#FFFFFF"></i><b>background</b><code>#FFFFFF</code></div><div class="color"><i style="background:#FAFAF9"></i><b>surface</b><code>#FAFAF9</code></div><div class="color"><i style="background:#121926"></i><b>text</b><code>#121926</code></div><div class="color"><i style="background:#686F7C"></i><b>muted</b><code>#686F7C</code></div><div class="color"><i style="background:#DEDFE1"></i><b>border</b><code>#DEDFE1</code></div></div></section>
+<section class="bloque"><h2>Colores extraídos</h2><div class="colores"><div class="color"><i style="background:#1963EF"></i><b>primary</b><code>#1963EF</code></div><div class="color"><i style="background:#FFFFFF"></i><b>on-primary</b><code>#FFFFFF</code></div><div class="color"><i style="background:#FF5454"></i><b>secondary</b><code>#FF5454</code></div><div class="color"><i style="background:#ECEAE6"></i><b>accent</b><code>#ECEAE6</code></div><div class="color"><i style="background:#FFFFFF"></i><b>background</b><code>#FFFFFF</code></div><div class="color"><i style="background:#FAFAF9"></i><b>surface</b><code>#FAFAF9</code></div><div class="color"><i style="background:#121926"></i><b>text</b><code>#121926</code></div><div class="color"><i style="background:#686F7C"></i><b>muted</b><code>#686F7C</code></div><div class="color"><i style="background:#DEDFE1"></i><b>border</b><code>#DEDFE1</code></div></div></section>
 <section class="bloque">
   <h2>Instrucción para tu IA</h2>
   <pre class="codigo corto" id="prompt" tabindex="0" aria-label="Instrucción para tu IA">Crea [describe aquí tu web]. Usa el DESIGN.md que te he pasado (análisis del estilo de Holded) como referencia visual: aplica sus colores, tipografías, radios y componentes, pero con mis textos, mi logotipo y mis imágenes.</pre>
@@ -50,9 +50,9 @@ version: &quot;alpha&quot;
 name: Holded (análisis)
 description: &quot;Análisis independiente del estilo visual de Holded (https://www.holded.com/es).&quot;
 colors:
-  primary: &quot;#FF5454&quot;
-  on-primary: &quot;#000000&quot;
-  secondary: &quot;#88363D&quot;
+  primary: &quot;#1963EF&quot;
+  on-primary: &quot;#FFFFFF&quot;
+  secondary: &quot;#FF5454&quot;
   accent: &quot;#ECEAE6&quot;
   background: &quot;#FFFFFF&quot;
   surface: &quot;#FAFAF9&quot;
@@ -85,9 +85,9 @@ typography:
     lineHeight: 1.3
     letterSpacing: 0.01em
 rounded:
-  sm: 6px
-  md: 12px
-  lg: 24px
+  sm: 9px
+  md: 18px
+  lg: 36px
   full: 9999px
 spacing:
   xs: 4px
@@ -109,10 +109,10 @@ components:
     padding: 24px
   link:
     backgroundColor: &quot;{colors.background}&quot;
-    textColor: &quot;{colors.secondary}&quot;
+    textColor: &quot;{colors.text}&quot;
   tag:
     backgroundColor: &quot;{colors.accent}&quot;
-    textColor: &quot;{colors.on-primary}&quot;
+    textColor: &quot;{colors.text}&quot;
     rounded: &quot;{rounded.full}&quot;
     padding: 2px 10px
   caption:
@@ -136,7 +136,7 @@ Acentos lila, capturas flotantes del software y sellos de valoraciones.
 
 ## Colores
 
-Fondo claro `#FFFFFF` con texto `#121926`. El color de acción es `#FF5454` (texto encima `#000000`); `#88363D` y `#ECEAE6` aparecen en detalles y etiquetas.
+Fondo claro `#FFFFFF` con texto `#121926`. El color de acción es `#1963EF` (texto encima `#FFFFFF`); `#FF5454` y `#ECEAE6` aparecen en detalles y etiquetas.
 
 ## Tipografía
 
@@ -144,11 +144,11 @@ Titulares en **inter** (peso 600, unos 56px en escritorio) y texto en **inter** 
 
 ## Formas y espaciado
 
-Radio habitual de 12px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
+Radio habitual de 18px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
 
 ## Qué hacer y qué no
 
-- Haz: respeta la jerarquía de un solo color de acción (`#FF5454`).
+- Haz: respeta la jerarquía de un solo color de acción (`#1963EF`).
 - Haz: usa inter solo en titulares y deja el texto en inter.
 - No hagas: copiar el logotipo, las fotografías o los textos de Holded; crea los tuyos.
 </pre></details>

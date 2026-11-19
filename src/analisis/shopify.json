@@ -20,21 +20,14 @@
   "9999px",
   "16px"
  ],
- "h1": {
-  "texto": "Tu negocio puede serEstrella de la IA",
-  "familia": "Shopify-Inter",
-  "tam": "96px",
-  "peso": "300",
-  "ls": "-1.92px",
-  "lh": "103.68px"
- },
+ "h1": null,
  "cuerpo": {
   "familia": "Shopify-Inter",
   "tam": "16px",
   "lh": "24px"
  },
  "boton": {
-  "texto": "Ir al contenido",
+  "texto": "Comenzar gratis",
   "fondo": "#FFFFFF",
   "color": "#000000",
   "radio": "9999px",

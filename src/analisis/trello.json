@@ -39,11 +39,11 @@
   "lh": "30px"
  },
  "boton": {
-  "texto": "Pasar al contenido principal",
-  "fondo": "#172B4D",
+  "texto": "Obtener Trello gratis",
+  "fondo": "#0065FF",
   "color": "#FFFFFF",
-  "radio": "4.8px",
-  "padding": "8px 20px",
+  "radio": "0px",
+  "padding": "8px 24px",
   "peso": "400"
  },
  "enlace": "#0052CC",

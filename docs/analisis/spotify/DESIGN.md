@@ -53,7 +53,7 @@ components:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
     typography: "{typography.label-sm}"
-    rounded: "{rounded.full}"
+    rounded: "{rounded.md}"
     padding: 12px 20px
   card:
     backgroundColor: "{colors.surface}"
@@ -97,7 +97,7 @@ Titulares en **SpotifyMixUITitleVariable** (peso 900, unos 96px en escritorio) y
 
 ## Formas y espaciado
 
-Radio habitual de 8px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
+Radio habitual de 8px; los botones son rectángulos con radio 8px. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
 
 ## Qué hacer y qué no
 

@@ -21,9 +21,11 @@ JS = r"""() => {
     if (parseFloat(s.borderTopLeftRadius) > 0 && bg) radios[s.borderTopLeftRadius] = (radios[s.borderTopLeftRadius] || 0) + 1;
   });
   const top = (o, n) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, n).map(x => x[0]);
-  const h = document.querySelector('h1') || document.querySelector('h2');
+  const enPantalla = e => { const r = e.getBoundingClientRect(); return vis(e) && r.top >= 0 && r.top < innerHeight && r.left >= 0 && r.left < innerWidth; };
+  const aviso = e => /cookie|consent|didomi|onetrust|privacidad|privacy|skip|saltar/i.test((e.id + ' ' + e.className + ' ' + (e.closest('[id*=cookie],[class*=cookie],[id*=consent],[class*=consent]') ? 'cookie' : '') + ' ' + e.textContent).toString());
+  const h = [...document.querySelectorAll('h1')].find(enPantalla) || [...document.querySelectorAll('h1,h2')].find(vis);
   const hs = h ? getComputedStyle(h) : null;
-  const botones = [...document.querySelectorAll('a,button')].filter(vis).map(e => [e, getComputedStyle(e)]).filter(([e, s]) => rgb(s.backgroundColor) && e.textContent.trim().length > 1 && e.textContent.trim().length < 40);
+  const botones = [...document.querySelectorAll('a,button')].filter(e => enPantalla(e) && !aviso(e)).map(e => [e, getComputedStyle(e)]).filter(([e, s]) => rgb(s.backgroundColor) && e.textContent.trim().length > 1 && e.textContent.trim().length < 40);
   const b = botones[0];
   const bodyS = getComputedStyle(document.body), htmlS = getComputedStyle(document.documentElement);
   return {
@@ -36,7 +38,7 @@ JS = r"""() => {
   };
 }"""
 
-CONSENTIR = re.compile(r"^\\s*(aceptar( todo| todas| y cerrar| y continuar| cookies)?|acepto|accept( all| cookies)?|allow all|permitir todas|agree|estoy de acuerdo|de acuerdo|entendido|ok)\\s*$", re.I)
+CONSENTIR = re.compile(r"^\s*(aceptar( todo| todas| y cerrar| y continuar| cookies)?|acepto|accept( all| cookies)?|allow all|permitir todas|agree|estoy de acuerdo|de acuerdo|entendido|ok)\s*$", re.I)
 
 
 LIMPIAR = r"""() => {
@@ -45,7 +47,7 @@ LIMPIAR = r"""() => {
     const s = getComputedStyle(e); if (s.position !== 'fixed' && s.position !== 'absolute') return;
     const r = e.getBoundingClientRect(), area = r.width * r.height / (innerWidth * innerHeight);
     const nombre = (e.id + ' ' + e.className + ' ' + (e.getAttribute('role') || '') + ' ' + (e.getAttribute('aria-label') || '')).toString();
-    if ((s.position === 'fixed' && (patron.test(nombre) || /cookie/i.test((e.innerText || '').slice(0, 400)) || area > 0.5 && +s.zIndex > 10)) || e.getAttribute('aria-modal') === 'true' || e.tagName === 'DIALOG') e.style.setProperty('display', 'none', 'important');
+    if ((s.position === 'fixed' && (patron.test(nombre) || /cookie/i.test((e.innerText || '').slice(0, 400)) || area > 0.5 && +s.zIndex > 10 && !e.querySelector('img,video,picture'))) || e.getAttribute('aria-modal') === 'true' || e.tagName === 'DIALOG') e.style.setProperty('display', 'none', 'important');
   });
   for (const e of [document.documentElement, document.body]) { e.style.setProperty('overflow', 'auto', 'important'); e.style.setProperty('filter', 'none', 'important'); }
   document.querySelectorAll('body > *').forEach(e => { if (getComputedStyle(e).filter !== 'none') e.style.setProperty('filter', 'none', 'important'); });

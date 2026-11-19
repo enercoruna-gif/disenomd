@@ -23,26 +23,19 @@
   "50px"
  ],
  "h1": {
-  "texto": "Página de inicio de Airbnb",
+  "texto": "Descubre experiencias cerca de ti",
   "familia": "Airbnb Cereal VF",
-  "tam": "28px",
-  "peso": "700",
+  "tam": "14px",
+  "peso": "400",
   "ls": "normal",
-  "lh": "40.04px"
+  "lh": "20.02px"
  },
  "cuerpo": {
   "familia": "Airbnb Cereal VF",
   "tam": "14px",
   "lh": "20.02px"
  },
- "boton": {
-  "texto": "Mostrar todo",
-  "fondo": "#FFFFFF",
-  "color": "#222222",
-  "radio": "20px",
-  "padding": "0px",
-  "peso": "400"
- },
+ "boton": null,
  "enlace": "#222222",
  "slug": "airbnb",
  "url": "https://www.airbnb.es",

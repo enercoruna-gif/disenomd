@@ -1,0 +1,52 @@
+{
+ "titulo": "Intercom | A complete system for human and AI customer service",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#FAF9F6",
+  "#E1E2E5",
+  "#111111",
+  "#0007CB",
+  "#D3CEC6",
+  "#DF2020"
+ ],
+ "textos": [
+  "#111111",
+  "#FFFFFF",
+  "#000000"
+ ],
+ "fuentes": [
+  "Saans",
+  "Serrif",
+  "SaansMono"
+ ],
+ "radios": [
+  "4px",
+  "50%"
+ ],
+ "h1": {
+  "texto": "A complete system forAI and humancustomer service",
+  "familia": "Saans",
+  "tam": "64px",
+  "peso": "400",
+  "ls": "-2.4px",
+  "lh": "64px"
+ },
+ "cuerpo": {
+  "familia": "ui-sans-serif",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Start free trial",
+  "fondo": "#111111",
+  "color": "#FFFFFF",
+  "radio": "4px",
+  "padding": "0px 12px",
+  "peso": "400"
+ },
+ "enlace": "#111111",
+ "slug": "intercom",
+ "url": "https://www.intercom.com",
+ "final": "https://www.intercom.com/"
+}

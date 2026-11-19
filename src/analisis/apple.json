@@ -29,12 +29,12 @@
   "50%"
  ],
  "h1": {
-  "texto": "Apple",
-  "familia": "SF Pro Text",
-  "tam": "34px",
+  "texto": "Regalos que ilusionan.",
+  "familia": "SF Pro Display",
+  "tam": "56px",
   "peso": "600",
-  "ls": "-0.374px",
-  "lh": "50px"
+  "ls": "-0.28px",
+  "lh": "60px"
  },
  "cuerpo": {
   "familia": "SF Pro Text",

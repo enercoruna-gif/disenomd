@@ -3,9 +3,9 @@ version: "alpha"
 name: Holded (análisis)
 description: "Análisis independiente del estilo visual de Holded (https://www.holded.com/es)."
 colors:
-  primary: "#FF5454"
-  on-primary: "#000000"
-  secondary: "#88363D"
+  primary: "#1963EF"
+  on-primary: "#FFFFFF"
+  secondary: "#FF5454"
   accent: "#ECEAE6"
   background: "#FFFFFF"
   surface: "#FAFAF9"
@@ -38,9 +38,9 @@ typography:
     lineHeight: 1.3
     letterSpacing: 0.01em
 rounded:
-  sm: 6px
-  md: 12px
-  lg: 24px
+  sm: 9px
+  md: 18px
+  lg: 36px
   full: 9999px
 spacing:
   xs: 4px
@@ -62,10 +62,10 @@ components:
     padding: 24px
   link:
     backgroundColor: "{colors.background}"
-    textColor: "{colors.secondary}"
+    textColor: "{colors.text}"
   tag:
     backgroundColor: "{colors.accent}"
-    textColor: "{colors.on-primary}"
+    textColor: "{colors.text}"
     rounded: "{rounded.full}"
     padding: 2px 10px
   caption:
@@ -89,7 +89,7 @@ Acentos lila, capturas flotantes del software y sellos de valoraciones.
 
 ## Colores
 
-Fondo claro `#FFFFFF` con texto `#121926`. El color de acción es `#FF5454` (texto encima `#000000`); `#88363D` y `#ECEAE6` aparecen en detalles y etiquetas.
+Fondo claro `#FFFFFF` con texto `#121926`. El color de acción es `#1963EF` (texto encima `#FFFFFF`); `#FF5454` y `#ECEAE6` aparecen en detalles y etiquetas.
 
 ## Tipografía
 
@@ -97,10 +97,10 @@ Titulares en **inter** (peso 600, unos 56px en escritorio) y texto en **inter** 
 
 ## Formas y espaciado
 
-Radio habitual de 12px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
+Radio habitual de 18px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
 
 ## Qué hacer y qué no
 
-- Haz: respeta la jerarquía de un solo color de acción (`#FF5454`).
+- Haz: respeta la jerarquía de un solo color de acción (`#1963EF`).
 - Haz: usa inter solo en titulares y deja el texto en inter.
 - No hagas: copiar el logotipo, las fotografías o los textos de Holded; crea los tuyos.

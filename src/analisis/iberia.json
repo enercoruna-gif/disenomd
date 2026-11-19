@@ -2,17 +2,17 @@
  "titulo": "IBERIA - Web Oficial: Los Mejores Precios - Iberia España",
  "fondo": "#EEEEEE",
  "fondos": [
-  "#000000",
   "#FFFFFF",
   "#D7192D",
   "#DDDDDD",
-  "#A8191A"
+  "#A8191A",
+  "#000000"
  ],
  "textos": [
   "#FFFFFF",
   "#333333",
-  "#D7192D",
-  "#666666"
+  "#666666",
+  "#D7192D"
  ],
  "fuentes": [
   "iberiaheadline",
@@ -22,18 +22,17 @@
  ],
  "radios": [
   "50%",
-  "2px",
   "4px",
   "3px",
   "16px"
  ],
  "h1": {
-  "texto": "IBERIA.COM: los mejores precios para vuelos de Iberia",
-  "familia": "verdana",
-  "tam": "0px",
+  "texto": "Empieza a vivir Costa Rica",
+  "familia": "iberiaheadline",
+  "tam": "60px",
   "peso": "400",
   "ls": "normal",
-  "lh": "0px"
+  "lh": "48px"
  },
  "cuerpo": {
   "familia": "verdana",
@@ -41,12 +40,12 @@
   "lh": "22.8571px"
  },
  "boton": {
-  "texto": "Saltar al contenido",
-  "fondo": "#000000",
+  "texto": "Siguiente",
+  "fondo": "#D7192D",
   "color": "#FFFFFF",
-  "radio": "4px",
-  "padding": "6px 10px",
-  "peso": "100"
+  "radio": "50%",
+  "padding": "0px",
+  "peso": "400"
  },
  "enlace": "#333333",
  "slug": "iberia",

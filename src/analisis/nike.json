@@ -3,8 +3,7 @@
  "fondo": "#FFFFFF",
  "fondos": [
   "#FFFFFF",
-  "#F5F5F5",
-  "#111111"
+  "#F5F5F5"
  ],
  "textos": [
   "#707072",
@@ -13,22 +12,21 @@
  ],
  "fuentes": [
   "Helvetica Now Text Medium",
-  "Helvetica Now Display Medium",
   "Helvetica Now Text",
-  "Nike Futura ND"
+  "Nike Futura ND",
+  "Helvetica Now Display Medium"
  ],
  "radios": [
   "30px",
-  "24px",
-  "3px"
+  "24px"
  ],
  "h1": {
-  "texto": "We think you are in United States. Update your location?",
+  "texto": "Comprar ofertas de los Nike Black Friday Days",
   "familia": "Helvetica Now Display Medium",
-  "tam": "16px",
+  "tam": "24px",
   "peso": "500",
   "ls": "normal",
-  "lh": "28px"
+  "lh": "28.8px"
  },
  "cuerpo": {
   "familia": "Helvetica Now Text",
@@ -36,11 +34,11 @@
   "lh": "28px"
  },
  "boton": {
-  "texto": "United States",
-  "fondo": "#111111",
-  "color": "#FFFFFF",
+  "texto": "Comprar ahora",
+  "fondo": "#FFFFFF",
+  "color": "#111111",
   "radio": "30px",
-  "padding": "5px 3px",
+  "padding": "6px 16px",
   "peso": "500"
  },
  "enlace": "#111111",

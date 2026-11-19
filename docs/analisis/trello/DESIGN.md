@@ -3,9 +3,9 @@ version: "alpha"
 name: Trello (análisis)
 description: "Análisis independiente del estilo visual de Trello (https://trello.com/es)."
 colors:
-  primary: "#172B4D"
+  primary: "#0065FF"
   on-primary: "#FFFFFF"
-  secondary: "#0065FF"
+  secondary: "#0052CC"
   accent: "#0052CC"
   background: "#FFFFFF"
   surface: "#F4F5F7"
@@ -89,7 +89,7 @@ Campo de correo con botón azul, formas redondeadas y tono optimista.
 
 ## Colores
 
-Fondo claro `#FFFFFF` con texto `#091E42`. El color de acción es `#172B4D` (texto encima `#FFFFFF`); `#0065FF` y `#0052CC` aparecen en detalles y etiquetas.
+Fondo claro `#FFFFFF` con texto `#091E42`. El color de acción es `#0065FF` (texto encima `#FFFFFF`); `#0052CC` y `#0052CC` aparecen en detalles y etiquetas.
 
 ## Tipografía
 
@@ -101,6 +101,6 @@ Radio habitual de 4px; los botones son rectángulos con radio 4px. Espaciado en 
 
 ## Qué hacer y qué no
 
-- Haz: respeta la jerarquía de un solo color de acción (`#172B4D`).
+- Haz: respeta la jerarquía de un solo color de acción (`#0065FF`).
 - Haz: usa Charlie Display solo en titulares y deja el texto en Charlie Text.
 - No hagas: copiar el logotipo, las fotografías o los textos de Trello; crea los tuyos.

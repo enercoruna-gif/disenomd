@@ -5,8 +5,8 @@ description: "Análisis independiente del estilo visual de Loom (https://www.loo
 colors:
   primary: "#1868DB"
   on-primary: "#FFFFFF"
-  secondary: "#FFAB00"
-  accent: "#FFC44C"
+  secondary: "#0C346E"
+  accent: "#55719A"
   background: "#FFFFFF"
   surface: "#E9F2FE"
   text: "#000000"
@@ -38,9 +38,9 @@ typography:
     lineHeight: 1.3
     letterSpacing: 0.01em
 rounded:
-  sm: 2px
-  md: 4px
-  lg: 8px
+  sm: 19px
+  md: 39px
+  lg: 78px
   full: 9999px
 spacing:
   xs: 4px
@@ -62,10 +62,10 @@ components:
     padding: 24px
   link:
     backgroundColor: "{colors.background}"
-    textColor: "{colors.text}"
+    textColor: "{colors.secondary}"
   tag:
     backgroundColor: "{colors.accent}"
-    textColor: "{colors.text}"
+    textColor: "{colors.background}"
     rounded: "{rounded.full}"
     padding: 2px 10px
   caption:
@@ -89,7 +89,7 @@ Botones en píldora azules y tarjetas con esquinas medianas.
 
 ## Colores
 
-Fondo claro `#FFFFFF` con texto `#000000`. El color de acción es `#1868DB` (texto encima `#FFFFFF`); `#FFAB00` y `#FFC44C` aparecen en detalles y etiquetas.
+Fondo claro `#FFFFFF` con texto `#000000`. El color de acción es `#1868DB` (texto encima `#FFFFFF`); `#0C346E` y `#55719A` aparecen en detalles y etiquetas.
 
 ## Tipografía
 
@@ -97,7 +97,7 @@ Titulares en **Charlie Display** (peso 700, unos 56.5385px en escritorio) y text
 
 ## Formas y espaciado
 
-Radio habitual de 4px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
+Radio habitual de 39px; los botones son píldoras. Espaciado en múltiplos de 8px, con bloques de 64px entre secciones.
 
 ## Qué hacer y qué no
 

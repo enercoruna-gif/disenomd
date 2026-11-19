@@ -78,10 +78,10 @@
 "sector": "Banca"
 },
 {
-"slug": "zara",
-"nombre": "Zara",
-"url": "https://www.zara.com/es/",
-"sector": "Moda"
+"slug": "intercom",
+"nombre": "Intercom",
+"url": "https://www.intercom.com",
+"sector": "Atención al cliente"
 },
 {
 "slug": "mango",
@@ -312,10 +312,10 @@
 "sector": "Supermercado"
 },
 {
-"slug": "renfe",
-"nombre": "Renfe",
-"url": "https://www.renfe.com/es/es",
-"sector": "Transporte"
+"slug": "paypal",
+"nombre": "PayPal",
+"url": "https://www.paypal.com/es/home",
+"sector": "Pagos"
 },
 {
 "slug": "cursor",
