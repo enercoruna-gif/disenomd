@@ -28,6 +28,13 @@
     if (el) copiar(el.textContent, b.dataset.copiarDe === 'md' ? 'DESIGN.md copiado' : 'Prompt copiado');
   });
 
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('a') && document.body.classList.contains('menu-abierto')) {
+      document.body.classList.remove('menu-abierto');
+      var m = document.querySelector('.menu-btn'); if (m) m.setAttribute('aria-expanded', 'false');
+    }
+  });
+
   var rejilla = document.getElementById('rejilla');
   if (!rejilla) return;
   var buscar = document.getElementById('buscar'), chips = document.getElementById('chips'), vacio = document.getElementById('vacio'), cat = '';

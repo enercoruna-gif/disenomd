@@ -124,11 +124,20 @@ def design_md(d):
   return "\n".join(y + m)
 
 
+def legible(color, fondo, tinta, minimo=4.5):
+  mezcla = lambda a, b, t: "#" + "".join(f"{round(int(a[i:i + 2], 16) * (1 - t) + int(b[i:i + 2], 16) * t):02X}" for i in (1, 3, 5))
+  t = 0.0
+  while contraste(mezcla(color, tinta, t), fondo) < minimo and t < 1:
+    t += 0.05
+  return mezcla(color, tinta, min(t, 1))
+
+
 def vars_css(d):
   c = d["colores"]
   disp, cuerpo = d["fuentes"]
   return (f"--bg:{c['background']};--fg:{c['text']};--pri:{c['primary']};--on:{c['on-primary']};--sec:{c['secondary']};"
-          f"--acc:{c['accent']};--onacc:{c[texto_sobre(c, 'accent')]};--sur:{c['surface']};--mut:{c['muted']};--bd:{c['border']};"
+          f"--acc:{c['accent']};--onacc:{c[texto_sobre(c, 'accent')]};--sur:{c['surface']};--mut:{legible(c['muted'], c['surface'], c['text'])};--bd:{c['border']};"
+          f"--secT:{legible(c['secondary'], c['surface'], c['text'])};--accT:{legible(c['accent'], c['surface'], c['text'])};--priT:{legible(c['primary'], c['surface'], c['text'])};"
           f"--fd:'{disp}';--fb:'{cuerpo}';--fm:'{d['mono']}';--wd:{PESO_TITULAR.get(disp, 700)};"
           f"--r:{d['radio']['md']};--rl:{d['radio']['lg']};--rf:{d['radio']['full']}")
 
@@ -266,6 +275,7 @@ def portada():
 </section>
 <section class="bloque" id="catalogo">
   <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(DISENOS)} sistemas de diseño en español</span></div>
+  <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-catalogo.zip" download>Descargar los {len(DISENOS)} DESIGN.md (zip)</a></p>
   <input class="buscar" id="buscar" type="search" placeholder="Busca tu negocio: peluquería, bar, clínica…" aria-label="Buscar diseños">
   <div class="chips" id="chips">{chips}</div>
   <p class="vacio" id="vacio" hidden>Ningún diseño menciona «<span id="vacio-q"></span>», pero todos sirven para cualquier negocio: elige el que más te guste por sus colores.</p>
@@ -326,10 +336,10 @@ def detalle(d, i):
 </section>
 <section class="bloque">
   <h2>Instrucción para tu IA</h2>
-  <pre class="codigo corto" id="prompt">{esc(prompt)}</pre>
+  <pre class="codigo corto" id="prompt" tabindex="0" aria-label="Instrucción para tu IA">{esc(prompt)}</pre>
   <details class="archivo"><summary>Ver el archivo DESIGN.md completo (para técnicos)</summary>
   <div class="tit-sec"><span class="tenue peq">{len(md.splitlines())} líneas</span><span><button class="btn btn-peq" data-copiar-de="md">Copiar</button> <a class="btn btn-peq btn-claro" href="DESIGN.md" download="DESIGN.md">Descargar</a></span></div>
-  <pre class="codigo" id="md">{esc(md)}</pre></details>
+  <pre class="codigo" id="md" tabindex="0" aria-label="Archivo DESIGN.md completo">{esc(md)}</pre></details>
 </section>
 <nav class="pasos"><a href="../{ant["slug"]}/">← {esc(ant["nombre"])}</a><a href="../{sig["slug"]}/">{esc(sig["nombre"])} →</a></nav>
 '''
