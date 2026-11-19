@@ -1,0 +1,30 @@
+CAUCE — DEMO FINTECH EN ESPAÑOL
+
+Una demo visual inspirada en las referencias de Payer de Jorge, con identidad y código propios. Pensada como recurso gratuito DESIGN.md para ia.cuadrantia.store. No es una app bancaria ni se ha publicado.
+
+ARCHIVOS
+index.html         Web completa, con CSS, JavaScript, fuente y DESIGN.md integrados.
+DESIGN.md          Sistema de diseño gratuito, en español.
+og-cauce.png       Imagen social de 1200 × 630 px.
+LICENSE.txt        Licencia MIT del código original.
+Manrope-OFL.txt    Licencia de la tipografía Manrope.
+
+VER EN IPHONE
+El HTML funciona sin red y sin archivos auxiliares en un navegador que ejecute HTML. Algunas previsualizaciones de Archivos o del chat no ejecutan JavaScript; para probar todos los controles, usar la vista previa de navegador facilitada o abrir la web en Safari tras subirla. La descarga de Markdown puede abrir el documento: guardarlo en Archivos desde Compartir. El DESIGN.md también está disponible como archivo independiente.
+
+CLOUDFLARE PAGES
+Descomprimir el ZIP y subir su contenido a una implementación estática. index.html está en la raíz. No hay comando de build, dependencias, backend ni variables secretas. Jorge o el Bot responsable decide cuándo subirlo; esta entrega no publica nada ni modifica el sitio actual.
+
+PARA EL BOT QUE MANTIENE DISEÑO.MD
+Integrar como ficha gratuita detrás de las cinco demos actuales, no como sustituto de la portada ni como proyecto de Ener. Puede renombrar la carpeta/ruta. Antes de publicar, sustituir la referencia relativa og-cauce.png por la URL absoluta pública del archivo y añadir canonical a la URL definitiva. El concepto lleva noindex,follow deliberadamente; la ficha del catálogo puede tener sus propios metadatos e indexación.
+
+QUÉ FUNCIONA
+Anclas, pestañas con teclado, dos controles de ocultar saldo, preguntas desplegables y descarga real del DESIGN.md. Todos los saldos y movimientos son ficticios. Las pestañas muestran gastos, aportaciones de ahorro y saldos; no hay conexión bancaria.
+
+No hay cookies, formularios, analítica ni peticiones externas al abrir el HTML.
+
+REFERENCIAS Y LICENCIAS
+Las siete bibliotecas solicitadas se consultaron y sus patrones se reinterpretaron con código original, sin componentes premium. Referencias y límites detallados en DESIGN.md. No se ha copiado la fotografía, la marca, los testimonios ni los logotipos de Payer.
+
+PRUEBAS
+La revisión técnica y de tamaños se hace en Chromium. No equivale a una comprobación en Safari/iPhone físico. No se prometen funciones de app móvil ni se incluyen enlaces falsos a tiendas.

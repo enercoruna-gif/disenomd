@@ -1,5 +1,8 @@
 # Análisis propios (redacción nuestra) de la portada pública de cada web, visitada el 19-11-2026.
 N = dict(
+  crix=("Demo independiente en español de gestión de proyectos, con montaña pastel, panel de tareas y contraste carbón.", "Diseño de muestra de diseño.md basado en una referencia visual; no es la web oficial de Crix ni está afiliado a ella."),
+  launchkit=("Diseño de muestra de diseño.md para finanzas empresariales: fondo claro, paneles sobrios y acento naranja.", "Demo independiente basada en una referencia visual, sin afiliación ni servicio financiero real."),
+  cauce=("Diseño original de diseño.md inspirado en Payer, con superficie blanca, azul cobalto y luz ámbar.", "Concepto fintech independiente con interfaz y datos propios; no es una aplicación bancaria real ni está afiliado a Payer."),
   airbnb=("Interfaz blanca y amable donde manda la fotografía: tarjetas de alojamiento con esquinas generosas y casi sin bordes.", "El rosa coral se reserva para la búsqueda y las acciones de reserva; todo lo demás es gris neutro."),
   airtable=("Portada corporativa centrada, con titular grande en una sans neutra y dos botones: uno sólido casi negro y otro con borde.", "Mucho blanco, tipografía de un solo peso y color solo en ilustraciones de producto."),
   anthropic=("Fondo crema cálido, titulares en serif y texto en sans: parece una editorial más que una tecnológica.", "Paleta de tierra y negro suave, botones en píldora y casi ningún color saturado."),

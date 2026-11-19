@@ -1,5 +1,56 @@
 [
  {
+  "slug": "crix",
+  "nombre": "Crix",
+  "categoria": "Webs populares",
+  "url": "https://enercoruna-gif.github.io/disenomd/demos/crix/",
+  "colores": {
+   "primary": "#252624",
+   "on-primary": "#FFFFFF",
+   "secondary": "#656762",
+   "accent": "#F5DCCD",
+   "background": "#F7F7F5",
+   "surface": "#FFFFFF",
+   "text": "#252624",
+   "muted": "#656762",
+   "border": "#E8E9E4"
+  }
+ },
+ {
+  "slug": "launchkit",
+  "nombre": "LaunchKit",
+  "categoria": "Webs populares",
+  "url": "https://enercoruna-gif.github.io/disenomd/demos/launchkit/",
+  "colores": {
+   "primary": "#181918",
+   "on-primary": "#FFFFFF",
+   "secondary": "#F3F3F2",
+   "accent": "#FF7B35",
+   "background": "#FAFAFA",
+   "surface": "#FFFFFF",
+   "text": "#181918",
+   "muted": "#6C6D69",
+   "border": "#E7E7E4"
+  }
+ },
+ {
+  "slug": "cauce",
+  "nombre": "Cauce",
+  "categoria": "Webs populares",
+  "url": "https://enercoruna-gif.github.io/disenomd/demos/cauce/",
+  "colores": {
+   "primary": "#2855DF",
+   "on-primary": "#FFFFFF",
+   "secondary": "#1C42BA",
+   "accent": "#F2A21A",
+   "background": "#FFFFFF",
+   "surface": "#F6F7F9",
+   "text": "#14171D",
+   "muted": "#5B606A",
+   "border": "#E6E8ED"
+  }
+ },
+ {
   "slug": "lattice",
   "nombre": "Lattice",
   "categoria": "Webs populares",

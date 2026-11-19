@@ -78,6 +78,8 @@ def radio(j):
 
 
 def design_md(s, j):
+  if s.get("original"):
+    return (RAIZ / "src/demos" / s["slug"] / "DESIGN.md").read_text(), j["colores"]
   c, oscuro = tokens(j)
   r, pildora = radio(j)
   h1 = j.get("h1") or {}
@@ -121,6 +123,7 @@ def design_md(s, j):
 
 
 GRUPOS = {
+  "Diseños propios": ["Diseños propios"],
   "Finanzas": ["Banca", "Pagos", "Inversión"],
   "Software y productividad": ["Software", "Productividad", "Gestión", "Recursos humanos", "Colaboración", "Formularios", "Agenda",
                                "Atención al cliente", "Comunicación", "Almacenamiento", "Bases de datos", "Analítica", "Marketing"],
@@ -135,7 +138,8 @@ GRUPO = {sec: g for g, secs in GRUPOS.items() for sec in secs}
 
 def tarjeta(s, c, prefijo):
   sw = "".join(f'<i style="background:{c[k]}"></i>' for k in ("primary", "secondary", "accent", "text", "background"))
-  txt = esc(f"{s['nombre']} {s['sector']} {GRUPO[s['sector']]} web real análisis {N[s['slug']][0]}".lower())
+  tipo = "diseño demo original" if s.get("original") else "web real análisis"
+  txt = esc(f"{s['nombre']} {s['sector']} {GRUPO[s['sector']]} {tipo} {N[s['slug']][0]}".lower())
   return (f'<a class="tarjeta tarjeta-foto" href="{prefijo}analisis/{s["slug"]}/" data-cat="{esc(GRUPO[s["sector"]])}" data-texto="{txt}">'
           f'<img src="{prefijo}analisis/{s["slug"]}/captura.webp" alt="Captura de la portada de {esc(s["nombre"])}" loading="lazy" width="960" height="600">'
           f'<div class="tarjeta-pie"><div><strong>{esc(s["nombre"])}</strong><small>{esc(s["sector"])}</small></div><span class="sw">{sw}</span></div></a>')
@@ -144,19 +148,27 @@ def tarjeta(s, c, prefijo):
 def ficha(s, md, c, pagina):
   sw = "".join(f'<div class="color"><i style="background:{v}"></i><b>{k}</b><code>{v}</code></div>' for k, v in c.items())
   resumen, claves = N[s["slug"]]
-  prompt = (f"Crea [describe aquí tu web]. Usa el DESIGN.md que te he pasado (análisis del estilo de {s['nombre']}) como referencia visual: "
+  original = s.get("original")
+  tipo = "Diseño de muestra de diseño.md" if original else "Análisis de web real"
+  referencia = f"diseño de muestra {s['nombre']}" if original else f"análisis del estilo de {s['nombre']}"
+  titulo = f"{s['nombre']} — diseño de muestra y DESIGN.md gratis | diseño.md" if original else f"{s['nombre']}: análisis de su estilo en DESIGN.md | diseño.md"
+  desc = f"{resumen} DESIGN.md gratis y demo en español." if original else f"Análisis independiente del estilo visual de {s['nombre']} en formato DESIGN.md, gratis y en español."
+  aviso = (f'Demo independiente de diseño.md{", inspirada en " + esc(s["inspiracion"]) if s.get("inspiracion") else ", basada en una referencia visual"}. No es una web oficial ni un servicio comercial real.' if original else
+           f'Captura hecha por nosotros el 19-11-2026 en <a href="{esc(s["url"])}" rel="noopener nofollow">{esc(s["url"])}</a>. Análisis independiente, sin afiliación con {esc(s["nombre"])}.')
+  demo = f'<a class="btn btn-claro" href="../../demos/{s["slug"]}/">Ver demo</a>' if original else ''
+  prompt = (f"Crea [describe aquí tu web]. Usa el DESIGN.md que te he pasado ({referencia}) como referencia visual: "
             "aplica sus colores, tipografías, radios y componentes, pero con mis textos, mi logotipo y mis imágenes.")
   cuerpo = f'''
 <section class="det-cab">
   <p class="migas"><a href="../../webs/">Webs populares</a> / {esc(s["nombre"])}</p>
-  <p class="eti">Análisis de web real · {esc(s["sector"])}</p>
+  <p class="eti">{tipo} · {esc(s["sector"])}</p>
   <h1>{esc(s["nombre"])}</h1>
   <img class="captura" src="captura.webp" alt="Captura propia de la portada de {esc(s["nombre"])}" width="960" height="600">
   <p class="intro">{esc(resumen)} {esc(claves)}</p>
-  <div class="acciones"><button class="btn" data-copiar-de="md">Copiar DESIGN.md</button><button class="btn btn-claro" data-copiar-de="prompt">Copiar instrucción</button></div>
-  <p class="tenue peq">Captura hecha por nosotros el 19-11-2026 en <a href="{esc(s["url"])}" rel="noopener nofollow">{esc(s["url"])}</a>. Análisis independiente, sin afiliación con {esc(s["nombre"])}.</p>
+  <div class="acciones"><button class="btn" data-copiar-de="md">Copiar DESIGN.md</button><button class="btn btn-claro" data-copiar-de="prompt">Copiar instrucción</button>{demo}</div>
+  <p class="tenue peq">{aviso}</p>
 </section>
-<section class="bloque"><h2>Colores extraídos</h2><div class="colores">{sw}</div></section>
+<section class="bloque"><h2>{"Colores del diseño" if original else "Colores extraídos"}</h2><div class="colores">{sw}</div></section>
 <section class="bloque">
   <h2>Instrucción para tu IA</h2>
   <pre class="codigo corto" id="prompt" tabindex="0" aria-label="Instrucción para tu IA">{esc(prompt)}</pre>
@@ -164,10 +176,9 @@ def ficha(s, md, c, pagina):
   <div class="tit-sec"><span class="tenue peq">{len(md.splitlines())} líneas</span><span><button class="btn btn-peq" data-copiar-de="md">Copiar</button> <a class="btn btn-peq btn-claro" href="DESIGN.md" download="DESIGN.md">Descargar</a></span></div>
   <pre class="codigo" id="md" tabindex="0" aria-label="Archivo DESIGN.md completo">{esc(md)}</pre></details>
 </section>'''
-  return pagina(f"{s['nombre']}: análisis de su estilo en DESIGN.md | diseño.md",
-                f"Análisis independiente del estilo visual de {s['nombre']} en formato DESIGN.md, gratis y en español.", cuerpo, "../../",
+  return pagina(titulo, desc, cuerpo, "../../",
                 imagen=f"analisis/{s['slug']}/og.jpg" if (RAIZ / "docs/analisis" / s["slug"] / "captura.webp").is_file() else "assets/og.png",
-                imagen_alt=f"{s['nombre']} — análisis independiente de su estilo visual por diseño.md")
+                imagen_alt=f"{s['nombre']} — diseño de muestra de diseño.md" if original else f"{s['nombre']} — análisis independiente de su estilo visual por diseño.md")
 
 
 def generar(salida, pagina, z):
@@ -190,8 +201,8 @@ def zona(tarjetas, pagina):
   cuerpo = f'''
 <section class="hero">
   <p class="eti">Webs populares</p>
-  <h1>DESIGN.md gratis de webs que ya conoces</h1>
-  <p class="intro">{len(tarjetas)} análisis independientes del estilo de webs conocidas: colores, tipografías y componentes en formato DESIGN.md, con capturas hechas por nosotros. Úsalos como referencia para tu IA, con tus textos, tu logotipo y tus fotos.</p>
+  <h1>DESIGN.md gratis: webs conocidas y diseños propios</h1>
+  <p class="intro">{len(tarjetas)} diseños gratuitos: {sum(not s.get("original", False) for s, _ in tarjetas)} análisis independientes de webs conocidas y {sum(bool(s.get("original")) for s, _ in tarjetas)} demos propias. Colores, tipografías y componentes en formato DESIGN.md, con capturas hechas por nosotros. Úsalos como referencia para tu IA, con tus textos, tu logotipo y tus fotos.</p>
   <p><a class="btn btn-claro btn-peq" href="../descargas/disenomd-webs.zip" download>Descargar los {len(tarjetas)} DESIGN.md (zip)</a> <a class="btn btn-peq" href="../#catalogo">Ver los destacados</a></p>
 </section>
 <section class="bloque" id="catalogo">
@@ -201,5 +212,5 @@ def zona(tarjetas, pagina):
   <div class="rejilla" id="rejilla">{html}</div>
   <p class="tenue peq">Análisis propios y sin afiliación: los nombres y marcas son de sus dueños y solo se citan para identificar la web analizada.</p>
 </section>'''
-  return pagina("DESIGN.md gratis de webs populares en español | diseño.md",
-                f"{len(tarjetas)} análisis independientes del estilo de webs conocidas en formato DESIGN.md, gratis y en español.", cuerpo, "../")
+  return pagina("DESIGN.md gratis de webs y diseños propios en español | diseño.md",
+                f"{len(tarjetas)} diseños gratuitos: análisis de webs conocidas y demos propias con DESIGN.md en español.", cuerpo, "../")

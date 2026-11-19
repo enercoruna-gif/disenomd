@@ -25,6 +25,13 @@
         if (siguiente.origin === new URL(datos.dominio).origin) {
           evento.preventDefault();
           var hash = '#!' + siguiente.pathname + siguiente.search + siguiente.hash;
+          if (siguiente.pathname === pagina) {
+            var destinoAncla = doc.getElementById(decodeURIComponent(siguiente.hash.slice(1)));
+            if (destinoAncla) destinoAncla.scrollIntoView();
+            else if (!siguiente.hash) ventana.scrollTo(0, 0);
+            history.replaceState(null, '', hash);
+            return;
+          }
           if (location.hash === hash) mostrar();
           else location.hash = hash;
         } else {

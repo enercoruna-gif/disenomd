@@ -53,7 +53,11 @@ def preparar(html, pagina):
                   lambda m: "" if re.search(r'\bclass="gh"', m[1]) else (m[2] if GITHUB.search(m[1]) and ORIGEN.rstrip("/") not in m[1] else m[0]), html, flags=re.S)
     html = limpiar_texto(html)
     html = re.sub(r'<link\b[^>]*rel="canonical"[^>]*>\s*|<meta\b[^>]*property="og:url"[^>]*>\s*', "", html)
-    html = ATRIBUTO.sub(lambda m: f'{m[1]}="{escape(ruta_local(m[2], pagina), quote=True)}"', html)
+    def enlaces(m):
+        if re.match(r'<use\b', m[0]):
+            return m[0]
+        return ATRIBUTO.sub(lambda a: f'{a[1]}="{escape(ruta_local(a[2], pagina), quote=True)}"', m[0])
+    html = re.sub(r'<[^>]*>', enlaces, html)
     def imagen_social(m):
         etiqueta = m[0]
         if re.search(r'(?:property|name)="(?:og:image|twitter:image)"', etiqueta):
@@ -99,7 +103,8 @@ def autonomo(sitio):
             return "@@recurso:" + url + "@@"
         if url.startswith("/"):
             archivo = sitio / url.lstrip("/")
-            recursos[url] = data_uri(archivo.read_bytes(), mimetypes.guess_type(archivo)[0] or "application/octet-stream")
+            tipo = mimetypes.guess_type(archivo)[0] or ("image/webp" if archivo.suffix == ".webp" else "application/octet-stream")
+            recursos[url] = data_uri(archivo.read_bytes(), tipo)
         else:
             try:
                 datos, tipo = descargar(url)
@@ -137,7 +142,15 @@ def autonomo(sitio):
             url = unescape(m[1])
             if url.startswith("/"):
                 clave = "css:" + url
-                recursos[clave] = (sitio / url.lstrip("/")).read_text(encoding="utf-8")
+                css = (sitio / url.lstrip("/")).read_text(encoding="utf-8")
+                def imagen_css(m):
+                    ruta = m[1].strip(' \t\r\n\"\'')
+                    if ruta.startswith(('data:', '#')):
+                        return m[0]
+                    local = ruta_local(ruta, url.lstrip('/'))
+                    recurso(local)
+                    return 'url("' + recursos[local] + '")'
+                recursos[clave] = re.sub(r'url\(([^)]+)\)', imagen_css, css)
                 return "<style>@@recurso:" + clave + "@@</style>"
             return "<style>" + fuentes(url) + "</style>"
 

@@ -8,6 +8,7 @@ from maquetas import M
 import analisis_web as AW
 from catalogo import DISENOS, TIPOS
 from imagenes_og import generar as generar_imagenes_og
+from demos import publicar as publicar_demos
 
 RAIZ = Path(__file__).resolve().parent.parent
 SALIDA = RAIZ / "docs"
@@ -515,6 +516,7 @@ def main():
       if p.name not in ("assets", "analisis"):
         shutil.rmtree(p) if p.is_dir() else p.unlink()
   SALIDA.mkdir(exist_ok=True)
+  publicar_demos(SALIDA, AW.SITIOS)
   generar_imagenes_og(SALIDA, AW.SITIOS)
   (SALIDA / "index.html").write_text(portada())
   for ruta, f in [("como-usar", como_usar), ("kits", kits), ("aviso-legal", aviso_legal)]:
@@ -535,7 +537,7 @@ def main():
   (SALIDA / "robots.txt").write_text("User-agent: *\nAllow: /\n")
   import readme
   readme.generar(AW.RAIZ)
-  print(f"{len(AW.SITIOS)} análisis generados en {SALIDA}")
+  print(f"{len(AW.SITIOS)} diseños generados en {SALIDA}")
 
 
 if __name__ == "__main__":
