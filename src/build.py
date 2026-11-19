@@ -196,21 +196,28 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
 <link rel="icon" href="{prefijo}assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{prefijo}assets/icono-180.png">
 <link rel="manifest" href="{prefijo}manifest.webmanifest" crossorigin="use-credentials">
-<meta name="theme-color" content="#141414">
+<meta name="theme-color" content="#161616">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{url_fuentes(fams)}">
 <link rel="stylesheet" href="{prefijo}assets/estilo.css">
 </head>
 <body>
-<a class="aviso" href="{prefijo}#catalogo"><span class="pill">GRATIS</span> {len(DISENOS) + len(AW.SITIOS)} diseños listos para copiar en ChatGPT <span aria-hidden="true">→</span></a>
+<a class="aviso" href="{prefijo}#catalogo"><span class="pill">NUEVO</span> {len(DISENOS) + len(AW.SITIOS)} diseños listos para copiar en ChatGPT <span aria-hidden="true">→</span></a>
 <header class="cab">
   <a class="logo" href="{prefijo}"><span>diseño</span>.md</a>
   <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" onclick="document.body.classList.toggle('menu-abierto');this.setAttribute('aria-expanded',document.body.classList.contains('menu-abierto'))">☰</button>
-  <nav class="nav">
-    <a href="{prefijo}#catalogo">Catálogo</a>
-    <a href="{prefijo}kits/">Kits</a>
-    <a href="{prefijo}como-usar/">Cómo usarlo</a>
-    <a class="nav-cta" href="{prefijo}#catalogo">Elegir diseño gratis</a>
+  <nav class="nav" aria-label="Menú principal">
+    <a class="nav-dest" href="{prefijo}kits/#a-medida"><span aria-hidden="true">➤</span> Pedir un DESIGN.md a medida</a>
+    <a href="{prefijo}#catalogo">Catálogo DESIGN.md</a>
+    <a href="{prefijo}webs/">Webs populares</a>
+    <a href="{prefijo}kits/#pase">Pase del catálogo</a>
+    <a href="{prefijo}kits/#web">Kit web inicial <span class="nav-ext" aria-hidden="true">↗</span></a>
+    <a href="{prefijo}kits/#fondos">Fondos</a>
+    <a href="{prefijo}kits/#videos">Plantillas de vídeo</a>
+    <a href="{prefijo}descargas/disenomd-catalogo.zip" download>DESIGN.md gratis</a>
+    <hr>
+    <a href="{prefijo}como-usar/">Qué es el formato DESIGN.md</a>
+    <a href="{prefijo}aviso-legal/">Aviso legal</a>
   </nav>
 </header>
 <main>

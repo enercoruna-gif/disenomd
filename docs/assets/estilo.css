@@ -1,4 +1,4 @@
-:root{--papel:#0D0D0F;--tinta:#F2F0EC;--gris:#A9A49C;--linea:#2B2B30;--acc:#FF7A45;--acc2:#4FD1A5;--blanco:#17171A;--sans:'Inter',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+:root{--papel:#161616;--tinta:#EDEDED;--gris:#A1A1A1;--linea:#2E2E2E;--acc:#F5A9D6;--acc2:#B9F18C;--blanco:#1E1E1E;--sans:'Inter',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--papel);color:var(--tinta);font:16px/1.6 var(--sans)}
@@ -8,7 +8,7 @@ code{font-family:var(--mono);font-size:.88em;background:#26262B;padding:1px 5px;
 .tenue{color:var(--gris)}.peq{font-size:.88rem}
 .aviso{display:flex;gap:10px;justify-content:center;align-items:center;padding:10px 16px;background:var(--tinta);color:var(--papel);text-decoration:none;font-weight:500;font-size:.92rem;text-align:center}
 .pill{font:600 .72rem var(--mono);letter-spacing:.08em;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:2px 8px}
-.cab{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;background:rgba(13,13,15,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.cab{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;background:rgba(22,22,22,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
 .logo{font:500 1.35rem var(--mono);text-decoration:none;letter-spacing:-.02em}.logo span{color:var(--acc)}
 .nav{display:flex;gap:22px;align-items:center}.nav a{text-decoration:none;font-weight:500}.nav a:hover{color:var(--acc)}
 .nav-cta{background:var(--tinta);color:var(--papel)!important;padding:8px 14px;border-radius:8px}
@@ -176,3 +176,13 @@ html{color-scheme:dark}body{background:var(--papel);color:var(--tinta)}
 .logo{display:inline-flex;align-items:center;justify-content:center;min-height:44px;color:var(--tinta)}.logo svg{width:34px;height:34px;fill:currentColor}
 .logo-txt{font:800 1.15rem Inter,system-ui,sans-serif;letter-spacing:-.01em;padding:0 2px}
 .logo-grad{background:linear-gradient(90deg,#FF8A3D,#FF3D8B 55%,#7B6CFF);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.aviso{background:#FFFFFF;color:#111111}.aviso .pill{color:#B7791F;border-color:#E9B949;background:#FFF8E6}
+.cab .logo span{color:var(--acc)}.cab .logo{font-family:var(--mono);color:var(--tinta)}
+.menu-btn{display:inline-flex!important;align-items:center;justify-content:center}
+.nav{display:none!important;position:fixed;left:0;right:0;top:var(--alto-cab,64px);bottom:0;z-index:9;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 40px;background:var(--papel);overflow:auto}
+.menu-abierto .nav{display:flex!important}
+.nav a{display:flex;align-items:center;gap:10px;min-height:52px;padding:0 6px;font-weight:400;font-size:1.05rem;color:var(--tinta)}
+.nav .nav-dest{color:var(--acc)}.nav-ext{font-size:.8em;color:var(--gris)}
+.nav hr{border:0;border-top:1px solid var(--linea);margin:10px 0}
+@media(min-width:900px){.nav{left:auto;width:380px;border-left:1px solid var(--linea)}}
