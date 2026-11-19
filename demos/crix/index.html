@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Crix | Proyectos, tareas y equipo en un solo lugar</title>
+  <meta name="description" content="Demo de Crix en español: una interfaz de gestión de proyectos con paisaje de montaña, panel interactivo y DESIGN.md gratuito para agentes de IA.">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="theme-color" content="#f7f7f5">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Crix — Todo tu trabajo, en un solo lugar">
+  <meta property="og:description" content="Explora la demo en español y descarga su DESIGN.md gratuito.">
+  <meta property="og:image" content="assets/og-crix.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Crix: proyectos, tareas y equipo en un solo lugar, sobre un paisaje de montaña.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/montanas.webp" as="image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Crix — Demo en español","inLanguage":"es","description":"Recreación visual independiente de una página de gestión de proyectos. Incluye una demo local y un DESIGN.md gratuito; no es un servicio comercial.","about":{"@type":"CreativeWork","name":"Crix DESIGN.md","inLanguage":"es","isAccessibleForFree":true},"mainEntity":{"@type":"Question","name":"¿Qué incluye esta demo de Crix?","acceptedAnswer":{"@type":"Answer","text":"Una página en español, un panel de tareas de ejemplo que funciona localmente y un DESIGN.md gratuito. No crea cuentas ni realiza cobros."}}}</script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="page" id="inicio">
+    <header class="header">
+      <a class="brand" href="#inicio" aria-label="Crix, inicio"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="5"/><path d="M16 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg><span>Crix</span></a>
+      <button class="menu-toggle" aria-controls="navegacion" aria-expanded="false" hidden>Menú</button>
+      <nav id="navegacion" aria-label="Navegación principal">
+        <a href="#producto">Producto</a><a href="#soluciones">Soluciones</a><a href="#recursos">Recursos</a><a href="#precios">Precios</a><a href="#acerca">Acerca de</a>
+      </nav>
+      <a class="button nav-cta" href="#espacio">Empezar</a>
+    </header>
+    <main id="contenido">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true"></div>
+        <div class="hero-copy wrap">
+          <h1 id="hero-title">Tus proyectos, tareas y equipo <br><span>en un solo lugar.</span></h1>
+          <div class="hero-bottom"><p>Todo lo que necesitas para avanzar: organiza tareas, colabora con tu equipo y sigue cada proyecto sin perder el contexto.</p><a class="button" href="#espacio">Probar Crix <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></div>
+        </div>
+        <div class="portal" aria-hidden="true"><div></div></div>
+        <section class="dashboard" id="espacio" aria-label="Panel de tareas de ejemplo" data-slot="product">
+          <div class="dash-top"><span class="team-brand"><span class="team-mark">C</span> Equipo Crix <span class="muted">/</span> <span class="muted">Espacio de trabajo</span></span><span class="dash-note">Datos de ejemplo</span><button class="button small" id="new-task" type="button" hidden>Crear tarea <span aria-hidden="true">+</span></button></div>
+          <div class="dash-layout">
+            <aside class="dash-sidebar" aria-label="Vistas del panel"><p class="sidebar-label">Tu espacio</p><button class="side-link selected" type="button" data-view="all" aria-pressed="true"><span aria-hidden="true">⌂</span> Vista general</button><button class="side-link" type="button" data-view="pending" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="14" height="12" rx="2"/><path d="M3 8h14"/></svg> Mis tareas</button><button class="side-link" type="button" data-view="done" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg> Completadas</button><p class="sidebar-label projects-label">Proyectos de ejemplo</p><p class="project-nav"><i></i> Rediseño web</p><p class="project-nav"><i></i> Lanzamiento</p><p class="project-nav"><i></i> Contenidos</p><a class="sidebar-download" href="DESIGN.md" download="DESIGN.md">Descargar DESIGN.md</a></aside>
+            <div class="dash-main">
+              <div class="welcome"><div><h2 id="view-title">¡Buen día, equipo!</h2><p>Este es el trabajo que tenemos por delante.</p></div><span class="avatar" aria-label="Equipo de ejemplo">CR</span></div>
+              <p class="demo-hint">Prueba el panel: marca una tarea o crea la tuya. Nada sale de este navegador.</p>
+              <div class="stats" aria-label="Resumen de las tareas de ejemplo"><div><span class="stat-icon" aria-hidden="true">▦</span><strong id="total-count">6</strong><span>Tareas del equipo</span></div><div><span class="stat-icon" aria-hidden="true">◷</span><strong id="pending-count">4</strong><span>Por completar</span></div><div><span class="stat-icon" aria-hidden="true">✓</span><strong id="done-count">2</strong><span>Completadas</span></div><div><span class="stat-icon" aria-hidden="true">◉</span><strong id="progress-count">33 %</strong><span>Progreso del equipo</span></div></div>
+              <div class="task-heading"><h3>Tareas del proyecto</h3><span>Responsable</span><span>Estado</span></div>
+              <form class="task-form" id="task-form" hidden><label for="task-name">Nueva tarea de ejemplo</label><div><input id="task-name" name="task" type="text" required maxlength="80" autocomplete="off" placeholder="Ej. Revisar la portada…"><button class="button small" type="submit">Añadir</button><button class="cancel-task" type="button" id="cancel-task">Cancelar</button></div><p>No se guarda al recargar la página.</p></form>
+              <ul class="task-list" id="task-list">
+                <li><label><input type="checkbox"><span>Diseñar la nueva portada</span></label><span class="assignee">AL</span><span class="status pending">En curso</span></li>
+                <li><label><input type="checkbox"><span>Preparar el lanzamiento</span></label><span class="assignee lavender">PM</span><span class="status pending">En curso</span></li>
+                <li><label><input type="checkbox" checked><span>Definir los objetivos</span></label><span class="assignee peach">CR</span><span class="status done">Completada</span></li>
+                <li><label><input type="checkbox"><span>Revisar los contenidos</span></label><span class="assignee">AL</span><span class="status pending">En curso</span></li>
+                <li><label><input type="checkbox" checked><span>Organizar el espacio de trabajo</span></label><span class="assignee lavender">PM</span><span class="status done">Completada</span></li>
+                <li><label><input type="checkbox"><span>Compartir la propuesta</span></label><span class="assignee peach">CR</span><span class="status pending">En curso</span></li>
+              </ul>
+              <p id="panel-status" class="panel-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="intro section wrap" id="producto" aria-labelledby="intro-title">
+        <h2 id="intro-title">El buen trabajo empieza con un flujo claro. <span>Por eso, te ayudamos a gestionar proyectos, organizar tareas y mantener a tu equipo alineado. Todo está conectado para que sepas qué hacer, cuándo hacerlo y quién se encarga.</span></h2>
+        <div class="steps">
+          <article><span class="step-number">1</span><div><h3>Gestiona tus proyectos</h3><p>De la primera idea a la entrega final, reúne cada detalle en un mismo espacio.</p></div></article>
+          <article><span class="step-number">2</span><div><h3>Organiza tus tareas</h3><p>Define prioridades, asigna responsables y deja claro cuál es el siguiente paso.</p></div></article>
+          <article><span class="step-number">3</span><div><h3>Mantén al equipo alineado</h3><p>Comparte el contexto y avanza con una visión común del trabajo.</p></div></article>
+        </div>
+      </section>
+
+      <section class="features section wrap" id="soluciones" aria-labelledby="features-title">
+        <div class="section-heading"><h2 id="features-title">Todo lo que tu equipo necesita <br>para llevar el trabajo a buen puerto.</h2><p>Planifica proyectos, asigna tareas y sigue cada avance, desde un único lugar.</p><a href="#espacio" class="button">Explorar el panel <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-visual project-visual" aria-label="Vista ilustrativa de tareas"><div class="mini-app"><div class="mini-tabs"><span>Por hacer</span><span>En curso</span></div><div class="mini-task"><span class="mini-tag">Diseño</span><b>Rediseñar la portada</b><span>Guía visual y estructura del proyecto</span><div class="mini-people"><i>AL</i><i>CR</i><span>Hoy</span></div></div></div></div><h3>Proyectos y tareas</h3><p>Ideas, plazos y prioridades. Cada pieza del proyecto encuentra su sitio.</p></article>
+          <article class="feature-card"><div class="feature-visual progress-visual" aria-label="Vista ilustrativa del seguimiento"><div class="mini-app"><div class="mini-profile"><span class="assignee peach">AL</span><b>Tu equipo</b></div><div class="mini-row"><span>Diseño de la web</span><span>En curso</span></div><div class="mini-row"><span>Revisión de textos</span><span>Completada</span></div><div class="mini-row"><span>Próxima entrega</span><span>Viernes</span></div></div></div><h3>Progreso y rendimiento</h3><p>Consulta cómo avanza el trabajo y detecta lo que necesita atención.</p></article>
+          <article class="feature-card"><div class="feature-visual apps-visual" aria-label="Concepto de aplicaciones conectadas"><div class="app-icons"><span>Ca</span><span>Do</span><span>Ar</span><span>Me</span><span>Ho</span><span>Co</span></div></div><h3>Tus herramientas, conectadas</h3><p>Un lugar para reunir documentos, conversaciones y recursos del proyecto.</p></article>
+        </div>
+      </section>
+
+      <section class="how section" id="como-funciona" aria-labelledby="how-title">
+        <div class="wrap"><div class="section-heading"><h2 id="how-title">Del primer paso <br>al trabajo terminado.</h2><p>Planifica, colabora y mantén el rumbo sin saltar de una herramienta a otra.</p><a href="#espacio" class="button light">Probar el espacio <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></a></div>
+        <div class="how-grid"><div class="how-copy"><h3>Así funciona Crix</h3><p>Tu trabajo, a tu manera. Empieza con lo importante y dale forma al resto.</p><details open><summary>Crea tu espacio de trabajo</summary><p>Reúne las tareas y los objetivos que compartís como equipo.</p></details><details><summary>Organiza lo que viene</summary><p>Asigna responsables, define prioridades y divide cada proyecto en pasos.</p></details><details><summary>Comparte cada avance</summary><p>Revisa qué está completo y qué necesita un poco más de atención.</p></details></div><div class="how-preview" data-slot="product"><div class="preview-sidebar"><b>Crix</b><span>Vista general</span><span>Mis proyectos</span><span>Mi equipo</span><span>Documentos</span></div><div class="preview-main"><span class="preview-path">Mi espacio / Proyectos</span><h3>Todo va tomando forma.</h3><p>Tu equipo tiene claro el siguiente paso.</p><div class="preview-banner">Revisión del proyecto <b>En curso</b></div><div class="preview-line"><span>Portada y navegación</span><span class="status done">Listo</span></div><div class="preview-line"><span>Biblioteca de recursos</span><span class="status pending">En curso</span></div><div class="preview-line"><span>Propuesta creativa</span><span class="status done">Listo</span></div><div class="preview-line"><span>Preparar la entrega</span><span class="status pending">En curso</span></div><div class="preview-chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class="preview-disclaimer">Interfaz y datos ilustrativos</p></div></div></div></div>
+      </section>
+
+      <section class="pricing section wrap" id="precios" aria-labelledby="pricing-title">
+        <div class="pricing-heading"><div><h2 id="pricing-title">Planes sencillos. <br>Espacio para crecer.</h2><p>Precios ilustrativos de la referencia. Esta demo no vende suscripciones.</p></div><fieldset class="billing"><legend>Vista de precios</legend><label><input type="radio" name="billing" value="monthly" checked> Mensual</label><label><input type="radio" name="billing" value="annual"> Anual</label></fieldset></div>
+        <div class="plans">
+          <article class="plan"><svg class="plan-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="m16 2-9 13h7l-2 11 9-15h-7z"/></svg><h3>Esencial</h3><p>Para dar forma a tus ideas y organizar el día a día.</p><div class="price"><strong data-month="10" data-year="8">10 €</strong><span>/ mes</span></div><ul><li>Gestión de proyectos</li><li>Organización de tareas</li><li>Colaboración en equipo</li><li>Documentos compartidos</li></ul><a class="button secondary choose-plan" data-plan="Esencial" href="#espacio">Probar Esencial</a><span class="price-note">Ejemplo visual, sin contratación</span></article>
+          <article class="plan featured"><div class="plan-landscape" aria-hidden="true"></div><svg class="plan-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M7 25V4h15l-4 5 4 5H7M11 18h8"/></svg><h3>Profesional</h3><p>Para equipos que necesitan ver cada proyecto con más claridad.</p><div class="price"><strong data-month="25" data-year="20">25 €</strong><span>/ mes</span></div><ul><li>Todo lo de Esencial</li><li>Proyectos sin límite de ejemplo</li><li>Permisos personalizados</li><li>Informes de equipo</li><li>Vistas avanzadas</li><li>Plantillas de proyecto</li></ul><a class="button choose-plan" data-plan="Profesional" href="#espacio">Probar Profesional</a><span class="price-note">Ejemplo visual, sin contratación</span></article>
+          <article class="plan"><svg class="plan-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M14 2v24M2 14h24M5 5l18 18M5 23 23 5M9 2l10 24M2 9l24 10"/></svg><h3>Empresa</h3><p>Más control para coordinar proyectos y equipos de mayor tamaño.</p><div class="price"><strong data-month="39" data-year="32">39 €</strong><span>/ mes</span></div><ul><li>Todo lo de Profesional</li><li>Control de acceso avanzado</li><li>Gestión de varios equipos</li><li>Informes personalizados</li><li>Soporte de ejemplo</li><li>Integraciones de ejemplo</li></ul><a class="button secondary choose-plan" data-plan="Empresa" href="#espacio">Probar Empresa</a><span class="price-note">Ejemplo visual, sin contratación</span></article>
+        </div><p class="billing-note" id="billing-note" role="status">Importes mensuales ilustrativos. No se realizará ningún cobro.</p>
+      </section>
+
+      <section class="quote section wrap" id="acerca" aria-label="Idea de producto"><blockquote>“Cada proyecto, cada tarea y cada persona <br><span>en un mismo lugar. Menos búsquedas, <br>más tiempo para hacer un buen trabajo.”</span></blockquote><div class="quote-avatar" aria-hidden="true">C</div><p>Crix, una idea de trabajo compartido</p><span>Texto ilustrativo, no es un testimonio de cliente</span></section>
+
+      <section class="closing" id="recursos" aria-labelledby="closing-title"><div class="closing-card"><h2 id="closing-title">Todo tu trabajo. <br>Un mismo lugar.</h2><p>Organiza proyectos, conecta a tu equipo y dale a cada tarea un siguiente paso.</p><div><a class="button" href="#espacio">Probar la demo</a><a class="button outline" href="DESIGN.md" download="DESIGN.md">Descargar DESIGN.md</a></div></div></section>
+    </main>
+    <footer class="footer"><div class="footer-top wrap"><div><a class="footer-brand" href="#inicio">CRIX</a><p>Planifica proyectos, organiza tareas y avanza en equipo. Un concepto de producto recreado en español.</p><p class="legal">Demo visual independiente. Sin cuentas, pagos ni envío de datos.</p></div><nav aria-label="Explorar"><h2>Explorar</h2><a href="#producto">Producto</a><a href="#soluciones">Soluciones</a><a href="#como-funciona">Cómo funciona</a><a href="#precios">Precios de ejemplo</a></nav><nav aria-label="Recursos"><h2>Recursos</h2><a href="DESIGN.md" download="DESIGN.md">DESIGN.md gratuito</a><a href="#espacio">Panel de ejemplo</a><a href="#creditos">Créditos</a></nav></div><div class="footer-landscape"><span aria-hidden="true">CRIX</span><p id="creditos">Fotografía de archivo ilustrativa: <a href="https://images.unsplash.com/photo-1454496522488-7a8e488e8606" target="_blank" rel="noopener noreferrer">Unsplash</a>. Adaptación cromática para esta demo. Referencia visual aportada por Jorge (IMG_0995); sin afiliación con el diseño original.</p></div></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
