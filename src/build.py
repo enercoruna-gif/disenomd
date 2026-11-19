@@ -485,6 +485,8 @@ def main():
     icons=[dict(src=f"assets/icono-{n}.png", sizes=f"{n}x{n}", type="image/png") for n in (192, 512)]), ensure_ascii=False))
   (SALIDA / ".nojekyll").write_text("")
   (SALIDA / "robots.txt").write_text("User-agent: *\nAllow: /\n")
+  import readme
+  readme.generar(AW.RAIZ)
   print(f"{len(AW.SITIOS)} análisis generados en {SALIDA}")
 
 
