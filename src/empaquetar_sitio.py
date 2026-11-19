@@ -54,6 +54,12 @@ def preparar(html, pagina):
     html = limpiar_texto(html)
     html = re.sub(r'<link\b[^>]*rel="canonical"[^>]*>\s*|<meta\b[^>]*property="og:url"[^>]*>\s*', "", html)
     html = ATRIBUTO.sub(lambda m: f'{m[1]}="{escape(ruta_local(m[2], pagina), quote=True)}"', html)
+    def imagen_social(m):
+        etiqueta = m[0]
+        if re.search(r'(?:property|name)="(?:og:image|twitter:image)"', etiqueta):
+            etiqueta = re.sub(r'content="([^"]*)"', lambda c: 'content="' + escape(urljoin(DOMINIO, unescape(c[1])), quote=True) + '"', etiqueta)
+        return etiqueta
+    html = re.sub(r'<meta\b[^>]*>', imagen_social, html)
     if CORREO not in re.sub(r"<[^>]*>", "", html):
         html = html.replace("</footer>", f'<p class="legal">Contacto: <a href="mailto:{CORREO}">{CORREO}</a></p>\n</footer>')
     canon = DOMINIO + pagina
@@ -154,7 +160,8 @@ def autonomo(sitio):
         paginas[pagina] = ATRIBUTO.sub(incrustar, html)
     datos = json.dumps({"paginas": paginas, "recursos": recursos, "dominio": DOMINIO}, ensure_ascii=False).replace("<", "\\u003c")
     navegador = Path(__file__).with_name("navegador_autonomo.js").read_text(encoding="utf-8")
-    return '''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>diseño.md — sin conexión</title><style>html,body{margin:0;height:100%;background:#161616}iframe{border:0;width:100%;height:100%;display:block}</style></head><body><iframe id="sitio" title="diseño.md" allow="clipboard-write"></iframe><script id="contenido" type="application/json">''' + datos + "</script><script>" + navegador + "</script></body></html>"
+    metadatos = "\n".join(re.findall(r'<meta\b[^>]*(?:property="og:[^"]*"|name="twitter:[^"]*")[^>]*>', (sitio / "index.html").read_text(encoding="utf-8")))
+    return '''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>diseño.md — sin conexión</title>''' + metadatos + '''<style>html,body{margin:0;height:100%;background:#161616}iframe{border:0;width:100%;height:100%;display:block}</style></head><body><iframe id="sitio" title="diseño.md" allow="clipboard-write"></iframe><script id="contenido" type="application/json">''' + datos + "</script><script>" + navegador + "</script></body></html>"
 
 
 def main():
@@ -181,6 +188,8 @@ def main():
     error = (sitio / "index.html").read_text(encoding="utf-8")
     error = re.sub(r"<main>.*?</main>", '<main><section class="det-cab"><p class="eti">Error 404</p><h1>Página no encontrada</h1><p class="intro">Esta página no existe. <a href="/">Volver al inicio →</a></p></section></main>', error, flags=re.S)
     error = re.sub(r"<title>.*?</title>", "<title>Página no encontrada | diseño.md</title>", error)
+    error = re.sub(r'(<meta (?:property="og:title"|name="twitter:title") content=")[^"]*', r'\1Página no encontrada | diseño.md', error)
+    error = re.sub(r'(<meta (?:property="og:description"|name="(?:twitter:description|description)") content=")[^"]*', r'\1Esta página no existe. Vuelve al inicio de diseño.md.', error)
     error = error.replace("</head>", '<meta name="robots" content="noindex">\n</head>')
     (sitio / "404.html").write_text(preparar(error, "404.html"), encoding="utf-8")
     manifest = json.loads((sitio / "manifest.webmanifest").read_text())

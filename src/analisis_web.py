@@ -165,7 +165,9 @@ def ficha(s, md, c, pagina):
   <pre class="codigo" id="md" tabindex="0" aria-label="Archivo DESIGN.md completo">{esc(md)}</pre></details>
 </section>'''
   return pagina(f"{s['nombre']}: análisis de su estilo en DESIGN.md | diseño.md",
-                f"Análisis independiente del estilo visual de {s['nombre']} en formato DESIGN.md, gratis y en español.", cuerpo, "../../")
+                f"Análisis independiente del estilo visual de {s['nombre']} en formato DESIGN.md, gratis y en español.", cuerpo, "../../",
+                imagen=f"analisis/{s['slug']}/og.jpg" if (RAIZ / "docs/analisis" / s["slug"] / "captura.webp").is_file() else "assets/og.png",
+                imagen_alt=f"{s['nombre']} — análisis independiente de su estilo visual por diseño.md")
 
 
 def generar(salida, pagina, z):

@@ -1,6 +1,7 @@
 from html import unescape
 import json
 from pathlib import Path
+from PIL import Image
 import re
 import tempfile
 import unittest
@@ -35,6 +36,13 @@ class EmpaquetarSitioTest(unittest.TestCase):
         self.assertIn(f'rel="canonical" href="{sitio.DOMINIO}analisis/ejemplo/"', resultado)
         self.assertIn(f'property="og:url" content="{sitio.DOMINIO}analisis/ejemplo/"', resultado)
         self.assertEqual(sitio.preparar("", ""), "")
+
+    def test_imagenes_sociales_absolutas(self):
+        for url in (sitio.ORIGEN + 'assets/og.png', '/assets/og.png', 'assets/og.png'):
+            html = '<head><meta property="og:image" content="' + url + '"><meta name="twitter:image" content="' + url + '"></head>'
+            resultado = sitio.preparar(html, '')
+            self.assertEqual(resultado.count('content="' + sitio.DOMINIO + 'assets/og.png"'), 2)
+            self.assertNotRegex(resultado, r'github\.(io|com)|/disenomd/')
 
     def test_rutas_y_js(self):
         for url, pagina, esperado in (("../../assets/app.js", "analisis/apple/", "/assets/app.js"),
@@ -87,11 +95,27 @@ class EmpaquetarSitioTest(unittest.TestCase):
                 self.assertIn(f'href="{canon}"', texto)
                 self.assertEqual(set(sitio.EMAIL.findall(texto)), {sitio.CORREO})
                 self.assertNotRegex(texto, r'github\.(io|com)|/disenomd/')
+                meta = dict(re.findall(r'<meta (?:property|name)="([^"]*)" content="([^"]*)"', texto))
+                self.assertEqual(meta['twitter:card'], 'summary_large_image')
+                self.assertEqual(meta['og:image:width'], '1200')
+                self.assertEqual(meta['og:image:height'], '630')
+                self.assertEqual(meta['twitter:image'], meta['og:image'])
+                for clave in ('og:title', 'og:description', 'og:type', 'og:site_name', 'og:image:alt', 'twitter:title', 'twitter:description'):
+                    self.assertTrue(meta[clave], (html, clave))
+                self.assertTrue(meta['og:image'].startswith(sitio.DOMINIO))
+                imagen = copia / meta['og:image'].removeprefix(sitio.DOMINIO)
+                self.assertIn(imagen.suffix, ('.jpg', '.png'))
+                self.assertLess(imagen.stat().st_size, 1_000_000)
+                with Image.open(imagen) as recurso:
+                    self.assertEqual(recurso.size, (1200, 630))
+                    self.assertIn(recurso.format, ('PNG', 'JPEG'))
             for _, url in sitio.ATRIBUTO.findall((copia / "404.html").read_text()):
                 self.assertTrue(url.startswith(("/", "https:", "mailto:")), url)
             self.assertIn("Empieza con el 80", (copia / "kits/index.html").read_text())
             self.assertNotIn("Empieza con el 80", (copia / "index.html").read_text())
             html = (destino / "cuadrantia-ia-autonomo.html").read_text()
+            self.assertIn('<meta name="twitter:card" content="summary_large_image">', html.split('</head>')[0])
+            self.assertIn('<meta property="og:image" content="' + sitio.DOMINIO + 'assets/og.png">', html.split('</head>')[0])
             datos = json.loads(re.search(r'<script id="contenido" type="application/json">(.*?)</script>', html, re.S)[1])
             self.assertEqual(len(datos["paginas"]), len(list(copia.rglob("*.html"))))
             self.assertIn("/", datos["paginas"])

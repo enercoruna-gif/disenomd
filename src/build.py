@@ -7,10 +7,12 @@ from urllib.parse import quote_plus
 from maquetas import M
 import analisis_web as AW
 from catalogo import DISENOS, TIPOS
+from imagenes_og import generar as generar_imagenes_og
 
 RAIZ = Path(__file__).resolve().parent.parent
 SALIDA = RAIZ / "docs"
 MARCA = "diseño.md"
+ORIGEN = "https://enercoruna-gif.github.io/disenomd/"
 CONTACTO = "enercoruna@gmail.com"
 TIENDA = "https://payhip.com/Cuadrantia"
 
@@ -197,7 +199,7 @@ def menu_kits(prefijo):
   return "".join(f'    <a href="{prefijo}kits/#{s}">{n}</a>\n' for s, n in MENU_KITS if s in hay)
 
 
-def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
+def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon="", imagen="assets/og.png", imagen_alt="diseño.md — Haz que la web que te crea la IA parezca hecha por un diseñador."):
   fams = ["Inter", "JetBrains Mono"] + (fuentes_extra or [])
   return f'''<!doctype html>
 <html lang="es">
@@ -209,6 +211,15 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
 <meta property="og:title" content="{esc(titulo)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="{MARCA}">
+<meta property="og:image" content="{ORIGEN}{esc(imagen)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{esc(imagen_alt)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(titulo)}">
+<meta name="twitter:description" content="{esc(desc)}">
+<meta name="twitter:image" content="{ORIGEN}{esc(imagen)}">
 <link rel="icon" href="{prefijo}assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{prefijo}assets/icono-180.png">
 <link rel="manifest" href="{prefijo}manifest.webmanifest" crossorigin="use-credentials">
@@ -504,6 +515,7 @@ def main():
       if p.name not in ("assets", "analisis"):
         shutil.rmtree(p) if p.is_dir() else p.unlink()
   SALIDA.mkdir(exist_ok=True)
+  generar_imagenes_og(SALIDA, AW.SITIOS)
   (SALIDA / "index.html").write_text(portada())
   for ruta, f in [("como-usar", como_usar), ("kits", kits), ("aviso-legal", aviso_legal)]:
     (SALIDA / ruta).mkdir(parents=True, exist_ok=True)
