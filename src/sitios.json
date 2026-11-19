@@ -1,5 +1,30 @@
 [
   {
+    "slug": "crix",
+    "nombre": "Crix",
+    "url": "https://enercoruna-gif.github.io/disenomd/demos/crix/",
+    "sector": "Diseños propios",
+    "original": true,
+    "portada": true
+  },
+  {
+    "slug": "launchkit",
+    "nombre": "LaunchKit",
+    "url": "https://enercoruna-gif.github.io/disenomd/demos/launchkit/",
+    "sector": "Diseños propios",
+    "original": true,
+    "portada": true
+  },
+  {
+    "slug": "cauce",
+    "nombre": "Cauce",
+    "url": "https://enercoruna-gif.github.io/disenomd/demos/cauce/",
+    "sector": "Diseños propios",
+    "original": true,
+    "inspiracion": "Payer",
+    "portada": true
+  },
+  {
     "slug": "lattice",
     "nombre": "Lattice",
     "url": "https://lattice.com",

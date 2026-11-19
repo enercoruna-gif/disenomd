@@ -1,0 +1,7 @@
+{
+  "colores": {
+    "primary": "#181918", "on-primary": "#FFFFFF", "secondary": "#F3F3F2",
+    "accent": "#FF7B35", "background": "#FAFAFA", "surface": "#FFFFFF",
+    "text": "#181918", "muted": "#6C6D69", "border": "#E7E7E4"
+  }
+}

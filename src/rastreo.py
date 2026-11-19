@@ -1,7 +1,6 @@
 """Visita webs públicas, hace capturas propias y extrae tokens visuales (uso: python3 src/rastreo.py)."""
 import asyncio, json, re, shutil, sys
 from pathlib import Path
-from playwright.async_api import async_playwright
 from PIL import Image
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -71,6 +70,8 @@ async def aceptar_cookies(pg):
 
 
 async def uno(nav, s, sem):
+  if s.get("original"):
+    return
   async with sem:
     destino = RAIZ / "docs/analisis" / s["slug"]; destino.mkdir(parents=True, exist_ok=True)
     ctx = await nav.new_context(viewport={"width": 1280, "height": 800}, locale="es-ES", user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36")
@@ -94,6 +95,8 @@ async def uno(nav, s, sem):
       await ctx.close()
 
 async def main():
+  from playwright.async_api import async_playwright
+
   solo = set(sys.argv[1:])
   async with async_playwright() as p:
     nav = await p.chromium.launch(executable_path=shutil.which("google-chrome") or shutil.which("chromium"), args=["--disable-blink-features=AutomationControlled"])
@@ -101,4 +104,5 @@ async def main():
     await asyncio.gather(*(uno(nav, s, sem) for s in SITIOS if not solo or s["slug"] in solo))
     await nav.close()
 
-asyncio.run(main())
+if __name__ == "__main__":
+  asyncio.run(main())

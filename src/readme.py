@@ -78,7 +78,7 @@ Saldrá con una paleta, dos tipografías y los mismos botones en todas las pági
 
 Es un archivo de texto con el sistema de diseño de una web: **colores, tipografías, radios, espaciados y componentes**, escrito para que un agente de IA lo lea y lo aplique. Sigue el [formato abierto de Google](https://github.com/google-labs-code/design.md), así que funciona igual en cualquier herramienta.
 
-Cada análisis de este repositorio lo hemos hecho nosotros: visitamos la web, hacemos la captura, extraemos sus colores y letras y escribimos en español qué la hace reconocible.
+Los análisis de webs conocidas incluyen capturas propias, colores y tipografías extraídos y una explicación en español. La sección «Diseños propios» reúne demos independientes y sus DESIGN.md originales: Crix, LaunchKit y Cauce (inspirado en Payer), sin afiliación con las referencias.
 
 ## 🛠️ Dónde funciona
 

@@ -121,6 +121,18 @@ class EmpaquetarSitioTest(unittest.TestCase):
             self.assertIn("/", datos["paginas"])
             self.assertIn("/webs/", datos["paginas"])
             self.assertIn("/analisis/apple/", datos["paginas"])
+            for slug in ('crix', 'launchkit', 'cauce'):
+                self.assertIn('/analisis/' + slug + '/', datos['paginas'])
+                self.assertIn('/demos/' + slug + '/', datos['paginas'])
+                self.assertIn('/analisis/' + slug + '/DESIGN.md', datos['recursos'].keys())
+            for slug in ('crix', 'launchkit'):
+                self.assertIn('/demos/' + slug + '/DESIGN.md', datos['recursos'].keys())
+            recurso_cauce = re.search(r'<script id="design-resource" type="application/json">(.*?)</script>', datos['paginas']['/demos/cauce/'], re.S)[1]
+            self.assertEqual(json.loads(recurso_cauce), (copia / 'demos/cauce/DESIGN.md').read_text())
+            css_crix = datos['recursos']['css:/demos/crix/styles.css']
+            self.assertIn('data:image/webp;base64,', css_crix)
+            self.assertNotIn("url('assets/montanas.webp')", css_crix)
+            self.assertIn('<use href="#mark"', datos['paginas']['/demos/cauce/'])
             self.assertIn("/descargas/disenomd-webs.zip", datos["recursos"])
             self.assertIn("function copiar", datos["recursos"]["js:/assets/app.js"])
             self.assertIn("data:font/woff2;base64,", "".join(datos["recursos"].values()))
