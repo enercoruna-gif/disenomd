@@ -46,6 +46,10 @@ def data_uri(datos, tipo):
     return f"data:{tipo};base64," + base64.b64encode(datos).decode("ascii")
 
 
+def enlaces_404(html):
+    return ATRIBUTO.sub(lambda m: f'{m[1]}="{urljoin("/", m[2])}"', html)
+
+
 def autonomo(html, sitio):
     html = html.replace('<link rel="stylesheet" href="assets/estilo.css">',
                         "<style>" + (sitio / "assets/estilo.css").read_text() + "</style>")
@@ -96,7 +100,7 @@ def main():
     error = error.replace("Kits de inicio para crear webs y apps con IA | diseño.md", "Página no encontrada | diseño.md")
     error = error.replace(f'<link rel="canonical" href="{DOMINIO}">', "")
     error = re.sub(r'<meta property="og:url"[^>]*>', "", error)
-    error = error.replace('="assets/', '="/assets/').replace('="manifest.webmanifest"', '="/manifest.webmanifest"').replace('href="aviso-legal/"', 'href="/aviso-legal/"')
+    error = enlaces_404(error)
     for nombre, contenido in (("index.html", indice), ("aviso-legal/index.html", legal), ("404.html", error)):
         (sitio / nombre).write_text(contenido, encoding="utf-8")
     manifest = json.loads((DOCS / "manifest.webmanifest").read_text())

@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from urllib.error import URLError
+from urllib.parse import urljoin
 
 import empaquetar_kits as kits
 
@@ -57,6 +58,30 @@ class EmpaquetarKitsTest(unittest.TestCase):
                 respuesta.read.return_value = b"<svg/>"
                 self.assertIn("data:image/svg+xml;base64,", kits.autonomo(html, sitio))
             self.assertEqual(kits.autonomo("", sitio), "")
+
+    def test_enlaces_404_desde_cualquier_profundidad(self):
+        casos = {
+            "#web": "/#web",
+            "#app": "/#app",
+            "assets/estilo.css": "/assets/estilo.css",
+            "assets/app.js": "/assets/app.js",
+            "manifest.webmanifest": "/manifest.webmanifest",
+            "aviso-legal/": "/aviso-legal/",
+            "./otra/": "/otra/",
+            "/": "/",
+            "": "/",
+            kits.ORIGEN + "#catalogo": kits.ORIGEN + "#catalogo",
+            "mailto:info@example.com": "mailto:info@example.com",
+            "data:image/png;base64,AA==": "data:image/png;base64,AA==",
+        }
+        for original, esperado in casos.items():
+            for atributo in ("href", "src"):
+                with self.subTest(original=original, atributo=atributo):
+                    html = f'<a {atributo}="{original}">'
+                    self.assertEqual(kits.enlaces_404(html), f'<a {atributo}="{esperado}">')
+                    for ruta in ("404.html", "no/existe/", "a/b/c.html"):
+                        self.assertEqual(urljoin(kits.DOMINIO + ruta, esperado), urljoin(kits.DOMINIO, esperado))
+        self.assertEqual(kits.enlaces_404(""), "")
 
     def test_falta_build(self):
         with tempfile.TemporaryDirectory() as carpeta, patch.object(kits, "DOCS", Path(carpeta)):
