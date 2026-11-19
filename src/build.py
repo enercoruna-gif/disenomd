@@ -325,7 +325,7 @@ def portada():
   tarjetas = "\n".join(AW.tarjeta(x, AW.design_md(x, json.loads((AW.RAIZ / "src/analisis" / f"{x['slug']}.json").read_text()))[1], "") for x in dest)
   cats = list(dict.fromkeys(AW.GRUPO[x["sector"]] for x in dest))
   chips = '<button class="chip activo" data-filtro="">Todos</button>' + "".join(f'<button class="chip" data-filtro="{esc(c)}">{esc(c)}</button>' for c in cats)
-  _kits = "".join(f'''<a class="kit-btn{' kit-dest' if i == 0 else ''}" href="kits/#{k["slug"]}"><span class="kit-ico">{k["icono"]}</span><span><strong>{k["nombre"]}</strong><small>{k["sub"]}</small></span></a>''' for i, k in enumerate(KITS[:2]))
+  _kits = "".join(f'''<a class="kit-btn{' kit-dest' if i == 0 else ''}" href="kits/#{k["slug"]}"><span class="kit-ico" aria-hidden="true" style="flex-shrink:0">{esc(k["icono"])}</span><span><strong>{esc(k["nombre"])} · <span style="white-space:nowrap">{esc(k["precio"])}</span>{" orientativos" if k.get("correo") else ""}</strong><small>{esc(k["sub"])}</small></span></a>''' for i, k in enumerate(KITS))
   usos = [("01", "Dar estilo sin saber diseñar", "Elige un DESIGN.md, ponlo en tu proyecto y tu agente aplica colores, tipografía y componentes coherentes."),
           ("02", "Partir de una referencia que te guste", "Usa un sistema del catálogo como base y pide a la IA que lo adapte a tu marca."),
           ("03", "Mantener todo igual en cada pantalla", "El agente consulta el archivo antes de cada pantalla, así la décima se parece a la primera."),
@@ -340,6 +340,7 @@ def portada():
 <section class="hero">
   <h1>Haz que la web que te crea la IA parezca <em>hecha por un diseñador</em>.</h1>
   <p class="intro">Elige un estilo, cópialo con un toque y pégalo en ChatGPT, Lovable o la IA que uses junto a tu petición. Colores, letras y botones salen coherentes desde el primer intento. Gratis.</p>
+  <div class="kits-hero" style="grid-template-columns:1fr;max-width:none" aria-label="Kits y servicios de pago">{_kits}</div>
   <div class="acciones"><a class="btn btn-grande" href="#catalogo">Elige un diseño gratis</a><a class="btn btn-claro" href="como-usar/">Cómo funciona</a></div>
   {logos()}
   <div class="antes-despues">
