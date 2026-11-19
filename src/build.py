@@ -475,6 +475,7 @@ def kits():
 {HERRAMIENTAS}</section>
 <section class="bloque kits">{bloques}</section>
 <section class="bloque banda" id="todo"><h2>¿Todo junto?</h2><p>Los 7 packs digitales (Pase, Kit Web, Kit App, Fondos, Vídeo, Prompts y Estilos por sector): <strong>199 €</strong> en lugar de 313 €.</p>{f'<a class="btn" href="{COMPRA_TODO}" rel="noopener">Comprar el pack completo</a>' if COMPRA_TODO else '<a class="btn" href="../#catalogo">Mientras, elige un diseño gratis</a>'}</section>
+<p class="tenue" id="aviso-cuadrantia"><a href="https://kits.cuadrantia.store/">Ahora también en kits.cuadrantia.store →</a></p>
 '''
   return pagina(f"Kits de inicio para crear webs y apps con IA | {MARCA}",
                 "Kits de inicio en español para crear webs y apps móviles con Claude Code, Cursor o Codex: plantillas, DESIGN.md, AGENTS.md y prompts.", cuerpo, "../")
