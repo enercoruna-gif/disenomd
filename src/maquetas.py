@@ -137,6 +137,6 @@ M["retro-pixel"] = dict(
          ("pixel-button", dict(backgroundColor="{colors.primary}", textColor="{colors.on-primary}", typography="{typography.label-sm}", rounded="{rounded.sm}", padding="12px 16px"),
           "Botón con borde escalonado de 4px (sombra dura en dos pasos) que se hunde al pulsar.")],
   html='''<div class="mq-hud"><span>♥♥♥</span><span>1UP 004200</span></div>
-<h2 class="mq-h">PRESS START</h2>
+<h2 class="mq-h">¡A JUGAR!</h2>
 <div class="mq-pixeles"><i style="background:var(--pri)"></i><i style="background:var(--acc)"></i><i style="background:var(--sec)"></i><i style="background:var(--pri)"></i></div>
 <div class="mq-fila"><span class="mq-btn mq-pix">Jugar</span><span class="mq-btn2">Ranking</span></div>''')

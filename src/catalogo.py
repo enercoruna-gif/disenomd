@@ -1,7 +1,7 @@
 # Datos de los sistemas de diseño del catálogo. Contenido original de diseño.md.
 
 DISENOS = [
-  dict(slug="terracota", nombre="Terracota", categoria="Restauración y lifestyle",
+  dict(slug="terracota", nombre="Terracota", categoria="Restauración y producto local",
     lema="Calidez mediterránea, barro cocido y sobremesa larga.",
     ideal="Restaurantes, bodegas, casas rurales, marcas de producto local.",
     fuentes=("Fraunces", "Inter"), mono="JetBrains Mono",
@@ -275,7 +275,7 @@ DISENOS = [
     layout="Tarjetas tipo «cartucho» en rejilla. Marcadores y barras de progreso pixeladas.",
     elevacion="Sombras en bloque sin difuminado (4px 4px 0 #000) y bordes de 3px.",
     formas="Píxel puro: esquinas rectas o escalonadas con clip-path.",
-    movimiento="Pasos discretos (steps(4)) en lugar de transiciones suaves. Parpadeo «PRESS START» lento.",
+    movimiento="Pasos discretos (steps(4)) en lugar de transiciones suaves. Parpadeo «¡A JUGAR!» lento.",
     voz="Juguetona, con guiños gamer. «¡Nivel desbloqueado!», «Inserta moneda para continuar».",
     si=["Limita Press Start 2P a textos cortos.", "Usa sombras en bloque.", "Ofrece desactivar el efecto CRT."],
     no=["No escribas párrafos con fuente pixelada.", "No uses esquinas redondeadas.", "No animes nada de forma suave."]),

@@ -221,16 +221,16 @@ HERRAMIENTAS = '<div class="herr"><span>Claude Code</span><span>Cursor</span><sp
 KITS = [
   dict(slug="web", icono="▭", nombre="Kit Web Inicial", sub="Tu web casi terminada: cambia textos y fotos",
        llano="5 webs completas (página de presentación, tienda, blog, portfolio y web de servicio) que le pasas a tu IA para que las adapte a tu negocio en una tarde.",
-       precio="79 €", detalle="5 plantillas (landing, SaaS, tienda, blog, portfolio) en Next.js + Tailwind, cada una con su DESIGN.md, AGENTS.md y prompts listos para Claude Code, Cursor o Codex.",
-       incluye=["5 plantillas web completas y adaptables", "DESIGN.md + AGENTS.md en cada plantilla", "Biblioteca de 60 prompts en español por pantalla", "Guía paso a paso para publicar gratis", "Pago único y actualizaciones de por vida"]),
+       precio="79 €", detalle="5 plantillas (presentación, servicio, tienda, blog, portfolio) en Next.js + Tailwind, cada una con su DESIGN.md, AGENTS.md y prompts listos para Claude Code, Cursor o Codex.",
+       incluye=["5 webs completas: presentación, servicio, tienda, blog y portfolio", "DESIGN.md + AGENTS.md en cada plantilla", "Biblioteca de 60 prompts en español por pantalla", "Guía paso a paso para publicar gratis", "Pago único y actualizaciones de por vida"]),
   dict(slug="app", icono="▯", nombre="Kit App Móvil", sub="Tu app para iPhone y Android, ya empezada",
-       llano="Una app base con registro, pagos y avisos ya hechos. Le pides a la IA los cambios en español y te guía hasta publicarla en App Store y Google Play.",
-       precio="79 €", detalle="Base de app en Expo / React Native con inicio de sesión, pagos, notificaciones y navegación preparados para conectar, guiada por DESIGN.md.",
-       incluye=["Plantilla Expo con 12 pantallas tipo", "Login, pagos y notificaciones listos para conectar", "DESIGN.md móvil + AGENTS.md", "Prompts para añadir pantallas sin romper el estilo", "Guía para subir a App Store y Google Play"]),
-  dict(slug="prompts", icono="✦", nombre="Pack Prompts y Skills", sub="Instrucciones listas para tu IA",
+       llano="Una app base con registro, pagos y avisos ya montados: solo falta conectarlos a tus cuentas. Le pides a la IA los cambios en español y te guía hasta publicarla en App Store y Google Play.",
+       precio="79 €", detalle="Base de app en Expo / React Native con inicio de sesión, pagos, notificaciones y navegación ya montados: solo falta conectarlos a tus cuentas. Guiada por DESIGN.md.",
+       incluye=["Plantilla Expo con 12 pantallas tipo", "Registro, pagos y avisos montados, listos para conectar a tus cuentas", "DESIGN.md móvil + AGENTS.md", "Prompts para añadir pantallas sin romper el estilo", "Guía para subir a App Store y Google Play"]),
+  dict(slug="prompts", icono="✦", nombre="Pack Prompts e Instrucciones", sub="Instrucciones listas para tu IA",
        llano="Más de 100 instrucciones probadas para pedirle a la IA textos, diseños y webs que salgan bien a la primera.",
-       precio="19 €", detalle="Colección de prompts, skills (SKILL.md) y reglas (.cursorrules, CLAUDE.md, AGENTS.md) en español para diseñar, programar, escribir textos y revisar webs.",
-       incluye=["40 skills SKILL.md listas para Claude y Codex", "Plantillas CLAUDE.md, AGENTS.md y .cursorrules", "120 prompts de diseño, código y marketing", "Ejemplos antes/después", "Actualizaciones mensuales"]),
+       precio="19 €", detalle="Colección de prompts, habilidades para tu IA (archivos SKILL.md) y reglas (.cursorrules, CLAUDE.md, AGENTS.md) en español para diseñar, programar, escribir textos y revisar webs.",
+       incluye=["40 habilidades (archivos SKILL.md) listas para Claude y Codex", "Plantillas CLAUDE.md, AGENTS.md y .cursorrules", "120 prompts de diseño, código y marketing", "Ejemplos antes/después", "Actualizaciones mensuales"]),
 ]
 
 
@@ -268,8 +268,8 @@ def portada():
   <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(DISENOS)} sistemas de diseño en español</span></div>
   <input class="buscar" id="buscar" type="search" placeholder="Busca tu negocio: peluquería, bar, clínica…" aria-label="Buscar diseños">
   <div class="chips" id="chips">{chips}</div>
-  <div class="rejilla" id="rejilla">{tarjetas}</div>
   <p class="vacio" id="vacio" hidden>Ningún diseño menciona «<span id="vacio-q"></span>», pero todos sirven para cualquier negocio: elige el que más te guste por sus colores.</p>
+  <div class="rejilla" id="rejilla">{tarjetas}</div>
 </section>
 <section class="bloque">
   <p class="eti">Usa DESIGN.md para</p>
@@ -388,10 +388,12 @@ def aviso_legal():
   cuerpo = f'''
 <section class="det-cab"><p class="eti">Información</p><h1>Aviso legal y privacidad</h1></section>
 <section class="bloque"><ul class="lista">
+<li><strong>Titular:</strong> Jorge, creador de Cuadrantia (España), persona física responsable de esta web. Los datos fiscales completos se publicarán aquí antes de vender ningún kit.</li>
+<li><strong>Contacto:</strong> a través de la tienda de Cuadrantia en <a href="https://payhip.com/Cuadrantia" rel="noopener">payhip.com/Cuadrantia</a>.</li>
 <li><strong>Quién está detrás:</strong> {MARCA} es un proyecto de Cuadrantia, una marca española de plantillas digitales.</li>
 <li><strong>Datos personales:</strong> esta web no tiene formularios, no usa cookies propias ni analítica y no guarda ningún dato tuyo. Las tipografías se cargan desde Google Fonts.</li>
 <li><strong>Licencia de los diseños:</strong> puedes usar los DESIGN.md gratis en proyectos personales y comerciales. No está permitido revenderlos como producto propio.</li>
-<li><strong>Kits:</strong> todavía no están a la venta; los precios mostrados son orientativos.</li>
+<li><strong>Kits:</strong> todavía no están a la venta; los precios mostrados son orientativos. Las condiciones de compra, devolución y licencia se publicarán con ellos.</li>
 <li><strong>Marcas:</strong> Claude Code, Cursor, Codex, Gemini, ChatGPT, Lovable y v0 son marcas de sus respectivos dueños; no hay afiliación.</li>
 </ul></section>
 '''

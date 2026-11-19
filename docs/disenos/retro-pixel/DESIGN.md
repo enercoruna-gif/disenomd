@@ -154,7 +154,7 @@ Píxel puro: esquinas rectas o escalonadas con clip-path.
 
 ## Movimiento
 
-Pasos discretos (steps(4)) en lugar de transiciones suaves. Parpadeo «PRESS START» lento. Respeta siempre `prefers-reduced-motion`.
+Pasos discretos (steps(4)) en lugar de transiciones suaves. Parpadeo «¡A JUGAR!» lento. Respeta siempre `prefers-reduced-motion`.
 
 ## Voz y contenido
 
