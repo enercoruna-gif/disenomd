@@ -1,4 +1,5 @@
 import re
+from urllib.parse import quote
 """Genera el sitio estático (docs/) y los DESIGN.md del catálogo."""
 import html, json, shutil, zipfile
 from pathlib import Path
@@ -184,6 +185,19 @@ def tarjeta(d, prefijo):
 GH = re.search(r' d="([^"]+)"', (Path(__file__).parent / "logos" / "github.svg").read_text()).group(1)
 
 
+CORREO = "mailto:enercoruna@gmail.com?subject=" + quote("Quiero un DESIGN.md a medida") + "&body=" + quote("Hola, quiero un DESIGN.md a medida para esta web: \n\nLo usaré con (ChatGPT, Cursor, Lovable...): \n")
+PROXIMOS = [("pase", "Pase del catálogo", "Acceso a todos los análisis nuevos según salgan, sin pagar uno a uno."),
+            ("fondos", "Fondos", "Fondos y degradados listos para usar en la cabecera de tu web."),
+            ("videos", "Plantillas de vídeo", "Vídeos cortos de presentación para enseñar tu producto en redes."),
+            ("a-medida", "DESIGN.md a medida", "Analizamos la web que tú elijas y te entregamos su DESIGN.md en español.")]
+MENU_KITS = [("pase", "Pase del catálogo"), ("web", "Kit web inicial"), ("app", "Kit app móvil"), ("prompts", "Pack de prompts"), ("fondos", "Fondos"), ("videos", "Plantillas de vídeo")]
+
+
+def menu_kits(prefijo):
+  hay = {k["slug"] for k in KITS} | {s for s, _, _ in PROXIMOS}
+  return "".join(f'    <a href="{prefijo}kits/#{s}">{n}</a>\n' for s, n in MENU_KITS if s in hay)
+
+
 def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
   fams = ["Inter", "JetBrains Mono"] + (fuentes_extra or [])
   return f'''<!doctype html>
@@ -211,16 +225,10 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
   <a class="gh" href="https://github.com/enercoruna-gif/disenomd" rel="noopener" aria-label="Repositorio en GitHub: dale una estrella"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="{GH}"/></svg><span class="gh-est"><span aria-hidden="true">★</span> <span data-estrellas>GitHub</span></span></a>
   <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" onclick="document.body.classList.toggle('menu-abierto');this.setAttribute('aria-expanded',document.body.classList.contains('menu-abierto'))">☰</button>
   <nav class="nav" aria-label="Menú principal">
-    <a class="nav-dest" href="{prefijo}kits/#a-medida"><span aria-hidden="true">➤</span> Pedir un DESIGN.md a medida</a>
+    <a class="nav-dest" href="{CORREO}"><span aria-hidden="true">➤</span> Pedir un DESIGN.md a medida</a>
     <a href="{prefijo}#catalogo">Catálogo DESIGN.md</a>
     <a href="{prefijo}webs/">Webs populares</a>
-    <a href="{prefijo}kits/#pase">Pase del catálogo</a>
-    <a href="{prefijo}kits/#web">Kit web inicial <span class="nav-ext" aria-hidden="true">↗</span></a>
-    <a href="{prefijo}kits/#app">Kit app móvil</a>
-    <a href="{prefijo}kits/#prompts">Pack de prompts</a>
-    <a href="{prefijo}kits/#fondos">Fondos</a>
-    <a href="{prefijo}kits/#videos">Plantillas de vídeo</a>
-    <a href="{prefijo}webs/">DESIGN.md gratis</a>
+{menu_kits(prefijo)}    <a href="{prefijo}descargas/disenomd-webs.zip" download>DESIGN.md gratis (zip)</a>
     <hr>
     <a href="{prefijo}como-usar/">Qué es el formato DESIGN.md</a>
     <a href="{prefijo}aviso-legal/">Aviso legal</a>
@@ -440,6 +448,7 @@ def kits():
 <p class="intro">Webs y apps casi terminadas, preparadas para que tu IA las entienda a la primera. Tú le pides en español lo que quieres cambiar y el resultado es tuyo. Aún no están a la venta; mientras tanto, el <a href="../#catalogo">catálogo de diseños</a> es gratis.</p>
 {HERRAMIENTAS}</section>
 <section class="bloque kits">{bloques}</section>
+<section class="bloque kits">{"".join(f'<article class="kit" id="{s}"><p class="eti eti-acc">{n} · próximamente</p><p>{d}</p>' + (f'<div class="acciones"><a class="btn" href="{CORREO}">Pedirlo por correo</a></div>' if s == "a-medida" else '<div class="acciones"><span class="btn btn-off" aria-disabled="true">Todavía no está a la venta</span></div>') + '</article>' for s, n, d in PROXIMOS)}</section>
 <section class="bloque banda"><h2>¿Todo junto?</h2><p>Kit Web + Kit App + Pack de instrucciones: <strong>129 €</strong> previstos en el lanzamiento.</p><a class="btn" href="../#catalogo">Mientras, elige un diseño gratis</a></section>
 '''
   return pagina(f"Kits de inicio para crear webs y apps con IA | {MARCA}",
