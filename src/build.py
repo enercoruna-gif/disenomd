@@ -187,6 +187,7 @@ GH = re.search(r' d="([^"]+)"', (Path(__file__).parent / "logos" / "github.svg")
 
 CORREO = "mailto:enercoruna@gmail.com?subject=" + quote("Quiero un DESIGN.md a medida") + "&body=" + quote("Hola, quiero un DESIGN.md a medida para esta web: \n\nLo usaré con (ChatGPT, Cursor, Lovable...): \n")
 COMPRA = {"pase": "https://payhip.com/b/TmsD6", "web": "https://payhip.com/b/zXyEs", "app": "https://payhip.com/b/8sAFS", "fondos": "https://payhip.com/b/APUh4", "videos": "https://payhip.com/b/mOwWv", "prompts": "https://payhip.com/b/MoOeS", "sectores": "https://payhip.com/b/bXiQf", "a-medida": "https://payhip.com/b/kYZU0"}
+ENERCORUNA = "https://www.enercoruna.com/web-seo-local-a-coruna/"
 COMPRA_TODO = "https://payhip.com/b/7smZP"
 MENU_KITS = [("pase", "Pase del catálogo"), ("web", "Kit web inicial"), ("app", "Kit app móvil"), ("prompts", "Pack de prompts"), ("fondos", "Fondos"), ("videos", "Plantillas de vídeo")]
 
@@ -456,6 +457,8 @@ def kits():
     inc = "".join(f"<li>{x}</li>" for x in k["incluye"])
     boton = (f'<a class="btn" href="{COMPRA[k["slug"]]}" rel="noopener">{"Encargarlo" if k.get("correo") else "Comprar"} en Payhip</a>' if k["slug"] in COMPRA
              else '<span class="btn btn-off" aria-disabled="true">Todavía no está a la venta</span>')
+    if k["slug"] in ("web", "a-medida"):
+      boton += f'<p class="tenue">¿No quieres hacerlo tú? Enercoruña te la monta por 350 €. <a class="btn" href="{ENERCORUNA}" rel="noopener">Que me la hagan</a></p>'
     if k.get("correo"):
       boton += f' <a href="{CORREO}">o pregúntanos por correo</a>'
     bloques += f'''<article class="kit" id="{k["slug"]}">
