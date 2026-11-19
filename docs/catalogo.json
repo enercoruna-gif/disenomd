@@ -1,0 +1,223 @@
+[
+ {
+  "slug": "terracota",
+  "nombre": "Terracota",
+  "categoria": "Restauración y lifestyle",
+  "lema": "Calidez mediterránea, barro cocido y sobremesa larga.",
+  "colores": {
+   "primary": "#B4532A",
+   "on-primary": "#FFF8F1",
+   "secondary": "#5E7A4F",
+   "accent": "#E9B44C",
+   "background": "#FBF5EC",
+   "surface": "#FFFFFF",
+   "text": "#2B1D14",
+   "muted": "#7A6455",
+   "border": "#EADBC8"
+  }
+ },
+ {
+  "slug": "azulejo",
+  "nombre": "Azulejo",
+  "categoria": "Turismo y cultura",
+  "lema": "Azul cobalto sobre blanco cal, como un patio de Lisboa o Sevilla.",
+  "colores": {
+   "primary": "#1F4FA3",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0E2A5C",
+   "accent": "#F2A541",
+   "background": "#FFFFFF",
+   "surface": "#F3F6FC",
+   "text": "#0F1B33",
+   "muted": "#56627A",
+   "border": "#D5DEEF"
+  }
+ },
+ {
+  "slug": "fintech-sobrio",
+  "nombre": "Fintech Sobrio",
+  "categoria": "SaaS y finanzas",
+  "lema": "Confianza, números claros y cero ruido.",
+  "colores": {
+   "primary": "#0B3D91",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0F9D74",
+   "accent": "#E5484D",
+   "background": "#F7F8FA",
+   "surface": "#FFFFFF",
+   "text": "#0B1220",
+   "muted": "#5B6474",
+   "border": "#E3E6EB"
+  }
+ },
+ {
+  "slug": "neon-nocturno",
+  "nombre": "Neón Nocturno",
+  "categoria": "Tecnología y gaming",
+  "lema": "Modo oscuro con brillo cian y magenta a medianoche.",
+  "colores": {
+   "primary": "#22D3EE",
+   "on-primary": "#04121A",
+   "secondary": "#E879F9",
+   "accent": "#A3E635",
+   "background": "#0A0B10",
+   "surface": "#14161F",
+   "text": "#E8EAF2",
+   "muted": "#8A90A6",
+   "border": "#262A38"
+  }
+ },
+ {
+  "slug": "papel-suizo",
+  "nombre": "Papel Suizo",
+  "categoria": "Estudio y portfolio",
+  "lema": "Estilo tipográfico internacional: rejilla, negro, blanco y un rojo.",
+  "colores": {
+   "primary": "#111111",
+   "on-primary": "#FFFFFF",
+   "secondary": "#E10600",
+   "accent": "#E10600",
+   "background": "#FFFFFF",
+   "surface": "#F2F2F2",
+   "text": "#111111",
+   "muted": "#6B6B6B",
+   "border": "#111111"
+  }
+ },
+ {
+  "slug": "bosque",
+  "nombre": "Bosque",
+  "categoria": "Sostenibilidad y bienestar",
+  "lema": "Verde musgo, papel reciclado y calma.",
+  "colores": {
+   "primary": "#2F5D3A",
+   "on-primary": "#F4F1E8",
+   "secondary": "#8A6A3D",
+   "accent": "#D98E32",
+   "background": "#F4F1E8",
+   "surface": "#FFFDF7",
+   "text": "#1F2A22",
+   "muted": "#66705F",
+   "border": "#DDD6C3"
+  }
+ },
+ {
+  "slug": "brutalista",
+  "nombre": "Brutalista",
+  "categoria": "Startups y creativos",
+  "lema": "Bordes gruesos, amarillo chillón y sin pedir perdón.",
+  "colores": {
+   "primary": "#111111",
+   "on-primary": "#FFE14D",
+   "secondary": "#FF5A36",
+   "accent": "#FFE14D",
+   "background": "#FFFBEA",
+   "surface": "#FFFFFF",
+   "text": "#111111",
+   "muted": "#4A4A4A",
+   "border": "#111111"
+  }
+ },
+ {
+  "slug": "pastel-suave",
+  "nombre": "Pastel Suave",
+  "categoria": "Educación y familia",
+  "lema": "Lavanda, menta y formas redondas que abrazan.",
+  "colores": {
+   "primary": "#6D4FD8",
+   "on-primary": "#FFFFFF",
+   "secondary": "#2BB39A",
+   "accent": "#FF9DB0",
+   "background": "#FAF8FF",
+   "surface": "#FFFFFF",
+   "text": "#2A2440",
+   "muted": "#6E6888",
+   "border": "#E7E2F7"
+  }
+ },
+ {
+  "slug": "editorial",
+  "nombre": "Editorial",
+  "categoria": "Medios y blogs",
+  "lema": "Revista de papel: serifas, columnas y buena lectura.",
+  "colores": {
+   "primary": "#9B1C31",
+   "on-primary": "#FFFFFF",
+   "secondary": "#1E1E1E",
+   "accent": "#C9A227",
+   "background": "#FFFEFB",
+   "surface": "#F6F2EA",
+   "text": "#1E1E1E",
+   "muted": "#666057",
+   "border": "#E4DDCF"
+  }
+ },
+ {
+  "slug": "clinico",
+  "nombre": "Clínico",
+  "categoria": "Salud y servicios",
+  "lema": "Accesible, limpio y tranquilizador.",
+  "colores": {
+   "primary": "#0A7C86",
+   "on-primary": "#FFFFFF",
+   "secondary": "#1D3557",
+   "accent": "#F4A261",
+   "background": "#F6FAFB",
+   "surface": "#FFFFFF",
+   "text": "#12202B",
+   "muted": "#4F6270",
+   "border": "#D6E4E8"
+  }
+ },
+ {
+  "slug": "lujo-noir",
+  "nombre": "Lujo Noir",
+  "categoria": "Moda y premium",
+  "lema": "Negro, champán y mucho espacio vacío.",
+  "colores": {
+   "primary": "#C8A96A",
+   "on-primary": "#0D0D0D",
+   "secondary": "#F2EDE4",
+   "accent": "#76592F",
+   "background": "#0D0D0D",
+   "surface": "#171615",
+   "text": "#F2EDE4",
+   "muted": "#A39C90",
+   "border": "#2C2A27"
+  }
+ },
+ {
+  "slug": "panel-saas",
+  "nombre": "Panel SaaS",
+  "categoria": "Apps y paneles",
+  "lema": "Gris neutro, índigo y densidad productiva.",
+  "colores": {
+   "primary": "#4F46E5",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0EA5E9",
+   "accent": "#F59E0B",
+   "background": "#F8FAFC",
+   "surface": "#FFFFFF",
+   "text": "#0F172A",
+   "muted": "#64748B",
+   "border": "#E2E8F0"
+  }
+ },
+ {
+  "slug": "retro-pixel",
+  "nombre": "Retro Pixel",
+  "categoria": "Juegos y ocio",
+  "lema": "Recreativa de los 80: píxeles, CRT y colores primarios.",
+  "colores": {
+   "primary": "#FF3366",
+   "on-primary": "#120A1F",
+   "secondary": "#33CCFF",
+   "accent": "#FFD23F",
+   "background": "#120A1F",
+   "surface": "#1E1433",
+   "text": "#F5F0FF",
+   "muted": "#A99BC7",
+   "border": "#3A2A5C"
+  }
+ }
+]
