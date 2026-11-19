@@ -1,3 +1,4 @@
+import re
 """Genera el sitio estático (docs/) y los DESIGN.md del catálogo."""
 import html, json, shutil, zipfile
 from pathlib import Path
@@ -201,7 +202,7 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
 <link rel="stylesheet" href="{prefijo}assets/estilo.css">
 </head>
 <body>
-<a class="aviso" href="{prefijo}#catalogo"><span class="pill">GRATIS</span> {len(DISENOS)} diseños listos para copiar en ChatGPT <span aria-hidden="true">→</span></a>
+<a class="aviso" href="{prefijo}#catalogo"><span class="pill">GRATIS</span> {len(DISENOS) + len(AW.SITIOS)} diseños listos para copiar en ChatGPT <span aria-hidden="true">→</span></a>
 <header class="cab">
   <a class="logo" href="{prefijo}"><span>diseño</span>.md</a>
   <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" onclick="document.body.classList.toggle('menu-abierto');this.setAttribute('aria-expanded',document.body.classList.contains('menu-abierto'))">☰</button>
@@ -246,6 +247,27 @@ KITS = [
 
 
 
+def _logo(slug, nombre):
+  if not slug:
+    return f'<span class="logo logo-txt" title="{nombre}">{nombre}</span>'
+  d = re.search(r' d="([^"]+)"', (Path(__file__).parent / "logos" / f"{slug}.svg").read_text()).group(1)
+  return f'<span class="logo" title="{nombre}"><svg viewBox="0 0 24 24" role="img" aria-label="{nombre}"><path d="{d}"/></svg></span>'
+
+
+CREADORES = [(None, "Lovable"), ("v0", "v0"), ("stackblitz", "Bolt"), ("framer", "Framer"), ("webflow", "Webflow"),
+             ("wordpress", "WordPress"), ("wix", "Wix"), ("squarespace", "Squarespace"), ("replit", "Replit")]
+AGENTES = [("claude", "Claude"), ("cursor", "Cursor"), ("googlegemini", "Gemini"), (None, "ChatGPT"), ("githubcopilot", "GitHub Copilot"),
+           ("windsurf", "Windsurf"), (None, "Codex")]
+
+
+def logos():
+  fila = lambda xs: "".join(_logo(a, b) for a, b in xs)
+  return (f'<div class="logos"><p class="eti">▸ Úsalo en cualquier creador web con IA</p><div class="fila-logos">{fila(CREADORES)}</div>'
+          f'<p class="eti">▸ O en cualquier agente de código</p><div class="fila-logos">{fila(AGENTES)}</div>'
+          '<p class="tenue peq">Pega el DESIGN.md donde construyas y úsalo como referencia de diseño con una sola instrucción. '
+          'Logotipos de <a href="https://simpleicons.org" rel="noopener">Simple Icons</a> (CC0); las marcas son de sus dueños y no hay afiliación.</p></div>')
+
+
 def portada():
   reales = [(x, AW.design_md(x, json.loads((AW.RAIZ / "src/analisis" / f"{x['slug']}.json").read_text()))[1]) for x in AW.SITIOS]
   tarjetas = "\n".join([AW.tarjeta(x, c, "") for x, c in reales] + [tarjeta(d, "") for d in DISENOS])
@@ -267,17 +289,16 @@ def portada():
   <h1>Haz que la web que te crea la IA parezca <em>hecha por un diseñador</em>.</h1>
   <p class="intro">Elige un estilo, cópialo con un toque y pégalo en ChatGPT, Lovable o la IA que uses junto a tu petición. Colores, letras y botones salen coherentes desde el primer intento. Gratis.</p>
   <div class="acciones"><a class="btn btn-grande" href="#catalogo">Elige un diseño gratis</a><a class="btn btn-claro" href="como-usar/">Cómo funciona</a></div>
+  {logos()}
   <div class="antes-despues">
     <div><p class="eti">Sin DESIGN.md</p><p>«Hazme una web para mi peluquería» → colores al azar, letras distintas en cada sección, botones que no pegan.</p></div>
     <div><p class="eti eti-acc">Con DESIGN.md</p><p>«Hazme una web para mi peluquería siguiendo este DESIGN.md» → una paleta, dos tipografías y el mismo estilo en todas las páginas.</p></div>
   </div>
   <p class="spec">Sigue el formato abierto <a href="https://github.com/google-labs-code/design.md" rel="noopener">DESIGN.md de Google</a></p>
-  <p class="tenue peq">Funciona con la IA que ya usas</p>
-  {HERRAMIENTAS}
 </section>
 <section class="bloque" id="catalogo">
-  <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(DISENOS)} sistemas de diseño en español</span></div>
-  <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-catalogo.zip" download>Descargar los {len(DISENOS)} DESIGN.md (zip)</a></p>
+  <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(AW.SITIOS)} análisis de webs reales y {len(DISENOS)} estilos originales</span></div>
+  <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-catalogo.zip" download>Descargar los {len(DISENOS) + len(AW.SITIOS)} DESIGN.md (zip)</a></p>
   <input class="buscar" id="buscar" type="search" placeholder="Busca tu negocio: peluquería, bar, clínica…" aria-label="Buscar diseños">
   <div class="chips" id="chips">{chips}</div>
   <p class="vacio" id="vacio" hidden>Ningún diseño menciona «<span id="vacio-q"></span>», pero todos sirven para cualquier negocio: elige el que más te guste por sus colores.</p>
@@ -437,7 +458,7 @@ def main():
       catalogo.append(dict(slug=x["slug"], nombre=x["nombre"], categoria="Webs reales", url=x["url"], colores=c))
   (SALIDA / "catalogo.json").write_text(json.dumps(catalogo, ensure_ascii=False, indent=1))
   (SALIDA / "manifest.webmanifest").write_text(json.dumps(dict(name=MARCA, short_name=MARCA, start_url="./", display="standalone",
-    background_color="#FAF7F2", theme_color="#141414", lang="es",
+    background_color="#0D0D0F", theme_color="#141414", lang="es",
     icons=[dict(src=f"assets/icono-{n}.png", sizes=f"{n}x{n}", type="image/png") for n in (192, 512)]), ensure_ascii=False))
   (SALIDA / ".nojekyll").write_text("")
   (SALIDA / "robots.txt").write_text("User-agent: *\nAllow: /\n")
