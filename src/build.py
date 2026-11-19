@@ -288,9 +288,8 @@ def logos():
 
 
 def portada():
-  reales = [(x, AW.design_md(x, json.loads((AW.RAIZ / "src/analisis" / f"{x['slug']}.json").read_text()))[1]) for x in AW.SITIOS]
-  tarjetas = "\n".join([AW.tarjeta(x, c, "") for x, c in reales] + [tarjeta(d, "") for d in DISENOS])
-  cats = ["Webs reales"] + list(dict.fromkeys(GRUPOS[d["slug"]] for d in DISENOS))
+  tarjetas = "\n".join(tarjeta(d, "") for d in DISENOS)
+  cats = list(dict.fromkeys(GRUPOS[d["slug"]] for d in DISENOS))
   chips = '<button class="chip activo" data-filtro="">Todos</button>' + "".join(f'<button class="chip" data-filtro="{esc(c)}">{esc(c)}</button>' for c in cats)
   _kits = "".join(f'''<a class="kit-btn{' kit-dest' if i == 0 else ''}" href="kits/#{k["slug"]}"><span class="kit-ico">{k["icono"]}</span><span><strong>{k["nombre"]}</strong><small>{k["sub"]}</small></span></a>''' for i, k in enumerate(KITS[:2]))
   usos = [("01", "Dar estilo sin saber diseñar", "Elige un DESIGN.md, ponlo en tu proyecto y tu agente aplica colores, tipografía y componentes coherentes."),
@@ -316,8 +315,8 @@ def portada():
   <p class="spec">Sigue el formato abierto <a href="https://github.com/google-labs-code/design.md" rel="noopener">DESIGN.md de Google</a></p>
 </section>
 <section class="bloque" id="catalogo">
-  <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(AW.SITIOS)} análisis de webs reales y {len(DISENOS)} estilos originales</span></div>
-  <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-catalogo.zip" download>Descargar los {len(DISENOS) + len(AW.SITIOS)} DESIGN.md (zip)</a></p>
+  <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(DISENOS)} estilos originales · <a href="webs/">{len(AW.SITIOS)} webs populares en su propia sección →</a></span></div>
+  <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-catalogo.zip" download>Descargar los {len(DISENOS)} DESIGN.md (zip)</a></p>
   <input class="buscar" id="buscar" type="search" placeholder="Busca tu negocio: peluquería, bar, clínica…" aria-label="Buscar diseños">
   <div class="chips" id="chips">{chips}</div>
   <p class="vacio" id="vacio" hidden>Ningún diseño menciona «<span id="vacio-q"></span>», pero todos sirven para cualquier negocio: elige el que más te guste por sus colores.</p>
@@ -473,8 +472,11 @@ def main():
       (carpeta / "index.html").write_text(pag)
       z.writestr(f"{d['slug']}/DESIGN.md", md)
       catalogo.append(dict(slug=d["slug"], nombre=d["nombre"], categoria=d["categoria"], lema=d["lema"], colores=d["colores"]))
-    for x, c in AW.generar(SALIDA, pagina, z):
-      catalogo.append(dict(slug=x["slug"], nombre=x["nombre"], categoria="Webs reales", url=x["url"], colores=c))
+  with zipfile.ZipFile(SALIDA / "descargas" / "disenomd-webs.zip", "w", zipfile.ZIP_DEFLATED) as z:
+    reales = AW.generar(SALIDA, pagina, z)
+  (SALIDA / "webs").mkdir(exist_ok=True)
+  (SALIDA / "webs" / "index.html").write_text(AW.zona(reales, pagina))
+  catalogo += [dict(slug=x["slug"], nombre=x["nombre"], categoria="Webs populares", url=x["url"], colores=c) for x, c in reales]
   (SALIDA / "catalogo.json").write_text(json.dumps(catalogo, ensure_ascii=False, indent=1))
   (SALIDA / "manifest.webmanifest").write_text(json.dumps(dict(name=MARCA, short_name=MARCA, start_url="./", display="standalone",
     background_color="#0D0D0F", theme_color="#141414", lang="es",

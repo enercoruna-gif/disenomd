@@ -120,10 +120,23 @@ def design_md(s, j):
   return "\n".join(y), c
 
 
+GRUPOS = {
+  "Finanzas": ["Banca", "Pagos"],
+  "Software y productividad": ["Software", "Productividad", "Gestión", "Recursos humanos", "Colaboración", "Formularios", "Agenda",
+                               "Atención al cliente", "Comunicación", "Almacenamiento", "Bases de datos", "Analítica", "Marketing"],
+  "Desarrollo e IA": ["Desarrollo", "Inteligencia artificial"],
+  "Diseño y creatividad": ["Diseño", "Animación", "Vídeo", "Publicación"],
+  "Tiendas y consumo": ["Moda", "Deporte", "Hogar", "Comercio", "Supermercado", "Tecnología", "Reparto"],
+  "Viajes y movilidad": ["Viajes", "Movilidad", "Aerolínea"],
+  "Medios y ocio": ["Música", "Prensa", "Streaming", "Comunidad", "Educación"],
+}
+GRUPO = {sec: g for g, secs in GRUPOS.items() for sec in secs}
+
+
 def tarjeta(s, c, prefijo):
   sw = "".join(f'<i style="background:{c[k]}"></i>' for k in ("primary", "secondary", "accent", "text", "background"))
   txt = esc(f"{s['nombre']} {s['sector']} web real análisis {N[s['slug']][0]}".lower())
-  return (f'<a class="tarjeta tarjeta-foto" href="{prefijo}analisis/{s["slug"]}/" data-cat="Webs reales" data-texto="{txt}">'
+  return (f'<a class="tarjeta tarjeta-foto" href="{prefijo}analisis/{s["slug"]}/" data-cat="{esc(GRUPO[s["sector"]])}" data-texto="{txt}">'
           f'<img src="{prefijo}analisis/{s["slug"]}/captura.webp" alt="Captura de la portada de {esc(s["nombre"])}" loading="lazy" width="960" height="600">'
           f'<div class="tarjeta-pie"><div><strong>{esc(s["nombre"])}</strong><small>{esc(s["sector"])}</small></div><span class="sw">{sw}</span></div></a>')
 
@@ -135,7 +148,7 @@ def ficha(s, md, c, pagina):
             "aplica sus colores, tipografías, radios y componentes, pero con mis textos, mi logotipo y mis imágenes.")
   cuerpo = f'''
 <section class="det-cab">
-  <p class="migas"><a href="../../#catalogo">Catálogo</a> / Webs reales / {esc(s["nombre"])}</p>
+  <p class="migas"><a href="../../webs/">Webs populares</a> / {esc(s["nombre"])}</p>
   <p class="eti">Análisis de web real · {esc(s["sector"])}</p>
   <h1>{esc(s["nombre"])}</h1>
   <img class="captura" src="captura.webp" alt="Captura propia de la portada de {esc(s["nombre"])}" width="960" height="600">
@@ -164,6 +177,27 @@ def generar(salida, pagina, z):
     carpeta.mkdir(parents=True, exist_ok=True)
     (carpeta / "DESIGN.md").write_text(md)
     (carpeta / "index.html").write_text(ficha(s, md, c, pagina))
-    z.writestr(f"webs-reales/{s['slug']}/DESIGN.md", md)
+    z.writestr(f"{s['slug']}/DESIGN.md", md)
     tarjetas.append((s, c))
   return tarjetas
+
+
+def zona(tarjetas, pagina):
+  html = "\n".join(tarjeta(s, c, "../") for s, c in tarjetas)
+  chips = '<button class="chip activo" data-filtro="">Todas</button>' + "".join(f'<button class="chip" data-filtro="{esc(g)}">{esc(g)}</button>' for g in GRUPOS)
+  cuerpo = f'''
+<section class="hero">
+  <p class="eti">Webs populares</p>
+  <h1>DESIGN.md gratis de webs que ya conoces</h1>
+  <p class="intro">{len(tarjetas)} análisis independientes del estilo de webs conocidas: colores, tipografías y componentes en formato DESIGN.md, con capturas hechas por nosotros. Úsalos como referencia para tu IA, con tus textos, tu logotipo y tus fotos.</p>
+  <p><a class="btn btn-claro btn-peq" href="../descargas/disenomd-webs.zip" download>Descargar los {len(tarjetas)} DESIGN.md (zip)</a> <a class="btn btn-peq" href="../#catalogo">Ver los estilos originales</a></p>
+</section>
+<section class="bloque" id="catalogo">
+  <input class="buscar" id="buscar" type="search" placeholder="Busca una web o un sector: banca, viajes, moda…" aria-label="Buscar webs">
+  <div class="chips" id="chips">{chips}</div>
+  <p class="vacio" id="vacio" hidden>Ninguna web coincide con «<span id="vacio-q"></span>». Prueba con otro nombre o sector.</p>
+  <div class="rejilla" id="rejilla">{html}</div>
+  <p class="tenue peq">Análisis propios y sin afiliación: los nombres y marcas son de sus dueños y solo se citan para identificar la web analizada.</p>
+</section>'''
+  return pagina("DESIGN.md gratis de webs populares en español | diseño.md",
+                f"{len(tarjetas)} análisis independientes del estilo de webs conocidas en formato DESIGN.md, gratis y en español.", cuerpo, "../")

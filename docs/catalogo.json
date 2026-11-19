@@ -223,7 +223,7 @@
  {
   "slug": "stripe",
   "nombre": "Stripe",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://stripe.com/es",
   "colores": {
    "primary": "#533AFD",
@@ -240,7 +240,7 @@
  {
   "slug": "linear",
   "nombre": "Linear",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://linear.app",
   "colores": {
    "primary": "#E5E5E6",
@@ -257,7 +257,7 @@
  {
   "slug": "vercel",
   "nombre": "Vercel",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://vercel.com",
   "colores": {
    "primary": "#171717",
@@ -274,7 +274,7 @@
  {
   "slug": "notion",
   "nombre": "Notion",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.notion.com/es",
   "colores": {
    "primary": "#0075DE",
@@ -291,7 +291,7 @@
  {
   "slug": "airbnb",
   "nombre": "Airbnb",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.airbnb.es",
   "colores": {
    "primary": "#DA1249",
@@ -308,7 +308,7 @@
  {
   "slug": "spotify",
   "nombre": "Spotify",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.spotify.com/es/premium/",
   "colores": {
    "primary": "#1D75DE",
@@ -325,7 +325,7 @@
  {
   "slug": "apple",
   "nombre": "Apple",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.apple.com/es/",
   "colores": {
    "primary": "#822704",
@@ -342,7 +342,7 @@
  {
   "slug": "figma",
   "nombre": "Figma",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.figma.com/es-es/",
   "colores": {
    "primary": "#000000",
@@ -359,7 +359,7 @@
  {
   "slug": "github",
   "nombre": "GitHub",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://github.com",
   "colores": {
    "primary": "#08872B",
@@ -376,7 +376,7 @@
  {
   "slug": "slack",
   "nombre": "Slack",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://slack.com/intl/es-es",
   "colores": {
    "primary": "#730394",
@@ -393,7 +393,7 @@
  {
   "slug": "revolut",
   "nombre": "Revolut",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.revolut.com/es-ES/",
   "colores": {
    "primary": "#1F1F1F",
@@ -410,7 +410,7 @@
  {
   "slug": "n26",
   "nombre": "N26",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://n26.com/es-es",
   "colores": {
    "primary": "#003B39",
@@ -427,7 +427,7 @@
  {
   "slug": "bbva",
   "nombre": "BBVA",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.bbva.es",
   "colores": {
    "primary": "#001391",
@@ -444,7 +444,7 @@
  {
   "slug": "intercom",
   "nombre": "Intercom",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.intercom.com",
   "colores": {
    "primary": "#0007CB",
@@ -461,7 +461,7 @@
  {
   "slug": "mango",
   "nombre": "Mango",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://shop.mango.com/es/es",
   "colores": {
    "primary": "#121212",
@@ -478,7 +478,7 @@
  {
   "slug": "airtable",
   "nombre": "Airtable",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.airtable.com",
   "colores": {
    "primary": "#912E1F",
@@ -495,7 +495,7 @@
  {
   "slug": "glovo",
   "nombre": "Glovo",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://glovoapp.com/es/es/",
   "colores": {
    "primary": "#017963",
@@ -512,7 +512,7 @@
  {
   "slug": "medium",
   "nombre": "Medium",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://medium.com",
   "colores": {
    "primary": "#191919",
@@ -529,7 +529,7 @@
  {
   "slug": "cabify",
   "nombre": "Cabify",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://cabify.com/es",
   "colores": {
    "primary": "#7145D6",
@@ -546,7 +546,7 @@
  {
   "slug": "typeform",
   "nombre": "Typeform",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.typeform.com/es/",
   "colores": {
    "primary": "#A057BB",
@@ -563,7 +563,7 @@
  {
   "slug": "holded",
   "nombre": "Holded",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.holded.com/es",
   "colores": {
    "primary": "#1963EF",
@@ -580,7 +580,7 @@
  {
   "slug": "factorial",
   "nombre": "Factorial",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://factorialhr.es",
   "colores": {
    "primary": "#E51943",
@@ -597,7 +597,7 @@
  {
   "slug": "el-pais",
   "nombre": "El País",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://elpais.com",
   "colores": {
    "primary": "#F7CF3C",
@@ -614,7 +614,7 @@
  {
   "slug": "xataka",
   "nombre": "Xataka",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.xataka.com",
   "colores": {
    "primary": "#38880A",
@@ -631,7 +631,7 @@
  {
   "slug": "nike",
   "nombre": "Nike",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.nike.com/es/",
   "colores": {
    "primary": "#111111",
@@ -648,7 +648,7 @@
  {
   "slug": "ikea",
   "nombre": "IKEA",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.ikea.com/es/es/",
   "colores": {
    "primary": "#CA5008",
@@ -665,7 +665,7 @@
  {
   "slug": "miro",
   "nombre": "Miro",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://miro.com/es/",
   "colores": {
    "primary": "#FDE050",
@@ -682,7 +682,7 @@
  {
   "slug": "iberia",
   "nombre": "Iberia",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.iberia.com/es/",
   "colores": {
    "primary": "#D7192D",
@@ -699,7 +699,7 @@
  {
   "slug": "booking",
   "nombre": "Booking.com",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.booking.com/index.es.html",
   "colores": {
    "primary": "#003B95",
@@ -716,7 +716,7 @@
  {
   "slug": "duolingo",
   "nombre": "Duolingo",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://es.duolingo.com",
   "colores": {
    "primary": "#1CB0F6",
@@ -733,7 +733,7 @@
  {
   "slug": "lottiefiles",
   "nombre": "LottieFiles",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://lottiefiles.com",
   "colores": {
    "primary": "#FFBF00",
@@ -750,7 +750,7 @@
  {
   "slug": "shopify",
   "nombre": "Shopify",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.shopify.com/es",
   "colores": {
    "primary": "#FFFFFF",
@@ -767,7 +767,7 @@
  {
   "slug": "framer",
   "nombre": "Framer",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.framer.com",
   "colores": {
    "primary": "#FFFFFF",
@@ -784,7 +784,7 @@
  {
   "slug": "webflow",
   "nombre": "Webflow",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://webflow.com",
   "colores": {
    "primary": "#146EF5",
@@ -801,7 +801,7 @@
  {
   "slug": "supabase",
   "nombre": "Supabase",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://supabase.com",
   "colores": {
    "primary": "#A9F1CA",
@@ -818,7 +818,7 @@
  {
   "slug": "raycast",
   "nombre": "Raycast",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.raycast.com",
   "colores": {
    "primary": "#E6E6E6",
@@ -835,7 +835,7 @@
  {
   "slug": "openai",
   "nombre": "OpenAI",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://openai.com/es-ES/",
   "colores": {
    "primary": "#000000",
@@ -852,7 +852,7 @@
  {
   "slug": "anthropic",
   "nombre": "Anthropic",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.anthropic.com",
   "colores": {
    "primary": "#141413",
@@ -869,7 +869,7 @@
  {
   "slug": "mailchimp",
   "nombre": "Mailchimp",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://mailchimp.com/es/",
   "colores": {
    "primary": "#FFE01B",
@@ -886,7 +886,7 @@
  {
   "slug": "dropbox",
   "nombre": "Dropbox",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.dropbox.com/es_ES/",
   "colores": {
    "primary": "#0061FE",
@@ -903,7 +903,7 @@
  {
   "slug": "discord",
   "nombre": "Discord",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://discord.com",
   "colores": {
    "primary": "#5865F2",
@@ -920,7 +920,7 @@
  {
   "slug": "twitch",
   "nombre": "Twitch",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.twitch.tv",
   "colores": {
    "primary": "#9147FF",
@@ -937,7 +937,7 @@
  {
   "slug": "uber",
   "nombre": "Uber",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.uber.com/es/es/",
   "colores": {
    "primary": "#111111",
@@ -954,7 +954,7 @@
  {
   "slug": "dribbble",
   "nombre": "Dribbble",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://dribbble.com",
   "colores": {
    "primary": "#0D0C22",
@@ -971,7 +971,7 @@
  {
   "slug": "wise",
   "nombre": "Wise",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://wise.com/es/",
   "colores": {
    "primary": "#163300",
@@ -988,7 +988,7 @@
  {
   "slug": "monzo",
   "nombre": "Monzo",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://monzo.com",
   "colores": {
    "primary": "#091723",
@@ -1005,7 +1005,7 @@
  {
   "slug": "cal",
   "nombre": "Cal.com",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://cal.com",
   "colores": {
    "primary": "#FF5F57",
@@ -1022,7 +1022,7 @@
  {
   "slug": "resend",
   "nombre": "Resend",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://resend.com",
   "colores": {
    "primary": "#FFFFFF",
@@ -1039,7 +1039,7 @@
  {
   "slug": "posthog",
   "nombre": "PostHog",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://posthog.com",
   "colores": {
    "primary": "#CD8407",
@@ -1056,7 +1056,7 @@
  {
   "slug": "canva",
   "nombre": "Canva",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.canva.com/es_es/",
   "colores": {
    "primary": "#0F1015",
@@ -1073,7 +1073,7 @@
  {
   "slug": "trello",
   "nombre": "Trello",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://trello.com/es",
   "colores": {
    "primary": "#0065FF",
@@ -1090,7 +1090,7 @@
  {
   "slug": "mercadona",
   "nombre": "Mercadona",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.mercadona.es",
   "colores": {
    "primary": "#00AB61",
@@ -1107,7 +1107,7 @@
  {
   "slug": "paypal",
   "nombre": "PayPal",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.paypal.com/es/home",
   "colores": {
    "primary": "#60CDFF",
@@ -1124,7 +1124,7 @@
  {
   "slug": "cursor",
   "nombre": "Cursor",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://cursor.com",
   "colores": {
    "primary": "#26251E",
@@ -1141,7 +1141,7 @@
  {
   "slug": "loom",
   "nombre": "Loom",
-  "categoria": "Webs reales",
+  "categoria": "Webs populares",
   "url": "https://www.loom.com",
   "colores": {
    "primary": "#1868DB",
