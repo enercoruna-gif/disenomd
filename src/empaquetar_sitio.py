@@ -181,6 +181,7 @@ def main():
     error = (sitio / "index.html").read_text(encoding="utf-8")
     error = re.sub(r"<main>.*?</main>", '<main><section class="det-cab"><p class="eti">Error 404</p><h1>Página no encontrada</h1><p class="intro">Esta página no existe. <a href="/">Volver al inicio →</a></p></section></main>', error, flags=re.S)
     error = re.sub(r"<title>.*?</title>", "<title>Página no encontrada | diseño.md</title>", error)
+    error = error.replace("</head>", '<meta name="robots" content="noindex">\n</head>')
     (sitio / "404.html").write_text(preparar(error, "404.html"), encoding="utf-8")
     manifest = json.loads((sitio / "manifest.webmanifest").read_text())
     manifest.update(start_url="/", scope="/")
@@ -188,14 +189,14 @@ def main():
         icono["src"] = "/" + icono["src"].lstrip("/")
     (sitio / "manifest.webmanifest").write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
     (sitio / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMINIO}sitemap.xml\n")
-    urls = [DOMINIO + ruta_pagina(p.relative_to(sitio)) for p in sorted(sitio.rglob("*.html"))]
-    (sitio / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{url}</loc></url>" for url in urls) + "</urlset>\n")
+    urls = [DOMINIO + ruta_pagina(p.relative_to(sitio)) for p in sorted(sitio.rglob("*.html")) if p != sitio / "404.html"]
+    (sitio / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(f"<url><loc>{url}</loc></url>" for url in urls) + "\n</urlset>\n")
     (DESTINO / "cuadrantia-ia-autonomo.html").write_text(autonomo(sitio), encoding="utf-8")
     with zipfile.ZipFile(DESTINO / "cuadrantia-ia.zip", "w", zipfile.ZIP_DEFLATED) as paquete:
         for archivo in sorted(sitio.rglob("*")):
             if archivo.is_file():
                 paquete.write(archivo, archivo.relative_to(sitio))
-    print(f"{len(urls)} páginas exportadas; sitio, ZIP y HTML autónomo generados en {DESTINO}")
+    print(f"{len(urls)} páginas en sitemap; sitio, ZIP y HTML autónomo generados en {DESTINO}")
 
 
 if __name__ == "__main__":

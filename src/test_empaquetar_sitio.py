@@ -75,10 +75,14 @@ class EmpaquetarSitioTest(unittest.TestCase):
                     if origen.suffix in (".png", ".webp"):
                         self.assertEqual((copia / relativo).read_bytes(), datos)
             urls = {e.text for e in ET.parse(copia / "sitemap.xml").iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
+            self.assertNotIn(sitio.DOMINIO + "404.html", urls)
+            self.assertEqual(len(urls), len(list(copia.rglob("*.html"))) - 1)
+            self.assertIn('<meta name="robots" content="noindex">', (copia / "404.html").read_text())
             for html in copia.rglob("*.html"):
                 texto = html.read_text()
                 canon = sitio.DOMINIO + sitio.ruta_pagina(html.relative_to(copia))
-                self.assertIn(canon, urls)
+                if html != copia / "404.html":
+                    self.assertIn(canon, urls)
                 self.assertEqual(texto.count('rel="canonical"'), 1)
                 self.assertIn(f'href="{canon}"', texto)
                 self.assertEqual(set(sitio.EMAIL.findall(texto)), {sitio.CORREO})
