@@ -27,7 +27,7 @@ typography:
     letterSpacing: -0.01em
   body-md:
     fontFamily: Atkinson Hyperlegible
-    fontSize: 1rem
+    fontSize: 1.125rem
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: 0em

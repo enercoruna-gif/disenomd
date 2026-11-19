@@ -65,7 +65,7 @@ def design_md(d):
   y += [f'  {k}: "{v}"' for k, v in c.items()]
   y.append("typography:")
   tok = [("display-lg", disp, TIPOS["display"], ptit), ("headline-md", disp, TIPOS["headline"], peso(disp, max(ptit - 100, 400) if disp != cuerpo else 600)),
-         ("body-md", cuerpo, TIPOS["body"], 400), ("label-sm", cuerpo, TIPOS["label"], peso(cuerpo, 500)),
+         ("body-md", cuerpo, d.get("cuerpo_tam", TIPOS["body"]), 400), ("label-sm", cuerpo, TIPOS["label"], peso(cuerpo, 500)),
          ("code-sm", d["mono"], ("0.875rem", "1.5", "0em", 400), 400)]
   for nombre, fam, (tam, lh, ls, _), w in tok:
     y += [f"  {nombre}:", f"    fontFamily: {fam}", f"    fontSize: {tam}", f"    fontWeight: {w}",

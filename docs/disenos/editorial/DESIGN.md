@@ -27,9 +27,9 @@ typography:
     letterSpacing: -0.01em
   body-md:
     fontFamily: Source Serif 4
-    fontSize: 1rem
+    fontSize: 1.1875rem
     fontWeight: 400
-    lineHeight: 1.6
+    lineHeight: 1.7
     letterSpacing: 0em
   label-sm:
     fontFamily: Source Serif 4
