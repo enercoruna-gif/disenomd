@@ -1,0 +1,52 @@
+{
+ "titulo": "Pide a domicilio online con Glovo en España: comida, la compra del súper, productos de parafarmacia. | Glovo",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#FFC042",
+  "#F9EFDC",
+  "#E0F0ED",
+  "#017963"
+ ],
+ "textos": [
+  "#161617",
+  "#896110",
+  "#000000",
+  "#FFFFFF",
+  "#035949"
+ ],
+ "fuentes": [
+  "Glovo Sans"
+ ],
+ "radios": [
+  "4px",
+  "100px",
+  "896px",
+  "8px"
+ ],
+ "h1": {
+  "texto": "Principales ciudades en España",
+  "familia": "Glovo Sans",
+  "tam": "37px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "40px"
+ },
+ "cuerpo": {
+  "familia": "Glovo Sans",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Iniciar sesión",
+  "fondo": "#017963",
+  "color": "#FFFFFF",
+  "radio": "896px",
+  "padding": "8px",
+  "peso": "700"
+ },
+ "enlace": "#035949",
+ "slug": "glovo",
+ "url": "https://glovoapp.com/es/es/",
+ "final": "https://glovoapp.com/es/es"
+}

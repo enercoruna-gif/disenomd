@@ -1,0 +1,46 @@
+{
+ "titulo": "Framer: Free website builder and AI design agent",
+ "fondo": "#000000",
+ "fondos": [
+  "#000000",
+  "#FFFFFF"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#000000"
+ ],
+ "fuentes": [
+  "Inter Variable",
+  "GT Walsheim Medium"
+ ],
+ "radios": [
+  "8px",
+  "18px",
+  "7px"
+ ],
+ "h1": {
+  "texto": "Framer is the pro website builder with a world-class design agent",
+  "familia": "GT Walsheim Medium",
+  "tam": "54px",
+  "peso": "500",
+  "ls": "-2.16px",
+  "lh": "54px"
+ },
+ "cuerpo": {
+  "familia": "sans-serif",
+  "tam": "12px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Sign up",
+  "fondo": "#FFFFFF",
+  "color": "#0000EE",
+  "radio": "8px",
+  "padding": "8px 10px",
+  "peso": "400"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "framer",
+ "url": "https://www.framer.com",
+ "final": "https://www.framer.com/"
+}

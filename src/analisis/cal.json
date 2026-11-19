@@ -1,0 +1,58 @@
+{
+ "titulo": "Cal.com | Software de programación para reservas online",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#F3F4F6",
+  "#E3DCCD",
+  "#F4F4F4",
+  "#DEE1E6",
+  "#242424",
+  "#E5E7EB",
+  "#FF5F57"
+ ],
+ "textos": [
+  "#242424",
+  "#5F6570",
+  "#111111",
+  "#374151",
+  "#FFFFFF",
+  "#676B75"
+ ],
+ "fuentes": [
+  "-apple-system",
+  "calSans"
+ ],
+ "radios": [
+  "8px",
+  "3.35544e+07px",
+  "16px",
+  "10px",
+  "12px"
+ ],
+ "h1": {
+  "texto": "Donde  la gente Intro call30m 11:00 11:00 Booked 12:30 AM 12:30 PM encuentra UTC tiempo pa",
+  "familia": "calSans",
+  "tam": "80px",
+  "peso": "700",
+  "ls": "-0.8px",
+  "lh": "86.4px"
+ },
+ "cuerpo": {
+  "familia": "calSans",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Empieza",
+  "fondo": "#242424",
+  "color": "#FFFFFF",
+  "radio": "12px",
+  "padding": "1px 14px 0px",
+  "peso": "500"
+ },
+ "enlace": "#242424",
+ "slug": "cal",
+ "url": "https://cal.com",
+ "final": "https://cal.com/es"
+}

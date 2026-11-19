@@ -1,0 +1,58 @@
+{
+ "titulo": "PostHog – Your product’s context layer",
+ "fondo": "#EEEFE9",
+ "fondos": [
+  "#D3DAC6",
+  "#FFFFFF",
+  "#FDFDF8",
+  "#B62AD9",
+  "#CBD5B9",
+  "#E5E7E0",
+  "#EB9D2A",
+  "#CD8407"
+ ],
+ "textos": [
+  "#374151",
+  "#111111",
+  "#65675E",
+  "#FFFFFF",
+  "#111827",
+  "#23251D"
+ ],
+ "fuentes": [
+  "RoundHog",
+  "Source Code Pro"
+ ],
+ "radios": [
+  "4.82367px",
+  "9999px",
+  "6px",
+  "8px",
+  "20px"
+ ],
+ "h1": {
+  "texto": "Your product's context layer",
+  "familia": "RoundHog",
+  "tam": "36px",
+  "peso": "800",
+  "ls": "-0.9px",
+  "lh": "40px"
+ },
+ "cuerpo": {
+  "familia": "RoundHog",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Get started – free",
+  "fondo": "#CD8407",
+  "color": "#23251D",
+  "radio": "6px",
+  "padding": "0px",
+  "peso": "400"
+ },
+ "enlace": "#111827",
+ "slug": "posthog",
+ "url": "https://posthog.com",
+ "final": "https://posthog.com/"
+}

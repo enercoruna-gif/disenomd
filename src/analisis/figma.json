@@ -1,0 +1,47 @@
+{
+ "titulo": "Figma: El lienzo colaborativo para diseño, código e IA",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#95B9AC",
+  "#000000"
+ ],
+ "textos": [
+  "#000000",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "figmaSans"
+ ],
+ "radios": [
+  "8px",
+  "24px",
+  "9999px",
+  "16px"
+ ],
+ "h1": {
+  "texto": "El lienzo creativo integral",
+  "familia": "figmaSans",
+  "tam": "56px",
+  "peso": "400",
+  "ls": "-1.25px",
+  "lh": "56px"
+ },
+ "cuerpo": {
+  "familia": "figmaSans",
+  "tam": "16px",
+  "lh": "23.2px"
+ },
+ "boton": {
+  "texto": "Registrarse",
+  "fondo": "#000000",
+  "color": "#FFFFFF",
+  "radio": "8px",
+  "padding": "12px 22px",
+  "peso": "400"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "figma",
+ "url": "https://www.figma.com/es-es/",
+ "final": "https://www.figma.com/es-es/"
+}

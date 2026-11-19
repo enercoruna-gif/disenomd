@@ -1,0 +1,50 @@
+{
+ "titulo": "Airbnb | Alquileres vacacionales, cabañas, casas en la playa y mucho más",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#DDDDDD",
+  "#F7F7F7",
+  "#FFFFFF",
+  "#F2F2F2",
+  "#DA1249"
+ ],
+ "textos": [
+  "#6C6C6C",
+  "#222222"
+ ],
+ "fuentes": [
+  "Airbnb Cereal VF"
+ ],
+ "radios": [
+  "20px",
+  "50%",
+  "14px",
+  "100px",
+  "50px"
+ ],
+ "h1": {
+  "texto": "Página de inicio de Airbnb",
+  "familia": "Airbnb Cereal VF",
+  "tam": "28px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "40.04px"
+ },
+ "cuerpo": {
+  "familia": "Airbnb Cereal VF",
+  "tam": "14px",
+  "lh": "20.02px"
+ },
+ "boton": {
+  "texto": "Mostrar todo",
+  "fondo": "#FFFFFF",
+  "color": "#222222",
+  "radio": "20px",
+  "padding": "0px",
+  "peso": "400"
+ },
+ "enlace": "#222222",
+ "slug": "airbnb",
+ "url": "https://www.airbnb.es",
+ "final": "https://www.airbnb.es/"
+}

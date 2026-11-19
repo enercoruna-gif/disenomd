@@ -1,0 +1,52 @@
+{
+ "titulo": "Airtable: Build Enterprise-ready AI Workflows, Apps & Agents | Airtable",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#912E1F",
+  "#F0F6FF",
+  "#181D26"
+ ],
+ "textos": [
+  "#181D26",
+  "#FFFFFF",
+  "#333840",
+  "#41454D",
+  "#254FAD",
+  "#040E20"
+ ],
+ "fuentes": [
+  "Haas"
+ ],
+ "radios": [
+  "12px",
+  "9999px",
+  "2px",
+  "24px"
+ ],
+ "h1": {
+  "texto": "All your teams, all their workflows—connected in one workspace",
+  "familia": "Haas",
+  "tam": "40px",
+  "peso": "400",
+  "ls": "normal",
+  "lh": "48px"
+ },
+ "cuerpo": {
+  "familia": "Haas Groot Disp",
+  "tam": "20px",
+  "lh": "30px"
+ },
+ "boton": {
+  "texto": "Sign up for freeSign up",
+  "fondo": "#181D26",
+  "color": "#FFFFFF",
+  "radio": "12px",
+  "padding": "16px 24px",
+  "peso": "500"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "airtable",
+ "url": "https://www.airtable.com",
+ "final": "https://www.airtable.com/"
+}

@@ -1,0 +1,37 @@
+{
+ "titulo": "LottieFiles: Download Free lightweight animations for website & apps.",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#FFBF00",
+  "#FF8EED",
+  "#00DDB3",
+  "#3A86FF"
+ ],
+ "textos": [],
+ "fuentes": [
+  "Inter LF",
+  "DM Sans LF"
+ ],
+ "radios": [
+  "8px"
+ ],
+ "h1": {
+  "texto": "Great designs come alive with motion!",
+  "familia": "DM Sans LF",
+  "tam": "96px",
+  "peso": "500",
+  "ls": "-4.8px",
+  "lh": "99.84px"
+ },
+ "cuerpo": {
+  "familia": "Inter LF",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": null,
+ "enlace": null,
+ "slug": "lottiefiles",
+ "url": "https://lottiefiles.com",
+ "final": "https://lottiefiles.com/"
+}

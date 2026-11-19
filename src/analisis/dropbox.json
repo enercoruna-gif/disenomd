@@ -1,0 +1,48 @@
+{
+ "titulo": "Dropbox: almacenamiento seguro en la nube, servicio para compartir archivos y mucho más",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F7F5F2",
+  "#1E1919",
+  "#FFFFFF",
+  "#0061FE"
+ ],
+ "textos": [
+  "#F7F5F2",
+  "#1E1919",
+  "#524A3E"
+ ],
+ "fuentes": [
+  "Atlas Grotesk Web",
+  "Sharp Grotesk"
+ ],
+ "radios": [
+  "12px",
+  "16px"
+ ],
+ "h1": {
+  "texto": "Un lugar para almacenar, compartir y colaborar",
+  "familia": "Sharp Grotesk",
+  "tam": "40px",
+  "peso": "500",
+  "ls": "normal",
+  "lh": "48px"
+ },
+ "cuerpo": {
+  "familia": "Times New Roman",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Pasar al contenido principal",
+  "fondo": "#1E1919",
+  "color": "#F7F5F2",
+  "radio": "0px",
+  "padding": "0px",
+  "peso": "400"
+ },
+ "enlace": "#F7F5F2",
+ "slug": "dropbox",
+ "url": "https://www.dropbox.com/es_ES/",
+ "final": "https://www.dropbox.com/es_ES/"
+}

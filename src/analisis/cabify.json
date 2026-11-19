@@ -1,0 +1,55 @@
+{
+ "titulo": "La ciudad es tuya. Viaja con nosotros | Cabify",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F8F8FE",
+  "#FFFFFF",
+  "#7145D6",
+  "#1F123F",
+  "#DDDAF9",
+  "#F2F2FD"
+ ],
+ "textos": [
+  "#5E6088",
+  "#FFFFFF",
+  "#7145D6",
+  "#1A1A1C",
+  "#DDDAF9"
+ ],
+ "fuentes": [
+  "Cabify Ciudad Text",
+  "Cabify Ciudad"
+ ],
+ "radios": [
+  "8px",
+  "15px",
+  "31px",
+  "32px",
+  "64px"
+ ],
+ "h1": {
+  "texto": "Más seguridad, mayor calidad y una ciudad a tu alcance",
+  "familia": "Cabify Ciudad",
+  "tam": "40px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "48px"
+ },
+ "cuerpo": {
+  "familia": "Cabify Ciudad Text",
+  "tam": "18px",
+  "lh": "26px"
+ },
+ "boton": {
+  "texto": "Regístrate",
+  "fondo": "#7145D6",
+  "color": "#FFFFFF",
+  "radio": "8px",
+  "padding": "4px 12px",
+  "peso": "700"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "cabify",
+ "url": "https://cabify.com/es",
+ "final": "https://cabify.com/es"
+}

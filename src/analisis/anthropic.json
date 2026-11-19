@@ -1,0 +1,55 @@
+{
+ "titulo": "Home \\ Anthropic",
+ "fondo": "#FAF9F5",
+ "fondos": [
+  "#FAF9F5",
+  "#141413",
+  "#F5F4ED",
+  "#30302E",
+  "#E8E6DC",
+  "#262624"
+ ],
+ "textos": [
+  "#5E5D59",
+  "#141413",
+  "#3D3D3A",
+  "#30302E",
+  "#FAF9F5"
+ ],
+ "fuentes": [
+  "anthropicSans",
+  "anthropicSerif"
+ ],
+ "radios": [
+  "999999px",
+  "8px",
+  "10px",
+  "16px",
+  "9999px"
+ ],
+ "h1": {
+  "texto": "AI research and products that put safety at the frontier. AI will have a vast impact on th",
+  "familia": "anthropicSerif",
+  "tam": "38.3791px",
+  "peso": "400",
+  "ls": "-0.383791px",
+  "lh": "47.9739px"
+ },
+ "cuerpo": {
+  "familia": "anthropicSans",
+  "tam": "16.5817px",
+  "lh": "25.37px"
+ },
+ "boton": {
+  "texto": "News",
+  "fondo": "#F5F4ED",
+  "color": "#3D3D3A",
+  "radio": "999999px",
+  "padding": "8px 16px",
+  "peso": "400"
+ },
+ "enlace": "#141413",
+ "slug": "anthropic",
+ "url": "https://www.anthropic.com",
+ "final": "https://www.anthropic.com/"
+}

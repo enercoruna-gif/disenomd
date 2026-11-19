@@ -1,0 +1,34 @@
+{
+ "titulo": "Supabase | The Postgres Development Platform",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#A9F1CA",
+  "#3FCF8E"
+ ],
+ "textos": [],
+ "fuentes": [
+  "Inter",
+  "Manrope"
+ ],
+ "radios": [
+  "3.35544e+07px"
+ ],
+ "h1": {
+  "texto": "Build in a weekendScale to millions",
+  "familia": "Manrope",
+  "tam": "46px",
+  "peso": "500",
+  "ls": "normal",
+  "lh": "46px"
+ },
+ "cuerpo": {
+  "familia": "Inter",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": null,
+ "enlace": null,
+ "slug": "supabase",
+ "url": "https://supabase.com",
+ "final": "https://supabase.com/"
+}

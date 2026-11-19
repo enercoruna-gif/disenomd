@@ -1,0 +1,53 @@
+{
+ "titulo": "Captura, organiza y aborda tus tareas pendientes en cualquier lugar",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F4F5F7",
+  "#DEEBFF",
+  "#FFFFFF",
+  "#EFEFEF",
+  "#0065FF",
+  "#172B4D",
+  "#091E42"
+ ],
+ "textos": [
+  "#091E42",
+  "#172B4D",
+  "#FFFFFF",
+  "#0052CC",
+  "#000000"
+ ],
+ "fuentes": [
+  "Charlie Text",
+  "Charlie Display"
+ ],
+ "radios": [
+  "4.8px",
+  "4px"
+ ],
+ "h1": {
+  "texto": "Captura, organiza y aborda tus tareas pendientes en cualquier lugar.",
+  "familia": "Charlie Display",
+  "tam": "48px",
+  "peso": "500",
+  "ls": "normal",
+  "lh": "60px"
+ },
+ "cuerpo": {
+  "familia": "Charlie Text",
+  "tam": "20px",
+  "lh": "30px"
+ },
+ "boton": {
+  "texto": "Pasar al contenido principal",
+  "fondo": "#172B4D",
+  "color": "#FFFFFF",
+  "radio": "4.8px",
+  "padding": "8px 20px",
+  "peso": "400"
+ },
+ "enlace": "#0052CC",
+ "slug": "trello",
+ "url": "https://trello.com/es",
+ "final": "https://trello.com/es"
+}

@@ -1,0 +1,57 @@
+{
+ "titulo": "Twitch",
+ "fondo": "#F7F7F8",
+ "fondos": [
+  "#000000",
+  "#330C6E",
+  "#EFEFF1",
+  "#FFFFFF",
+  "#451093",
+  "#EB0400",
+  "#5C16C5",
+  "#9147FF"
+ ],
+ "textos": [
+  "#0E0E10",
+  "#3B3B44",
+  "#FFFFFF",
+  "#5C16C5",
+  "#000000"
+ ],
+ "fuentes": [
+  "Inter",
+  "Roobert"
+ ],
+ "radios": [
+  "9000px",
+  "4px",
+  "2px",
+  "6px",
+  "8px"
+ ],
+ "h1": {
+  "texto": "En directo en Twitch",
+  "familia": "Roobert",
+  "tam": "18px",
+  "peso": "500",
+  "ls": "-0.18px",
+  "lh": "19.8px"
+ },
+ "cuerpo": {
+  "familia": "Inter",
+  "tam": "14px",
+  "lh": "19.6px"
+ },
+ "boton": {
+  "texto": "Registrarse",
+  "fondo": "#9147FF",
+  "color": "#FFFFFF",
+  "radio": "9000px",
+  "padding": "0px",
+  "peso": "600"
+ },
+ "enlace": "#5C16C5",
+ "slug": "twitch",
+ "url": "https://www.twitch.tv",
+ "final": "https://www.twitch.tv/"
+}

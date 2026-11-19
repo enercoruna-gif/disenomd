@@ -1,0 +1,59 @@
+{
+ "titulo": "AI Coding Agent for Building Ambitious Software | Cursor",
+ "fondo": "#F7F7F4",
+ "fondos": [
+  "#F7F7F4",
+  "#F2F1ED",
+  "#D9D5CF",
+  "#26251E",
+  "#EBEAE5",
+  "#E6E5E0",
+  "#E1E0DB",
+  "#E3EBF3"
+ ],
+ "textos": [
+  "#26251E",
+  "#F7F7F4",
+  "#3A6A9F",
+  "#1F8A65",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "system-ui",
+  "EB Garamond",
+  "CursorGothic",
+  "berkeleyMono"
+ ],
+ "radios": [
+  "4px",
+  "3.35544e+07px",
+  "8px",
+  "10px",
+  "2px"
+ ],
+ "h1": {
+  "texto": "Cursor es tu agente de programación para crear software ambicioso.",
+  "familia": "CursorGothic",
+  "tam": "26px",
+  "peso": "400",
+  "ls": "-0.325px",
+  "lh": "32.5px"
+ },
+ "cuerpo": {
+  "familia": "CursorGothic",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Saltar al contenido",
+  "fondo": "#26251E",
+  "color": "#F7F7F4",
+  "radio": "3.35544e+07px",
+  "padding": "5.6px 10.5px 5.88px",
+  "peso": "400"
+ },
+ "enlace": "#F7F7F4",
+ "slug": "cursor",
+ "url": "https://cursor.com",
+ "final": "https://cursor.com/"
+}

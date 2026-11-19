@@ -1,0 +1,55 @@
+{
+ "titulo": "Slack | Plataforma de trabajo y herramientas de productividad basadas en IA",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#481A54",
+  "#FFFFFF",
+  "#730394",
+  "#2E0039",
+  "#F9F0FF"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#1D1D1D",
+  "#481A54",
+  "#730394",
+  "#000000",
+  "#757575"
+ ],
+ "fuentes": [
+  "Salesforce-Sans",
+  "Salesforce-Avant-Garde"
+ ],
+ "radios": [
+  "48px",
+  "4px",
+  "50%",
+  "32px",
+  "999px"
+ ],
+ "h1": {
+  "texto": "Tu equipo y tus agentes, codo con codo",
+  "familia": "Salesforce-Avant-Garde",
+  "tam": "64px",
+  "peso": "700",
+  "ls": "-0.768px",
+  "lh": "68px"
+ },
+ "cuerpo": {
+  "familia": "Salesforce-Sans",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Ir al contenido principal",
+  "fondo": "#730394",
+  "color": "#FFFFFF",
+  "radio": "4px",
+  "padding": "19px 40px 20px",
+  "peso": "700"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "slack",
+ "url": "https://slack.com/intl/es-es",
+ "final": "https://slack.com/intl/es-es"
+}

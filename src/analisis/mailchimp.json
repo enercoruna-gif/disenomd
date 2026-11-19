@@ -1,0 +1,51 @@
+{
+ "titulo": "Plataforma de Email Marketing | Mailchimp",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F5F5F5",
+  "#FFFFFF",
+  "#231E15",
+  "#FFE01B"
+ ],
+ "textos": [
+  "#231E15",
+  "#FFFFFF",
+  "#000000",
+  "#004E56",
+  "#FFE01B"
+ ],
+ "fuentes": [
+  "Tally",
+  "Means Web"
+ ],
+ "radios": [
+  "24px",
+  "26px",
+  "40px"
+ ],
+ "h1": {
+  "texto": "Convierte ideas en correos electrónicos y SMS  que conecten",
+  "familia": "Means Web",
+  "tam": "64px",
+  "peso": "400",
+  "ls": "-1.2px",
+  "lh": "76.8px"
+ },
+ "cuerpo": {
+  "familia": "Tally",
+  "tam": "16px",
+  "lh": "21.6px"
+ },
+ "boton": {
+  "texto": "Iniciar gratis",
+  "fondo": "#FFE01B",
+  "color": "#231E15",
+  "radio": "26px",
+  "padding": "12px 24px",
+  "peso": "700"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "mailchimp",
+ "url": "https://mailchimp.com/es/",
+ "final": "https://mailchimp.com/es/"
+}

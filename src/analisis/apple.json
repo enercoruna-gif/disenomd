@@ -1,0 +1,56 @@
+{
+ "titulo": "Apple (España)",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#000000",
+  "#F5F5F7",
+  "#822704",
+  "#161617",
+  "#1D1D1F",
+  "#0071E3",
+  "#424245"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#F5F5F7",
+  "#1D1D1F",
+  "#000000",
+  "#0071E3",
+  "#0066CC"
+ ],
+ "fuentes": [
+  "SF Pro Text",
+  "SF Pro Display"
+ ],
+ "radios": [
+  "980px",
+  "11px",
+  "8px",
+  "50%"
+ ],
+ "h1": {
+  "texto": "Apple",
+  "familia": "SF Pro Text",
+  "tam": "34px",
+  "peso": "600",
+  "ls": "-0.374px",
+  "lh": "50px"
+ },
+ "cuerpo": {
+  "familia": "SF Pro Text",
+  "tam": "17px",
+  "lh": "25px"
+ },
+ "boton": {
+  "texto": "Continuar",
+  "fondo": "#F5F5F7",
+  "color": "#000000",
+  "radio": "8px",
+  "padding": "8px 15px",
+  "peso": "400"
+ },
+ "enlace": "#F5F5F7",
+ "slug": "apple",
+ "url": "https://www.apple.com/es/",
+ "final": "https://www.apple.com/es/"
+}

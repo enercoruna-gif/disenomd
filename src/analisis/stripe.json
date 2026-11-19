@@ -1,0 +1,54 @@
+{
+ "titulo": "Stripe | Infraestructura financiera para tu negocio",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#E5EDF5",
+  "#0D1738",
+  "#F8FAFD",
+  "#533AFD",
+  "#FFE0D1",
+  "#00D66F",
+  "#000000"
+ ],
+ "textos": [
+  "#061B31",
+  "#50617A",
+  "#273951",
+  "#64748D",
+  "#1A2C44",
+  "#3C4F69"
+ ],
+ "fuentes": [
+  "sohne-var"
+ ],
+ "radios": [
+  "4px",
+  "6px"
+ ],
+ "h1": {
+  "texto": "La infraestructura financiera para hacer crecer tu negocio. Acepta pagos, ofrece servicios",
+  "familia": "sohne-var",
+  "tam": "44px",
+  "peso": "300",
+  "ls": "-0.88px",
+  "lh": "50.6px"
+ },
+ "cuerpo": {
+  "familia": "sohne-var",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Contacta con ventas",
+  "fondo": "#533AFD",
+  "color": "#FFFFFF",
+  "radio": "4px",
+  "padding": "11.5px 20px 12.5px",
+  "peso": "400"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "stripe",
+ "url": "https://stripe.com/es",
+ "final": "https://stripe.com/es"
+}

@@ -1,0 +1,38 @@
+{
+ "titulo": "Duolingo - La forma más popular del mundo para aprender",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF"
+ ],
+ "textos": [
+  "#777777",
+  "#1CB0F6",
+  "#58CC02",
+  "#AFAFAF",
+  "#4B4B4B",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "duolingo-sans",
+  "feather"
+ ],
+ "radios": [],
+ "h1": {
+  "texto": "¡La forma más divertida de aprender idiomas, ajedrez y más!",
+  "familia": "duolingo-sans",
+  "tam": "32px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "normal"
+ },
+ "cuerpo": {
+  "familia": "sans-serif",
+  "tam": "17px",
+  "lh": "20px"
+ },
+ "boton": null,
+ "enlace": "#1CB0F6",
+ "slug": "duolingo",
+ "url": "https://es.duolingo.com",
+ "final": "https://es.duolingo.com/"
+}

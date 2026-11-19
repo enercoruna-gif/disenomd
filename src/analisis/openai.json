@@ -1,0 +1,37 @@
+{
+ "titulo": "OpenAI | Investigación e implementación",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#000000"
+ ],
+ "textos": [
+  "#000000",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "OpenAI Sans"
+ ],
+ "radios": [
+  "40px",
+  "24px"
+ ],
+ "h1": {
+  "texto": "Nuestros anuncios más recientes de Daybreak",
+  "familia": "OpenAI Sans",
+  "tam": "17.6995px",
+  "peso": "500",
+  "ls": "-0.176995px",
+  "lh": "23.1951px"
+ },
+ "cuerpo": {
+  "familia": "OpenAI Sans",
+  "tam": "17px",
+  "lh": "27.999px"
+ },
+ "boton": null,
+ "enlace": "#000000",
+ "slug": "openai",
+ "url": "https://openai.com/es-ES/",
+ "final": "https://openai.com/es-ES/"
+}

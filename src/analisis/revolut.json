@@ -1,0 +1,49 @@
+{
+ "titulo": "Revolut | El banco todo en uno | Revolut España",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F7F7F7",
+  "#FFFFFF",
+  "#1F1F1F"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#1F1F1F",
+  "#F4F4F4",
+  "#000000"
+ ],
+ "fuentes": [
+  "Aeonik Pro",
+  "Inter",
+  "-apple-system"
+ ],
+ "radios": [
+  "9999px",
+  "20px"
+ ],
+ "h1": {
+  "texto": "Banking & Beyond",
+  "familia": "Aeonik Pro",
+  "tam": "84.6578px",
+  "peso": "500",
+  "ls": "-2.08px",
+  "lh": "84.6578px"
+ },
+ "cuerpo": {
+  "familia": "-apple-system",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Enviar",
+  "fondo": "#1F1F1F",
+  "color": "#FFFFFF",
+  "radio": "9999px",
+  "padding": "0px 20px",
+  "peso": "400"
+ },
+ "enlace": "#F4F4F4",
+ "slug": "revolut",
+ "url": "https://www.revolut.com/es-ES/",
+ "final": "https://www.revolut.com/es-ES/"
+}

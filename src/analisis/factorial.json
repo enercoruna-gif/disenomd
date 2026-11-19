@@ -1,0 +1,50 @@
+{
+ "titulo": "Factorial | La IA para empresas",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#E8E8ED",
+  "#E51943",
+  "#FAF2F4",
+  "#A8A8B1",
+  "#25253D"
+ ],
+ "textos": [
+  "#25253D",
+  "#515164",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "DM Sans"
+ ],
+ "radios": [
+  "9999px",
+  "10px",
+  "21px"
+ ],
+ "h1": {
+  "texto": "La IA para empresas que desata el potencial de tu negocio",
+  "familia": "DM Sans",
+  "tam": "64px",
+  "peso": "500",
+  "ls": "-2.56px",
+  "lh": "64px"
+ },
+ "cuerpo": {
+  "familia": "DM Sans",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Analizar",
+  "fondo": "#FFFFFF",
+  "color": "#25253D",
+  "radio": "10px",
+  "padding": "6px 12px 6px 9px",
+  "peso": "500"
+ },
+ "enlace": "#E51943",
+ "slug": "factorial",
+ "url": "https://factorialhr.es",
+ "final": "https://factorial.es/"
+}

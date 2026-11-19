@@ -1,0 +1,47 @@
+{
+ "titulo": "Mango España (Península y Baleares) | Moda online",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#DADADA",
+  "#FAFAFA"
+ ],
+ "textos": [
+  "#131313",
+  "#121212",
+  "#FDFDFD",
+  "#FFFFFF",
+  "#434343"
+ ],
+ "fuentes": [
+  "HeadingsFontES",
+  "DefaultFontES",
+  "InspirationalFontES"
+ ],
+ "radios": [],
+ "h1": {
+  "texto": "MANGOHome",
+  "familia": "DefaultFontES",
+  "tam": "26px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "20px"
+ },
+ "cuerpo": {
+  "familia": "DefaultFontES",
+  "tam": "13px",
+  "lh": "20px"
+ },
+ "boton": {
+  "texto": "Saltar al contenido principal",
+  "fondo": "#DADADA",
+  "color": "#434343",
+  "radio": "0px",
+  "padding": "14px 18px",
+  "peso": "600"
+ },
+ "enlace": "#FDFDFD",
+ "slug": "mango",
+ "url": "https://shop.mango.com/es/es",
+ "final": "https://shop.mango.com/es/es"
+}

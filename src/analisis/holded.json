@@ -1,0 +1,56 @@
+{
+ "titulo": "El software de gestión para pymes y emprendedores | Holded",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#0F1117",
+  "#FAFAF9",
+  "#06070A",
+  "#121926",
+  "#FEF2F2",
+  "#FF5454",
+  "#FFFBEB"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#121926",
+  "#686F7C",
+  "#9CA3AF",
+  "#CDD5DF",
+  "#374151"
+ ],
+ "fuentes": [
+  "inter"
+ ],
+ "radios": [
+  "9999px",
+  "18px",
+  "8px",
+  "12px"
+ ],
+ "h1": {
+  "texto": "Facturación y mucho más. Todo tu negocio en un solo sitio.",
+  "familia": "inter",
+  "tam": "56px",
+  "peso": "600",
+  "ls": "-2.1px",
+  "lh": "54.88px"
+ },
+ "cuerpo": {
+  "familia": "inter",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Empieza gratis",
+  "fondo": "#FFFFFF",
+  "color": "#121926",
+  "radio": "9999px",
+  "padding": "0px 18px",
+  "peso": "400"
+ },
+ "enlace": "#ECEAE6",
+ "slug": "holded",
+ "url": "https://www.holded.com/es",
+ "final": "https://www.holded.com/es"
+}

@@ -1,0 +1,46 @@
+{
+ "titulo": "Canva España | Una herramienta de diseño todo en uno",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF"
+ ],
+ "textos": [
+  "#0F1015",
+  "#FFFFFF",
+  "#8B3DFF"
+ ],
+ "fuentes": [
+  "Canva Sans"
+ ],
+ "radios": [
+  "12px",
+  "10px",
+  "8px",
+  "9999px"
+ ],
+ "h1": {
+  "texto": "¿Necesitas un diseño top para ayer?",
+  "familia": "Canva Sans",
+  "tam": "24px",
+  "peso": "600",
+  "ls": "normal",
+  "lh": "32px"
+ },
+ "cuerpo": {
+  "familia": "Times New Roman",
+  "tam": "10px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Iniciar sesión",
+  "fondo": "#FFFFFF",
+  "color": "#0F1015",
+  "radio": "10px",
+  "padding": "0px 12px",
+  "peso": "600"
+ },
+ "enlace": "#0F1015",
+ "slug": "canva",
+ "url": "https://www.canva.com/es_es/",
+ "final": "https://www.canva.com/es_es/"
+}

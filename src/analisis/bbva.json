@@ -1,0 +1,52 @@
+{
+ "titulo": "Banco BBVA - Productos financieros para particulares | BBVA",
+ "fondo": "#F7F8F8",
+ "fondos": [
+  "#FFFFFF",
+  "#001391",
+  "#F7F8F8",
+  "#0C6DFF",
+  "#070E46"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#001391",
+  "#070E46",
+  "#000000",
+  "#85C8FF"
+ ],
+ "fuentes": [
+  "Benton Sans BBVA",
+  "BentonSansBBVA-Medium",
+  "Tiempos Headline"
+ ],
+ "radios": [
+  "8px",
+  "16px"
+ ],
+ "h1": {
+  "texto": "Cuenta Online Sin Comisiones",
+  "familia": "Benton Sans BBVA",
+  "tam": "15.008px",
+  "peso": "350",
+  "ls": "0%",
+  "lh": "24px"
+ },
+ "cuerpo": {
+  "familia": "Benton Sans BBVA",
+  "tam": "15.008px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Acceso",
+  "fondo": "#F7F8F8",
+  "color": "#001391",
+  "radio": "8px",
+  "padding": "16px 32px",
+  "peso": "500"
+ },
+ "enlace": "#000000",
+ "slug": "bbva",
+ "url": "https://www.bbva.es",
+ "final": "https://www.bbva.es/personas.html"
+}

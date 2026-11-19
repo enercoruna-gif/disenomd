@@ -1,0 +1,51 @@
+{
+ "titulo": "Wise: la cuenta internacional | Dinero sin fronteras | Wise España",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#9FE870",
+  "#21231D",
+  "#163300"
+ ],
+ "textos": [
+  "#163300",
+  "#9FE870",
+  "#A0E1E1",
+  "#ECF9F9",
+  "#0E0F0C"
+ ],
+ "fuentes": [
+  "Inter",
+  "Wise Sans"
+ ],
+ "radios": [
+  "9999px",
+  "27.5385px",
+  "36.718px"
+ ],
+ "h1": {
+  "texto": "La cuenta corriente para España y el extranjero",
+  "familia": "Wise Sans",
+  "tam": "96px",
+  "peso": "800",
+  "ls": "normal",
+  "lh": "100.608px"
+ },
+ "cuerpo": {
+  "familia": "Inter",
+  "tam": "18px",
+  "lh": "26px"
+ },
+ "boton": {
+  "texto": "Regístrate",
+  "fondo": "#163300",
+  "color": "#9FE870",
+  "radio": "9999px",
+  "padding": "8px 12px",
+  "peso": "600"
+ },
+ "enlace": "#163300",
+ "slug": "wise",
+ "url": "https://wise.com/es/",
+ "final": "https://wise.com/es/"
+}

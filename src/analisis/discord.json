@@ -1,0 +1,46 @@
+{
+ "titulo": "Discord - Un chat de grupo lleno de juegos y diversión",
+ "fondo": "#1A2081",
+ "fondos": [
+  "#FFFFFF",
+  "#5865F2"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#000000",
+  "#23272A"
+ ],
+ "fuentes": [
+  "Abcgintodiscord",
+  "Abcgintodiscordnord"
+ ],
+ "radios": [
+  "12px",
+  "16px"
+ ],
+ "h1": {
+  "texto": "Un chat de grupo lleno de juegos y diversión",
+  "familia": "Abcgintodiscordnord",
+  "tam": "44px",
+  "peso": "700",
+  "ls": "-0.44px",
+  "lh": "37.7143px"
+ },
+ "cuerpo": {
+  "familia": "Ggsans",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Iniciar sesión",
+  "fondo": "#FFFFFF",
+  "color": "#000000",
+  "radio": "16px",
+  "padding": "10px 16px",
+  "peso": "500"
+ },
+ "enlace": null,
+ "slug": "discord",
+ "url": "https://discord.com",
+ "final": "https://discord.com/"
+}

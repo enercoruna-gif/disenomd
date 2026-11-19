@@ -1,0 +1,40 @@
+{
+ "titulo": "Mercadona",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F8F5EC",
+  "#F3F2EE",
+  "#FFFFFF",
+  "#00AB61"
+ ],
+ "textos": [
+  "#00AB61",
+  "#000000",
+  "#3B3935"
+ ],
+ "fuentes": [
+  "Muli",
+  "PlayfairDisplay-ExtraBold"
+ ],
+ "radios": [
+  "8px"
+ ],
+ "h1": {
+  "texto": "Empieza tu compra en Mercadona",
+  "familia": "PlayfairDisplay-ExtraBold",
+  "tam": "44.8px",
+  "peso": "800",
+  "ls": "normal",
+  "lh": "51.52px"
+ },
+ "cuerpo": {
+  "familia": "Muli",
+  "tam": "16px",
+  "lh": "18.4px"
+ },
+ "boton": null,
+ "enlace": null,
+ "slug": "mercadona",
+ "url": "https://www.mercadona.es",
+ "final": "https://www.mercadona.es/"
+}

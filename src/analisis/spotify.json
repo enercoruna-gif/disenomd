@@ -1,0 +1,52 @@
+{
+ "titulo": "Spotify Premium (España) - Prueba 3 meses por 0 €",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#121212",
+  "#000000",
+  "#1D75DE",
+  "#1ED760",
+  "#FFFFFF"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#D9DADC",
+  "#000000",
+  "#B3B3B3",
+  "#121212"
+ ],
+ "fuentes": [
+  "SpotifyMixUI",
+  "SpotifyMixUITitleVariable",
+  "a"
+ ],
+ "radios": [
+  "9999px",
+  "500px"
+ ],
+ "h1": {
+  "texto": "Todo, en un solo lugar:músicaartistasfanseventos en directovídeos",
+  "familia": "SpotifyMixUITitleVariable",
+  "tam": "96px",
+  "peso": "900",
+  "ls": "normal",
+  "lh": "normal"
+ },
+ "cuerpo": {
+  "familia": "SpotifyMixUI",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Saltar al contenido",
+  "fondo": "#FFFFFF",
+  "color": "#121212",
+  "radio": "500px",
+  "padding": "16px 48px",
+  "peso": "700"
+ },
+ "enlace": "#9E9EFF",
+ "slug": "spotify",
+ "url": "https://www.spotify.com/es/premium/",
+ "final": "https://www.spotify.com/es/premium/"
+}

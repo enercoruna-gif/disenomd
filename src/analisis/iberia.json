@@ -1,0 +1,55 @@
+{
+ "titulo": "IBERIA - Web Oficial: Los Mejores Precios - Iberia España",
+ "fondo": "#EEEEEE",
+ "fondos": [
+  "#000000",
+  "#FFFFFF",
+  "#D7192D",
+  "#DDDDDD",
+  "#A8191A"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#333333",
+  "#D7192D",
+  "#666666"
+ ],
+ "fuentes": [
+  "iberiaheadline",
+  "verdana",
+  "iberiatext",
+  "Iberia Micro"
+ ],
+ "radios": [
+  "50%",
+  "2px",
+  "4px",
+  "3px",
+  "16px"
+ ],
+ "h1": {
+  "texto": "IBERIA.COM: los mejores precios para vuelos de Iberia",
+  "familia": "verdana",
+  "tam": "0px",
+  "peso": "400",
+  "ls": "normal",
+  "lh": "0px"
+ },
+ "cuerpo": {
+  "familia": "verdana",
+  "tam": "16px",
+  "lh": "22.8571px"
+ },
+ "boton": {
+  "texto": "Saltar al contenido",
+  "fondo": "#000000",
+  "color": "#FFFFFF",
+  "radio": "4px",
+  "padding": "6px 10px",
+  "peso": "100"
+ },
+ "enlace": "#333333",
+ "slug": "iberia",
+ "url": "https://www.iberia.com/es/",
+ "final": "https://www.iberia.com/es/"
+}

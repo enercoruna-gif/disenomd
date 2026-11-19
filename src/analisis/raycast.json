@@ -1,0 +1,51 @@
+{
+ "titulo": "Raycast - Your shortcut to everything",
+ "fondo": "#07080A",
+ "fondos": [
+  "#07080A",
+  "#E6E6E6",
+  "#452324",
+  "#130D0E"
+ ],
+ "textos": [
+  "#9C9C9D",
+  "#FFFFFF",
+  "#2F3031",
+  "#6A6B6C"
+ ],
+ "fuentes": [
+  "Inter",
+  "GeistMono"
+ ],
+ "radios": [
+  "8px",
+  "43px",
+  "1000px",
+  "12px"
+ ],
+ "h1": {
+  "texto": "Your shortcut to everything.",
+  "familia": "Inter",
+  "tam": "64px",
+  "peso": "600",
+  "ls": "normal",
+  "lh": "70.4px"
+ },
+ "cuerpo": {
+  "familia": "Inter",
+  "tam": "16px",
+  "lh": "18.4px"
+ },
+ "boton": {
+  "texto": "Download",
+  "fondo": "#E6E6E6",
+  "color": "#2F3031",
+  "radio": "8px",
+  "padding": "8px 12px",
+  "peso": "500"
+ },
+ "enlace": null,
+ "slug": "raycast",
+ "url": "https://www.raycast.com",
+ "final": "https://www.raycast.com/"
+}

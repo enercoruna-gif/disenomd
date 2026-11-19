@@ -1,0 +1,45 @@
+{
+ "titulo": "Agentic Infrastructure - Vercel",
+ "fondo": "#FAFAFA",
+ "fondos": [
+  "#FFFFFF",
+  "#171717"
+ ],
+ "textos": [
+  "#171717",
+  "#4D4D4D",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "GeistSans"
+ ],
+ "radios": [
+  "6px",
+  "3.35544e+07px"
+ ],
+ "h1": {
+  "texto": "Agentic Infrastructure",
+  "familia": "GeistSans",
+  "tam": "64px",
+  "peso": "400",
+  "ls": "-3.84px",
+  "lh": "64px"
+ },
+ "cuerpo": {
+  "familia": "GeistSans",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Get a Demo",
+  "fondo": "#FFFFFF",
+  "color": "#171717",
+  "radio": "6px",
+  "padding": "0px 6px",
+  "peso": "500"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "vercel",
+ "url": "https://vercel.com",
+ "final": "https://vercel.com/"
+}

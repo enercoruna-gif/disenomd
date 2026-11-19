@@ -1,0 +1,51 @@
+{
+ "titulo": "Explore the Uber Platform | Earn & Ride | Uber",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#000000",
+  "#292929",
+  "#F6F6F6",
+  "#111111"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#FCFCFC",
+  "#000000",
+  "#111111",
+  "#4A4A4A"
+ ],
+ "fuentes": [
+  "UberMoveText",
+  "UberMove"
+ ],
+ "radios": [
+  "999px",
+  "8px"
+ ],
+ "h1": {
+  "texto": "Ve a cualquier lugar",
+  "familia": "UberMove",
+  "tam": "52px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "64px"
+ },
+ "cuerpo": {
+  "familia": "sans-serif",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Viaja",
+  "fondo": "#111111",
+  "color": "#FCFCFC",
+  "radio": "999px",
+  "padding": "10px 12px",
+  "peso": "500"
+ },
+ "enlace": "#000000",
+ "slug": "uber",
+ "url": "https://www.uber.com/es/es/",
+ "final": "https://www.uber.com/es/es-es/"
+}

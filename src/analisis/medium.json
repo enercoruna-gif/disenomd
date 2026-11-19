@@ -1,0 +1,48 @@
+{
+ "titulo": "Medium: Read and write stories.",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F7F4ED",
+  "#FFFFFF",
+  "#191919"
+ ],
+ "textos": [
+  "#6B6B6B",
+  "#242424",
+  "#FFFFFF",
+  "#000000"
+ ],
+ "fuentes": [
+  "sohne",
+  "gt-super"
+ ],
+ "radios": [
+  "1386px",
+  "1980px"
+ ],
+ "h1": {
+  "texto": "Human stories & ideas",
+  "familia": "gt-super",
+  "tam": "120px",
+  "peso": "400",
+  "ls": "-6.6px",
+  "lh": "100px"
+ },
+ "cuerpo": {
+  "familia": "Times New Roman",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Get started",
+  "fondo": "#191919",
+  "color": "#FFFFFF",
+  "radio": "1386px",
+  "padding": "8px 16px",
+  "peso": "400"
+ },
+ "enlace": "#242424",
+ "slug": "medium",
+ "url": "https://medium.com",
+ "final": "https://medium.com/"
+}

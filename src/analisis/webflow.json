@@ -1,0 +1,47 @@
+{
+ "titulo": "Webflow: The agentic web platform for modern businesses",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#F0F0F0",
+  "#D8D8D8",
+  "#146EF5"
+ ],
+ "textos": [
+  "#080808",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "WF Visual Sans Variable"
+ ],
+ "radios": [
+  "8px",
+  "4px",
+  "1280px"
+ ],
+ "h1": {
+  "texto": "Build for what’s next",
+  "familia": "WF Visual Sans Variable",
+  "tam": "74.8571px",
+  "peso": "600",
+  "ls": "-0.748571px",
+  "lh": "77.8514px"
+ },
+ "cuerpo": {
+  "familia": "WF Visual Sans Variable",
+  "tam": "16px",
+  "lh": "25.6px"
+ },
+ "boton": {
+  "texto": "Start for free",
+  "fondo": "#146EF5",
+  "color": "#FFFFFF",
+  "radio": "4px",
+  "padding": "16px 24px",
+  "peso": "500"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "webflow",
+ "url": "https://webflow.com",
+ "final": "https://webflow.com/"
+}

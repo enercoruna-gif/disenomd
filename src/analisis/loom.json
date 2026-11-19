@@ -1,0 +1,54 @@
+{
+ "titulo": "Free screen recorder for Mac and PC | Loom",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#101214",
+  "#1868DB",
+  "#E9F2FE",
+  "#FFAB00"
+ ],
+ "textos": [
+  "#101214",
+  "#FFFFFF",
+  "#0052CC",
+  "#000000",
+  "#292A2E",
+  "#696969"
+ ],
+ "fuentes": [
+  "Charlie Text",
+  "Charlie Display"
+ ],
+ "radios": [
+  "9999px",
+  "2px",
+  "39.3846px",
+  "4px"
+ ],
+ "h1": {
+  "texto": "One video is worth a thousand words",
+  "familia": "Charlie Display",
+  "tam": "56.5385px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "58.1781px"
+ },
+ "cuerpo": {
+  "familia": "Charlie Text",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Get Loom for free",
+  "fondo": "#1868DB",
+  "color": "#FFFFFF",
+  "radio": "9999px",
+  "padding": "7.61538px 15.2308px",
+  "peso": "400"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "loom",
+ "url": "https://www.loom.com",
+ "final": "https://www.loom.com/"
+}

@@ -1,0 +1,54 @@
+{
+ "titulo": "Linear – The system for product development",
+ "fondo": "#08090A",
+ "fondos": [
+  "#08090A",
+  "#090A0B",
+  "#101112",
+  "#0F1011",
+  "#E5E5E6",
+  "#121414"
+ ],
+ "textos": [
+  "#D0D6E0",
+  "#62666D",
+  "#8A8F98",
+  "#F7F8F8",
+  "#08090A"
+ ],
+ "fuentes": [
+  "Inter Variable",
+  "Berkeley Mono"
+ ],
+ "radios": [
+  "12px",
+  "9px",
+  "9999px",
+  "2px"
+ ],
+ "h1": {
+  "texto": "The product development system for teams and agentsThe product developmentsystem for teams",
+  "familia": "Inter Variable",
+  "tam": "64px",
+  "peso": "510",
+  "ls": "-1.408px",
+  "lh": "64px"
+ },
+ "cuerpo": {
+  "familia": "Inter Variable",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Sign up",
+  "fondo": "#E5E5E6",
+  "color": "#08090A",
+  "radio": "9999px",
+  "padding": "0px 12px",
+  "peso": "510"
+ },
+ "enlace": "#F7F8F8",
+ "slug": "linear",
+ "url": "https://linear.app",
+ "final": "https://linear.app/"
+}

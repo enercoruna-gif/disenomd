@@ -1,0 +1,51 @@
+{
+ "titulo": "Monzo | Open a Free Account",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F2F8F3",
+  "#FFFFFF",
+  "#091723",
+  "#EFEFEF"
+ ],
+ "textos": [
+  "#091723",
+  "#FFFFFF",
+  "#000000"
+ ],
+ "fuentes": [
+  "MonzoSansText",
+  "MonzoSansDisplay"
+ ],
+ "radios": [
+  "100px",
+  "500px",
+  "10px",
+  "64px",
+  "128px"
+ ],
+ "h1": {
+  "texto": "Spend your money on life, not your life on money",
+  "familia": "MonzoSansDisplay",
+  "tam": "48.8288px",
+  "peso": "800",
+  "ls": "normal",
+  "lh": "58.5946px"
+ },
+ "cuerpo": {
+  "familia": "MonzoSansText",
+  "tam": "16px",
+  "lh": "22.4px"
+ },
+ "boton": {
+  "texto": "Sign up",
+  "fondo": "#091723",
+  "color": "#FFFFFF",
+  "radio": "500px",
+  "padding": "12px 24px",
+  "peso": "600"
+ },
+ "enlace": "#091723",
+ "slug": "monzo",
+ "url": "https://monzo.com",
+ "final": "https://monzo.com/"
+}

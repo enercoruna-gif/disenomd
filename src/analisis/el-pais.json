@@ -1,0 +1,47 @@
+{
+ "titulo": "EL PAÍS Edición US: el periódico global",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#F7CF3C"
+ ],
+ "textos": [
+  "#111111",
+  "#666666",
+  "#000000",
+  "#4A4A4A"
+ ],
+ "fuentes": [
+  "MarcinAntB",
+  "MajritTx",
+  "MajritTxRoman"
+ ],
+ "radios": [
+  "2px"
+ ],
+ "h1": {
+  "texto": "",
+  "familia": "MajritTx",
+  "tam": "32px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "36.8px"
+ },
+ "cuerpo": {
+  "familia": "MajritTx",
+  "tam": "16px",
+  "lh": "18.4px"
+ },
+ "boton": {
+  "texto": "6 meses, US$1",
+  "fondo": "#F7CF3C",
+  "color": "#111111",
+  "radio": "2px",
+  "padding": "5px 8px",
+  "peso": "700"
+ },
+ "enlace": "#111111",
+ "slug": "el-pais",
+ "url": "https://elpais.com",
+ "final": "https://elpais.com/us/"
+}

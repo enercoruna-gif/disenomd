@@ -1,0 +1,52 @@
+{
+ "titulo": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#F2F5F3",
+  "#F9FBF9",
+  "#08872B",
+  "#000000"
+ ],
+ "textos": [
+  "#000000",
+  "#58635B",
+  "#FFFFFF",
+  "#08872B"
+ ],
+ "fuentes": [
+  "Mona Sans",
+  "Mona Sans Mono"
+ ],
+ "radios": [
+  "6px",
+  "9999.01px",
+  "8px",
+  "50%"
+ ],
+ "h1": {
+  "texto": "Software still starts with you",
+  "familia": "Mona Sans",
+  "tam": "56px",
+  "peso": "440",
+  "ls": "normal",
+  "lh": "61.6px"
+ },
+ "cuerpo": {
+  "familia": "Mona Sans VF",
+  "tam": "14px",
+  "lh": "21px"
+ },
+ "boton": {
+  "texto": "Sign up",
+  "fondo": "#000000",
+  "color": "#FFFFFF",
+  "radio": "6px",
+  "padding": "0px 12px",
+  "peso": "400"
+ },
+ "enlace": "#0969DA",
+ "slug": "github",
+ "url": "https://github.com",
+ "final": "https://github.com/"
+}

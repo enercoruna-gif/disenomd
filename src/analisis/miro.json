@@ -1,0 +1,60 @@
+{
+ "titulo": "El espacio de innovación con IA | Miro",
+ "fondo": "#FBFAF7",
+ "fondos": [
+  "#FBFAF7",
+  "#FFFFFF",
+  "#1C1C1E",
+  "#FDE050",
+  "#FFC795",
+  "#A8F7F0",
+  "#FDE0F0",
+  "#CDD8FF"
+ ],
+ "textos": [
+  "#0000EE",
+  "#000000",
+  "#1C1C1E",
+  "#FFFFFF",
+  "#666666",
+  "#222428"
+ ],
+ "fuentes": [
+  "sans-serif",
+  "Roobert PRO SemiBold",
+  "Noto Sans",
+  "Roobert PRO"
+ ],
+ "radios": [
+  "40px",
+  "12px",
+  "8px",
+  "3.35544e+07px",
+  "16px"
+ ],
+ "h1": {
+  "texto": "Desde la lluvia de ideas hasta la innovación con Miro",
+  "familia": "Apris Regular",
+  "tam": "56px",
+  "peso": "400",
+  "ls": "normal",
+  "lh": "61.6px"
+ },
+ "cuerpo": {
+  "familia": "sans-serif",
+  "tam": "12px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Descubre por qué rediseñamos Miro →",
+  "fondo": "#FDE050",
+  "color": "#1C1C1E",
+  "radio": "8px",
+  "padding": "8px 12px",
+  "peso": "900"
+ },
+ "enlace": null,
+ "slug": "miro",
+ "url": "https://miro.com/es/",
+ "final": "https://miro.com/es/"
+}

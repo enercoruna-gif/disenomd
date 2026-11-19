@@ -1,0 +1,50 @@
+{
+ "titulo": "Banco online N26 | Ahorra, invierte y gestiona desde una app",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#088177",
+  "#003B39",
+  "#FAF8F5",
+  "#FFFFFF"
+ ],
+ "textos": [
+  "#1B1B1B",
+  "#FFFFFF",
+  "#003B39"
+ ],
+ "fuentes": [
+  "N26",
+  "N26-Extended"
+ ],
+ "radios": [
+  "8px",
+  "24px",
+  "6px",
+  "40px"
+ ],
+ "h1": {
+  "texto": "El primer banco del que te vas a enamorar",
+  "familia": "N26-Extended",
+  "tam": "80px",
+  "peso": "400",
+  "ls": "normal",
+  "lh": "88px"
+ },
+ "cuerpo": {
+  "familia": "N26",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Abrir una cuenta bancaria",
+  "fondo": "#003B39",
+  "color": "#FFFFFF",
+  "radio": "24px",
+  "padding": "12px 24px",
+  "peso": "500"
+ },
+ "enlace": null,
+ "slug": "n26",
+ "url": "https://n26.com/es-es",
+ "final": "https://n26.com/es-es"
+}

@@ -1,0 +1,49 @@
+{
+ "titulo": "El espacio de trabajo con IA que trabaja para ti. | Notion",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#F6F5F4",
+  "#E6F3FE",
+  "#000000",
+  "#0075DE"
+ ],
+ "textos": [
+  "#000000",
+  "#FFFFFF",
+  "#0075DE",
+  "#005BAB"
+ ],
+ "fuentes": [
+  "NotionInter"
+ ],
+ "radios": [
+  "8px",
+  "9999.01px"
+ ],
+ "h1": {
+  "texto": "Donde equipos y agentes piensan codo con codo.",
+  "familia": "NotionInter",
+  "tam": "96px",
+  "peso": "600",
+  "ls": "-4.6px",
+  "lh": "100px"
+ },
+ "cuerpo": {
+  "familia": "NotionInter",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Obtén Notion gratis",
+  "fondo": "#0075DE",
+  "color": "#FFFFFF",
+  "radio": "8px",
+  "padding": "4px 14px",
+  "peso": "500"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "notion",
+ "url": "https://www.notion.com/es",
+ "final": "https://www.notion.com/es"
+}

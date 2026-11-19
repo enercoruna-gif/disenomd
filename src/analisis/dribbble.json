@@ -1,0 +1,57 @@
+{
+ "titulo": "Browse thousands of images for design inspiration | Dribbble",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#F3F3F6",
+  "#ECEBF0",
+  "#FAF9FB",
+  "#FDFCFB",
+  "#0D0C22",
+  "#EA4C89",
+  "#3A3546"
+ ],
+ "textos": [
+  "#0D0C22",
+  "#FFFFFF",
+  "#060318",
+  "#BEB9CA",
+  "#3A3546",
+  "#524B63"
+ ],
+ "fuentes": [
+  "Mona Sans"
+ ],
+ "radios": [
+  "50%",
+  "1e+07px",
+  "4px",
+  "24px",
+  "8px"
+ ],
+ "h1": {
+  "texto": "Work with the world’s best in\n\n        \n          \n            web design\n            mobi",
+  "familia": "Mona Sans",
+  "tam": "52px",
+  "peso": "600",
+  "ls": "normal",
+  "lh": "62.4px"
+ },
+ "cuerpo": {
+  "familia": "Mona Sans",
+  "tam": "16px",
+  "lh": "28px"
+ },
+ "boton": {
+  "texto": "Log in",
+  "fondo": "#0D0C22",
+  "color": "#FFFFFF",
+  "radio": "1e+07px",
+  "padding": "0px 24px",
+  "peso": "600"
+ },
+ "enlace": null,
+ "slug": "dribbble",
+ "url": "https://dribbble.com",
+ "final": "https://dribbble.com/"
+}

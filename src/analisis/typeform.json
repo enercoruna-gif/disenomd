@@ -1,0 +1,52 @@
+{
+ "titulo": "Editor de formularios con automatizaciones basadas en IA | Typeform",
+ "fondo": "#FAF9FB",
+ "fondos": [
+  "#2A222B",
+  "#FFFFFF",
+  "#FAF9FB",
+  "#A057BB"
+ ],
+ "textos": [
+  "#FAF9FB",
+  "#3C323E",
+  "#2A222B",
+  "#F9F2FD",
+  "#ECCFFA"
+ ],
+ "fuentes": [
+  "Twklausanne 400",
+  "Tobias",
+  "Twklausanne 500",
+  "Twklausanne 600"
+ ],
+ "radios": [
+  "12px",
+  "16000px"
+ ],
+ "h1": {
+  "texto": "Tus formularios favoritos. Ahora, con automatizaciones basadas en IA.",
+  "familia": "Tobias",
+  "tam": "64px",
+  "peso": "400",
+  "ls": "-1px",
+  "lh": "70.4px"
+ },
+ "cuerpo": {
+  "familia": "Twklausanne 400",
+  "tam": "16px",
+  "lh": "19.2px"
+ },
+ "boton": {
+  "texto": "Contactar con Ventas",
+  "fondo": "#2A222B",
+  "color": "#FAF9FB",
+  "radio": "12px",
+  "padding": "8px 20px",
+  "peso": "400"
+ },
+ "enlace": "#2A222B",
+ "slug": "typeform",
+ "url": "https://www.typeform.com/es/",
+ "final": "https://www.typeform.com/es"
+}

@@ -1,0 +1,51 @@
+{
+ "titulo": "Muebles y Decoración al Mejor Precio - IKEA",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F5F5F5",
+  "#FFFFFF",
+  "#000000",
+  "#CA5008",
+  "#CC0008",
+  "#111111",
+  "#FFDB00",
+  "#DFDFDF"
+ ],
+ "textos": [
+  "#111111",
+  "#FFFFFF",
+  "#484848"
+ ],
+ "fuentes": [
+  "Omani Rial"
+ ],
+ "radios": [
+  "64px",
+  "100%"
+ ],
+ "h1": {
+  "texto": "IKEA, tu tienda de muebles y decoración",
+  "familia": "Omani Rial",
+  "tam": "40px",
+  "peso": "700",
+  "ls": "-1.39286px",
+  "lh": "50px"
+ },
+ "cuerpo": {
+  "familia": "Omani Rial",
+  "tam": "14px",
+  "lh": "21.994px"
+ },
+ "boton": {
+  "texto": "Special Prices",
+  "fondo": "#F5F5F5",
+  "color": "#484848",
+  "radio": "64px",
+  "padding": "12px",
+  "peso": "400"
+ },
+ "enlace": "#484848",
+ "slug": "ikea",
+ "url": "https://www.ikea.com/es/es/",
+ "final": "https://www.ikea.com/es/es/"
+}

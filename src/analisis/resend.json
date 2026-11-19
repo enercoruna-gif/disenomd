@@ -1,0 +1,38 @@
+{
+ "titulo": "Resend · Email for developers",
+ "fondo": "#000000",
+ "fondos": [
+  "#000000",
+  "#0B0E14"
+ ],
+ "textos": [
+  "#A1A4A5",
+  "#FFFFFF",
+  "#F0F0F0"
+ ],
+ "fuentes": [
+  "Inter Website",
+  "domaine"
+ ],
+ "radios": [
+  "3.35544e+07px"
+ ],
+ "h1": {
+  "texto": "Email fordevelopers",
+  "familia": "domaine",
+  "tam": "96px",
+  "peso": "400",
+  "ls": "-0.96px",
+  "lh": "96px"
+ },
+ "cuerpo": {
+  "familia": "Inter Website",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": null,
+ "enlace": null,
+ "slug": "resend",
+ "url": "https://resend.com",
+ "final": "https://resend.com/"
+}

@@ -1,0 +1,50 @@
+{
+ "titulo": "Nike Black Friday - Apúntate un 40 % de descuento. Just Do It. Nike ES",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#F5F5F5",
+  "#111111"
+ ],
+ "textos": [
+  "#707072",
+  "#111111",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "Helvetica Now Text Medium",
+  "Helvetica Now Display Medium",
+  "Helvetica Now Text",
+  "Nike Futura ND"
+ ],
+ "radios": [
+  "30px",
+  "24px",
+  "3px"
+ ],
+ "h1": {
+  "texto": "We think you are in United States. Update your location?",
+  "familia": "Helvetica Now Display Medium",
+  "tam": "16px",
+  "peso": "500",
+  "ls": "normal",
+  "lh": "28px"
+ },
+ "cuerpo": {
+  "familia": "Helvetica Now Text",
+  "tam": "16px",
+  "lh": "28px"
+ },
+ "boton": {
+  "texto": "United States",
+  "fondo": "#111111",
+  "color": "#FFFFFF",
+  "radio": "30px",
+  "padding": "5px 3px",
+  "peso": "500"
+ },
+ "enlace": "#111111",
+ "slug": "nike",
+ "url": "https://www.nike.com/es/",
+ "final": "https://www.nike.com/es/"
+}

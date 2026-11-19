@@ -1,0 +1,56 @@
+{
+ "titulo": "Booking.com | Sitio oficial | Los mejores hoteles, vuelos, coches de alquiler y alojamientos",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FFFFFF",
+  "#003B95",
+  "#000000",
+  "#F5F5F5",
+  "#FFB700",
+  "#595959",
+  "#868686",
+  "#006CE4"
+ ],
+ "textos": [
+  "#1A1A1A",
+  "#FFFFFF",
+  "#F5F5F5",
+  "#006CE4",
+  "#595959"
+ ],
+ "fuentes": [
+  "BlinkMacSystemFont",
+  "Avenir Next"
+ ],
+ "radios": [
+  "8px",
+  "4px",
+  "50%",
+  "9999px"
+ ],
+ "h1": {
+  "texto": "Nuestra mayor oferta del año",
+  "familia": "Avenir Next",
+  "tam": "24px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "32px"
+ },
+ "cuerpo": {
+  "familia": "BlinkMacSystemFont",
+  "tam": "14px",
+  "lh": "20px"
+ },
+ "boton": {
+  "texto": "Hazte una cuenta",
+  "fondo": "#FFFFFF",
+  "color": "#006CE4",
+  "radio": "4px",
+  "padding": "4px 12px",
+  "peso": "500"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "booking",
+ "url": "https://www.booking.com/index.es.html",
+ "final": "https://www.booking.com/index.es.html?chal_t=1795085444207&force_referer="
+}

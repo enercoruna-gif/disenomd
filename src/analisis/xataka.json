@@ -1,0 +1,58 @@
+{
+ "titulo": "Xataka - Tecnología y gadgets, móviles, informática, electrónica",
+ "fondo": "#000409",
+ "fondos": [
+  "#1C2631",
+  "#253241",
+  "#F6F6F6",
+  "#EAECEF",
+  "#000409",
+  "#10161D",
+  "#111111",
+  "#F2F4F6"
+ ],
+ "textos": [
+  "#111111",
+  "#FFFFFF",
+  "#378708",
+  "#707070",
+  "#000000",
+  "#72DA38"
+ ],
+ "fuentes": [
+  "Tofino",
+  "Tofino Narrow"
+ ],
+ "radios": [
+  "4px",
+  "50%",
+  "6px",
+  "24px",
+  "100%"
+ ],
+ "h1": {
+  "texto": "Xataka",
+  "familia": "Tofino Narrow",
+  "tam": "40px",
+  "peso": "700",
+  "ls": "normal",
+  "lh": "48px"
+ },
+ "cuerpo": {
+  "familia": "Tofino",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Xataka",
+  "fondo": "#38880A",
+  "color": "#FFFFFF",
+  "radio": "0px",
+  "padding": "0px",
+  "peso": "400"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "xataka",
+ "url": "https://www.xataka.com",
+ "final": "https://www.xataka.com/"
+}

@@ -1,0 +1,332 @@
+[
+{
+"slug": "stripe",
+"nombre": "Stripe",
+"url": "https://stripe.com/es",
+"sector": "Pagos"
+},
+{
+"slug": "linear",
+"nombre": "Linear",
+"url": "https://linear.app",
+"sector": "Software"
+},
+{
+"slug": "vercel",
+"nombre": "Vercel",
+"url": "https://vercel.com",
+"sector": "Desarrollo"
+},
+{
+"slug": "notion",
+"nombre": "Notion",
+"url": "https://www.notion.com/es",
+"sector": "Productividad"
+},
+{
+"slug": "airbnb",
+"nombre": "Airbnb",
+"url": "https://www.airbnb.es",
+"sector": "Viajes"
+},
+{
+"slug": "spotify",
+"nombre": "Spotify",
+"url": "https://www.spotify.com/es/premium/",
+"sector": "Música"
+},
+{
+"slug": "apple",
+"nombre": "Apple",
+"url": "https://www.apple.com/es/",
+"sector": "Tecnología"
+},
+{
+"slug": "figma",
+"nombre": "Figma",
+"url": "https://www.figma.com/es-es/",
+"sector": "Diseño"
+},
+{
+"slug": "github",
+"nombre": "GitHub",
+"url": "https://github.com",
+"sector": "Desarrollo"
+},
+{
+"slug": "slack",
+"nombre": "Slack",
+"url": "https://slack.com/intl/es-es",
+"sector": "Comunicación"
+},
+{
+"slug": "revolut",
+"nombre": "Revolut",
+"url": "https://www.revolut.com/es-ES/",
+"sector": "Banca"
+},
+{
+"slug": "n26",
+"nombre": "N26",
+"url": "https://n26.com/es-es",
+"sector": "Banca"
+},
+{
+"slug": "bbva",
+"nombre": "BBVA",
+"url": "https://www.bbva.es",
+"sector": "Banca"
+},
+{
+"slug": "zara",
+"nombre": "Zara",
+"url": "https://www.zara.com/es/",
+"sector": "Moda"
+},
+{
+"slug": "mango",
+"nombre": "Mango",
+"url": "https://shop.mango.com/es/es",
+"sector": "Moda"
+},
+{
+"slug": "airtable",
+"nombre": "Airtable",
+"url": "https://www.airtable.com",
+"sector": "Bases de datos"
+},
+{
+"slug": "glovo",
+"nombre": "Glovo",
+"url": "https://glovoapp.com/es/es/",
+"sector": "Reparto"
+},
+{
+"slug": "medium",
+"nombre": "Medium",
+"url": "https://medium.com",
+"sector": "Publicación"
+},
+{
+"slug": "cabify",
+"nombre": "Cabify",
+"url": "https://cabify.com/es",
+"sector": "Movilidad"
+},
+{
+"slug": "typeform",
+"nombre": "Typeform",
+"url": "https://www.typeform.com/es/",
+"sector": "Formularios"
+},
+{
+"slug": "holded",
+"nombre": "Holded",
+"url": "https://www.holded.com/es",
+"sector": "Gestión"
+},
+{
+"slug": "factorial",
+"nombre": "Factorial",
+"url": "https://factorialhr.es",
+"sector": "Recursos humanos"
+},
+{
+"slug": "el-pais",
+"nombre": "El País",
+"url": "https://elpais.com",
+"sector": "Prensa"
+},
+{
+"slug": "xataka",
+"nombre": "Xataka",
+"url": "https://www.xataka.com",
+"sector": "Prensa"
+},
+{
+"slug": "nike",
+"nombre": "Nike",
+"url": "https://www.nike.com/es/",
+"sector": "Deporte"
+},
+{
+"slug": "ikea",
+"nombre": "IKEA",
+"url": "https://www.ikea.com/es/es/",
+"sector": "Hogar"
+},
+{
+"slug": "miro",
+"nombre": "Miro",
+"url": "https://miro.com/es/",
+"sector": "Colaboración"
+},
+{
+"slug": "iberia",
+"nombre": "Iberia",
+"url": "https://www.iberia.com/es/",
+"sector": "Aerolínea"
+},
+{
+"slug": "booking",
+"nombre": "Booking.com",
+"url": "https://www.booking.com/index.es.html",
+"sector": "Viajes"
+},
+{
+"slug": "duolingo",
+"nombre": "Duolingo",
+"url": "https://es.duolingo.com",
+"sector": "Educación"
+},
+{
+"slug": "lottiefiles",
+"nombre": "LottieFiles",
+"url": "https://lottiefiles.com",
+"sector": "Animación"
+},
+{
+"slug": "shopify",
+"nombre": "Shopify",
+"url": "https://www.shopify.com/es",
+"sector": "Comercio"
+},
+{
+"slug": "framer",
+"nombre": "Framer",
+"url": "https://www.framer.com",
+"sector": "Diseño"
+},
+{
+"slug": "webflow",
+"nombre": "Webflow",
+"url": "https://webflow.com",
+"sector": "Diseño"
+},
+{
+"slug": "supabase",
+"nombre": "Supabase",
+"url": "https://supabase.com",
+"sector": "Desarrollo"
+},
+{
+"slug": "raycast",
+"nombre": "Raycast",
+"url": "https://www.raycast.com",
+"sector": "Productividad"
+},
+{
+"slug": "openai",
+"nombre": "OpenAI",
+"url": "https://openai.com/es-ES/",
+"sector": "Inteligencia artificial"
+},
+{
+"slug": "anthropic",
+"nombre": "Anthropic",
+"url": "https://www.anthropic.com",
+"sector": "Inteligencia artificial"
+},
+{
+"slug": "mailchimp",
+"nombre": "Mailchimp",
+"url": "https://mailchimp.com/es/",
+"sector": "Marketing"
+},
+{
+"slug": "dropbox",
+"nombre": "Dropbox",
+"url": "https://www.dropbox.com/es_ES/",
+"sector": "Almacenamiento"
+},
+{
+"slug": "discord",
+"nombre": "Discord",
+"url": "https://discord.com",
+"sector": "Comunidad"
+},
+{
+"slug": "twitch",
+"nombre": "Twitch",
+"url": "https://www.twitch.tv",
+"sector": "Streaming"
+},
+{
+"slug": "uber",
+"nombre": "Uber",
+"url": "https://www.uber.com/es/es/",
+"sector": "Movilidad"
+},
+{
+"slug": "dribbble",
+"nombre": "Dribbble",
+"url": "https://dribbble.com",
+"sector": "Diseño"
+},
+{
+"slug": "wise",
+"nombre": "Wise",
+"url": "https://wise.com/es/",
+"sector": "Pagos"
+},
+{
+"slug": "monzo",
+"nombre": "Monzo",
+"url": "https://monzo.com",
+"sector": "Banca"
+},
+{
+"slug": "cal",
+"nombre": "Cal.com",
+"url": "https://cal.com",
+"sector": "Agenda"
+},
+{
+"slug": "resend",
+"nombre": "Resend",
+"url": "https://resend.com",
+"sector": "Desarrollo"
+},
+{
+"slug": "posthog",
+"nombre": "PostHog",
+"url": "https://posthog.com",
+"sector": "Analítica"
+},
+{
+"slug": "canva",
+"nombre": "Canva",
+"url": "https://www.canva.com/es_es/",
+"sector": "Diseño"
+},
+{
+"slug": "trello",
+"nombre": "Trello",
+"url": "https://trello.com/es",
+"sector": "Productividad"
+},
+{
+"slug": "mercadona",
+"nombre": "Mercadona",
+"url": "https://www.mercadona.es",
+"sector": "Supermercado"
+},
+{
+"slug": "renfe",
+"nombre": "Renfe",
+"url": "https://www.renfe.com/es/es",
+"sector": "Transporte"
+},
+{
+"slug": "cursor",
+"nombre": "Cursor",
+"url": "https://cursor.com",
+"sector": "Inteligencia artificial"
+},
+{
+"slug": "loom",
+"nombre": "Loom",
+"url": "https://www.loom.com",
+"sector": "Vídeo"
+}
+]
