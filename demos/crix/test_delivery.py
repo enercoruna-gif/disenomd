@@ -5,9 +5,10 @@ import tempfile
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from unittest.mock import patch
 from zipfile import ZipFile
 
-from build import ROOT, build
+from build import ROOT, build, data_uri
 
 
 class Document(HTMLParser):
@@ -16,11 +17,14 @@ class Document(HTMLParser):
         self.ids = []
         self.links = []
         self.files = []
+        self.downloads = []
         self.h1 = 0
         self.feed(source)
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
+        if "download" in attrs:
+            self.downloads.append(attrs["download"])
         if "id" in attrs:
             self.ids.append(attrs["id"])
         if tag == "h1":
@@ -36,9 +40,15 @@ class Document(HTMLParser):
 
 
 class DeliveryTest(unittest.TestCase):
+    def test_portable_mime_types(self):
+        with patch("build.mimetypes.guess_type", return_value=(None, None)):
+            self.assertTrue(data_uri(ROOT / "assets/montanas.webp").startswith("data:image/webp;base64,"))
+            self.assertTrue(data_uri(ROOT / "DESIGN.md").startswith("data:text/markdown;base64,"))
+
     def test_document_and_assets(self):
         source = (ROOT / "index.html").read_text()
         doc = Document(source)
+        self.assertEqual(doc.downloads, ["DESIGN.md"] * 3)
         self.assertEqual(doc.h1, 1)
         self.assertEqual(len(doc.ids), len(set(doc.ids)))
         self.assertIn('lang="es"', source)
@@ -63,7 +73,7 @@ class DeliveryTest(unittest.TestCase):
             self.assertNotIn('src="app.js"', standalone)
             self.assertNotIn("url('assets/", standalone)
             self.assertIn("data:image/webp;base64,", standalone)
-            self.assertIn('download', standalone)
+            self.assertEqual(Document(standalone).downloads, ["DESIGN.md"] * 3)
             self.assertEqual((output / "DESIGN.md").read_bytes(), (ROOT / "DESIGN.md").read_bytes())
 
     def test_demo_honesty_and_safety(self):

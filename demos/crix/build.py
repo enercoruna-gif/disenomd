@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parent
 
 
 def data_uri(path):
-    mime = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
+    portable_types = {".webp": "image/webp", ".md": "text/markdown"}
+    mime = portable_types.get(path.suffix.lower()) or mimetypes.guess_type(path.name)[0] or "application/octet-stream"
     return f"data:{mime};base64,{base64.b64encode(path.read_bytes()).decode()}"
 
 
