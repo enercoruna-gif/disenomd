@@ -20,6 +20,7 @@ Pago único en Payhip. Detalles de cada uno en la [página de kits](https://ener
 | **[Plantillas de vídeo](https://enercoruna-gif.github.io/disenomd/kits/#videos)** | Vídeos para redes y web con tu marca | <img src="https://img.shields.io/badge/precio-39%E2%82%AC-F5B83D?style=for-the-badge&labelColor=161616" alt="39 €"> | [Comprar](https://payhip.com/b/mOwWv) |
 | **[DESIGN.md a medida](https://enercoruna-gif.github.io/disenomd/kits/#a-medida)** | Un DESIGN.md hecho para tu marca o tu web | <img src="https://img.shields.io/badge/precio-149%E2%82%AC-C60B1E?style=for-the-badge&labelColor=161616" alt="149 €"> | [Comprar](https://payhip.com/b/kYZU0) |
 | **[Estilos por sector](https://enercoruna-gif.github.io/disenomd/kits/#sectores)** | 45 estilos originales para negocios de aquí | <img src="https://img.shields.io/badge/precio-19%E2%82%AC-FF7A45?style=for-the-badge&labelColor=161616" alt="19 €"> | [Comprar](https://payhip.com/b/bXiQf) |
+| **[Pack completo](https://enercoruna-gif.github.io/disenomd/kits/#todo)** | Los 7 packs digitales juntos | <img src="https://img.shields.io/badge/precio-199%E2%82%AC-C60B1E?style=for-the-badge&labelColor=161616" alt="199 €"> | [Comprar](https://payhip.com/b/7smZP) |
 
 ---
 
