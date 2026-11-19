@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LaunchKit — Demo de finanzas empresariales en español</title>
+  <meta name="description" content="Demo gratuita de una landing financiera: caja, gastos y automatización en una interfaz clara. Incluye su DESIGN.md en español. Sin cuentas ni datos reales.">
+  <meta name="theme-color" content="#f8f8f7">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="robots" content="noindex,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="LaunchKit — Finanzas con claridad">
+  <meta property="og:description" content="Una demo financiera en español y su DESIGN.md gratuito. Diseño de muestra, sin servicio bancario real.">
+  <meta property="og:image" content="https://ia.cuadrantia.store/demos/launchkit/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LaunchKit, demo de finanzas empresariales en español">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"LaunchKit — Demo financiera en español","inLanguage":"es","description":"Demostración de diseño de una landing de finanzas empresariales. Todos los importes, marcas y planes son ilustrativos; no es una entidad financiera.","isAccessibleForFree":true,"about":{"@type":"Thing","name":"Diseño de interfaces para finanzas empresariales"}}</script>
+  <style>
+/* hallmark: reference-locked | genre: modern-minimal | shape: finance landing | theme: custom LaunchKit | motion: quiet */
+/* critique: preserve the supplied composition, restrained type, fine grid and isolated orange pricing accent. */
+/* Reference overrides: centered headings, small section labels, illustrative marks, sample prices and product mockups reproduce IMG_0987. */
+:root{--paper:#fafafa;--white:#fff;--surface:#f3f3f2;--ink:#181918;--muted:#70716e;--soft:#92938f;--line:#e7e7e4;--orange:#ff7b35;--orange-ink:#22201d;--green:#577b68;--focus:#9c3b0a;--footer:#080908;--footer-type:#242624;--sky:#c3cdd0;--shadow:rgba(26,30,25,.08);--glow:rgba(255,123,53,.12);--veil:rgba(239,242,235,.62);--font:Arial,Helvetica,sans-serif;--radius:5px;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box}html,body{margin:0;overflow-x:clip}html{scroll-behavior:smooth;scroll-padding-top:24px;color-scheme:light}body{font-family:var(--font);font-size:15px;line-height:1.5;color:var(--ink);background:var(--sky)}body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(var(--veil),var(--veil)),url('data:image/jpeg;base64,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') center/cover no-repeat;filter:blur(7px);transform:scale(1.04)}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit;color:inherit}button,a,summary,select{touch-action:manipulation;-webkit-tap-highlight-color:var(--glow)}button,summary,select{cursor:pointer}button{border:0}button,a,input,textarea,select,summary{border-radius:var(--radius)}:focus-visible{outline:2px solid var(--focus);outline-offset:4px}button,a{transition:transform .16s var(--ease),background-color .16s var(--ease),color .16s var(--ease)}button:active,.button:active{transform:translateY(1px)}a:hover{text-decoration:underline;text-underline-offset:4px}button:hover,.button:hover{filter:brightness(.95)}svg{display:block;flex-shrink:0}.icon{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.sprite{position:absolute;width:0;height:0;overflow:hidden}.skip{position:fixed;left:16px;top:12px;z-index:5;padding:12px;background:var(--white);transform:translateY(-180%)}.skip:focus{transform:none}.shell{width:min(1176px,calc(100% - 72px));margin:76px auto 0;background:var(--paper);box-shadow:0 16px 80px var(--shadow)}.demo-note{width:min(1176px,calc(100% - 72px));margin:0 auto;padding-top:28px;font-size:12px;color:var(--ink)}.demo-note+.shell{margin-top:20px}.nav{height:90px;display:flex;align-items:center;padding:0 48px;gap:40px;border-bottom:1px solid var(--line)}.brand{margin-right:auto;display:flex;align-items:center;gap:10px;font-weight:600}.brand-mark{width:25px;height:25px;border-radius:6px;background:var(--ink);color:var(--white);display:grid;place-items:center}.brand-name{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.nav-links{display:flex;align-items:center;gap:42px;color:var(--muted);font-size:12px}.nav-cta{margin-left:28px}.menu-toggle{display:none;background:transparent;padding:10px}.button{min-height:42px;padding:11px 23px;background:var(--ink);color:var(--white);border:1px solid var(--ink);display:inline-flex;align-items:center;justify-content:center;font-size:12px;line-height:1.4;white-space:nowrap}.button:hover{text-decoration:none;transform:translateY(-1px)}.button.secondary{background:var(--surface);color:var(--muted);border-color:var(--line)}.button.orange{background:var(--orange);color:var(--orange-ink);border-color:var(--orange)}.button.small{min-height:36px;padding:8px 17px;font-size:11px}.button.pill{border-radius:999px}.label{font-size:10px;color:var(--muted);margin:0 0 18px;display:flex;align-items:center;justify-content:center;gap:6px}.label::before{content:"";width:4px;height:4px;background:var(--orange);border-radius:50%}h1,h2,h3,p{margin-top:0}h1,h2{font-weight:500;letter-spacing:-.045em;line-height:1.12;text-wrap:balance;overflow-wrap:break-word;min-width:0}h1{font-size:43px;max-width:760px;margin:0 auto 24px}h1 span{color:var(--soft)}h2{font-size:34px;margin-bottom:20px}h3{font-size:19px;line-height:1.25;font-weight:500;letter-spacing:-.025em}.intro{max-width:410px;margin:0 auto 23px;font-size:12px;line-height:1.65;color:var(--muted)}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.hero{text-align:center;padding:78px 40px 94px}.hero .label{margin-bottom:20px}.composer{width:min(640px,100%);margin:74px auto 0;text-align:left;padding:12px;border:1px solid var(--line);border-radius:20px;box-shadow:0 0 0 7px var(--paper),0 0 0 8px var(--glow),0 12px 35px var(--shadow);background:var(--paper)}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}.chip{background:var(--white);border:1px solid var(--line);box-shadow:0 2px 3px var(--shadow);padding:4px 10px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;font-size:11px}.chip .icon{width:13px;height:13px}.chip button{font-size:14px;padding:0 2px;background:none;line-height:1}.query-panel{border:1px solid var(--line);border-radius:9px;background:var(--white);box-shadow:0 6px 12px var(--shadow);padding:14px}.query-panel textarea{display:block;resize:vertical;min-height:106px;max-height:260px;width:100%;border:0;background:transparent;font-size:13px;line-height:1.5}.query-panel textarea::placeholder{color:var(--soft)}.query-tools{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.icon-button{display:inline-flex;align-items:center;justify-content:center;background:var(--white);border:1px solid var(--line);width:30px;height:30px;border-radius:7px}.tool{font-size:10px;color:var(--muted);background:none;padding:6px 2px;display:flex;gap:4px;align-items:center}.tool .icon{width:12px;height:12px}.send{margin-left:auto;background:var(--ink);color:var(--white);border:0;width:33px;height:33px}.status{font-size:12px;line-height:1.6;color:var(--muted);margin:12px 0 0;overflow-wrap:anywhere}.status:empty{display:none}.sample-result{padding:18px 5px 3px}.sample-result h3{font-size:14px}.sample-result dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:8px}.sample-result dt{font-size:10px;color:var(--muted)}.sample-result dd{margin:4px 0 0;font-size:18px;font-variant-numeric:tabular-nums}.sample-result[hidden]{display:none}.trust{background:var(--surface);text-align:center}.trust h2{font-size:21px;letter-spacing:-.025em;padding:47px 20px 43px;margin:0}.wordmarks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);min-height:102px;align-items:stretch;padding:0 28px}.wordmarks span{border-right:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;letter-spacing:-1px}.wordmarks span:last-child{border:0}.wordmarks span:nth-child(2){font-size:18px}.wordmarks span:nth-child(3){font-size:19px}.wordmarks span:nth-child(5){font-family:var(--font);font-weight:800}.section-head{text-align:center;padding:82px 30px 58px}.section-head h2{max-width:590px;margin-left:auto;margin-right:auto}.features{padding:0 44px}.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;border-top:1px solid var(--line);padding:46px 18px 0}.feature{background:var(--paper);border:1px solid var(--line);height:448px;padding:26px;overflow:clip}.feature>p{font-size:12px;color:var(--muted);max-width:240px;margin-bottom:0}.transfer{max-width:350px;margin:58px auto 0;padding:17px;background:var(--white);border:1px solid var(--line);border-radius:8px;box-shadow:0 5px 14px var(--shadow)}.transfer-top{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px}.transfer-top strong{font-weight:500;display:flex;gap:6px;align-items:center}.transfer select{border:0;background:var(--white);font-size:11px;max-width:90px;padding:6px}.search{display:flex;align-items:center;margin:13px 0 5px;background:var(--surface);border:1px solid var(--line);padding:7px 8px;gap:7px;border-radius:5px}.search .icon{width:13px;height:13px;color:var(--soft)}.search input{min-width:0;width:100%;background:none;border:0;font-size:11px}.country{display:flex;align-items:center;padding:13px 0;gap:10px}.country[hidden]{display:none}.flag{width:21px;height:21px;border-radius:50%;overflow:clip;position:relative;background:var(--white);box-shadow:0 0 0 1px var(--line)}.flag.de{background:linear-gradient(var(--ink) 33%,#d63540 33% 66%,#ffce49 66%)}.flag.ca{background:linear-gradient(90deg,#ed3143 25%,var(--white) 25% 75%,#ed3143 75%)}.flag.ca::after{content:"✦";color:#ed3143;position:absolute;inset:1px 0;text-align:center;font-size:12px}.flag.jp::after{content:"";position:absolute;inset:6px;border-radius:50%;background:#d7355b}.country-copy{font-size:12px}.country-copy small{display:block;color:var(--soft);font-size:9px}.rate{margin-left:auto;text-align:right;font-size:12px;font-variant-numeric:tabular-nums}.rate small{font-size:9px;display:block;color:var(--green)}.empty{font-size:11px;padding:16px 0;color:var(--muted);margin:0}.phone{width:228px;height:358px;border:5px solid var(--line);outline:1px solid var(--soft);background:var(--white);border-radius:48px;margin:100px auto 0;padding:66px 35px 25px;position:relative;box-shadow:inset 0 0 0 2px var(--paper)}.phone::before{content:"";position:absolute;width:10px;height:10px;top:18px;left:calc(50% - 5px);background:var(--line);border-radius:50%}.mic{width:62px;height:73px;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;margin:0 auto 20px;border-radius:13px;color:var(--soft)}.mic .icon{width:29px;height:29px}.receipt{border:1px solid var(--line);padding:15px 10px;border-radius:8px;font-size:10px;color:var(--muted)}.receipt-line{height:5px;background:var(--surface);margin:8px 0;border-radius:2px}.receipt-line.short{width:60%}.receipt strong{font-size:13px;font-weight:500;color:var(--ink)}.infra{padding:0 44px 65px}.infra .section-head{padding-bottom:30px}.architecture{display:grid;grid-template-columns:1fr 1.55fr 1fr;align-items:center;gap:20px;max-width:980px;margin:55px auto 0;min-height:300px}.arch-labels{font-size:9px;color:var(--muted);line-height:2}.arch-labels div{border-bottom:1px solid var(--line);padding:6px 0;max-width:150px}.arch-labels.right{font-size:9px;text-align:right;line-height:1.8}.arch-labels.right p{margin:0}.processor{width:100%;height:auto;fill:var(--white);stroke:var(--line);stroke-width:2}.processor .outline{stroke:var(--soft);stroke-width:1}.processor text{fill:var(--muted);stroke:none;font-family:var(--font)}.pricing{padding:10px 62px 72px}.pricing .section-head{padding-top:36px;padding-bottom:46px}.billing{display:inline-flex;gap:3px;padding:4px;background:var(--surface);border:1px solid var(--line);margin-top:22px;border-radius:5px}.billing button{font-size:10px;padding:7px 13px;background:transparent;color:var(--muted)}.billing button[aria-pressed="true"]{background:var(--ink);color:var(--white)}.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--surface);border:1px solid var(--line);padding:28px}.plan{padding:15px 17px 20px;border:1px solid var(--line);border-right:0;display:flex;flex-direction:column;min-width:0}.plan:last-child{border-right:1px solid var(--line)}.plan h3{font-size:13px;margin-bottom:12px;letter-spacing:0}.plan>p{font-size:11px;color:var(--muted);line-height:1.5;min-height:50px;margin-bottom:18px}.plan .price{font-size:26px;line-height:1.2;font-weight:600;letter-spacing:-.06em;font-variant-numeric:tabular-nums;display:block}.price small{font-size:9px;letter-spacing:0;color:var(--muted);font-weight:400}.price-note{font-size:9px;min-height:20px;color:var(--muted);display:block;margin:8px 0 15px}.plan .button{width:100%;min-height:34px;padding:8px;font-size:10px}.plan ul{padding:0;margin:19px 0 0;list-style:none;font-size:10px;color:var(--muted)}.plan li{padding:9px 0;border-top:1px solid var(--line);display:flex;gap:7px}.plan li::before{content:"✓";color:var(--muted)}.faq{padding:0 62px 0}.faq .section-head{padding-top:38px;padding-bottom:68px}.faq .button{margin-top:7px}.faq-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 21px}.faq-item{min-height:190px;border:1px solid transparent;border-radius:8px;padding:19px 15px}.faq-item summary{list-style:none;font-size:12px;line-height:1.5;min-height:80px}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary::before{content:"+";display:grid;place-items:center;width:17px;height:17px;border-radius:50%;background:var(--ink);color:var(--white);margin-bottom:18px;font-size:12px}.faq-item:not([open]) summary::before{content:"+"}.faq-item[open] summary::before{content:"−"}.faq-item p{font-size:11px;color:var(--muted);margin:0;line-height:1.6}.faq-item:first-child[open]{background:var(--ink);color:var(--white);border:4px double var(--soft);padding:16px 12px}.faq-item:first-child[open] summary::before{background:var(--white);color:var(--ink)}.faq-item:first-child[open] p{color:var(--line)}.newsletter{text-align:center;margin:64px 62px 0;padding:62px 15px 89px;border-top:1px solid var(--line)}.newsletter h2{max-width:560px;margin-left:auto;margin-right:auto}.newsletter form{display:flex;gap:8px;max-width:430px;margin:28px auto 0}.newsletter input{min-width:0;flex:1;background:var(--white);border:1px solid var(--line);padding:11px 13px;font-size:11px}.newsletter .button{font-size:10px}.footer{background:var(--footer);color:var(--white);padding:58px 44px 0;overflow:clip}.footer-top{display:flex;justify-content:space-between;gap:40px;min-height:225px}.footer-about{max-width:240px}.footer-about>svg{width:26px;height:26px;margin-bottom:20px}.footer p{font-size:10px;color:var(--soft)}.footer-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;font-size:10px}.footer-links h3{font-size:10px;letter-spacing:0;margin-bottom:20px;color:var(--white)}.footer-links a,.footer-links button{display:block;margin:8px 0;padding:0;background:none;color:var(--soft);text-align:left;font-size:10px}.footer-links button:hover{text-decoration:underline}.footer-word{font-size:clamp(46px,10.9vw,148px);font-weight:700;letter-spacing:-.07em;line-height:.8;color:var(--footer-type);text-align:center;white-space:nowrap;margin:0 -6px;user-select:none}.footer-legal{padding:24px 0 18px;margin:0!important;line-height:1.7}.footer-legal a{text-decoration:underline}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:clip;clip-path:inset(50%);white-space:nowrap;border:0}dialog{border:1px solid var(--line);border-radius:14px;padding:32px;max-width:480px;width:calc(100% - 36px);color:var(--ink);background:var(--white);box-shadow:0 30px 100px var(--shadow);overscroll-behavior:contain}dialog::backdrop{background:rgba(15,20,15,.4)}dialog h2{font-size:26px;padding-right:20px}dialog p{font-size:14px;color:var(--muted)}dialog .close{position:absolute;top:12px;right:12px}.nojs{background:var(--surface);padding:15px;text-align:center;font-size:12px}.below-note{text-align:center;font-size:10px;padding:20px 12px 26px;color:var(--ink)}[id]{scroll-margin-top:26px}
+@media(min-width:1600px){.footer-word{font-size:148px}}
+@media(max-width:900px){.shell,.demo-note{width:calc(100% - 40px)}.nav{padding:0 30px;gap:22px}.nav-links{gap:24px}.nav-cta{margin-left:0}.features,.infra{padding-left:24px;padding-right:24px}.feature-grid{padding-left:0;padding-right:0}.feature{padding:23px;height:430px}.transfer{padding:12px}.pricing,.faq{padding-left:28px;padding-right:28px}.pricing-grid{padding:15px}.plan{padding:14px 10px}.newsletter{margin-left:28px;margin-right:28px}.footer-links{gap:24px}.wordmarks span{font-size:19px}.architecture{grid-template-columns:.8fr 1.8fr .8fr;gap:10px}.query-tools .tool{font-size:9px}}
+@media(max-width:600px){body::before{filter:blur(5px)}.demo-note{padding-top:max(18px,env(safe-area-inset-top));font-size:10px;line-height:1.6}.shell,.demo-note{width:calc(100% - 24px)}.demo-note+.shell{margin-top:12px}.nav{height:72px;padding:0 20px;gap:12px;position:relative;flex-wrap:wrap}.menu-toggle{display:grid;place-items:center}.nav-cta{order:1}.menu-toggle{order:2}.nav-links{display:none;position:absolute;top:71px;left:0;right:0;background:var(--paper);padding:16px 24px;z-index:2;border-bottom:1px solid var(--line);box-shadow:0 10px 15px var(--shadow);gap:0}.nav-links.open{display:grid}.nav-links a{padding:11px 0}.hero{padding:64px 21px 70px}.hero .label{font-size:9px;margin-bottom:20px}h1{font-size:32px;letter-spacing:-.05em;line-height:1.13;margin-bottom:22px}h2{font-size:28px}.intro{font-size:12px;max-width:310px}.button{min-height:42px;padding:11px 17px;font-size:11px}.nav-cta.button{min-height:34px;padding:8px 13px;font-size:10px}.composer{margin-top:54px;padding:9px;border-radius:15px}.chip{font-size:9px;padding:3px 7px;gap:3px}.chip button{min-width:20px;min-height:22px}.chips{gap:5px}.query-panel{padding:10px}.query-panel textarea{font-size:16px;min-height:106px}.query-tools{gap:5px}.tool{font-size:9px}.query-tools .tool:last-of-type{display:none}.sample-result dl{gap:5px}.sample-result dd{font-size:15px}.trust h2{font-size:17px;padding:32px 20px}.wordmarks{padding:0 12px;min-height:75px;grid-template-columns:repeat(5,minmax(0,1fr))}.wordmarks span{font-size:15px;letter-spacing:-.7px}.wordmarks span:nth-child(2),.wordmarks span:nth-child(3){font-size:12px}.section-head{padding:64px 5px 37px}.section-head .label{margin-bottom:17px}.features,.infra{padding-left:20px;padding-right:20px}.feature-grid{grid-template-columns:minmax(0,1fr);gap:14px;padding-top:24px}.feature{height:410px;padding:21px}.feature h3{font-size:18px}.feature>p{font-size:12px}.transfer{margin-top:43px;max-width:310px;padding:15px}.transfer select{font-size:12px}.search input{font-size:16px}.country-copy,.rate{font-size:12px}.country{padding:11px 0}.phone{margin-top:55px;width:215px;height:350px}.infra{padding-bottom:42px}.infra .section-head{padding-top:60px}.architecture{grid-template-columns:1fr;gap:14px;min-height:0;margin-top:12px}.processor{max-width:300px;margin:auto;grid-row:1}.arch-labels{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;line-height:1.4;font-size:9px}.arch-labels div{border:0;padding:0}.arch-labels.right{display:none}.pricing{padding:0 20px 57px}.pricing .section-head{padding:34px 0}.pricing-grid{grid-template-columns:minmax(0,1fr);gap:12px;padding:12px}.plan{border:1px solid var(--line);padding:22px 18px}.plan>p{min-height:0;max-width:250px;font-size:12px;margin-bottom:16px}.plan h3{font-size:16px}.plan .button{font-size:12px;min-height:42px}.plan ul{font-size:11px}.plan .price{font-size:30px}.price small,.price-note{font-size:10px}.faq{padding:0 20px}.faq .section-head{padding:15px 0 35px}.faq-grid{grid-template-columns:minmax(0,1fr);gap:6px}.faq-item{min-height:0;padding:18px 12px;border-bottom-color:var(--line)}.faq-item summary{font-size:13px;min-height:0;display:flex;gap:12px;align-items:center}.faq-item summary::before{margin-bottom:0;flex-shrink:0}.faq-item p{font-size:12px;padding:14px 0 2px 29px}.faq-item:first-child[open]{padding:18px 12px;border:1px solid var(--soft)}.newsletter{margin:48px 20px 0;padding:45px 0 55px}.newsletter form{flex-direction:column;max-width:310px}.newsletter input{font-size:16px;min-height:44px}.newsletter .button{font-size:12px}.footer{padding:36px 22px 0}.footer-top{display:block;min-height:0}.footer-about{margin-bottom:30px}.footer-links{gap:12px;padding-bottom:45px}.footer-links a,.footer-links button{font-size:11px;min-height:28px}.footer-links h3{font-size:11px;margin-bottom:14px}.footer-word{font-size:14.5vw;letter-spacing:-.07em;line-height:.85}.footer-legal{font-size:9px!important;padding-bottom:max(20px,env(safe-area-inset-bottom))}.below-note{font-size:9px}.icon-button{width:34px;height:34px}.mic{width:62px;height:73px}dialog{padding:28px 22px}dialog h2{font-size:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M9 9v12M14 9v12M4 15h16"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 7h16l-4-4M20 17H4l4 4M20 7l-4 4M4 17l4-4"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 8h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4H9m3-10v12"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2m-7 9v3m-4 0h8"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+</defs></svg>
+<p class="demo-note">Concepto web ficticio. Marcas, importes y planes ilustrativos. Sin conexión bancaria.</p>
+<div class="shell">
+<header class="nav">
+  <a class="brand" href="#contenido" aria-label="LaunchKit, inicio"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="brand-name" translate="no">LaunchKit</span></a>
+  <nav class="nav-links" id="navegacion" aria-label="Principal"><a href="#infraestructura">Nosotros</a><a href="#precios">Precios</a><a href="#preguntas">Preguntas</a><a href="#recursos">Recursos</a></nav>
+  <a class="button small nav-cta" href="#asistente">Empieza gratis</a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="navegacion" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+</header>
+<main id="contenido">
+  <noscript><p class="nojs">Puedes recorrer el diseño y leer las preguntas sin JavaScript. Las simulaciones interactivas requieren activarlo.</p></noscript>
+  <section class="hero" aria-labelledby="titulo">
+    <p class="label">Finanzas pensadas para personas</p>
+    <h1 id="titulo">La forma más inteligente de gestionar<br><span>las finanzas de tu empresa</span></h1>
+    <p class="intro">Simplifica pagos, automatiza tareas y dale a tu equipo<br>la claridad que necesita para tomar mejores decisiones.</p>
+    <div class="actions"><a class="button" href="#asistente">Descubre LaunchKit</a><a class="button secondary" href="#funciones">Saber más</a></div>
+    <form class="composer" id="asistente">
+      <div class="chips" aria-label="Fuentes de ejemplo">
+        <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg>Facturas<button type="button" aria-label="Quitar Facturas" data-remove-chip>×</button></span>
+        <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg>Transacciones<button type="button" aria-label="Quitar Transacciones" data-remove-chip>×</button></span>
+        <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-cash"/></svg>Flujo de caja<button type="button" aria-label="Quitar Flujo de caja" data-remove-chip>×</button></span>
+      </div>
+      <div class="query-panel"><label class="visually-hidden" for="consulta">Tu consulta financiera de ejemplo</label><textarea id="consulta" name="consulta" maxlength="500" placeholder="Revisa movimientos, flujo de caja, facturas y más…"></textarea>
+        <div class="query-tools"><button class="icon-button" type="button" id="restaurar" aria-label="Restaurar fuentes de ejemplo"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button><button class="tool" type="button" data-prompt="Analiza los gastos de este mes."><svg class="icon" aria-hidden="true"><use href="#i-cash"/></svg>Analiza gastos</button><button class="tool" type="button" data-prompt="Muéstrame un resumen del flujo de caja."><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Análisis inteligente</button><button class="tool" type="button" data-prompt="¿Qué facturas quedan pendientes?">Asistente</button><button class="icon-button send" type="submit" aria-label="Ejecutar consulta de ejemplo"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      </div>
+      <p class="status" id="assistant-status" role="status"></p>
+      <div class="sample-result" id="resultado" hidden><h3>Resumen de muestra</h3><dl><div><dt>Ingresos</dt><dd>12.500 €</dd></div><div><dt>Gastos</dt><dd>7.350 €</dd></div><div><dt>Disponible</dt><dd>5.150 €</dd></div></dl><p class="status">Datos ficticios y respuesta predefinida. No es asesoramiento financiero ni utiliza IA real.</p></div>
+    </form>
+  </section>
+  <section class="trust" aria-label="Marcas ilustrativas"><h2>La confianza empieza por una buena identidad</h2><div class="wordmarks" aria-label="Marcas ficticias de ejemplo"><span>MÖRA</span><span>LUMEN</span><span>◒ Vértice</span><span>Senda</span><span>FIN</span></div></section>
+  <section class="features" id="funciones" aria-labelledby="funciones-titulo">
+    <div class="section-head"><p class="label">Funcionalidades</p><h2 id="funciones-titulo">Diseñado para simplificar<br>las finanzas de cada día.</h2><p class="intro">Automatiza lo repetitivo, gana visibilidad y devuelve<br>a tu equipo el tiempo para centrarse en lo importante.</p><div class="actions"><a class="button small" href="#asistente">Descubre LaunchKit</a><a class="button small secondary" href="#contacto">Hablemos</a></div></div>
+    <div class="feature-grid">
+      <article class="feature"><h3>Control de caja, en tiempo real.</h3><p>Revisa cada movimiento y entiende<br>cómo cambia el dinero de tu negocio.</p>
+        <div class="transfer"><div class="transfer-top"><strong><svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg>Transferencias</strong><label class="visually-hidden" for="moneda">Moneda de origen</label><select name="moneda" id="moneda"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></div>
+        <label class="search" for="buscar"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="visually-hidden">Buscar país</span><input id="buscar" name="pais" type="search" placeholder="Buscar país…" autocomplete="off"></label>
+        <div class="country" data-country="alemania"><span class="flag de" aria-hidden="true"></span><div class="country-copy">Alemania<small class="exchange-caption">1 USD, tipo ilustrativo</small></div><div class="rate"><span data-rate="EUR">0,94 EUR</span><small>↑ 0,44 %</small></div></div>
+        <div class="country" data-country="canada"><span class="flag ca" aria-hidden="true"></span><div class="country-copy">Canadá<small class="exchange-caption">1 USD, tipo ilustrativo</small></div><div class="rate"><span data-rate="CAD">1,35 CAD</span><small>↑ 0,26 %</small></div></div>
+        <div class="country" data-country="japon"><span class="flag jp" aria-hidden="true"></span><div class="country-copy">Japón<small class="exchange-caption">1 USD, tipo ilustrativo</small></div><div class="rate"><span data-rate="JPY">147,92 JPY</span><small>↑ 0,30 %</small></div></div><p class="empty" id="sin-paises" role="status" hidden>No hay países con ese nombre. Prueba con Japón, Canadá o Alemania.</p><p class="visually-hidden" id="exchange-status" role="status"></p></div>
+      </article>
+      <article class="feature"><h3>Menos gastos. Más control.</h3><p>Ordena recibos, revisa presupuestos<br>y encuentra lo que necesitas al instante.</p><div class="phone" aria-label="Vista ilustrativa de un recibo en un móvil"><button class="mic" type="button" id="dictado" aria-label="Simular registro de un gasto por voz"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg></button><div class="receipt"><span id="receipt-label">Tu próximo gasto</span><div class="receipt-line"></div><div class="receipt-line short"></div><strong id="receipt-amount">Todo en su sitio.</strong></div></div></article>
+    </div>
+  </section>
+  <section class="infra" id="infraestructura" aria-labelledby="infra-titulo"><div class="section-head"><p class="label">Infraestructura</p><h2 id="infra-titulo">La base de las decisiones<br>financieras más inteligentes.</h2><p class="intro">Una forma sencilla de conectar tu información<br>con las herramientas que ya conoces.</p><div class="actions"><a class="button small" href="#asistente">Descubre LaunchKit</a><a class="button small secondary" href="#contacto">Hablemos</a></div></div>
+    <div class="architecture"><div class="arch-labels"><div>Pagos</div><div>Facturas</div><div>Contabilidad</div><div>Informes</div><div>Tu negocio, conectado</div></div>
+    <svg class="processor" viewBox="0 0 440 330" role="img" aria-labelledby="chip-title"><title id="chip-title">Capas conectadas de la infraestructura financiera de LaunchKit</title><path d="m220 127 174 91q10 6 0 12l-161 88q-13 7-26 0L47 230q-10-6 0-12Z"/><path d="M42 224v9q0 7 9 12l155 81q14 8 29 0l154-81q10-5 10-12v-9"/><path d="m220 102 174 91q10 6 0 12l-161 88q-13 7-26 0L47 205q-10-6 0-12Z"/><path d="M42 199v9q0 7 9 12l155 81q14 8 29 0l154-81q10-5 10-12v-9"/><path d="m220 76 174 91q10 6 0 12l-161 88q-13 7-26 0L47 179q-10-6 0-12Z"/><path d="M42 173v9q0 7 9 12l155 81q14 8 29 0l154-81q10-5 10-12v-9"/><path class="outline" d="m220 35 174 91q10 6 0 12l-161 88q-13 7-26 0L47 138q-10-6 0-12Z"/><path d="m220 50 152 80q5 3 0 6l-146 78q-6 3-12 0L68 136q-5-3 0-6Z"/><path d="m220 83 91 48q5 3 0 6l-85 46q-6 3-12 0l-85-46q-5-3 0-6Z"/><g transform="translate(220 125) rotate(28)"><text text-anchor="middle" font-size="15" font-weight="600">LaunchKit</text><text text-anchor="middle" y="18" font-size="9">Tu información.</text><text text-anchor="middle" y="31" font-size="9">Bien conectada.</text></g></svg>
+    <div class="arch-labels right"><p>Diseñado para equipos financieros</p><p>Operaciones conectadas</p><p>Decisiones con perspectiva</p></div></div>
+  </section>
+  <section class="pricing" id="precios" aria-labelledby="precios-titulo"><div class="section-head"><p class="label">Planes de demostración</p><h2 id="precios-titulo">Precios sencillos para<br>equipos que quieren avanzar.</h2><p class="intro">Elige la opción que encaja con tu equipo.<br>Estos importes son ilustrativos, no una oferta comercial.</p><div class="billing" role="group" aria-label="Periodo de facturación ilustrativo"><button type="button" data-billing="monthly" aria-pressed="true">Pago mensual</button><button type="button" data-billing="yearly" aria-pressed="false">Pago anual</button></div></div>
+    <div class="pricing-grid">
+      <article class="plan"><h3>Inicial</h3><p>Para explorar una forma más sencilla de ordenar las finanzas de tu día a día.</p><span class="price"><span data-price="0">0 €</span> <small>/ mes, demo</small></span><span class="price-note" data-price-note>Sin tarjeta. Solo una demostración.</span><button class="button secondary" type="button" data-plan="Inicial">Ver este plan</button><ul><li>Visión general</li><li>Categorías de gastos</li><li>Movimientos recientes</li><li>Avisos y alertas</li><li>Seguridad de acceso</li></ul></article>
+      <article class="plan"><h3>Crecimiento</h3><p>Para equipos que quieren conectar más tareas y trabajar mejor.</p><span class="price"><span data-price="49">49 €</span> <small>/ mes, demo</small></span><span class="price-note" data-price-note>Facturación mensual ilustrativa.</span><button class="button orange" type="button" data-plan="Crecimiento">Ver este plan</button><ul><li>Todo lo del plan Inicial</li><li>Automatización de tareas</li><li>Informes compartidos</li><li>Seguimiento de gastos</li><li>Integraciones de ejemplo</li></ul></article>
+      <article class="plan"><h3>Pro</h3><p>Para empresas que necesitan una experiencia más completa.</p><span class="price"><span data-price="75">75 €</span> <small>/ mes, demo</small></span><span class="price-note" data-price-note>Facturación mensual ilustrativa.</span><button class="button secondary" type="button" data-plan="Pro">Ver este plan</button><ul><li>Todo lo del plan Crecimiento</li><li>Categorías personalizadas</li><li>Control de equipo</li><li>Exportación de informes</li><li>Gestión centralizada</li></ul></article>
+    </div><p class="visually-hidden" id="billing-status" role="status"></p>
+  </section>
+  <section class="faq" id="preguntas" aria-labelledby="faq-titulo"><div class="section-head"><p class="label">Preguntas frecuentes</p><h2 id="faq-titulo">Todo lo que necesitas<br>saber, en un lugar.</h2><p class="intro">Resolvemos dudas sobre funciones, seguridad e integraciones.<br>Una experiencia más clara desde el primer paso.</p><a class="button pill small" href="#respuestas">Ver las respuestas</a></div>
+    <div class="faq-grid" id="respuestas">
+      <details class="faq-item" open><summary>¿Cómo ayuda a organizar las finanzas?</summary><p>La demo muestra cómo reunir movimientos, facturas e información relevante en una vista clara y ordenada.</p></details>
+      <details class="faq-item" open><summary>¿Puedo conectar mis cuentas?</summary><p>La conexión bancaria es solo ilustrativa. No conectes cuentas reales ni introduzcas información financiera personal.</p></details>
+      <details class="faq-item" open><summary>¿Mis datos están seguros?</summary><p>Este concepto no envía ni guarda lo que escribes. Las simulaciones se ejecutan solo en tu navegador.</p></details>
+      <details class="faq-item" open><summary>¿Puedo gestionar varias empresas?</summary><p>Las pantallas muestran cómo podría organizarse la información de varios proyectos. No hay cuentas de empresa reales.</p></details>
+      <details class="faq-item" open><summary>¿Se admiten pagos internacionales?</summary><p>Los tipos de cambio y las monedas son datos fijos de ejemplo para mostrar la interfaz. No se realizan pagos.</p></details>
+      <details class="faq-item" open><summary>¿Se pueden crear informes?</summary><p>El asistente devuelve un resumen predefinido con importes ficticios. No procesa facturas ni genera informes reales.</p></details>
+      <details class="faq-item" open><summary>¿Hay una versión de prueba?</summary><p>No hay un servicio conectado. Puedes probar los controles de esta demo sin registrarte y descargar el DESIGN.md gratis.</p></details>
+      <details class="faq-item" open><summary>¿Sirve para equipos pequeños?</summary><p>El lenguaje visual es flexible y puede adaptarse a distintos tamaños de negocio y necesidades.</p></details>
+      <details class="faq-item" open><summary>¿Puedo automatizar tareas?</summary><p>Es una muestra de diseño, no un sistema de automatización. Las conexiones y funciones reales tendrían que desarrollarse.</p></details>
+    </div>
+  </section>
+  <section class="newsletter" id="contacto" aria-labelledby="contacto-titulo"><h2 id="contacto-titulo">Una forma más inteligente<br>de gestionar tu negocio.</h2><p class="intro">Una experiencia financiera más sencilla.<br>Concepto de muestra. No es un servicio activo.</p><form id="interes"><label class="visually-hidden" for="email">Tu correo electrónico</label><input type="email" id="email" name="email" autocomplete="email" spellcheck="false" placeholder="Tu correo electrónico…" required maxlength="254"><button class="button" type="submit">Me interesa</button></form><p class="status" role="status" id="interest-status"></p></section>
+</main>
+<footer class="footer" id="recursos"><div class="footer-top"><div class="footer-about"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg><p>Una marca de ejemplo.<br>Una web que convierte la complejidad<br>en una experiencia clara.</p><p>Demo gratuita en español.</p></div><div class="footer-links"><div><h3>Producto</h3><a href="#funciones">Funciones</a><a href="#infraestructura">Cómo funciona</a><a href="#precios">Planes</a><a href="#asistente">Probar la demo</a></div><div><h3>Recursos</h3><a href="#preguntas">Ayuda</a><a href="DESIGN.md" download>DESIGN.md gratis</a><button type="button" id="descargar-diseno">Copiar DESIGN.md</button><a href="#contacto">Contacto</a></div><div><h3>Empresa</h3><a href="#infraestructura">Nosotros</a><button type="button" data-info="privacidad">Privacidad</button><button type="button" data-info="aviso">Aviso legal</button><button type="button" data-info="creditos">Créditos</button></div></div></div><div class="footer-word" aria-hidden="true" translate="no">LAUNCHKIT</div><p class="footer-legal">Concepto independiente basado en una referencia aportada por el usuario. Sin afiliación con LaunchKit. Marcas y datos ilustrativos. Fotografía ilustrativa: <a href="https://images.unsplash.com/photo-1472396961693-142e6e269027" rel="noreferrer" target="_blank">Unsplash</a>. <span id="copy-status" role="status"></span></p></footer>
+</div><p class="below-note">LaunchKit — Demostración de diseño para ia.cuadrantia.store. Sin pagos, registros ni seguimiento.</p>
+<dialog id="informacion" aria-labelledby="dialog-title"><button class="icon-button close" type="button" aria-label="Cerrar ventana"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><h2 id="dialog-title"></h2><p id="dialog-text"></p><form method="dialog"><button class="button" type="submit">Entendido</button></form></dialog>
+<script id="design-source" type="text/plain">
+---
+version: "alpha"
+name: LaunchKit — Finanzas claras
+description: "Sistema visual gratuito en español para una landing financiera clara, basado en una referencia aportada por el usuario. Demo independiente, sin afiliación ni servicio financiero real."
+colors:
+  primary: "#181918"
+  on-primary: "#FFFFFF"
+  secondary: "#F3F3F2"
+  accent: "#FF7B35"
+  background: "#FAFAFA"
+  surface: "#FFFFFF"
+  text: "#181918"
+  muted: "#70716E"
+  border: "#E7E7E4"
+typography:
+  display-lg:
+    fontFamily: Arial
+    fontSize: 2.6875rem
+    fontWeight: 500
+    lineHeight: 1.12
+    letterSpacing: -0.045em
+  headline-md:
+    fontFamily: Arial
+    fontSize: 2.125rem
+    fontWeight: 500
+    lineHeight: 1.12
+    letterSpacing: -0.045em
+  body-md:
+    fontFamily: Arial
+    fontSize: 0.9375rem
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: 0em
+  label-sm:
+    fontFamily: Arial
+    fontSize: 0.75rem
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: 0em
+rounded:
+  sm: 5px
+  md: 9px
+  lg: 20px
+  full: 9999px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+  xl: 64px
+components:
+  button-primary:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.label-sm}"
+    rounded: "{rounded.sm}"
+    padding: 11px 23px
+  button-secondary:
+    backgroundColor: "{colors.secondary}"
+    textColor: "{colors.muted}"
+    typography: "{typography.label-sm}"
+    rounded: "{rounded.sm}"
+    padding: 11px 23px
+  button-featured:
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.text}"
+    typography: "{typography.label-sm}"
+    rounded: "{rounded.sm}"
+    padding: 11px 23px
+  card:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.md}"
+    padding: 24px
+  link:
+    backgroundColor: "{colors.background}"
+    textColor: "{colors.text}"
+  tag:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.full}"
+    padding: 4px 10px
+  caption:
+    backgroundColor: "{colors.background}"
+    textColor: "{colors.muted}"
+    typography: "{typography.label-sm}"
+  divider:
+    backgroundColor: "{colors.border}"
+    height: 1px
+---
+
+# LaunchKit — Finanzas claras
+
+Sistema de diseño gratuito en español para construir una landing de software financiero. La composición reproduce la referencia visual IMG_0987 aportada por el usuario y su adaptación española anterior; no es un análisis de la web oficial ni una copia de su código. La tipografía exacta y los recursos originales de la referencia no están disponibles: se sustituyen por Arial, un paisaje ilustrativo y gráficos propios. No se afirma una similitud medida del 95 %.
+
+## 1. Intención visual
+
+Una hoja casi blanca sobre un paisaje desaturado y desenfocado. Tipografía pequeña y precisa, titulares centrados, líneas muy finas, módulos financieros sobrios y mucho aire. El negro guía la acción. El naranja aparece casi exclusivamente en el plan destacado y en pequeños indicadores de sección.
+
+El contenido debe parecer un producto B2B ordenado, no una web de criptomonedas ni una consultoría: sin neón, cristal brillante, degradados en los títulos, sombras pesadas o tipografía de exhibición. No convertir la página en un panel a pantalla completa.
+
+## 2. Composición y medidas
+
+| Elemento | Escritorio | iPhone / móvil |
+| --- | --- | --- |
+| Hoja principal | Máximo 1176 px; margen lateral mínimo 36 px | Ancho disponible menos 24 px |
+| Barra superior | 90 px de alto; relleno horizontal 48 px | 72 px; relleno 20 px; menú desplegable |
+| Hero | Relleno 78 px arriba, 94 px abajo | 64 px arriba, 70 px abajo |
+| Título principal | 43 px; ancho máximo 760 px | 32 px; líneas naturales |
+| Titulares de sección | 34 px | 28 px |
+| Asistente | Máximo 640 px; margen superior 74 px | Ancho completo; margen superior 54 px |
+| Funciones | Dos columnas; separación 18 px | Una columna; separación 14 px |
+| Tarjetas de función | 448 px de alto | 410 px de alto |
+| Planes | Tres columnas dentro de un marco gris claro | Tres tarjetas apiladas |
+| Preguntas | Retícula de tres columnas | Lista de una columna |
+| Pie de página | Fondo casi negro; nombre gigante recortado por su base | Tres columnas de enlaces; nombre ajustado al ancho |
+
+Puntos de ruptura: 900 px y 600 px. A partir de 1600 px el contenedor deja de crecer. Usar `minmax(0, 1fr)` en las retículas; los elementos flexibles deben admitir `min-width: 0`. No ocultar un desbordamiento para disimular un error de anchura.
+
+## 3. Orden de las secciones
+
+1. Aviso discreto fuera de la hoja: concepto ficticio, datos ilustrativos, sin conexión bancaria.
+2. Navegación con símbolo cuadrado, enlaces pequeños y “Empieza gratis”.
+3. Hero centrado: frase de contexto, titular negro/gris, descripción y dos acciones.
+4. Asistente financiero de muestra: fuentes en píldoras, consulta y herramientas inferiores.
+5. Franja gris de identidades ficticias, sin presentarlas como clientes reales.
+6. Funciones: dos grandes módulos con transferencias y recibo móvil.
+7. Infraestructura: titular, acciones, procesador isométrico de capas y etiquetas laterales.
+8. Precios: conmutador mensual/anual y tres planes; naranja solo en el botón de Crecimiento.
+9. Preguntas: nueve bloques abiertos inicialmente; el primero oscuro.
+10. Captación: titular centrado, texto corto, correo y botón.
+11. Pie negro: recursos y nombre LAUNCHKIT de gran tamaño.
+
+## 4. Colores y tipografía
+
+Los valores del bloque YAML son la fuente de verdad. Tokens adicionales de esta demo: texto secundario muy suave `#92938F` solo para jerarquía decorativa, foco `#9C3B0A`, verde informativo `#577B68`, pie `#080908`, marca gigante `#242624` y fondo exterior `#C3CDD0`.
+
+Familia: `Arial, Helvetica, sans-serif`, sin peticiones de fuentes externas. Los títulos usan peso 500, interlineado 1,12 y espaciado negativo. Los textos de apoyo de la réplica de escritorio tienen 12 px; etiquetas 10–12 px. En móvil, todo campo de escritura tiene al menos 16 px para evitar el zoom automático de Safari. Para una web comercial con mayor densidad de lectura, subir los textos de apoyo a 14–16 px manteniendo la estructura.
+
+Los números usan `font-variant-numeric: tabular-nums` y formato `Intl.NumberFormat('es-ES')`. El acento naranja lleva texto oscuro para mantener el contraste. No usar el gris más claro para información imprescindible.
+
+## 5. Componentes
+
+### Botones
+
+Rectángulos discretos, radio de 5 px. Primario negro con texto blanco; secundario gris claro con borde; destacado naranja con texto oscuro. Altura habitual de 42 px. Evitar flechas pegadas al texto. Solo el acceso a preguntas utiliza forma de píldora. Hover: desplazamiento vertical de −1 px; pulsación: +1 px. Transición de 160 ms, nunca `transition: all`.
+
+### Asistente
+
+Marco exterior redondeado de 20 px, borde fino y halo naranja muy tenue. Las fuentes se muestran encima del área de consulta en píldoras blancas. El panel interior es blanco, con sombra ligera y radio de 9 px. La franja inferior contiene restaurar fuentes, sugerencias y enviar. La respuesta aparece debajo, nunca encima de la consulta. Los textos introducidos no se insertan como HTML.
+
+### Transferencias
+
+Tarjeta blanca pequeña, sombra suave, buscador gris, lista de tres países y valores alineados a la derecha. Cada fila tiene bandera circular, país, aclaración de la moneda de origen y tipo de cambio. Los tipos son constantes ficticias; no simular una cotización en tiempo real.
+
+### Recibo móvil
+
+Silueta blanca de un móvil con borde gris, sin fotografía de un dispositivo comercial. Botón de micrófono y recibo simplificado. El botón muestra una simulación: no pedir permisos de micrófono ni insinuar una transcripción real.
+
+### Diagrama de infraestructura
+
+Cuatro capas isométricas blancas con contornos grises; sin animación continua ni perspectiva 3D pesada. SVG accesible con título descriptivo. Mantener las etiquetas en HTML cuando deban leerse o traducirse.
+
+### Planes
+
+Marco exterior gris y tres columnas con bordes compartidos. El precio manda, no una insignia de “más popular”. Los importes 0 €, 49 € y 75 € son demostrativos. El pago anual aplica un 20 % a los planes de pago y muestra el total anual; no se ejecuta ningún cobro.
+
+### Preguntas
+
+Usar `details` y `summary` nativos, abiertos inicialmente. El primer bloque abierto es negro, los otros son blancos. En móvil se convierten en filas legibles. El símbolo cambia de menos a más al cerrar; el teclado funciona sin controladores especiales.
+
+## 6. Interacciones incluidas
+
+| Control | Comportamiento real en la demo |
+| --- | --- |
+| Menú móvil | Abre/cierra enlaces, actualiza `aria-expanded`; Escape lo cierra |
+| Fuentes del asistente | Cada × retira una píldora; + restaura las tres |
+| Sugerencias | Rellenan la consulta y mueven el foco al campo |
+| Enviar consulta | Muestra un resumen fijo con importes ficticios, no una IA |
+| Buscar país | Filtra sin distinguir tildes; muestra estado vacío |
+| Moneda | Cambia las conversiones ilustrativas entre USD, EUR y GBP |
+| Micrófono | Muestra un recibo de ejemplo y explica la simulación |
+| Periodo | Actualiza precios, total anual y estado accesible |
+| Ver plan | Abre un diálogo; no crea una cuenta ni suscripción |
+| Correo | Valida formato y confirma que no se envía ni guarda |
+| DESIGN.md | Descarga local con Blob; copia al portapapeles cuando se permite |
+| Privacidad y créditos | Abren información clara en un diálogo nativo |
+
+Todo se restablece al recargar. Sin `fetch`, analítica, cookies, almacenamiento persistente, formularios externos, cobros, bibliotecas CDN ni fuentes remotas. La fotografía está integrada como `data:`. Los enlaces externos solo se visitan si el usuario los pulsa.
+
+## 7. Accesibilidad y movimiento
+
+- Documento en español, un solo `h1`, regiones semánticas y títulos jerárquicos.
+- Enlace de salto, controles nativos, etiquetas de campo y nombres para botones de icono.
+- Foco visible de 2 px; nunca eliminarlo sin sustitución.
+- Mensajes de resultado con `role="status"`; el diálogo devuelve el foco al control de origen.
+- Fuentes eliminadas con foco restituido en el botón de restauración.
+- Respetar `prefers-reduced-motion`: sin transiciones y sin desplazamiento suave.
+- No bloquear el zoom ni imponer `maximum-scale`.
+- Considerar las zonas seguras del iPhone en los márgenes superior e inferior.
+- Evitar movimiento automático, carruseles, scroll secuestrado y efectos de paralaje.
+
+## 8. Contenido, SEO y uso responsable
+
+Todo el contenido visible está en español. LaunchKit se conserva como nombre propio; el resto de marcas de la franja es ficticio. Nunca publicar métricas, clientes, garantías de seguridad o testimonios inventados. La fotografía de archivo debe seguir identificada como ilustrativa.
+
+Esta demo incluye título, descripción, Open Graph 1200 × 630, tarjeta social, preguntas visibles y JSON-LD `WebPage` con idioma y descripción verificables. Está marcada `noindex,follow` para no competir con el catálogo ni presentarse como entidad financiera. No añadir datos estructurados de productos financieros, reseñas ni ofertas reales.
+
+Antes de integrarla, el responsable de ia.cuadrantia.store debe adaptar la URL absoluta de `og:image` si cambia `/demos/launchkit/`. El archivo `og.png` se incluye. No hay una URL canónica fijada: solo debe añadirse cuando exista una ruta pública definitiva. El catálogo y sus metadatos los gestiona su mantenedor.
+
+## 9. Recursos y alcance
+
+- Referencias: IMG_0987 y adaptación española previa aportadas por el usuario; no se redistribuyen las capturas dentro del ZIP.
+- Paisaje ilustrativo: `https://images.unsplash.com/photo-1472396961693-142e6e269027`, integrado, desaturado y desenfocado. Revisar la licencia de Unsplash antes de sustituirlo o redistribuirlo en otro contexto.
+- Iconos SVG y procesador: dibujados para esta implementación.
+- Código: HTML, CSS y JavaScript nativos; sin instalación ni servicios de pago.
+- Este archivo y la demo se entregan gratuitamente para reutilizar el sistema visual; no conceden derechos sobre marcas ni recursos de terceros.
+
+## 10. Instrucción para tu IA
+
+> Construye una landing en español siguiendo este DESIGN.md. Conserva el contenedor blanco de 1176 px, la jerarquía tipográfica contenida, los márgenes generosos, los módulos financieros con bordes finos y el naranja reservado al plan destacado. En móvil, apila funciones y planes, usa campos de 16 px y evita el desbordamiento horizontal. No inventes testimonios, logotipos de clientes, métricas o servicios activos. Si no hay backend, identifica expresamente cada simulación y no envíes datos personales. Entrega un HTML autónomo y un ZIP con index.html en la raíz.
+</script>
+<script>
+(() => {
+  const $ = (selector) => document.querySelector(selector);
+  const $$ = (selector) => [...document.querySelectorAll(selector)];
+  const menu = $('.menu-toggle');
+  menu.addEventListener('click', () => {
+    const expanded = menu.getAttribute('aria-expanded') !== 'true';
+    menu.setAttribute('aria-expanded', String(expanded));
+    menu.setAttribute('aria-label', expanded ? 'Cerrar menú' : 'Abrir menú');
+    $('#navegacion').classList.toggle('open', expanded);
+  });
+  $$('#navegacion a').forEach(link => link.addEventListener('click', () => {
+    menu.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-label', 'Abrir menú');
+    $('#navegacion').classList.remove('open');
+  }));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+      menu.click();
+      menu.focus();
+    }
+  });
+  const chips = $('.chips').innerHTML;
+  $('.chips').addEventListener('click', event => {
+    const remove = event.target.closest('[data-remove-chip]');
+    if (!remove) return;
+    const chip = remove.closest('.chip');
+    const name = chip.textContent.replace('×', '').trim();
+    chip.remove();
+    $('#assistant-status').textContent = `${name} retirado de las fuentes de ejemplo. Usa + para restaurarlas.`;
+    $('#restaurar').focus();
+  });
+  $('#restaurar').addEventListener('click', () => {
+    $('.chips').innerHTML = chips;
+    $('#assistant-status').textContent = 'Fuentes de ejemplo restauradas.';
+  });
+  $$('[data-prompt]').forEach(button => button.addEventListener('click', () => {
+    $('#consulta').value = button.dataset.prompt;
+    $('#consulta').focus();
+  }));
+  $('#asistente').addEventListener('submit', event => {
+    event.preventDefault();
+    $('#assistant-status').textContent = $('#consulta').value.trim() ? 'Consulta recibida solo en este navegador. Aquí tienes una respuesta de muestra.' : 'Aquí tienes un ejemplo de tu resumen financiero. Puedes escribir una consulta para probar el diseño.';
+    $('#resultado').hidden = false;
+  });
+  const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  $('#buscar').addEventListener('input', event => {
+    let matches = 0;
+    $$('.country').forEach(row => {
+      row.hidden = !row.dataset.country.includes(normalize(event.target.value));
+      if (!row.hidden) matches++;
+    });
+    $('#sin-paises').hidden = matches > 0;
+  });
+  const rates = {USD: [0.94, 1.35, 147.92], EUR: [1, 1.44, 157.36], GBP: [1.17, 1.68, 183.92]};
+  $('#moneda').addEventListener('change', event => {
+    const currency = event.target.value;
+    $$('[data-rate]').forEach((rate, index) => {rate.textContent = `${new Intl.NumberFormat('es-ES', {minimumFractionDigits:2, maximumFractionDigits:2}).format(rates[currency][index])} ${rate.dataset.rate}`;});
+    $$('.exchange-caption').forEach(label => {label.textContent = `1 ${currency}, tipo ilustrativo`;});
+    $('#exchange-status').textContent = `Tipos de ejemplo actualizados para ${currency}. No son cotizaciones reales.`;
+  });
+  $('#dictado').addEventListener('click', () => {
+    $('#receipt-label').textContent = 'Material de oficina, ejemplo';
+    $('#receipt-amount').textContent = '24,50 €';
+    openDialog('Un gasto, sin complicaciones', 'Simulación: “Registra 24,50 € en material de oficina”. No hemos activado tu micrófono ni guardado ningún dato.');
+  });
+  let yearly = false;
+  const euro = value => new Intl.NumberFormat('es-ES', {style:'currency', currency:'EUR', maximumFractionDigits:2}).format(value);
+  $$('[data-billing]').forEach(button => button.addEventListener('click', () => {
+    yearly = button.dataset.billing === 'yearly';
+    $$('[data-billing]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    $$('[data-price]').forEach(price => {price.textContent = euro(Number(price.dataset.price) * (yearly ? 0.8 : 1));});
+    $$('[data-price-note]').forEach((note, index) => {note.textContent = index === 0 ? 'Sin tarjeta. Solo una demostración.' : yearly ? `${euro([0,49,75][index] * 0.8 * 12)} al año, pago ilustrativo.` : 'Facturación mensual ilustrativa.';});
+    $('#billing-status').textContent = yearly ? 'Precios anuales ilustrativos: descuento del 20 %, equivalencia mensual redondeada.' : 'Precios mensuales ilustrativos restaurados.';
+  }));
+  const dialog = $('#informacion');
+  let dialogTrigger;
+  function openDialog(title, text) {
+    dialogTrigger = document.activeElement;
+    $('#dialog-title').textContent = title;
+    $('#dialog-text').textContent = text;
+    dialog.showModal();
+  }
+  dialog.addEventListener('close', () => dialogTrigger?.focus());
+  dialog.querySelector('.close').addEventListener('click', () => dialog.close());
+  $$('[data-plan]').forEach(button => button.addEventListener('click', () => openDialog(`Plan ${button.dataset.plan}`, `Has elegido el plan ${button.dataset.plan} con periodo ${yearly ? 'anual' : 'mensual'}. Es una tarifa ilustrativa: no se crea ninguna cuenta, no hay suscripción y no se solicita ningún pago.`)));
+  $('#interes').addEventListener('submit', event => {
+    event.preventDefault();
+    $('#interest-status').textContent = '¡Así de sencillo sería! Esto es una demo: tu correo no se ha enviado ni guardado y no te has suscrito a nada.';
+    $('#interes').reset();
+  });
+  const info = {
+    privacidad: ['Tu privacidad, primero', 'Esta demo no usa cookies, analítica, almacenamiento local ni servicios externos. Tus consultas y tu correo no salen del navegador. Al recargar, se restablece todo. Los enlaces externos se abren solo si los pulsas.'],
+    aviso: ['Una demo, no un banco', 'LaunchKit es aquí una muestra de diseño basada en una imagen de referencia aportada por el usuario. No es una entidad financiera ni un producto disponible. Marcas, importes, planes y respuestas son ilustrativos. No hay afiliación con el autor de la referencia.'],
+    creditos: ['Diseño y recursos', 'Referencia visual: IMG_0987 aportada por el usuario. Implementación independiente en español. Tipografía de sistema sin descargas. Iconos SVG y diagrama originales. Fotografía de paisaje ilustrativa de Unsplash (photo-1472396961693-142e6e269027). El DESIGN.md describe esta implementación; no concede derechos sobre marcas ajenas.']
+  };
+  $$('[data-info]').forEach(button => button.addEventListener('click', () => openDialog(...info[button.dataset.info])));
+  $('#descargar-diseno').addEventListener('click', async () => {
+    const source = $('#design-source').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(source);
+      $('#copy-status').textContent = 'DESIGN.md copiado.';
+    } catch {
+      openDialog('Copia tu DESIGN.md', 'Tu navegador no permite copiar automáticamente. Usa el enlace “DESIGN.md gratis” para descargar el archivo.');
+    }
+  });
+  const designLink = $('a[download]');
+  const designUrl = URL.createObjectURL(new Blob([$('#design-source').textContent.trim() + '\n'], {type:'text/markdown;charset=utf-8'}));
+  designLink.href = designUrl;
+  designLink.download = 'DESIGN.md';
+})();
+</script>
+</body>
+</html>
