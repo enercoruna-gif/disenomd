@@ -1,0 +1,52 @@
+{
+ "titulo": "Online Business Banking For Startups, Small Businesses & Scaling Companies",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#171721",
+  "#1E1E2A",
+  "#5266EB",
+  "#272735",
+  "#CDDDFF"
+ ],
+ "textos": [
+  "#EDEDF3",
+  "#C3C3CC",
+  "#F4F5F9",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "arcadia",
+  "arcadiaDisplay"
+ ],
+ "radios": [
+  "32px",
+  "4px",
+  "12px",
+  "8px"
+ ],
+ "h1": {
+  "texto": "Radically different banking",
+  "familia": "arcadiaDisplay",
+  "tam": "45.0784px",
+  "peso": "480",
+  "ls": "normal",
+  "lh": "49.5862px"
+ },
+ "cuerpo": {
+  "familia": "arcadia",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Open account",
+  "fondo": "#5266EB",
+  "color": "#FFFFFF",
+  "radio": "32px",
+  "padding": "0px 16px",
+  "peso": "420"
+ },
+ "enlace": "#EDEDF3",
+ "slug": "mercury",
+ "url": "https://mercury.com",
+ "final": "https://mercury.com/"
+}

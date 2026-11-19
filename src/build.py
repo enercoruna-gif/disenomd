@@ -181,6 +181,9 @@ def tarjeta(d, prefijo):
 </a>'''
 
 
+GH = re.search(r' d="([^"]+)"', (Path(__file__).parent / "logos" / "github.svg").read_text()).group(1)
+
+
 def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
   fams = ["Inter", "JetBrains Mono"] + (fuentes_extra or [])
   return f'''<!doctype html>
@@ -202,9 +205,10 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
 <link rel="stylesheet" href="{prefijo}assets/estilo.css">
 </head>
 <body>
-<a class="aviso" href="{prefijo}#catalogo"><span class="pill">NUEVO</span> {len(DISENOS) + len(AW.SITIOS)} diseños listos para copiar en ChatGPT <span aria-hidden="true">→</span></a>
+<a class="aviso" href="{prefijo}#catalogo"><span class="pill">NUEVO</span> {len(AW.SITIOS)} diseños listos para copiar en ChatGPT <span aria-hidden="true">→</span></a>
 <header class="cab">
   <a class="logo" href="{prefijo}"><span>diseño</span>.md</a>
+  <a class="gh" href="https://github.com/enercoruna-gif/disenomd" rel="noopener" aria-label="Repositorio en GitHub: dale una estrella"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="{GH}"/></svg><span class="gh-est"><span aria-hidden="true">★</span> <span data-estrellas>GitHub</span></span></a>
   <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" onclick="document.body.classList.toggle('menu-abierto');this.setAttribute('aria-expanded',document.body.classList.contains('menu-abierto'))">☰</button>
   <nav class="nav" aria-label="Menú principal">
     <a class="nav-dest" href="{prefijo}kits/#a-medida"><span aria-hidden="true">➤</span> Pedir un DESIGN.md a medida</a>
@@ -216,7 +220,7 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
     <a href="{prefijo}kits/#prompts">Pack de prompts</a>
     <a href="{prefijo}kits/#fondos">Fondos</a>
     <a href="{prefijo}kits/#videos">Plantillas de vídeo</a>
-    <a href="{prefijo}descargas/disenomd-catalogo.zip" download>DESIGN.md gratis</a>
+    <a href="{prefijo}webs/">DESIGN.md gratis</a>
     <hr>
     <a href="{prefijo}como-usar/">Qué es el formato DESIGN.md</a>
     <a href="{prefijo}aviso-legal/">Aviso legal</a>
@@ -289,8 +293,9 @@ def logos():
 
 
 def portada():
-  tarjetas = "\n".join(tarjeta(d, "") for d in DISENOS)
-  cats = list(dict.fromkeys(GRUPOS[d["slug"]] for d in DISENOS))
+  dest = [x for x in AW.SITIOS if x.get("portada")]
+  tarjetas = "\n".join(AW.tarjeta(x, AW.design_md(x, json.loads((AW.RAIZ / "src/analisis" / f"{x['slug']}.json").read_text()))[1], "") for x in dest)
+  cats = list(dict.fromkeys(AW.GRUPO[x["sector"]] for x in dest))
   chips = '<button class="chip activo" data-filtro="">Todos</button>' + "".join(f'<button class="chip" data-filtro="{esc(c)}">{esc(c)}</button>' for c in cats)
   _kits = "".join(f'''<a class="kit-btn{' kit-dest' if i == 0 else ''}" href="kits/#{k["slug"]}"><span class="kit-ico">{k["icono"]}</span><span><strong>{k["nombre"]}</strong><small>{k["sub"]}</small></span></a>''' for i, k in enumerate(KITS[:2]))
   usos = [("01", "Dar estilo sin saber diseñar", "Elige un DESIGN.md, ponlo en tu proyecto y tu agente aplica colores, tipografía y componentes coherentes."),
@@ -317,15 +322,15 @@ def portada():
 </section>
 <section class="bloque lista-webs" aria-labelledby="t-webs">
   <p class="eti" id="t-webs"># Análisis de webs populares</p>
-  <ul class="lista-iconos">{"".join(f'<li><a href="analisis/{x["slug"]}/"><img src="analisis/{x["slug"]}/icono.png" alt="" width="28" height="28"><span>{esc(x["nombre"])}</span><small>{esc(x["sector"])}</small></a></li>' for x in AW.SITIOS[:12])}</ul>
+  <ul class="lista-iconos">{"".join(f'<li><a href="analisis/{x["slug"]}/"><img src="analisis/{x["slug"]}/icono.png" alt="" width="28" height="28"><span>{esc(x["nombre"])}</span><small>{esc(x["sector"])}</small></a></li>' for x in [x for x in AW.SITIOS if not x.get("portada")][:12])}</ul>
   <p><a class="btn btn-claro btn-peq" href="webs/">Ver las {len(AW.SITIOS)} webs →</a></p>
 </section>
 <section class="bloque" id="catalogo">
-  <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(DISENOS)} estilos originales · <a href="webs/">{len(AW.SITIOS)} webs populares en su propia sección →</a></span></div>
-  <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-catalogo.zip" download>Descargar los {len(DISENOS)} DESIGN.md (zip)</a></p>
-  <input class="buscar" id="buscar" type="search" placeholder="Busca tu negocio: peluquería, bar, clínica…" aria-label="Buscar diseños">
+  <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(dest)} destacados · <a href="webs/">ver las {len(AW.SITIOS)} webs →</a></span></div>
+  <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-webs.zip" download>Descargar los {len(AW.SITIOS)} DESIGN.md (zip)</a></p>
+  <input class="buscar" id="buscar" type="search" placeholder="Busca una web o un sector: banca, diseño, salud…" aria-label="Buscar diseños">
   <div class="chips" id="chips">{chips}</div>
-  <p class="vacio" id="vacio" hidden>Ningún diseño menciona «<span id="vacio-q"></span>», pero todos sirven para cualquier negocio: elige el que más te guste por sus colores.</p>
+  <p class="vacio" id="vacio" hidden>Ningún destacado coincide con «<span id="vacio-q"></span>». Prueba en <a href="webs/">las {len(AW.SITIOS)} webs</a>.</p>
   <div class="rejilla" id="rejilla">{tarjetas}</div>
 </section>
 <section class="bloque">
@@ -340,7 +345,7 @@ def portada():
 </section>
 <section class="bloque"><h2>Preguntas frecuentes</h2><div class="faq">{faq_html}</div></section>
 '''
-  fams = [f for d in DISENOS for f in familias(d)]
+  fams = []
   return pagina(f"{MARCA} — Sistemas de diseño DESIGN.md en español para agentes de IA",
                 "Catálogo gratuito de archivos DESIGN.md en español para Claude Code, Cursor, Codex, Gemini y ChatGPT. Dale a tu web un diseño coherente en minutos.",
                 cuerpo, "", fams)
@@ -469,15 +474,6 @@ def main():
     (SALIDA / ruta / "index.html").write_text(f())
   (SALIDA / "descargas").mkdir(exist_ok=True)
   catalogo = []
-  with zipfile.ZipFile(SALIDA / "descargas" / "disenomd-catalogo.zip", "w", zipfile.ZIP_DEFLATED) as z:
-    for i, d in enumerate(DISENOS):
-      md, pag = detalle(d, i)
-      carpeta = SALIDA / "disenos" / d["slug"]
-      carpeta.mkdir(parents=True, exist_ok=True)
-      (carpeta / "DESIGN.md").write_text(md)
-      (carpeta / "index.html").write_text(pag)
-      z.writestr(f"{d['slug']}/DESIGN.md", md)
-      catalogo.append(dict(slug=d["slug"], nombre=d["nombre"], categoria=d["categoria"], lema=d["lema"], colores=d["colores"]))
   with zipfile.ZipFile(SALIDA / "descargas" / "disenomd-webs.zip", "w", zipfile.ZIP_DEFLATED) as z:
     reales = AW.generar(SALIDA, pagina, z)
   (SALIDA / "webs").mkdir(exist_ok=True)
@@ -489,7 +485,7 @@ def main():
     icons=[dict(src=f"assets/icono-{n}.png", sizes=f"{n}x{n}", type="image/png") for n in (192, 512)]), ensure_ascii=False))
   (SALIDA / ".nojekyll").write_text("")
   (SALIDA / "robots.txt").write_text("User-agent: *\nAllow: /\n")
-  print(f"{len(DISENOS)} diseños y {len(AW.SITIOS)} análisis generados en {SALIDA}")
+  print(f"{len(AW.SITIOS)} análisis generados en {SALIDA}")
 
 
 if __name__ == "__main__":

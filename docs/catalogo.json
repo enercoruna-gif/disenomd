@@ -1,223 +1,223 @@
 [
  {
-  "slug": "terracota",
-  "nombre": "Terracota",
-  "categoria": "Restauración y producto local",
-  "lema": "Calidez mediterránea, barro cocido y sobremesa larga.",
+  "slug": "lattice",
+  "nombre": "Lattice",
+  "categoria": "Webs populares",
+  "url": "https://lattice.com",
   "colores": {
-   "primary": "#B4532A",
-   "on-primary": "#FFF8F1",
-   "secondary": "#5E7A4F",
-   "accent": "#E9B44C",
-   "background": "#FBF5EC",
-   "surface": "#FFFFFF",
-   "text": "#2B1D14",
-   "muted": "#7A6455",
-   "border": "#EADBC8"
-  }
- },
- {
-  "slug": "azulejo",
-  "nombre": "Azulejo",
-  "categoria": "Turismo y cultura",
-  "lema": "Azul cobalto sobre blanco cal, como un patio de Lisboa o Sevilla.",
-  "colores": {
-   "primary": "#1F4FA3",
+   "primary": "#027653",
    "on-primary": "#FFFFFF",
-   "secondary": "#0E2A5C",
-   "accent": "#F2A541",
+   "secondary": "#C4F7CA",
+   "accent": "#C4F7CA",
    "background": "#FFFFFF",
-   "surface": "#F3F6FC",
-   "text": "#0F1B33",
-   "muted": "#56627A",
-   "border": "#D5DEEF"
+   "surface": "#E2F5FE",
+   "text": "#1A1F2E",
+   "muted": "#027653",
+   "border": "#DFE0E2"
   }
  },
  {
-  "slug": "fintech-sobrio",
-  "nombre": "Fintech Sobrio",
-  "categoria": "SaaS y finanzas",
-  "lema": "Confianza, números claros y cero ruido.",
+  "slug": "antimetal",
+  "nombre": "Antimetal",
+  "categoria": "Webs populares",
+  "url": "https://antimetal.com",
   "colores": {
-   "primary": "#0B3D91",
-   "on-primary": "#FFFFFF",
-   "secondary": "#0F9D74",
-   "accent": "#E5484D",
-   "background": "#F7F8FA",
-   "surface": "#FFFFFF",
-   "text": "#0B1220",
-   "muted": "#5B6474",
-   "border": "#E3E6EB"
+   "primary": "#D77435",
+   "on-primary": "#000000",
+   "secondary": "#C35E49",
+   "accent": "#D28C7B",
+   "background": "#F5F6F1",
+   "surface": "#ECEDE8",
+   "text": "#1A1614",
+   "muted": "#676461",
+   "border": "#D6D7D2"
   }
  },
  {
-  "slug": "neon-nocturno",
-  "nombre": "Neón Nocturno",
-  "categoria": "Tecnología y gaming",
-  "lema": "Modo oscuro con brillo cian y magenta a medianoche.",
+  "slug": "krepling",
+  "nombre": "Krepling",
+  "categoria": "Webs populares",
+  "url": "https://krepling.com",
   "colores": {
-   "primary": "#22D3EE",
-   "on-primary": "#04121A",
-   "secondary": "#E879F9",
-   "accent": "#A3E635",
-   "background": "#0A0B10",
-   "surface": "#14161F",
-   "text": "#E8EAF2",
-   "muted": "#8A90A6",
-   "border": "#262A38"
-  }
- },
- {
-  "slug": "papel-suizo",
-  "nombre": "Papel Suizo",
-  "categoria": "Estudio y portfolio",
-  "lema": "Estilo tipográfico internacional: rejilla, negro, blanco y un rojo.",
-  "colores": {
-   "primary": "#111111",
-   "on-primary": "#FFFFFF",
-   "secondary": "#E10600",
-   "accent": "#E10600",
+   "primary": "#B154F9",
+   "on-primary": "#000000",
+   "secondary": "#582A7C",
+   "accent": "#8A6AA3",
    "background": "#FFFFFF",
-   "surface": "#F2F2F2",
-   "text": "#111111",
-   "muted": "#6B6B6B",
-   "border": "#111111"
+   "surface": "#F1F1F1",
+   "text": "#000000",
+   "muted": "#6C6B6B",
+   "border": "#DBDBDB"
   }
  },
  {
-  "slug": "bosque",
-  "nombre": "Bosque",
-  "categoria": "Sostenibilidad y bienestar",
-  "lema": "Verde musgo, papel reciclado y calma.",
+  "slug": "titan",
+  "nombre": "Titan",
+  "categoria": "Webs populares",
+  "url": "https://titan.com",
   "colores": {
-   "primary": "#2F5D3A",
-   "on-primary": "#F4F1E8",
-   "secondary": "#8A6A3D",
-   "accent": "#D98E32",
-   "background": "#F4F1E8",
-   "surface": "#FFFDF7",
-   "text": "#1F2A22",
-   "muted": "#66705F",
-   "border": "#DDD6C3"
-  }
- },
- {
-  "slug": "brutalista",
-  "nombre": "Brutalista",
-  "categoria": "Startups y creativos",
-  "lema": "Bordes gruesos, amarillo chillón y sin pedir perdón.",
-  "colores": {
-   "primary": "#111111",
-   "on-primary": "#FFE14D",
-   "secondary": "#FF5A36",
-   "accent": "#FFE14D",
-   "background": "#FFFBEA",
-   "surface": "#FFFFFF",
-   "text": "#111111",
-   "muted": "#4A4A4A",
-   "border": "#111111"
-  }
- },
- {
-  "slug": "pastel-suave",
-  "nombre": "Pastel Suave",
-  "categoria": "Educación y familia",
-  "lema": "Lavanda, menta y formas redondas que abrazan.",
-  "colores": {
-   "primary": "#6D4FD8",
+   "primary": "#12100E",
    "on-primary": "#FFFFFF",
-   "secondary": "#2BB39A",
-   "accent": "#FF9DB0",
-   "background": "#FAF8FF",
-   "surface": "#FFFFFF",
-   "text": "#2A2440",
-   "muted": "#6E6888",
-   "border": "#E7E2F7"
+   "secondary": "#12100E",
+   "accent": "#585755",
+   "background": "#FDFEFA",
+   "surface": "#F4F4F1",
+   "text": "#12100E",
+   "muted": "#646361",
+   "border": "#DCDDD9"
   }
  },
  {
-  "slug": "editorial",
-  "nombre": "Editorial",
-  "categoria": "Medios y blogs",
-  "lema": "Revista de papel: serifas, columnas y buena lectura.",
+  "slug": "better-stack",
+  "nombre": "Better Stack",
+  "categoria": "Webs populares",
+  "url": "https://betterstack.com",
   "colores": {
-   "primary": "#9B1C31",
+   "primary": "#939DB8",
+   "on-primary": "#000000",
+   "secondary": "#C9CEDC",
+   "accent": "#C9D3EE",
+   "background": "#0B0C14",
+   "surface": "#0F101A",
+   "text": "#FFFFFF",
+   "muted": "#939DB8",
+   "border": "#2D2E35"
+  }
+ },
+ {
+  "slug": "eraser",
+  "nombre": "Eraser",
+  "categoria": "Webs populares",
+  "url": "https://www.eraser.io",
+  "colores": {
+   "primary": "#171717",
    "on-primary": "#FFFFFF",
    "secondary": "#1E1E1E",
-   "accent": "#C9A227",
-   "background": "#FFFEFB",
-   "surface": "#F6F2EA",
-   "text": "#1E1E1E",
-   "muted": "#666057",
-   "border": "#E4DDCF"
-  }
- },
- {
-  "slug": "clinico",
-  "nombre": "Clínico",
-  "categoria": "Salud y servicios",
-  "lema": "Accesible, limpio y tranquilizador.",
-  "colores": {
-   "primary": "#0A7C86",
-   "on-primary": "#FFFFFF",
-   "secondary": "#1D3557",
-   "accent": "#F4A261",
-   "background": "#F6FAFB",
+   "accent": "#FFFFFF",
+   "background": "#FCFBF9",
    "surface": "#FFFFFF",
-   "text": "#12202B",
-   "muted": "#4F6270",
-   "border": "#D6E4E8"
+   "text": "#242424",
+   "muted": "#3A3A3A",
+   "border": "#DEDDDB"
   }
  },
  {
-  "slug": "lujo-noir",
-  "nombre": "Lujo Noir",
-  "categoria": "Moda y premium",
-  "lema": "Negro, champán y mucho espacio vacío.",
+  "slug": "healthy-together",
+  "nombre": "Healthy Together",
+  "categoria": "Webs populares",
+  "url": "https://healthytogether.io",
   "colores": {
-   "primary": "#C8A96A",
-   "on-primary": "#0D0D0D",
-   "secondary": "#F2EDE4",
-   "accent": "#76592F",
-   "background": "#0D0D0D",
-   "surface": "#171615",
-   "text": "#F2EDE4",
-   "muted": "#A39C90",
-   "border": "#2C2A27"
-  }
- },
- {
-  "slug": "panel-saas",
-  "nombre": "Panel SaaS",
-  "categoria": "Apps y paneles",
-  "lema": "Gris neutro, índigo y densidad productiva.",
-  "colores": {
-   "primary": "#4F46E5",
+   "primary": "#4541FE",
    "on-primary": "#FFFFFF",
-   "secondary": "#0EA5E9",
-   "accent": "#F59E0B",
-   "background": "#F8FAFC",
-   "surface": "#FFFFFF",
-   "text": "#0F172A",
-   "muted": "#64748B",
-   "border": "#E2E8F0"
+   "secondary": "#A2A0FE",
+   "accent": "#7D7EBF",
+   "background": "#101722",
+   "surface": "#1A202B",
+   "text": "#FFFFFF",
+   "muted": "#C3C5C7",
+   "border": "#313741"
   }
  },
  {
-  "slug": "retro-pixel",
-  "nombre": "Retro Pixel",
-  "categoria": "Juegos y ocio",
-  "lema": "Recreativa de los 80: píxeles, CRT y colores primarios.",
+  "slug": "passionfroot",
+  "nombre": "Passionfroot",
+  "categoria": "Webs populares",
+  "url": "https://www.passionfroot.me",
   "colores": {
-   "primary": "#FF3366",
-   "on-primary": "#120A1F",
-   "secondary": "#33CCFF",
-   "accent": "#FFD23F",
-   "background": "#120A1F",
-   "surface": "#1E1433",
-   "text": "#F5F0FF",
-   "muted": "#A99BC7",
-   "border": "#3A2A5C"
+   "primary": "#190922",
+   "on-primary": "#FFFFFF",
+   "secondary": "#160E1B",
+   "accent": "#5C565F",
+   "background": "#FFFFFF",
+   "surface": "#F6F6F6",
+   "text": "#141414",
+   "muted": "#666666",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "june",
+  "nombre": "June",
+  "categoria": "Webs populares",
+  "url": "https://www.june.so",
+  "colores": {
+   "primary": "#2A2A63",
+   "on-primary": "#FFFFFF",
+   "secondary": "#20204A",
+   "accent": "#636380",
+   "background": "#FFFFFF",
+   "surface": "#FAFAFA",
+   "text": "#151531",
+   "muted": "#2A2A63",
+   "border": "#DEDEE2"
+  }
+ },
+ {
+  "slug": "endless-tools",
+  "nombre": "Endless Tools",
+  "categoria": "Webs populares",
+  "url": "https://www.endlesstools.io",
+  "colores": {
+   "primary": "#FF13B1",
+   "on-primary": "#000000",
+   "secondary": "#FF89D8",
+   "accent": "#B26097",
+   "background": "#000000",
+   "surface": "#0A0A0A",
+   "text": "#FFFFFF",
+   "muted": "#959595",
+   "border": "#242424"
+  }
+ },
+ {
+  "slug": "mercury",
+  "nombre": "Mercury",
+  "categoria": "Webs populares",
+  "url": "https://mercury.com",
+  "colores": {
+   "primary": "#5266EB",
+   "on-primary": "#FFFFFF",
+   "secondary": "#CDDDFF",
+   "accent": "#EDEDF3",
+   "background": "#FFFFFF",
+   "surface": "#CDDDFF",
+   "text": "#141414",
+   "muted": "#666666",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "oura",
+  "nombre": "Oura",
+  "categoria": "Webs populares",
+  "url": "https://ouraring.com/es",
+  "colores": {
+   "primary": "#2A72DE",
+   "on-primary": "#FFFFFF",
+   "secondary": "#15396F",
+   "accent": "#5B749A",
+   "background": "#FFFFFF",
+   "surface": "#F7F1E8",
+   "text": "#000000",
+   "muted": "#4A4741",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "dji",
+  "nombre": "DJI",
+  "categoria": "Webs populares",
+  "url": "https://www.dji.com/es",
+  "colores": {
+   "primary": "#0070D5",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0060E7",
+   "accent": "#4C90EE",
+   "background": "#FFFFFF",
+   "surface": "#EDEDED",
+   "text": "#000000",
+   "muted": "#303233",
+   "border": "#DBDBDB"
   }
  },
  {

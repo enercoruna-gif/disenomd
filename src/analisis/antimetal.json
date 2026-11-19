@@ -1,0 +1,52 @@
+{
+ "titulo": "Antimetal",
+ "fondo": "#F5F6F1",
+ "fondos": [
+  "#1A1614",
+  "#231F1D",
+  "#D77435",
+  "#C35E49",
+  "#ABA9A6"
+ ],
+ "textos": [
+  "#ABA9A6",
+  "#BBBBB7",
+  "#F5F6F1",
+  "#FAFBF7",
+  "#1A1614"
+ ],
+ "fuentes": [
+  "GeistSans",
+  "signifier"
+ ],
+ "radios": [
+  "50%",
+  "3.35544e+07px",
+  "20px"
+ ],
+ "h1": {
+  "texto": "Production that runs itself.Production that runs itself.",
+  "familia": "signifier",
+  "tam": "51.0272px",
+  "peso": "400",
+  "ls": "-1.02054px",
+  "lh": "55.1094px"
+ },
+ "cuerpo": {
+  "familia": "GeistSans",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Book a Demo",
+  "fondo": "#1A1614",
+  "color": "#F5F6F1",
+  "radio": "3.35544e+07px",
+  "padding": "12px",
+  "peso": "500"
+ },
+ "enlace": "#F5F6F1",
+ "slug": "antimetal",
+ "url": "https://antimetal.com",
+ "final": "https://antimetal.com/"
+}

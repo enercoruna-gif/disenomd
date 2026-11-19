@@ -1,0 +1,37 @@
+{
+ "titulo": "June - Product & Customer Analytics Software for B2B SaaS",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#FAFAFA",
+  "#F0F0FE"
+ ],
+ "textos": [
+  "#2A2A63",
+  "#151531"
+ ],
+ "fuentes": [
+  "SF Pro Rounded",
+  "Inter"
+ ],
+ "radios": [
+  "12px"
+ ],
+ "h1": {
+  "texto": "A new chapter for June",
+  "familia": "SF Pro Rounded",
+  "tam": "60px",
+  "peso": "900",
+  "ls": "normal",
+  "lh": "60px"
+ },
+ "cuerpo": {
+  "familia": "Inter",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": null,
+ "enlace": "#2A2A63",
+ "slug": "june",
+ "url": "https://www.june.so",
+ "final": "https://www.june.so/"
+}

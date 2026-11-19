@@ -1,0 +1,34 @@
+{
+ "titulo": "Passionfroot - The AI Agent for Creator-led GTM",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#190922",
+  "#1E1C1D"
+ ],
+ "textos": [],
+ "fuentes": [
+  "Nunito Sans",
+  "new-kansas"
+ ],
+ "radios": [
+  "50%"
+ ],
+ "h1": {
+  "texto": "The Agentic Marketing OS for the AI era",
+  "familia": "new-kansas",
+  "tam": "64px",
+  "peso": "500",
+  "ls": "-0.64px",
+  "lh": "76.8px"
+ },
+ "cuerpo": {
+  "familia": "Nunito Sans",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": null,
+ "enlace": null,
+ "slug": "passionfroot",
+ "url": "https://www.passionfroot.me",
+ "final": "https://www.passionfroot.me/"
+}

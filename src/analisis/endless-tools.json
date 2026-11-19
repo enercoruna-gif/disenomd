@@ -1,0 +1,45 @@
+{
+ "titulo": "Endless Tools",
+ "fondo": "#000000",
+ "fondos": [
+  "#FFFFFF",
+  "#FF13B1",
+  "#353535"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#959595",
+  "#0A0A0A"
+ ],
+ "fuentes": [
+  "Inter"
+ ],
+ "radios": [
+  "3.35544e+07px"
+ ],
+ "h1": {
+  "texto": "A visual exploration tool for graphic designers.",
+  "familia": "Inter",
+  "tam": "42px",
+  "peso": "500",
+  "ls": "-1.26px",
+  "lh": "46px"
+ },
+ "cuerpo": {
+  "familia": "Inter",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Start for free",
+  "fondo": "#FFFFFF",
+  "color": "#0A0A0A",
+  "radio": "3.35544e+07px",
+  "padding": "0px 20px",
+  "peso": "500"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "endless-tools",
+ "url": "https://www.endlesstools.io",
+ "final": "https://endlesstools.io/"
+}

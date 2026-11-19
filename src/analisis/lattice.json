@@ -1,0 +1,57 @@
+{
+ "titulo": "Lattice | The HR platform that people love",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#E2F5FE",
+  "#FAF8F8",
+  "#FFFFFF",
+  "#E4FDE7",
+  "#F3FAD5",
+  "#FEECF6",
+  "#FEEDED",
+  "#C4F7CA"
+ ],
+ "textos": [
+  "#027653",
+  "#1A1F2E",
+  "#50565D",
+  "#0160C1",
+  "#556E0E",
+  "#A42C71"
+ ],
+ "fuentes": [
+  "Matter"
+ ],
+ "radios": [
+  "21.0432px",
+  "50%",
+  "12.6259px",
+  "11.223px",
+  "42.0864px"
+ ],
+ "h1": {
+  "texto": "People + AI: Succeeding Together",
+  "familia": "Matter",
+  "tam": "70.144px",
+  "peso": "500",
+  "ls": "-1.68346px",
+  "lh": "63.1296px"
+ },
+ "cuerpo": {
+  "familia": "Matter",
+  "tam": "17.536px",
+  "lh": "22.7968px"
+ },
+ "boton": {
+  "texto": "Request a demo",
+  "fondo": "#027653",
+  "color": "#C4F7CA",
+  "radio": "11.223px",
+  "padding": "9.82016px 16.8346px",
+  "peso": "500"
+ },
+ "enlace": "#C4F7CA",
+ "slug": "lattice",
+ "url": "https://lattice.com",
+ "final": "https://lattice.com/"
+}

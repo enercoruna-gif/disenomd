@@ -1,0 +1,53 @@
+{
+ "titulo": "Eraser – AI-native architecture platform",
+ "fondo": "#FCFBF9",
+ "fondos": [
+  "#FCFBF9",
+  "#FFFFFF",
+  "#D0D0D0",
+  "#FDFDFD",
+  "#171717"
+ ],
+ "textos": [
+  "#3A3A3A",
+  "#242424",
+  "#FFFFFF",
+  "#878787",
+  "#666666",
+  "#656565"
+ ],
+ "fuentes": [
+  "Inter var",
+  "ui-monospace"
+ ],
+ "radios": [
+  "8px",
+  "999px",
+  "12px"
+ ],
+ "h1": {
+  "texto": "AI-nativearchitecture platform",
+  "familia": "Inter var",
+  "tam": "78px",
+  "peso": "600",
+  "ls": "-3.51px",
+  "lh": "81.9px"
+ },
+ "cuerpo": {
+  "familia": "Inter var",
+  "tam": "14px",
+  "lh": "20px"
+ },
+ "boton": {
+  "texto": "Try Eraser",
+  "fondo": "#171717",
+  "color": "#FFFFFF",
+  "radio": "8px",
+  "padding": "7px 14px",
+  "peso": "600"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "eraser",
+ "url": "https://www.eraser.io",
+ "final": "https://www.eraser.io/"
+}

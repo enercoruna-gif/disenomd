@@ -1,0 +1,44 @@
+{
+ "titulo": "DJI - Official Website",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#EDEDED",
+  "#EEEEED",
+  "#FFFFFF",
+  "#FAFAFA",
+  "#0070D5",
+  "#0060E7"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#000000",
+  "#303233",
+  "#0070D5"
+ ],
+ "fuentes": [
+  "Open Sans"
+ ],
+ "radios": [
+  "4px",
+  "50%",
+  "1408px"
+ ],
+ "h1": null,
+ "cuerpo": {
+  "familia": "Open Sans",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Store",
+  "fondo": "#0070D5",
+  "color": "#FFFFFF",
+  "radio": "1408px",
+  "padding": "8px 16px 8px 34px",
+  "peso": "400"
+ },
+ "enlace": null,
+ "slug": "dji",
+ "url": "https://www.dji.com/es",
+ "final": "https://www.dji.com/"
+}

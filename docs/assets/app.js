@@ -58,3 +58,11 @@
     cat = b.dataset.filtro; filtrar();
   });
 })();
+(function () {
+  var els = document.querySelectorAll('[data-estrellas]'); if (!els.length || !window.fetch) return;
+  fetch('https://api.github.com/repos/enercoruna-gif/disenomd').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    if (!d || typeof d.stargazers_count !== 'number') return;
+    var n = d.stargazers_count, t = n >= 1000 ? (n / 1000).toFixed(1).replace('.0', '') + 'k' : String(n);
+    els.forEach(function (e) { e.textContent = t; });
+  }).catch(function () {});
+})();

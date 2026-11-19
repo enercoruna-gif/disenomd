@@ -1,0 +1,34 @@
+{
+ "titulo": "Healthy Together",
+ "fondo": "#101722",
+ "fondos": [
+  "#101722",
+  "#4541FE"
+ ],
+ "textos": [
+  "#FFFFFF",
+  "#C3C5C7",
+  "#FF5779",
+  "#C7CACC"
+ ],
+ "fuentes": [
+  "Inter:Medium",
+  "Inter:Semi Bold",
+  "Inter:Bold",
+  "Inter:Regular"
+ ],
+ "radios": [
+  "999px"
+ ],
+ "h1": null,
+ "cuerpo": {
+  "familia": "ui-sans-serif",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": null,
+ "enlace": null,
+ "slug": "healthy-together",
+ "url": "https://healthytogether.io",
+ "final": "https://www.healthytogether.co/"
+}

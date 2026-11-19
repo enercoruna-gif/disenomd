@@ -1,0 +1,46 @@
+{
+ "titulo": "Better Stack - 30x cheaper than Datadog, Exceptional support",
+ "fondo": "#0B0C14",
+ "fondos": [
+  "#0F101A",
+  "#171824",
+  "#171926",
+  "#2F3547",
+  "#202432",
+  "#939DB8"
+ ],
+ "textos": [
+  "#939DB8",
+  "#FFFFFF",
+  "#646E87",
+  "#C9D3EE"
+ ],
+ "fuentes": [
+  "Helvetica Now Text",
+  "Helvetica Now Display"
+ ],
+ "radios": [
+  "9999px",
+  "43px",
+  "16px",
+  "44px"
+ ],
+ "h1": {
+  "texto": "The AI SRE\n\nobservability stack",
+  "familia": "Helvetica Now Display",
+  "tam": "53px",
+  "peso": "500",
+  "ls": "normal",
+  "lh": "58.3px"
+ },
+ "cuerpo": {
+  "familia": "Helvetica Now Text",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": null,
+ "enlace": "#C9D3EE",
+ "slug": "better-stack",
+ "url": "https://betterstack.com",
+ "final": "https://betterstack.com/"
+}

@@ -1,0 +1,47 @@
+{
+ "titulo": "Titan | Wealth Management for Tech Professionals",
+ "fondo": "#FDFEFA",
+ "fondos": [
+  "#12100E",
+  "#FDFEFA",
+  "#1D1B19"
+ ],
+ "textos": [
+  "#12100E",
+  "#878784",
+  "#FDFEFA",
+  "#E2E2DE",
+  "#F6F7F3"
+ ],
+ "fuentes": [
+  "neueMontreal"
+ ],
+ "radios": [
+  "3.35544e+07px"
+ ],
+ "h1": {
+  "texto": "The wealth manager for tech professionals.",
+  "familia": "neueMontreal",
+  "tam": "24px",
+  "peso": "400",
+  "ls": "normal",
+  "lh": "30px"
+ },
+ "cuerpo": {
+  "familia": "neueMontreal",
+  "tam": "14px",
+  "lh": "21px"
+ },
+ "boton": {
+  "texto": "Get started",
+  "fondo": "#FDFEFA",
+  "color": null,
+  "radio": "3.35544e+07px",
+  "padding": "16px 24px",
+  "peso": "400"
+ },
+ "enlace": null,
+ "slug": "titan",
+ "url": "https://titan.com",
+ "final": "https://www.titan.com/"
+}

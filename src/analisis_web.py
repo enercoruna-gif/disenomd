@@ -121,12 +121,12 @@ def design_md(s, j):
 
 
 GRUPOS = {
-  "Finanzas": ["Banca", "Pagos"],
+  "Finanzas": ["Banca", "Pagos", "Inversión"],
   "Software y productividad": ["Software", "Productividad", "Gestión", "Recursos humanos", "Colaboración", "Formularios", "Agenda",
                                "Atención al cliente", "Comunicación", "Almacenamiento", "Bases de datos", "Analítica", "Marketing"],
-  "Desarrollo e IA": ["Desarrollo", "Inteligencia artificial"],
+  "Desarrollo e IA": ["Desarrollo", "Inteligencia artificial", "Infraestructura"],
   "Diseño y creatividad": ["Diseño", "Animación", "Vídeo", "Publicación"],
-  "Tiendas y consumo": ["Moda", "Deporte", "Hogar", "Comercio", "Supermercado", "Tecnología", "Reparto"],
+  "Tiendas y consumo": ["Moda", "Deporte", "Hogar", "Comercio", "Supermercado", "Tecnología", "Reparto", "Salud"],
   "Viajes y movilidad": ["Viajes", "Movilidad", "Aerolínea"],
   "Medios y ocio": ["Música", "Prensa", "Streaming", "Comunidad", "Educación"],
 }
@@ -190,7 +190,7 @@ def zona(tarjetas, pagina):
   <p class="eti">Webs populares</p>
   <h1>DESIGN.md gratis de webs que ya conoces</h1>
   <p class="intro">{len(tarjetas)} análisis independientes del estilo de webs conocidas: colores, tipografías y componentes en formato DESIGN.md, con capturas hechas por nosotros. Úsalos como referencia para tu IA, con tus textos, tu logotipo y tus fotos.</p>
-  <p><a class="btn btn-claro btn-peq" href="../descargas/disenomd-webs.zip" download>Descargar los {len(tarjetas)} DESIGN.md (zip)</a> <a class="btn btn-peq" href="../#catalogo">Ver los estilos originales</a></p>
+  <p><a class="btn btn-claro btn-peq" href="../descargas/disenomd-webs.zip" download>Descargar los {len(tarjetas)} DESIGN.md (zip)</a> <a class="btn btn-peq" href="../#catalogo">Ver los destacados</a></p>
 </section>
 <section class="bloque" id="catalogo">
   <input class="buscar" id="buscar" type="search" placeholder="Busca una web o un sector: banca, viajes, moda…" aria-label="Buscar webs">

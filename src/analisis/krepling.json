@@ -1,0 +1,44 @@
+{
+ "titulo": "Krepling | Leading centralized commerce building tool and software",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F1F1F1",
+  "#B154F9"
+ ],
+ "textos": [
+  "#000000",
+  "#6C6B6B",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "Regular"
+ ],
+ "radios": [
+  "10px"
+ ],
+ "h1": {
+  "texto": "The world’s most powerful commerce platform.",
+  "familia": "Regular",
+  "tam": "56.8889px",
+  "peso": "400",
+  "ls": "-0.568889px",
+  "lh": "62.5778px"
+ },
+ "cuerpo": {
+  "familia": "Regular",
+  "tam": "16px",
+  "lh": "normal"
+ },
+ "boton": {
+  "texto": "Request a demo",
+  "fondo": "#B154F9",
+  "color": "#FFFFFF",
+  "radio": "10px",
+  "padding": "14px 16px",
+  "peso": "400"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "krepling",
+ "url": "https://krepling.com",
+ "final": "https://www.krepling.com/"
+}

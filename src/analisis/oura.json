@@ -1,0 +1,50 @@
+{
+ "titulo": "Oura Ring: monitoriza el estrés, el sueño y la salud",
+ "fondo": "#FFFFFF",
+ "fondos": [
+  "#F7F1E8",
+  "#CED4B8",
+  "#4A4741",
+  "#2A72DE",
+  "#1C1B1A"
+ ],
+ "textos": [
+  "#4A4741",
+  "#F7F1E8",
+  "#000000",
+  "#FFFFFF"
+ ],
+ "fuentes": [
+  "AkkuratLL",
+  "Editorial New"
+ ],
+ "radios": [
+  "3.35544e+07px",
+  "8px"
+ ],
+ "h1": {
+  "texto": "Ahórrate un 100 US$ en el Oura Ring 5",
+  "familia": "Editorial New",
+  "tam": "80px",
+  "peso": "300",
+  "ls": "-4px",
+  "lh": "88px"
+ },
+ "cuerpo": {
+  "familia": "AkkuratLL",
+  "tam": "16px",
+  "lh": "24px"
+ },
+ "boton": {
+  "texto": "Ver oferta",
+  "fondo": "#2A72DE",
+  "color": "#FFFFFF",
+  "radio": "3.35544e+07px",
+  "padding": "12px 24px",
+  "peso": "700"
+ },
+ "enlace": "#FFFFFF",
+ "slug": "oura",
+ "url": "https://ouraring.com/es",
+ "final": "https://ouraring.com/es"
+}
