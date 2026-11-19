@@ -105,9 +105,9 @@ class EmpaquetarKitsTest(unittest.TestCase):
                 html = (destino / "sitio" / nombre).read_text()
                 self.assertEqual(set(kits.EMAIL.findall(html)), {kits.CORREO})
                 self.assertIn(kits.CORREO, kits.re.sub(r"<[^>]*>", "", html))
-            html = (destino / "cuadrantia-kits-autonomo.html").read_text()
+            html = (destino / "cuadrantia-ia-autonomo.html").read_text()
             self.assertEqual(set(kits.EMAIL.findall(html)), {kits.CORREO})
-            with zipfile.ZipFile(destino / "cuadrantia-kits.zip") as paquete:
+            with zipfile.ZipFile(destino / "cuadrantia-ia.zip") as paquete:
                 for nombre in paquete.namelist():
                     if not nombre.endswith(".png"):
                         self.assertLessEqual(set(kits.EMAIL.findall(paquete.read(nombre).decode())), {kits.CORREO})

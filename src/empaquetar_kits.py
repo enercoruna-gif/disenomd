@@ -15,7 +15,7 @@ import zipfile
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 DESTINO = Path.home() / "kits-cuadrantia"
 ORIGEN = "https://enercoruna-gif.github.io/disenomd/"
-DOMINIO = "https://kits.cuadrantia.store/"
+DOMINIO = "https://ia.cuadrantia.store/"
 ATRIBUTO = re.compile(r'\b(href|src)="([^"]*)"')
 CORREO = "hola@cuadrantia.store"
 EMAIL = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}', re.I)
@@ -126,8 +126,8 @@ def main():
             archivo.write_text(contenido, encoding="utf-8")
             if "../" in contenido:
                 raise ValueError(f"Ruta sin resolver: {archivo}")
-    (DESTINO / "cuadrantia-kits-autonomo.html").write_text(autonomo(indice, sitio), encoding="utf-8")
-    with zipfile.ZipFile(DESTINO / "cuadrantia-kits.zip", "w", zipfile.ZIP_DEFLATED) as paquete:
+    (DESTINO / "cuadrantia-ia-autonomo.html").write_text(autonomo(indice, sitio), encoding="utf-8")
+    with zipfile.ZipFile(DESTINO / "cuadrantia-ia.zip", "w", zipfile.ZIP_DEFLATED) as paquete:
         for archivo in sorted(sitio.rglob("*")):
             if archivo.is_file():
                 paquete.write(archivo, archivo.relative_to(sitio))
