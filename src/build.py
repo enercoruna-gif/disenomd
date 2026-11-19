@@ -228,6 +228,7 @@ def pagina(titulo, desc, cuerpo, prefijo="", fuentes_extra=None, canon=""):
 <footer class="pie">
   <div><a class="logo" href="{prefijo}"><span>diseño</span>.md</a><p>Sistemas de diseño en español para que la IA haga webs con buen gusto. Un proyecto de Cuadrantia, hecho en España.</p></div>
   <div class="pie-links"><a href="{prefijo}#catalogo">Catálogo</a><a href="{prefijo}kits/">Kits</a><a href="{prefijo}como-usar/">Cómo usarlo</a><a href="{prefijo}aviso-legal/">Aviso legal y privacidad</a></div>
+  <p class="badge-cp"><a target="_blank" rel="noopener" href="https://cazaproducto.com/productos/diseno-md"><img alt="diseño.md — CazaProducto" width="290" height="54" style="width:290px;height:54px;" src="https://cazaproducto.com/productos/diseno-md/badge?theme=light" /></a></p>
   <p class="legal">DESIGN.md es un formato abierto. Los diseños de este catálogo son originales de {MARCA}. Claude Code, Cursor, Codex, Gemini y ChatGPT son marcas de sus respectivos dueños; no hay afiliación.</p>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>

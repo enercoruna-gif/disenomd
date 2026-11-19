@@ -189,3 +189,4 @@ html{color-scheme:dark}body{background:var(--papel);color:var(--tinta)}
 .lista-iconos{list-style:none;margin:8px 0 16px;padding:0;border-top:1px solid var(--linea)}
 .lista-iconos a{display:flex;align-items:center;gap:14px;min-height:56px;border-bottom:1px solid var(--linea);text-decoration:none;color:var(--tinta);font-weight:600}
 .lista-iconos img{width:28px;height:28px;border-radius:7px;background:#fff;flex:none}.lista-iconos small{margin-left:auto;color:var(--gris);font-weight:400}
+.badge-cp{margin:8px 0}.badge-cp img{max-width:100%;height:auto!important}
