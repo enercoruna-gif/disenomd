@@ -50,7 +50,7 @@ h1,h2,h3{line-height:1.12;letter-spacing:-.025em;margin:0 0 .5em}
 .tarjeta-pie strong{display:block}.tarjeta-pie small{color:var(--gris)}
 .sw{display:flex}.sw i{width:16px;height:16px;border-radius:50%;margin-left:-4px;border:2px solid #fff;box-shadow:0 0 0 1px var(--linea)}
 .vacio{color:var(--gris)}
-.banda{background:var(--tinta);color:var(--papel);margin:44px -20px;padding:48px 20px;border:0;border-radius:0}
+.banda{background:#1C1C21;color:var(--tinta);border-top:1px solid var(--linea)!important;border-bottom:1px solid var(--linea)!important;margin:44px -20px;padding:48px 20px;border:0;border-radius:0}
 .banda p{color:#D9D4CC;max-width:60ch}.banda .btn{background:var(--acc);color:var(--papel)}.banda .btn-claro{background:var(--blanco);color:var(--tinta)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 1rem var(--sans);min-height:46px;padding:10px 20px;border-radius:10px;border:1px solid var(--tinta);background:var(--tinta);color:var(--papel);text-decoration:none;cursor:pointer}
 .btn-claro{background:var(--blanco);color:var(--tinta);border-color:var(--linea)}
