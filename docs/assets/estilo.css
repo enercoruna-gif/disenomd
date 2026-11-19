@@ -174,4 +174,5 @@ html{color-scheme:dark}body{background:var(--papel);color:var(--tinta)}
 .logos{margin:32px 0 8px}.logos .eti{margin:20px 0 10px;letter-spacing:.12em}
 .fila-logos{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center}
 .logo{display:inline-flex;align-items:center;justify-content:center;min-height:44px;color:var(--tinta)}.logo svg{width:34px;height:34px;fill:currentColor}
-.logo-txt{font:700 1.05rem var(--fd,inherit);letter-spacing:-.01em;padding:0 2px}
+.logo-txt{font:800 1.15rem Inter,system-ui,sans-serif;letter-spacing:-.01em;padding:0 2px}
+.logo-grad{background:linear-gradient(90deg,#FF8A3D,#FF3D8B 55%,#7B6CFF);-webkit-background-clip:text;background-clip:text;color:transparent}

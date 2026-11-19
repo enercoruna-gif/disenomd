@@ -247,22 +247,32 @@ KITS = [
 
 
 
-def _logo(slug, nombre):
+COLOR_LOGO = dict(claude="#D97757", stackblitz="#1269D3", framer="#0055FF", webflow="#146EF5", wordpress="#21759B", wix="#0C6EFC",
+                  replit="#F26207", googlegemini="url(#grad-gemini)")
+DEGRADADOS = {"grad-gemini": ("#4285F4", "#9B72CB", "#D96570")}
+
+
+def _logo(slug, nombre, color=None):
   if not slug:
-    return f'<span class="logo logo-txt" title="{nombre}">{nombre}</span>'
+    estilo = f' style="color:{color}"' if color and not color.startswith("grad") else ""
+    clase = " logo-grad" if color == "grad" else ""
+    return f'<span class="logo logo-txt{clase}" title="{nombre}"{estilo}>{nombre}</span>'
   d = re.search(r' d="([^"]+)"', (Path(__file__).parent / "logos" / f"{slug}.svg").read_text()).group(1)
-  return f'<span class="logo" title="{nombre}"><svg viewBox="0 0 24 24" role="img" aria-label="{nombre}"><path d="{d}"/></svg></span>'
+  relleno = COLOR_LOGO.get(slug, "currentColor")
+  return f'<span class="logo" title="{nombre}"><svg viewBox="0 0 24 24" role="img" aria-label="{nombre}"><path fill="{relleno}" d="{d}"/></svg></span>'
 
 
-CREADORES = [(None, "Lovable"), ("v0", "v0"), ("stackblitz", "Bolt"), ("framer", "Framer"), ("webflow", "Webflow"),
+CREADORES = [(None, "Lovable", "grad"), ("v0", "v0"), ("stackblitz", "Bolt"), ("framer", "Framer"), ("webflow", "Webflow"),
              ("wordpress", "WordPress"), ("wix", "Wix"), ("squarespace", "Squarespace"), ("replit", "Replit")]
-AGENTES = [("claude", "Claude"), ("cursor", "Cursor"), ("googlegemini", "Gemini"), (None, "ChatGPT"), ("githubcopilot", "GitHub Copilot"),
+AGENTES = [("claude", "Claude"), ("cursor", "Cursor"), ("googlegemini", "Gemini"), (None, "ChatGPT", "#10A37F"), ("githubcopilot", "GitHub Copilot"),
            ("windsurf", "Windsurf"), (None, "Codex")]
 
 
 def logos():
-  fila = lambda xs: "".join(_logo(a, b) for a, b in xs)
-  return (f'<div class="logos"><p class="eti">▸ Úsalo en cualquier creador web con IA</p><div class="fila-logos">{fila(CREADORES)}</div>'
+  fila = lambda xs: "".join(_logo(*x) for x in xs)
+  defs = "".join(f'<linearGradient id="{k}" x1="0" y1="0" x2="1" y2="1">' + "".join(f'<stop offset="{n / (len(v) - 1):.2f}" stop-color="{c}"/>' for n, c in enumerate(v)) + "</linearGradient>" for k, v in DEGRADADOS.items())
+  svgdefs = f'<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>{defs}</defs></svg>'
+  return (f'<div class="logos">{svgdefs}<p class="eti">▸ Úsalo en cualquier creador web con IA</p><div class="fila-logos">{fila(CREADORES)}</div>'
           f'<p class="eti">▸ O en cualquier agente de código</p><div class="fila-logos">{fila(AGENTES)}</div>'
           '<p class="tenue peq">Pega el DESIGN.md donde construyas y úsalo como referencia de diseño con una sola instrucción. '
           'Logotipos de <a href="https://simpleicons.org" rel="noopener">Simple Icons</a> (CC0); las marcas son de sus dueños y no hay afiliación.</p></div>')
