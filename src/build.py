@@ -314,6 +314,11 @@ def portada():
   </div>
   <p class="spec">Sigue el formato abierto <a href="https://github.com/google-labs-code/design.md" rel="noopener">DESIGN.md de Google</a></p>
 </section>
+<section class="bloque lista-webs" aria-labelledby="t-webs">
+  <p class="eti" id="t-webs"># Análisis de webs populares</p>
+  <ul class="lista-iconos">{"".join(f'<li><a href="analisis/{x["slug"]}/"><img src="analisis/{x["slug"]}/icono.png" alt="" width="28" height="28" loading="lazy"><span>{esc(x["nombre"])}</span><small>{esc(x["sector"])}</small></a></li>' for x in AW.SITIOS[:12])}</ul>
+  <p><a class="btn btn-claro btn-peq" href="webs/">Ver las {len(AW.SITIOS)} webs →</a></p>
+</section>
 <section class="bloque" id="catalogo">
   <div class="tit-sec"><h2>Catálogo gratuito</h2><span class="tenue">{len(DISENOS)} estilos originales · <a href="webs/">{len(AW.SITIOS)} webs populares en su propia sección →</a></span></div>
   <p><a class="btn btn-claro btn-peq" href="descargas/disenomd-catalogo.zip" download>Descargar los {len(DISENOS)} DESIGN.md (zip)</a></p>
