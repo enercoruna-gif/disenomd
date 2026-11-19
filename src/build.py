@@ -3,6 +3,7 @@ import html, json, shutil, zipfile
 from pathlib import Path
 from urllib.parse import quote_plus
 from maquetas import M
+import analisis_web as AW
 from catalogo import DISENOS, TIPOS
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -246,8 +247,9 @@ KITS = [
 
 
 def portada():
-  tarjetas = "\n".join(tarjeta(d, "") for d in DISENOS)
-  cats = list(dict.fromkeys(GRUPOS[d["slug"]] for d in DISENOS))
+  reales = [(x, AW.design_md(x, json.loads((AW.RAIZ / "src/analisis" / f"{x['slug']}.json").read_text()))[1]) for x in AW.SITIOS]
+  tarjetas = "\n".join([AW.tarjeta(x, c, "") for x, c in reales] + [tarjeta(d, "") for d in DISENOS])
+  cats = ["Webs reales"] + list(dict.fromkeys(GRUPOS[d["slug"]] for d in DISENOS))
   chips = '<button class="chip activo" data-filtro="">Todos</button>' + "".join(f'<button class="chip" data-filtro="{esc(c)}">{esc(c)}</button>' for c in cats)
   _kits = "".join(f'''<a class="kit-btn{' kit-dest' if i == 0 else ''}" href="kits/#{k["slug"]}"><span class="kit-ico">{k["icono"]}</span><span><strong>{k["nombre"]}</strong><small>{k["sub"]}</small></span></a>''' for i, k in enumerate(KITS[:2]))
   usos = [("01", "Dar estilo sin saber diseñar", "Elige un DESIGN.md, ponlo en tu proyecto y tu agente aplica colores, tipografía y componentes coherentes."),
@@ -413,7 +415,7 @@ def aviso_legal():
 def main():
   if SALIDA.exists():
     for p in SALIDA.iterdir():
-      if p.name != "assets":
+      if p.name not in ("assets", "analisis"):
         shutil.rmtree(p) if p.is_dir() else p.unlink()
   SALIDA.mkdir(exist_ok=True)
   (SALIDA / "index.html").write_text(portada())
@@ -431,13 +433,15 @@ def main():
       (carpeta / "index.html").write_text(pag)
       z.writestr(f"{d['slug']}/DESIGN.md", md)
       catalogo.append(dict(slug=d["slug"], nombre=d["nombre"], categoria=d["categoria"], lema=d["lema"], colores=d["colores"]))
+    for x, c in AW.generar(SALIDA, pagina, z):
+      catalogo.append(dict(slug=x["slug"], nombre=x["nombre"], categoria="Webs reales", url=x["url"], colores=c))
   (SALIDA / "catalogo.json").write_text(json.dumps(catalogo, ensure_ascii=False, indent=1))
   (SALIDA / "manifest.webmanifest").write_text(json.dumps(dict(name=MARCA, short_name=MARCA, start_url="./", display="standalone",
     background_color="#FAF7F2", theme_color="#141414", lang="es",
     icons=[dict(src=f"assets/icono-{n}.png", sizes=f"{n}x{n}", type="image/png") for n in (192, 512)]), ensure_ascii=False))
   (SALIDA / ".nojekyll").write_text("")
   (SALIDA / "robots.txt").write_text("User-agent: *\nAllow: /\n")
-  print(f"{len(DISENOS)} diseños generados en {SALIDA}")
+  print(f"{len(DISENOS)} diseños y {len(AW.SITIOS)} análisis generados en {SALIDA}")
 
 
 if __name__ == "__main__":

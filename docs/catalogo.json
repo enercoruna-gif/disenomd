@@ -219,5 +219,940 @@
    "muted": "#A99BC7",
    "border": "#3A2A5C"
   }
+ },
+ {
+  "slug": "stripe",
+  "nombre": "Stripe",
+  "categoria": "Webs reales",
+  "url": "https://stripe.com/es",
+  "colores": {
+   "primary": "#533AFD",
+   "on-primary": "#FFFFFF",
+   "secondary": "#00D66F",
+   "accent": "#FFE0D1",
+   "background": "#FFFFFF",
+   "surface": "#E5EDF5",
+   "text": "#061B31",
+   "muted": "#50617A",
+   "border": "#DCDFE2"
+  }
+ },
+ {
+  "slug": "linear",
+  "nombre": "Linear",
+  "categoria": "Webs reales",
+  "url": "https://linear.app",
+  "colores": {
+   "primary": "#E5E5E6",
+   "on-primary": "#000000",
+   "secondary": "#DADEE3",
+   "accent": "#F7F8F8",
+   "background": "#08090A",
+   "surface": "#090A0B",
+   "text": "#D0D6E0",
+   "muted": "#8A8F98",
+   "border": "#242628"
+  }
+ },
+ {
+  "slug": "vercel",
+  "nombre": "Vercel",
+  "categoria": "Webs reales",
+  "url": "https://vercel.com",
+  "colores": {
+   "primary": "#171717",
+   "on-primary": "#FFFFFF",
+   "secondary": "#171717",
+   "accent": "#FFFFFF",
+   "background": "#FAFAFA",
+   "surface": "#FFFFFF",
+   "text": "#171717",
+   "muted": "#4D4D4D",
+   "border": "#DADADA"
+  }
+ },
+ {
+  "slug": "notion",
+  "nombre": "Notion",
+  "categoria": "Webs reales",
+  "url": "https://www.notion.com/es",
+  "colores": {
+   "primary": "#0075DE",
+   "on-primary": "#000000",
+   "secondary": "#003A6F",
+   "accent": "#4C759A",
+   "background": "#FFFFFF",
+   "surface": "#F6F5F4",
+   "text": "#000000",
+   "muted": "#0075DE",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "airbnb",
+  "nombre": "Airbnb",
+  "categoria": "Webs reales",
+  "url": "https://www.airbnb.es",
+  "colores": {
+   "primary": "#DA1249",
+   "on-primary": "#FFFFFF",
+   "secondary": "#7E1A36",
+   "accent": "#A55F72",
+   "background": "#FFFFFF",
+   "surface": "#DDDDDD",
+   "text": "#222222",
+   "muted": "#6C6C6C",
+   "border": "#E0E0E0"
+  }
+ },
+ {
+  "slug": "spotify",
+  "nombre": "Spotify",
+  "categoria": "Webs reales",
+  "url": "https://www.spotify.com/es/premium/",
+  "colores": {
+   "primary": "#1D75DE",
+   "on-primary": "#000000",
+   "secondary": "#1ED760",
+   "accent": "#9E9EFF",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#000000",
+   "muted": "#121212",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "apple",
+  "nombre": "Apple",
+  "categoria": "Webs reales",
+  "url": "https://www.apple.com/es/",
+  "colores": {
+   "primary": "#822704",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0071E3",
+   "accent": "#F5F5F7",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F7",
+   "text": "#000000",
+   "muted": "#1D1D1F",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "figma",
+  "nombre": "Figma",
+  "categoria": "Webs reales",
+  "url": "https://www.figma.com/es-es/",
+  "colores": {
+   "primary": "#000000",
+   "on-primary": "#FFFFFF",
+   "secondary": "#000000",
+   "accent": "#4C4C4C",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#000000",
+   "muted": "#595959",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "github",
+  "nombre": "GitHub",
+  "categoria": "Webs reales",
+  "url": "https://github.com",
+  "colores": {
+   "primary": "#08872B",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0969DA",
+   "accent": "#0969DA",
+   "background": "#FFFFFF",
+   "surface": "#F2F5F3",
+   "text": "#000000",
+   "muted": "#58635B",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "slack",
+  "nombre": "Slack",
+  "categoria": "Webs reales",
+  "url": "https://slack.com/intl/es-es",
+  "colores": {
+   "primary": "#730394",
+   "on-primary": "#FFFFFF",
+   "secondary": "#481A54",
+   "accent": "#2E0039",
+   "background": "#FFFFFF",
+   "surface": "#F9F0FF",
+   "text": "#1D1D1D",
+   "muted": "#481A54",
+   "border": "#DFDFDF"
+  }
+ },
+ {
+  "slug": "revolut",
+  "nombre": "Revolut",
+  "categoria": "Webs reales",
+  "url": "https://www.revolut.com/es-ES/",
+  "colores": {
+   "primary": "#1F1F1F",
+   "on-primary": "#FFFFFF",
+   "secondary": "#101010",
+   "accent": "#F4F4F4",
+   "background": "#FFFFFF",
+   "surface": "#F7F7F7",
+   "text": "#000000",
+   "muted": "#1F1F1F",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "n26",
+  "nombre": "N26",
+  "categoria": "Webs reales",
+  "url": "https://n26.com/es-es",
+  "colores": {
+   "primary": "#003B39",
+   "on-primary": "#FFFFFF",
+   "secondary": "#088177",
+   "accent": "#52A7A0",
+   "background": "#FFFFFF",
+   "surface": "#FAF8F5",
+   "text": "#1B1B1B",
+   "muted": "#003B39",
+   "border": "#DFDFDF"
+  }
+ },
+ {
+  "slug": "bbva",
+  "nombre": "BBVA",
+  "categoria": "Webs reales",
+  "url": "https://www.bbva.es",
+  "colores": {
+   "primary": "#001391",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0C6DFF",
+   "accent": "#070E46",
+   "background": "#F7F8F8",
+   "surface": "#FFFFFF",
+   "text": "#000000",
+   "muted": "#001391",
+   "border": "#D4D5D5"
+  }
+ },
+ {
+  "slug": "zara",
+  "nombre": "Zara",
+  "categoria": "Webs reales",
+  "url": "https://www.zara.com/es/",
+  "colores": {
+   "primary": "#FD2E00",
+   "on-primary": "#000000",
+   "secondary": "#7E1700",
+   "accent": "#A55D4C",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#000000",
+   "muted": "#595959",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "mango",
+  "nombre": "Mango",
+  "categoria": "Webs reales",
+  "url": "https://shop.mango.com/es/es",
+  "colores": {
+   "primary": "#121212",
+   "on-primary": "#FFFFFF",
+   "secondary": "#121212",
+   "accent": "#FDFDFD",
+   "background": "#FFFFFF",
+   "surface": "#DADADA",
+   "text": "#121212",
+   "muted": "#131313",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "airtable",
+  "nombre": "Airtable",
+  "categoria": "Webs reales",
+  "url": "https://www.airtable.com",
+  "colores": {
+   "primary": "#912E1F",
+   "on-primary": "#FFFFFF",
+   "secondary": "#542622",
+   "accent": "#876764",
+   "background": "#FFFFFF",
+   "surface": "#F0F6FF",
+   "text": "#181D26",
+   "muted": "#333840",
+   "border": "#DFDFE1"
+  }
+ },
+ {
+  "slug": "glovo",
+  "nombre": "Glovo",
+  "categoria": "Webs reales",
+  "url": "https://glovoapp.com/es/es/",
+  "colores": {
+   "primary": "#017963",
+   "on-primary": "#FFFFFF",
+   "secondary": "#FFC042",
+   "accent": "#035949",
+   "background": "#FFFFFF",
+   "surface": "#F9EFDC",
+   "text": "#000000",
+   "muted": "#161617",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "medium",
+  "nombre": "Medium",
+  "categoria": "Webs reales",
+  "url": "https://medium.com",
+  "colores": {
+   "primary": "#191919",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0C0C0C",
+   "accent": "#242424",
+   "background": "#FFFFFF",
+   "surface": "#F7F4ED",
+   "text": "#000000",
+   "muted": "#6B6B6B",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "cabify",
+  "nombre": "Cabify",
+  "categoria": "Webs reales",
+  "url": "https://cabify.com/es",
+  "colores": {
+   "primary": "#7145D6",
+   "on-primary": "#FFFFFF",
+   "secondary": "#1F123F",
+   "accent": "#625979",
+   "background": "#FFFFFF",
+   "surface": "#F8F8FE",
+   "text": "#1A1A1C",
+   "muted": "#5E6088",
+   "border": "#DFDFDF"
+  }
+ },
+ {
+  "slug": "typeform",
+  "nombre": "Typeform",
+  "categoria": "Webs reales",
+  "url": "https://www.typeform.com/es/",
+  "colores": {
+   "primary": "#A057BB",
+   "on-primary": "#FFFFFF",
+   "secondary": "#653C73",
+   "accent": "#83698C",
+   "background": "#FAF9FB",
+   "surface": "#FFFFFF",
+   "text": "#2A222B",
+   "muted": "#3C323E",
+   "border": "#DDDBDE"
+  }
+ },
+ {
+  "slug": "holded",
+  "nombre": "Holded",
+  "categoria": "Webs reales",
+  "url": "https://www.holded.com/es",
+  "colores": {
+   "primary": "#FF5454",
+   "on-primary": "#000000",
+   "secondary": "#88363D",
+   "accent": "#ECEAE6",
+   "background": "#FFFFFF",
+   "surface": "#FAFAF9",
+   "text": "#121926",
+   "muted": "#686F7C",
+   "border": "#DEDFE1"
+  }
+ },
+ {
+  "slug": "factorial",
+  "nombre": "Factorial",
+  "categoria": "Webs reales",
+  "url": "https://factorialhr.es",
+  "colores": {
+   "primary": "#E51943",
+   "on-primary": "#FFFFFF",
+   "secondary": "#851F40",
+   "accent": "#A25D73",
+   "background": "#FFFFFF",
+   "surface": "#E8E8ED",
+   "text": "#25253D",
+   "muted": "#515164",
+   "border": "#E0E0E4"
+  }
+ },
+ {
+  "slug": "el-pais",
+  "nombre": "El País",
+  "categoria": "Webs reales",
+  "url": "https://elpais.com",
+  "colores": {
+   "primary": "#F7CF3C",
+   "on-primary": "#000000",
+   "secondary": "#7C681E",
+   "accent": "#111111",
+   "background": "#FFFFFF",
+   "surface": "#F7CF3C",
+   "text": "#000000",
+   "muted": "#111111",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "xataka",
+  "nombre": "Xataka",
+  "categoria": "Webs reales",
+  "url": "https://www.xataka.com",
+  "colores": {
+   "primary": "#38880A",
+   "on-primary": "#000000",
+   "secondary": "#9CC484",
+   "accent": "#6D8A5F",
+   "background": "#000409",
+   "surface": "#1C2631",
+   "text": "#FFFFFF",
+   "muted": "#378708",
+   "border": "#24272B"
+  }
+ },
+ {
+  "slug": "nike",
+  "nombre": "Nike",
+  "categoria": "Webs reales",
+  "url": "https://www.nike.com/es/",
+  "colores": {
+   "primary": "#111111",
+   "on-primary": "#FFFFFF",
+   "secondary": "#111111",
+   "accent": "#585858",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#111111",
+   "muted": "#707072",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "ikea",
+  "nombre": "IKEA",
+  "categoria": "Webs reales",
+  "url": "https://www.ikea.com/es/es/",
+  "colores": {
+   "primary": "#CA5008",
+   "on-primary": "#000000",
+   "secondary": "#FFDB00",
+   "accent": "#484848",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#111111",
+   "muted": "#484848",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "miro",
+  "nombre": "Miro",
+  "categoria": "Webs reales",
+  "url": "https://miro.com/es/",
+  "colores": {
+   "primary": "#FDE050",
+   "on-primary": "#000000",
+   "secondary": "#FFC795",
+   "accent": "#A8F7F0",
+   "background": "#FBFAF7",
+   "surface": "#FFFFFF",
+   "text": "#000000",
+   "muted": "#0000EE",
+   "border": "#D8D7D4"
+  }
+ },
+ {
+  "slug": "iberia",
+  "nombre": "Iberia",
+  "categoria": "Webs reales",
+  "url": "https://www.iberia.com/es/",
+  "colores": {
+   "primary": "#D7192D",
+   "on-primary": "#FFFFFF",
+   "secondary": "#A8191A",
+   "accent": "#B45556",
+   "background": "#EEEEEE",
+   "surface": "#FFFFFF",
+   "text": "#333333",
+   "muted": "#666666",
+   "border": "#D4D4D4"
+  }
+ },
+ {
+  "slug": "booking",
+  "nombre": "Booking.com",
+  "categoria": "Webs reales",
+  "url": "https://www.booking.com/index.es.html",
+  "colores": {
+   "primary": "#003B95",
+   "on-primary": "#FFFFFF",
+   "secondary": "#FFB700",
+   "accent": "#003B95",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#1A1A1A",
+   "muted": "#006CE4",
+   "border": "#DFDFDF"
+  }
+ },
+ {
+  "slug": "duolingo",
+  "nombre": "Duolingo",
+  "categoria": "Webs reales",
+  "url": "https://es.duolingo.com",
+  "colores": {
+   "primary": "#1CB0F6",
+   "on-primary": "#000000",
+   "secondary": "#347EA0",
+   "accent": "#71A5BC",
+   "background": "#FFFFFF",
+   "surface": "#F8F8F8",
+   "text": "#4B4B4B",
+   "muted": "#747474",
+   "border": "#E6E6E6"
+  }
+ },
+ {
+  "slug": "lottiefiles",
+  "nombre": "LottieFiles",
+  "categoria": "Webs reales",
+  "url": "https://lottiefiles.com",
+  "colores": {
+   "primary": "#FFBF00",
+   "on-primary": "#000000",
+   "secondary": "#00DDB3",
+   "accent": "#3A86FF",
+   "background": "#FFFFFF",
+   "surface": "#F6F6F6",
+   "text": "#141414",
+   "muted": "#666666",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "shopify",
+  "nombre": "Shopify",
+  "categoria": "Webs reales",
+  "url": "https://www.shopify.com/es",
+  "colores": {
+   "primary": "#FFFFFF",
+   "on-primary": "#000000",
+   "secondary": "#FFFFFF",
+   "accent": "#B2B2B2",
+   "background": "#000000",
+   "surface": "#02090A",
+   "text": "#FFFFFF",
+   "muted": "#A1A1AA",
+   "border": "#242424"
+  }
+ },
+ {
+  "slug": "framer",
+  "nombre": "Framer",
+  "categoria": "Webs reales",
+  "url": "https://www.framer.com",
+  "colores": {
+   "primary": "#FFFFFF",
+   "on-primary": "#000000",
+   "secondary": "#FFFFFF",
+   "accent": "#B2B2B2",
+   "background": "#000000",
+   "surface": "#0A0A0A",
+   "text": "#FFFFFF",
+   "muted": "#A6A6A6",
+   "border": "#242424"
+  }
+ },
+ {
+  "slug": "webflow",
+  "nombre": "Webflow",
+  "categoria": "Webs reales",
+  "url": "https://webflow.com",
+  "colores": {
+   "primary": "#146EF5",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0E3B7E",
+   "accent": "#5676A5",
+   "background": "#FFFFFF",
+   "surface": "#F0F0F0",
+   "text": "#080808",
+   "muted": "#5E5E5E",
+   "border": "#DCDCDC"
+  }
+ },
+ {
+  "slug": "supabase",
+  "nombre": "Supabase",
+  "categoria": "Webs reales",
+  "url": "https://supabase.com",
+  "colores": {
+   "primary": "#A9F1CA",
+   "on-primary": "#000000",
+   "secondary": "#3FCF8E",
+   "accent": "#79DDB0",
+   "background": "#FFFFFF",
+   "surface": "#A9F1CA",
+   "text": "#141414",
+   "muted": "#666666",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "raycast",
+  "nombre": "Raycast",
+  "categoria": "Webs reales",
+  "url": "https://www.raycast.com",
+  "colores": {
+   "primary": "#E6E6E6",
+   "on-primary": "#000000",
+   "secondary": "#F2F2F2",
+   "accent": "#ABACAC",
+   "background": "#07080A",
+   "surface": "#452324",
+   "text": "#FFFFFF",
+   "muted": "#9C9C9D",
+   "border": "#2A2B2C"
+  }
+ },
+ {
+  "slug": "openai",
+  "nombre": "OpenAI",
+  "categoria": "Webs reales",
+  "url": "https://openai.com/es-ES/",
+  "colores": {
+   "primary": "#000000",
+   "on-primary": "#FFFFFF",
+   "secondary": "#000000",
+   "accent": "#4C4C4C",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#000000",
+   "muted": "#595959",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "anthropic",
+  "nombre": "Anthropic",
+  "categoria": "Webs reales",
+  "url": "https://www.anthropic.com",
+  "colores": {
+   "primary": "#141413",
+   "on-primary": "#FFFFFF",
+   "secondary": "#141413",
+   "accent": "#595957",
+   "background": "#FAF9F5",
+   "surface": "#F5F4ED",
+   "text": "#141413",
+   "muted": "#5E5D59",
+   "border": "#DAD9D5"
+  }
+ },
+ {
+  "slug": "mailchimp",
+  "nombre": "Mailchimp",
+  "categoria": "Webs reales",
+  "url": "https://mailchimp.com/es/",
+  "colores": {
+   "primary": "#FFE01B",
+   "on-primary": "#000000",
+   "secondary": "#80700E",
+   "accent": "#A69B56",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F5",
+   "text": "#000000",
+   "muted": "#231E15",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "dropbox",
+  "nombre": "Dropbox",
+  "categoria": "Webs reales",
+  "url": "https://www.dropbox.com/es_ES/",
+  "colores": {
+   "primary": "#0061FE",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0F3D8C",
+   "accent": "#F7F5F2",
+   "background": "#FFFFFF",
+   "surface": "#F7F5F2",
+   "text": "#1E1919",
+   "muted": "#524A3E",
+   "border": "#DFDFDF"
+  }
+ },
+ {
+  "slug": "discord",
+  "nombre": "Discord",
+  "categoria": "Webs reales",
+  "url": "https://discord.com",
+  "colores": {
+   "primary": "#5865F2",
+   "on-primary": "#FFFFFF",
+   "secondary": "#ACB2F8",
+   "accent": "#8D92D8",
+   "background": "#1A2081",
+   "surface": "#232986",
+   "text": "#FFFFFF",
+   "muted": "#AFB1D3",
+   "border": "#3A3F93"
+  }
+ },
+ {
+  "slug": "twitch",
+  "nombre": "Twitch",
+  "categoria": "Webs reales",
+  "url": "https://www.twitch.tv",
+  "colores": {
+   "primary": "#9147FF",
+   "on-primary": "#FFFFFF",
+   "secondary": "#EB0400",
+   "accent": "#5C16C5",
+   "background": "#F7F7F8",
+   "surface": "#EFEFF1",
+   "text": "#0E0E10",
+   "muted": "#3B3B44",
+   "border": "#D6D6D8"
+  }
+ },
+ {
+  "slug": "uber",
+  "nombre": "Uber",
+  "categoria": "Webs reales",
+  "url": "https://www.uber.com/es/es/",
+  "colores": {
+   "primary": "#111111",
+   "on-primary": "#FFFFFF",
+   "secondary": "#080808",
+   "accent": "#525252",
+   "background": "#FFFFFF",
+   "surface": "#F6F6F6",
+   "text": "#000000",
+   "muted": "#111111",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "dribbble",
+  "nombre": "Dribbble",
+  "categoria": "Webs reales",
+  "url": "https://dribbble.com",
+  "colores": {
+   "primary": "#EA4C89",
+   "on-primary": "#000000",
+   "secondary": "#782850",
+   "accent": "#A06884",
+   "background": "#FFFFFF",
+   "surface": "#F3F3F6",
+   "text": "#060318",
+   "muted": "#0D0C22",
+   "border": "#DCDCDF"
+  }
+ },
+ {
+  "slug": "wise",
+  "nombre": "Wise",
+  "categoria": "Webs reales",
+  "url": "https://wise.com/es/",
+  "colores": {
+   "primary": "#163300",
+   "on-primary": "#FFFFFF",
+   "secondary": "#9FE870",
+   "accent": "#BCEF9B",
+   "background": "#FFFFFF",
+   "surface": "#9FE870",
+   "text": "#0E0F0C",
+   "muted": "#163300",
+   "border": "#DDDDDD"
+  }
+ },
+ {
+  "slug": "monzo",
+  "nombre": "Monzo",
+  "categoria": "Webs reales",
+  "url": "https://monzo.com",
+  "colores": {
+   "primary": "#091723",
+   "on-primary": "#FFFFFF",
+   "secondary": "#040C12",
+   "accent": "#4F5559",
+   "background": "#FFFFFF",
+   "surface": "#F2F8F3",
+   "text": "#000000",
+   "muted": "#091723",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "cal",
+  "nombre": "Cal.com",
+  "categoria": "Webs reales",
+  "url": "https://cal.com",
+  "colores": {
+   "primary": "#FF5F57",
+   "on-primary": "#000000",
+   "secondary": "#883834",
+   "accent": "#242424",
+   "background": "#FFFFFF",
+   "surface": "#F3F4F6",
+   "text": "#111111",
+   "muted": "#242424",
+   "border": "#DEDEDE"
+  }
+ },
+ {
+  "slug": "resend",
+  "nombre": "Resend",
+  "categoria": "Webs reales",
+  "url": "https://resend.com",
+  "colores": {
+   "primary": "#FFFFFF",
+   "on-primary": "#000000",
+   "secondary": "#FFFFFF",
+   "accent": "#B2B2B2",
+   "background": "#000000",
+   "surface": "#0B0E14",
+   "text": "#FFFFFF",
+   "muted": "#A1A4A5",
+   "border": "#242424"
+  }
+ },
+ {
+  "slug": "posthog",
+  "nombre": "PostHog",
+  "categoria": "Webs reales",
+  "url": "https://posthog.com",
+  "colores": {
+   "primary": "#CD8407",
+   "on-primary": "#000000",
+   "secondary": "#EB9D2A",
+   "accent": "#111827",
+   "background": "#EEEFE9",
+   "surface": "#D3DAC6",
+   "text": "#111111",
+   "muted": "#374151",
+   "border": "#CFD0CB"
+  }
+ },
+ {
+  "slug": "canva",
+  "nombre": "Canva",
+  "categoria": "Webs reales",
+  "url": "https://www.canva.com/es_es/",
+  "colores": {
+   "primary": "#0F1015",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0F1015",
+   "accent": "#57585B",
+   "background": "#FFFFFF",
+   "surface": "#F5F5F6",
+   "text": "#0F1015",
+   "muted": "#8B3DFF",
+   "border": "#DDDEDE"
+  }
+ },
+ {
+  "slug": "trello",
+  "nombre": "Trello",
+  "categoria": "Webs reales",
+  "url": "https://trello.com/es",
+  "colores": {
+   "primary": "#172B4D",
+   "on-primary": "#FFFFFF",
+   "secondary": "#0065FF",
+   "accent": "#0052CC",
+   "background": "#FFFFFF",
+   "surface": "#F4F5F7",
+   "text": "#091E42",
+   "muted": "#172B4D",
+   "border": "#DDDFE5"
+  }
+ },
+ {
+  "slug": "mercadona",
+  "nombre": "Mercadona",
+  "categoria": "Webs reales",
+  "url": "https://www.mercadona.es",
+  "colores": {
+   "primary": "#00AB61",
+   "on-primary": "#000000",
+   "secondary": "#005630",
+   "accent": "#4C896E",
+   "background": "#FFFFFF",
+   "surface": "#F8F5EC",
+   "text": "#000000",
+   "muted": "#3B3935",
+   "border": "#DBDBDB"
+  }
+ },
+ {
+  "slug": "renfe",
+  "nombre": "Renfe",
+  "categoria": "Webs reales",
+  "url": "https://www.renfe.com/es/es",
+  "colores": {
+   "primary": "#5B064B",
+   "on-primary": "#FFFFFF",
+   "secondary": "#340A2E",
+   "accent": "#404040",
+   "background": "#FFFFFF",
+   "surface": "#F1F2F8",
+   "text": "#0D0F12",
+   "muted": "#404040",
+   "border": "#DDDDDE"
+  }
+ },
+ {
+  "slug": "cursor",
+  "nombre": "Cursor",
+  "categoria": "Webs reales",
+  "url": "https://cursor.com",
+  "colores": {
+   "primary": "#26251E",
+   "on-primary": "#FFFFFF",
+   "secondary": "#26251E",
+   "accent": "#65645E",
+   "background": "#F7F7F4",
+   "surface": "#F2F1ED",
+   "text": "#26251E",
+   "muted": "#3A6A9F",
+   "border": "#DADAD6"
+  }
+ },
+ {
+  "slug": "loom",
+  "nombre": "Loom",
+  "categoria": "Webs reales",
+  "url": "https://www.loom.com",
+  "colores": {
+   "primary": "#1868DB",
+   "on-primary": "#FFFFFF",
+   "secondary": "#FFAB00",
+   "accent": "#FFC44C",
+   "background": "#FFFFFF",
+   "surface": "#E9F2FE",
+   "text": "#000000",
+   "muted": "#101214",
+   "border": "#DBDBDB"
+  }
  }
 ]

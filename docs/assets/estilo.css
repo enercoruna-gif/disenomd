@@ -164,3 +164,7 @@ html{scroll-padding-top:96px}
 .btn-peq{min-height:44px}
 .mq-pos{color:var(--secT)}.mq-neg{color:var(--accT)}.mq-eti,.demo-eti{color:var(--secT)}.mq-sub{color:var(--priT);border-color:var(--priT)}
 pre.codigo:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+
+.tarjeta-foto img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--linea)}
+.captura{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--linea);margin:16px 0}
+.colores .color{display:flex;align-items:center;gap:10px;margin:6px 0}.colores .color i{width:32px;height:32px;border-radius:8px;border:1px solid var(--linea)}
