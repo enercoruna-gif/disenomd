@@ -4,23 +4,13 @@
 
 <h3 align="center">Copia el estilo de las webs que te gustan y haz que tu IA lo respete en cada pantalla.</h3>
 
+<p align="center">🇪🇸 Web principal y descarga gratis: <a href="https://ia.cuadrantia.store"><b>ia.cuadrantia.store</b></a></p>
+
 <p align="center"><a href="https://enercoruna-gif.github.io/disenomd/"><b>🌐 Abrir la web</b></a> · <a href="https://enercoruna-gif.github.io/disenomd/webs/"><b>📚 Ver las 71 webs</b></a> · <a href="https://enercoruna-gif.github.io/disenomd/kits/"><b>🎁 Kits</b></a> · <a href="https://enercoruna-gif.github.io/disenomd/como-usar/"><b>❓ Cómo se usa</b></a></p>
 
-## 🎁 Packs de pago
+## 🎁 Kits de pago
 
-Pago único en Payhip. Detalles de cada uno en la [página de kits](https://enercoruna-gif.github.io/disenomd/kits/).
-
-| Pack | Qué es | Precio | |
-|---|---|:-:|:-:|
-| **[Kit Web Inicial](https://enercoruna-gif.github.io/disenomd/kits/#web)** | Tu web casi terminada: cambia textos y fotos | <img src="https://img.shields.io/badge/precio-79%E2%82%AC-FF7A45?style=for-the-badge&labelColor=161616" alt="79 €"> | [Comprar](https://payhip.com/b/zXyEs) |
-| **[Kit App Móvil](https://enercoruna-gif.github.io/disenomd/kits/#app)** | Tu app para iPhone y Android, ya empezada | <img src="https://img.shields.io/badge/precio-79%E2%82%AC-7B6CFF?style=for-the-badge&labelColor=161616" alt="79 €"> | [Comprar](https://payhip.com/b/8sAFS) |
-| **[Pack Prompts e Instrucciones](https://enercoruna-gif.github.io/disenomd/kits/#prompts)** | Instrucciones listas para tu IA | <img src="https://img.shields.io/badge/precio-19%E2%82%AC-2EA043?style=for-the-badge&labelColor=161616" alt="19 €"> | [Comprar](https://payhip.com/b/MoOeS) |
-| **[Pase del catálogo](https://enercoruna-gif.github.io/disenomd/kits/#pase)** | Todos los DESIGN.md de pago en un solo pase | <img src="https://img.shields.io/badge/precio-49%E2%82%AC-F5A9D6?style=for-the-badge&labelColor=161616" alt="49 €"> | [Comprar](https://payhip.com/b/TmsD6) |
-| **[Fondos animados](https://enercoruna-gif.github.io/disenomd/kits/#fondos)** | Fondos en movimiento para tu web, listos para pegar | <img src="https://img.shields.io/badge/precio-29%E2%82%AC-4285F4?style=for-the-badge&labelColor=161616" alt="29 €"> | [Comprar](https://payhip.com/b/APUh4) |
-| **[Plantillas de vídeo](https://enercoruna-gif.github.io/disenomd/kits/#videos)** | Vídeos para redes y web con tu marca | <img src="https://img.shields.io/badge/precio-39%E2%82%AC-F5B83D?style=for-the-badge&labelColor=161616" alt="39 €"> | [Comprar](https://payhip.com/b/mOwWv) |
-| **[DESIGN.md a medida](https://enercoruna-gif.github.io/disenomd/kits/#a-medida)** | Un DESIGN.md hecho para tu marca o tu web | <img src="https://img.shields.io/badge/precio-149%E2%82%AC-C60B1E?style=for-the-badge&labelColor=161616" alt="149 €"> | [Comprar](https://payhip.com/b/kYZU0) |
-| **[Estilos por sector](https://enercoruna-gif.github.io/disenomd/kits/#sectores)** | 45 estilos originales para negocios de aquí | <img src="https://img.shields.io/badge/precio-19%E2%82%AC-FF7A45?style=for-the-badge&labelColor=161616" alt="19 €"> | [Comprar](https://payhip.com/b/bXiQf) |
-| **[Pack completo](https://enercoruna-gif.github.io/disenomd/kits/#todo)** | Los 7 packs digitales juntos | <img src="https://img.shields.io/badge/precio-199%E2%82%AC-C60B1E?style=for-the-badge&labelColor=161616" alt="199 €"> | [Comprar](https://payhip.com/b/7smZP) |
+Los kits, estilos por sector y DESIGN.md a medida están en [ia.cuadrantia.store/kits](https://ia.cuadrantia.store/kits).
 
 ---
 
